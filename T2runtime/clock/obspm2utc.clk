@@ -1,0 +1,4 @@
+# UTC(OP) UTC
+40000.000000	0.0
+# Asume UTC(OP) = UTC for time before obspm2gps.clk is valid
+52973.000000    0.0 

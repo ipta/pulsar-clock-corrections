@@ -1,0 +1,12 @@
+# UTC(GB853) UTC(NIST) 
+# IHS 050826: I am *guessing* that the 85-3 corrections are to NIST
+# rather than to GPS.  Should verify with David/Don.
+# From old tempo time_gb853.dat:
+# awk '{printf("%11.5f %10.5e\n",$1,($3-$2)/1.e6)}' time_gb853.dat 
+#  > $TEMPO2/clock/gb8532nist.clk
+#
+50633.99000 0.00000e+00
+50634.00000 -1.00000e-03
+50688.40000 -1.00000e-03
+50688.41000 0.00000e+00
+99999.00000 0.00000e+00

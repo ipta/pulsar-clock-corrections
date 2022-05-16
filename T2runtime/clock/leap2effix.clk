@@ -1,0 +1,14 @@
+# UTC(LEAP) UTC(EFFIX)
+# Some 'effix' time jumps do not appear in LEAP data
+# So we must account for this...
+#    MJD: 56230 to 56490; offset=-0.0972843 s * pre-removed in LEAP
+#    MJD: 56490 to 56720; offset=-0.409268 s * pre-removed in LEAP
+#
+0 0
+56229.999999 0
+56230.000000 0.0972843
+56489.999999 0.0972843
+56490.000000 0.409268 
+56719.999999 0.409268 
+56720.0000000 0
+99999.0000000 0

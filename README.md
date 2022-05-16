@@ -24,7 +24,7 @@ With TEMPO or TEMPO2
 --------------------
 
 Simply `git clone` this repository, then set the environment variable `$TEMPO`
-to point to the `tempo` subdirectory and `$TEMPO` to point to the `tempo2` subdirectory.
+to point to the `tempo` subdirectory and `$TEMPO` to point to the `T2runtime` subdirectory.
 
 With PINT
 ---------

@@ -1,0 +1,3295 @@
+# UTC(AUS) UTC 1
+#
+# Tie between UTC(AUS) and UTC, from Circular T :
+#   update_clkcorr -t ausutc cirt.*
+#  -- Russell Edwards 29 Sep 2004
+#Comments from merged data file:
+#>Thu Sep 30 16:10:35 2004 Imported from file cirt.200
+#Comments from merged data file:
+#>Thu Feb 17 10:17:47 2005 Imported from file cirt.201
+#Comments from merged data file:
+#>Thu Feb 17 10:17:47 2005 Imported from file cirt.202
+#Comments from merged data file:
+#>Thu Feb 17 10:17:47 2005 Imported from file cirt.203
+#Comments from merged data file:
+#>Thu Feb 17 10:17:47 2005 Imported from file cirt.204
+#Comments from merged data file:
+#>Thu Feb 17 10:17:47 2005 Imported from file cirt.205
+#Comments from merged data file:
+#>Wed May 18 12:06:37 2005 Imported from file cirt.206
+#Comments from merged data file:
+#>Wed May 18 12:06:37 2005 Imported from file cirt.207
+#Comments from merged data file:
+#>Wed May 18 12:06:37 2005 Imported from file cirt.208
+#Comments from merged data file:
+#>Mon Jul 18 15:49:36 2005 Imported from file cirt.209
+#Comments from merged data file:
+#>Mon Jul 18 15:49:36 2005 Imported from file cirt.210
+#Comments from merged data file:
+#>Thu Sep 29 16:32:05 2005 Imported from file cirt.211
+#Comments from merged data file:
+#>Thu Sep 29 16:32:05 2005 Imported from file cirt.212
+#Comments from merged data file:
+#>Thu Mar 16 14:15:52 2006 Imported from file cirt.210
+#Comments from merged data file:
+#>Thu Mar 16 14:15:52 2006 Imported from file cirt.211
+#Comments from merged data file:
+#>Thu Mar 16 14:15:52 2006 Imported from file cirt.212
+#Comments from merged data file:
+#>Thu Mar 16 14:15:52 2006 Imported from file cirt.213
+#Comments from merged data file:
+#>Thu Mar 16 14:15:52 2006 Imported from file cirt.214
+#Comments from merged data file:
+#>Thu Mar 16 14:15:52 2006 Imported from file cirt.215
+#Comments from merged data file:
+#>Thu Mar 16 14:15:52 2006 Imported from file cirt.216
+#Comments from merged data file:
+#>Thu Mar 16 14:15:52 2006 Imported from file cirt.217
+#Comments from merged data file:
+#>Tue Jun 13 15:30:25 2006 Imported from file cirt.218
+#Comments from merged data file:
+#>Tue Jun 13 15:30:25 2006 Imported from file cirt.219
+#Comments from merged data file:
+#>Mon Aug 14 14:28:19 2006 Imported from file cirt.220
+#Comments from merged data file:
+#>Mon Aug 14 14:28:19 2006 Imported from file cirt.221
+#Comments from merged data file:
+#>Mon Aug 14 14:28:19 2006 Imported from file cirt.222
+#Comments from merged data file:
+#>Mon Aug 14 14:28:19 2006 Imported from file cirt.223
+#Comments from merged data file:
+#>Fri Jan 12 12:05:04 2007 Imported from file cirt.224
+#Comments from merged data file:
+#>Fri Jan 12 12:05:04 2007 Imported from file cirt.225
+#Comments from merged data file:
+#>Fri Jan 12 12:05:04 2007 Imported from file cirt.226
+#Comments from merged data file:
+#>Fri Jan 12 12:05:04 2007 Imported from file cirt.227
+#Comments from merged data file:
+#>Thu Feb  8 17:07:15 2007 Imported from file cirt.228
+#Comments from merged data file:
+#>Thu Mar  8 13:50:41 2007 Imported from file cirt.229
+#Comments from merged data file:
+#>Thu Apr  5 11:56:49 2007 Imported from file cirt.230
+#Comments from merged data file:
+#>Thu May  3 12:03:07 2007 Imported from file cirt.231
+#Comments from merged data file:
+#>Thu Jun 14 15:36:24 2007 Imported from file cirt.232
+#Comments from merged data file:
+#>Thu Jun 14 15:38:12 2007 Imported from file cirt.233
+#Comments from merged data file:
+#>Tue Jul 17 14:08:56 2007 Imported from file cirt.234
+#Comments from merged data file:
+#>Thu Sep  6 13:08:17 2007 Imported from file cirt.235
+#Comments from merged data file:
+#>Wed Oct  3 16:22:19 2007 Imported from file cirt.236
+#Comments from merged data file:
+#>Thu Nov  8 14:42:50 2007 Imported from file cirt.237
+#Comments from merged data file:
+#>Fri Dec  7 16:48:49 2007 Imported from file cirt.238
+#Comments from merged data file:
+#>Thu Jan 31 14:07:19 2008 Imported from file cirt.239
+#Comments from merged data file:
+#>Thu Jan 31 14:09:22 2008 Imported from file cirt.240
+#Comments from merged data file:
+#>Wed Mar 12 16:47:10 2008 Imported from file cirt.241
+#Comments from merged data file:
+#>Fri Mar 14 10:50:48 2008 Imported from file cirt.242
+#Comments from merged data file:
+#>Wed Apr 23 02:38:43 2008 Imported from file cirt.243
+#Comments from merged data file:
+#>Thu Jul 10 14:17:16 2008 Imported from file cirt.244
+#Comments from merged data file:
+#>Thu Jul 10 14:19:06 2008 Imported from file cirt.245
+#Comments from merged data file:
+#>Wed Aug 13 15:52:31 2008 Imported from file cirt.246
+#Comments from merged data file:
+#>Wed Aug 13 15:54:35 2008 Imported from file cirt.247
+#Comments from merged data file:
+#>Wed Oct  8 11:27:36 2008 Imported from file cirt.248
+#Comments from merged data file:
+#>Tue Nov 11 16:05:59 2008 Imported from file cirt.249
+#Comments from merged data file:
+#>Wed Dec 10 11:39:26 2008 Imported from file cirt.250
+#Comments from merged data file:
+#>Thu Jan 15 15:46:56 2009 Imported from file cirt.251
+#Comments from merged data file:
+#>Thu Feb 19 12:15:18 2009 Imported from file cirt.252
+#Comments from merged data file:
+#>Thu Feb 19 12:16:38 2009 Imported from file cirt.253
+#Comments from merged data file:
+#>Wed Mar 25 16:32:28 2009 Imported from file cirt.254
+#Comments from merged data file:
+#>Thu May  7 14:53:37 2009 Imported from file cirt.255
+#Comments from merged data file:
+#>Thu Jun 11 14:51:48 2009 Imported from file cirt.256
+#Comments from merged data file:
+#>Wed Sep 16 09:11:54 2009 Imported from file cirt.257
+#Comments from merged data file:
+#>Wed Sep 16 09:27:30 2009 Imported from file cirt.258
+#Comments from merged data file:
+#>Wed Sep 16 09:29:02 2009 Imported from file cirt.259
+#Comments from merged data file:
+#>Wed Sep 16 09:31:24 2009 Imported from file cirt.260
+#Comments from merged data file:
+#>Tue Oct 13 11:17:20 2009 Imported from file cirt.261
+#Comments from merged data file:
+#>Wed Nov 18 14:30:23 2009 Imported from file cirt.262
+#Comments from merged data file:
+#>Tue Dec 22 12:20:32 2009 Imported from file cirt.263
+#Comments from merged data file:
+#>Thu Jan 14 17:02:43 2010 Imported from file cirt.264
+#Comments from merged data file:
+#>Wed Feb 24 17:34:41 2010 Imported from file cirt.265
+#Comments from merged data file:
+#>Thu Mar 18 12:11:51 2010 Imported from file cirt.266
+#Comments from merged data file:
+#>Wed Apr 14 14:59:23 2010 Imported from file cirt.267
+#Comments from merged data file:
+#>Wed May 19 16:22:02 2010 Imported from file cirt.268
+#Comments from merged data file:
+#>Tue Jun 22 14:05:13 2010 Imported from file cirt.269
+#Comments from merged data file:
+#>Tue Jul 20 16:27:38 2010 Imported from file cirt.270
+#Comments from merged data file:
+#>Tue Aug 24 12:14:07 2010 Imported from file cirt.271
+#Comments from merged data file:
+#>Thu Sep 23 19:33:28 2010 Imported from file cirt.272
+#Comments from merged data file:
+#>Tue Oct 26 18:48:02 2010 Imported from file cirt.273
+#Comments from merged data file:
+#>Wed Nov 24 15:42:56 2010 Imported from file cirt.274
+#Comments from merged data file:
+#>Thu Jan  6 16:23:47 2011 Imported from file cirt.275
+#Comments from merged data file:
+#>Fri Jan 14 17:19:29 2011 Imported from file cirt.276
+#Comments from merged data file:
+#>Wed Feb 23 11:37:27 2011 Imported from file cirt.277
+#Comments from merged data file:
+#>Wed Mar 23 18:03:27 2011 Imported from file cirt.278
+#Comments from merged data file:
+#>Mon May  2 17:09:00 2011 Imported from file cirt.279
+#Comments from merged data file:
+#>Tue Jul  5 12:01:59 2011 Imported from file cirt.280
+#Comments from merged data file:
+#>Tue Jul  5 12:04:14 2011 Imported from file cirt.281
+#Comments from merged data file:
+#>Wed Nov 16 20:40:01 2011 Imported from file cirt.282
+#Comments from merged data file:
+#>Wed Nov 16 20:40:23 2011 Imported from file cirt.283
+#Comments from merged data file:
+#>Wed Nov 16 20:40:38 2011 Imported from file cirt.284
+#Comments from merged data file:
+#>Wed Nov 16 20:40:49 2011 Imported from file cirt.285
+#Comments from merged data file:
+#>Wed Nov 16 20:41:03 2011 Imported from file cirt.286
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.100
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.101
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.102
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.103
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.105
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.106
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.107
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.108
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.109
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.110
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.111
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.112
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.113
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.114
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.115
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.116
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.117
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.118
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.119
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.120
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.121
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.122
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.123
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.124
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.125
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.126
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.127
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.128
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.130
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.131
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.133
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.134
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.135
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.136
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.137
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.138
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.139
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.140
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.141
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.142
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.143
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.144
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.145
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.146
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.147
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.148
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.149
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.150
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.151
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.152
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.153
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.154
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.155
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.156
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.157
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.158
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.159
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.160
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.161
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.162
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.163
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.164
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.165
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.166
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.167
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.168
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.169
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.170
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.171
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.172
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.173
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.174
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.175
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.176
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.177
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.178
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.179
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.180
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.181
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.182
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.183
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.184
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.185
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.186
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.187
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.188
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.189
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.190
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.191
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.192
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.193
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.194
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.195
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.196
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.197
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.198
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.199
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.200
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.201
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.202
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.203
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.204
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.205
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.206
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.207
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.208
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.209
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.210
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.211
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.212
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.213
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.214
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.215
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.216
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.217
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.218
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.219
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.220
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.221
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.222
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.223
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.224
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.225
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.226
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.228
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.229
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.230
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.232
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.233
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.234
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.235
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.236
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.237
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.238
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.239
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.240
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.241
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.242
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.243
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.244
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.245
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.246
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.247
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.248
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.249
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.250
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.251
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.252
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.253
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.254
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.255
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.256
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.257
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.258
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.259
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.260
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.261
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.262
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.263
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.264
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.265
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.266
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.267
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.268
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.269
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.27
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.270
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.271
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.272
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.273
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.274
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.275
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.276
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.277
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.278
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.279
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.280
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.281
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.282
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.283
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.284
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.285
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.286
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.287
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.288
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.289
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.290
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.291
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.292
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.293
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.294
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.295
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.296
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.297
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.298
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.299
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.300
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.301
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.302
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.303
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.304
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.305
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.306
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.307
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.308
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.309
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.310
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.311
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.312
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.313
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.314
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.315
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.316
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.317
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.318
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.319
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.320
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.321
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.322
+#Comments from merged data file:
+#>Tue Dec 23 11:41:20 2014 Imported from file cirt.323
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.100
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.101
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.102
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.103
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.105
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.106
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.107
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.108
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.109
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.110
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.111
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.112
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.113
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.114
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.115
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.116
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.117
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.118
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.119
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.120
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.121
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.122
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.123
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.124
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.125
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.126
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.127
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.128
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.130
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.131
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.133
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.134
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.135
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.136
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.137
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.138
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.139
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.140
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.141
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.142
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.143
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.144
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.145
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.146
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.147
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.148
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.149
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.150
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.151
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.152
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.153
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.154
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.155
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.156
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.157
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.158
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.159
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.160
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.161
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.162
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.163
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.164
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.165
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.166
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.167
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.168
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.169
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.170
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.171
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.172
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.173
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.174
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.175
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.176
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.177
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.178
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.179
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.180
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.181
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.182
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.183
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.184
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.185
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.186
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.187
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.188
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.189
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.190
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.191
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.192
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.193
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.194
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.195
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.196
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.197
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.198
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.199
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.200
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.201
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.202
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.203
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.204
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.205
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.206
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.207
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.208
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.209
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.210
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.211
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.212
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.213
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.214
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.215
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.216
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.217
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.218
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.219
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.220
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.221
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.222
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.223
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.224
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.225
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.226
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.228
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.229
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.230
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.232
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.233
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.234
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.235
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.236
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.237
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.238
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.239
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.240
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.241
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.242
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.243
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.244
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.245
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.246
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.247
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.248
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.249
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.250
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.251
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.252
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.253
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.254
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.255
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.256
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.257
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.258
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.259
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.260
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.261
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.262
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.263
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.264
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.265
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.266
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.267
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.268
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.269
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.27
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.270
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.271
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.272
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.273
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.274
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.275
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.276
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.277
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.278
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.279
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.280
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.281
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.282
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.283
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.284
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.285
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.286
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.287
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.288
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.289
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.290
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.291
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.292
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.293
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.294
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.295
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.296
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.297
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.298
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.299
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.300
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.301
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.302
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.303
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.304
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.305
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.306
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.307
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.308
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.309
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.310
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.311
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.312
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.313
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.314
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.315
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.316
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.317
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.318
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.319
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.320
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.321
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.322
+#Comments from merged data file:
+#>Wed Dec 31 13:32:28 2014 Imported from file cirt.323
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.100
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.101
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.102
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.103
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.105
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.106
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.107
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.108
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.109
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.110
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.111
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.112
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.113
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.114
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.115
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.116
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.117
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.118
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.119
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.120
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.121
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.122
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.123
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.124
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.125
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.126
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.127
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.128
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.130
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.131
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.133
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.134
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.135
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.136
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.137
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.138
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.139
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.140
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.141
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.142
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.143
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.144
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.145
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.146
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.147
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.148
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.149
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.150
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.151
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.152
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.153
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.154
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.155
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.156
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.157
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.158
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.159
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.160
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.161
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.162
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.163
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.164
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.165
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.166
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.167
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.168
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.169
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.170
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.171
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.172
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.173
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.174
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.175
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.176
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.177
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.178
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.179
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.180
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.181
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.182
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.183
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.184
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.185
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.186
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.187
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.188
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.189
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.190
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.191
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.192
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.193
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.194
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.195
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.196
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.197
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.198
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.199
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.200
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.201
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.202
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.203
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.204
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.205
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.206
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.207
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.208
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.209
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.210
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.211
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.212
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.213
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.214
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.215
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.216
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.217
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.218
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.219
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.220
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.221
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.222
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.223
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.224
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.225
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.226
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.228
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.229
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.230
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.232
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.233
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.234
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.235
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.236
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.237
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.238
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.239
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.240
+#Comments from merged data file:
+#>Fri Jan 16 11:34:59 2015 Imported from file cirt.241
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.242
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.243
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.244
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.245
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.246
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.247
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.248
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.249
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.250
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.251
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.252
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.253
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.254
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.255
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.256
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.257
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.258
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.259
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.260
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.261
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.262
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.263
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.264
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.265
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.266
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.267
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.268
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.269
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.27
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.270
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.271
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.272
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.273
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.274
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.275
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.276
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.277
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.278
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.279
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.280
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.281
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.282
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.283
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.284
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.285
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.286
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.287
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.288
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.289
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.290
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.291
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.292
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.293
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.294
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.295
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.296
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.297
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.298
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.299
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.300
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.301
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.302
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.303
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.304
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.305
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.306
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.307
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.308
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.309
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.310
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.311
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.312
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.313
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.314
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.315
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.316
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.317
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.318
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.319
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.320
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.321
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.322
+#Comments from merged data file:
+#>Fri Jan 16 11:35:00 2015 Imported from file cirt.323
+#Comments from merged data file:
+#>Fri Feb 13 20:30:35 2015 Imported from file cirt.100
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.101
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.102
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.103
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.105
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.106
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.107
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.108
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.109
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.110
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.111
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.112
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.113
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.114
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.115
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.116
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.117
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.118
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.119
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.120
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.121
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.122
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.123
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.124
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.125
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.126
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.127
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.128
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.130
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.131
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.133
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.134
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.135
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.136
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.137
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.138
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.139
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.140
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.141
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.142
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.143
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.144
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.145
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.146
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.147
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.148
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.149
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.150
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.151
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.152
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.153
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.154
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.155
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.156
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.157
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.158
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.159
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.160
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.161
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.162
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.163
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.164
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.165
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.166
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.167
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.168
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.169
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.170
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.171
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.172
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.173
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.174
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.175
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.176
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.177
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.178
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.179
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.180
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.181
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.182
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.183
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.184
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.185
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.186
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.187
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.188
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.189
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.190
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.191
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.192
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.193
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.194
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.195
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.196
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.197
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.198
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.199
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.200
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.201
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.202
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.203
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.204
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.205
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.206
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.207
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.208
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.209
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.210
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.211
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.212
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.213
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.214
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.215
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.216
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.217
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.218
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.219
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.220
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.221
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.222
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.223
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.224
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.225
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.226
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.228
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.229
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.230
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.232
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.233
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.234
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.235
+#Comments from merged data file:
+#>Fri Feb 13 20:30:36 2015 Imported from file cirt.236
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.237
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.238
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.239
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.240
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.241
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.242
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.243
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.244
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.245
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.246
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.247
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.248
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.249
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.250
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.251
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.252
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.253
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.254
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.255
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.256
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.257
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.258
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.259
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.260
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.261
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.262
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.263
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.264
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.265
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.266
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.267
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.268
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.269
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.27
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.270
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.271
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.272
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.273
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.274
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.275
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.276
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.277
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.278
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.279
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.280
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.281
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.282
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.283
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.284
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.285
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.286
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.287
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.288
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.289
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.290
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.291
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.292
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.293
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.294
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.295
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.296
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.297
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.298
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.299
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.300
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.301
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.302
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.303
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.304
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.305
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.306
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.307
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.308
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.309
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.310
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.311
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.312
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.313
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.314
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.315
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.316
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.317
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.318
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.319
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.320
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.321
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.322
+#Comments from merged data file:
+#>Fri Feb 13 20:30:37 2015 Imported from file cirt.323
+50169.00000 -0.000000631000
+50174.00000 -0.000000595000
+50179.00000 -0.000000587000
+50184.00000 -0.000000556000
+50189.00000 -0.000000506000
+50194.00000 -0.000000478000
+50199.00000 -0.000000458000
+50204.00000 -0.000000424000
+50209.00000 -0.000000368000
+50214.00000 -0.000000335000
+50219.00000 -0.000000291000
+50224.00000 -0.000000245000
+50229.00000 -0.000000225000
+50234.00000 -0.000000176000
+50239.00000 -0.000000175000
+50244.00000 -0.000000150000
+50249.00000 -0.000000133000
+50254.00000 -0.000000100000
+50259.00000 -0.000000080000
+50264.00000 -0.000000049000
+50269.00000 -0.000000016000
+50274.00000 -0.000000016000
+50279.00000 0.000000023000
+50284.00000 0.000000042000
+50289.00000 0.000000048000
+50294.00000 0.000000040000
+50324.00000 0.000000069000
+50329.00000 0.000000051000
+50334.00000 0.000000044000
+50339.00000 0.000000003000
+50344.00000 -0.000000005000
+50349.00000 -0.000000016000
+50354.00000 -0.000000035000
+50359.00000 -0.000000042000
+50364.00000 -0.000000070000
+50369.00000 -0.000000089000
+50374.00000 -0.000000091000
+50379.00000 -0.000000110000
+50384.00000 -0.000000078000
+50389.00000 -0.000000095000
+50394.00000 -0.000000093000
+50399.00000 -0.000000088000
+50404.00000 -0.000000092000
+50409.00000 -0.000000098000
+50414.00000 -0.000000078000
+50419.00000 -0.000000084000
+50424.00000 -0.000000087000
+50429.00000 -0.000000076000
+50434.00000 -0.000000085000
+50439.00000 -0.000000062000
+50444.00000 -0.000000058000
+50449.00000 -0.000000047000
+50454.00000 -0.000000018000
+50459.00000 0.000000000000
+50464.00000 -0.000000007000
+50469.00000 -0.000000020000
+50474.00000 0.000000000000
+50479.00000 0.000000010000
+50484.00000 0.000000026000
+50489.00000 0.000000030000
+50494.00000 0.000000058000
+50499.00000 0.000000082000
+50504.00000 0.000000089000
+50509.00000 0.000000117000
+50514.00000 0.000000116000
+50519.00000 0.000000151000
+50524.00000 0.000000171000
+50529.00000 0.000000191000
+50534.00000 0.000000188000
+50539.00000 0.000000226000
+50544.00000 0.000000252000
+50549.00000 0.000000270000
+50554.00000 0.000000287000
+50559.00000 0.000000293000
+50564.00000 0.000000287000
+50569.00000 0.000000326000
+50574.00000 0.000000340000
+50579.00000 0.000000336000
+50584.00000 0.000000351000
+50589.00000 0.000000328000
+50594.00000 0.000000302000
+50599.00000 0.000000282000
+50604.00000 0.000000292000
+50609.00000 0.000000278000
+50614.00000 0.000000267000
+50619.00000 0.000000258000
+50624.00000 0.000000265000
+50629.00000 0.000000266000
+50634.00000 0.000000278000
+50639.00000 0.000000251000
+50644.00000 0.000000269000
+50649.00000 0.000000262000
+50654.00000 0.000000251000
+50659.00000 0.000000271000
+50664.00000 0.000000256000
+50669.00000 0.000000261000
+50674.00000 0.000000225000
+50679.00000 0.000000230000
+50684.00000 0.000000238000
+50689.00000 0.000000251000
+50694.00000 0.000000229000
+50699.00000 0.000000218000
+50704.00000 0.000000207000
+50709.00000 0.000000217000
+50714.00000 0.000000222000
+50719.00000 0.000000209000
+50724.00000 0.000000219000
+50729.00000 0.000000196000
+50734.00000 0.000000202000
+50739.00000 0.000000186000
+50744.00000 0.000000155000
+50749.00000 0.000000154000
+50754.00000 0.000000155000
+50759.00000 0.000000163000
+50764.00000 0.000000170000
+50769.00000 0.000000169000
+50774.00000 0.000000162000
+50779.00000 0.000000165000
+50784.00000 0.000000183000
+50789.00000 0.000000181000
+50794.00000 0.000000197000
+50799.00000 0.000000207000
+50804.00000 0.000000208000
+50809.00000 0.000000218000
+50814.00000 0.000000254000
+50819.00000 0.000000259000
+50824.00000 0.000000276000
+50829.00000 0.000000289000
+50834.00000 0.000000298000
+50839.00000 0.000000290000
+50844.00000 0.000000308000
+50849.00000 0.000000310000
+50854.00000 0.000000302000
+50859.00000 0.000000302000
+50864.00000 0.000000291000
+50869.00000 0.000000285000
+50874.00000 0.000000291000
+50879.00000 0.000000291000
+50884.00000 0.000000311000
+50889.00000 0.000000306000
+50894.00000 0.000000326000
+50899.00000 0.000000320000
+50904.00000 0.000000312000
+50909.00000 0.000000311000
+50914.00000 0.000000298000
+50919.00000 0.000000324000
+50924.00000 0.000000323000
+50929.00000 0.000000332000
+50934.00000 0.000000357000
+50939.00000 0.000000372000
+50944.00000 0.000000377000
+50949.00000 0.000000373000
+50954.00000 0.000000391000
+50959.00000 0.000000424000
+50964.00000 0.000000437000
+50969.00000 0.000000461000
+50974.00000 0.000000487000
+50979.00000 0.000000509000
+50984.00000 0.000000524000
+50989.00000 0.000000577000
+50994.00000 0.000000612000
+50999.00000 0.000000638000
+51004.00000 0.000000652000
+51009.00000 0.000000682000
+51014.00000 0.000000727000
+51019.00000 0.000000742000
+51024.00000 0.000000764000
+51029.00000 0.000000785000
+51034.00000 0.000000787000
+51039.00000 0.000000812000
+51044.00000 0.000000830000
+51049.00000 0.000000859000
+51054.00000 0.000000901000
+51084.00000 0.000000824000
+51089.00000 0.000000864000
+51094.00000 0.000000887000
+51099.00000 0.000000910000
+51104.00000 0.000000937000
+51109.00000 0.000000964000
+51114.00000 0.000000974000
+51119.00000 0.000000998000
+51124.00000 0.000001021000
+51129.00000 0.000001035000
+51134.00000 0.000001050000
+51139.00000 0.000001078000
+51144.00000 0.000001090000
+51174.00000 0.000001067000
+51179.00000 0.000001068000
+51184.00000 0.000001099000
+51189.00000 0.000001119000
+51194.00000 0.000001156000
+51199.00000 0.000001168000
+51204.00000 0.000001175000
+51209.00000 0.000001186000
+51214.00000 0.000001194000
+51219.00000 0.000001186000
+51224.00000 0.000001194000
+51229.00000 0.000001211000
+51234.00000 0.000001229000
+51239.00000 0.000001272000
+51244.00000 0.000001299000
+51249.00000 0.000001315000
+51254.00000 0.000001345000
+51259.00000 0.000001351000
+51264.00000 0.000001370000
+51269.00000 0.000001404000
+51274.00000 0.000001428000
+51279.00000 0.000001447000
+51284.00000 0.000001461000
+51289.00000 0.000001473000
+51294.00000 0.000001519000
+51299.00000 0.000001535000
+51304.00000 0.000001536000
+51309.00000 0.000001522000
+51314.00000 0.000001504000
+51319.00000 0.000001485000
+51324.00000 0.000001473000
+51329.00000 0.000001460000
+51334.00000 0.000001432000
+51339.00000 0.000001421000
+51344.00000 0.000001409000
+51349.00000 0.000001399000
+51354.00000 0.000001382000
+51359.00000 0.000001360000
+51364.00000 0.000001343000
+51369.00000 0.000001320000
+51374.00000 0.000001311000
+51379.00000 0.000001265000
+51384.00000 0.000001281000
+51389.00000 0.000001255000
+51394.00000 0.000001238000
+51399.00000 0.000001225000
+51404.00000 0.000001205000
+51409.00000 0.000001188000
+51414.00000 0.000001175000
+51419.00000 0.000001172000
+51424.00000 0.000001135000
+51429.00000 0.000001136000
+51434.00000 0.000001114000
+51439.00000 0.000001099000
+51444.00000 0.000001076000
+51449.00000 0.000001065000
+51454.00000 0.000001035000
+51459.00000 0.000001032000
+51464.00000 0.000001018000
+51469.00000 0.000001002000
+51474.00000 0.000000986000
+51479.00000 0.000000981000
+51484.00000 0.000000963000
+51489.00000 0.000000946000
+51494.00000 0.000000918000
+51499.00000 0.000000912000
+51504.00000 0.000000899000
+51509.00000 0.000000877000
+51514.00000 0.000000871000
+51519.00000 0.000000862000
+51524.00000 0.000000841000
+51529.00000 0.000000840000
+51534.00000 0.000000839000
+51539.00000 0.000000835000
+51544.00000 0.000000832000
+51549.00000 0.000000839000
+51554.00000 0.000000841000
+51559.00000 0.000000841000
+51564.00000 0.000000838000
+51569.00000 0.000000838000
+51574.00000 0.000000834000
+51579.00000 0.000000839000
+51584.00000 0.000000837000
+51589.00000 0.000000835000
+51594.00000 0.000000832000
+51599.00000 0.000000814000
+51604.00000 0.000000803000
+51609.00000 0.000000822000
+51614.00000 0.000000843000
+51619.00000 0.000000839000
+51624.00000 0.000000841000
+51629.00000 0.000000838000
+51634.00000 0.000000824000
+51639.00000 0.000000816000
+51644.00000 0.000000795000
+51649.00000 0.000000781000
+51654.00000 0.000000761000
+51659.00000 0.000000746000
+51664.00000 0.000000736000
+51669.00000 0.000000721000
+51674.00000 0.000000701000
+51679.00000 0.000000686000
+51684.00000 0.000000675000
+51689.00000 0.000000666000
+51694.00000 0.000000655000
+51699.00000 0.000000643000
+51704.00000 0.000000631000
+51709.00000 0.000000609000
+51714.00000 0.000000600000
+51719.00000 0.000000597000
+51724.00000 0.000000578000
+51729.00000 0.000000561000
+51734.00000 0.000000552000
+51739.00000 0.000000539000
+51744.00000 0.000000526000
+51749.00000 0.000000505000
+51754.00000 0.000000488000
+51759.00000 0.000000466000
+51764.00000 0.000000445000
+51769.00000 0.000000433000
+51774.00000 0.000000416000
+51779.00000 0.000000406000
+51784.00000 0.000000392000
+51789.00000 0.000000382000
+51794.00000 0.000000363000
+51799.00000 0.000000345000
+51804.00000 0.000000329000
+51809.00000 0.000000306000
+51814.00000 0.000000284000
+51819.00000 0.000000271000
+51824.00000 0.000000249000
+51829.00000 0.000000253000
+51834.00000 0.000000230000
+51839.00000 0.000000212000
+51844.00000 0.000000195000
+51849.00000 0.000000190000
+51854.00000 0.000000168000
+51859.00000 0.000000147000
+51864.00000 0.000000135000
+51869.00000 0.000000115000
+51874.00000 0.000000100000
+51879.00000 0.000000085000
+51884.00000 0.000000070000
+51889.00000 0.000000035000
+51894.00000 0.000000013000
+51899.00000 -0.000000004000
+51904.00000 -0.000000015000
+51909.00000 -0.000000017000
+51914.00000 -0.000000027000
+51919.00000 -0.000000031000
+51924.00000 -0.000000023000
+51929.00000 -0.000000023000
+51934.00000 -0.000000025000
+51939.00000 -0.000000023000
+51944.00000 -0.000000026000
+51949.00000 -0.000000020000
+51954.00000 -0.000000019000
+51959.00000 -0.000000031000
+51964.00000 -0.000000034000
+51969.00000 -0.000000039000
+51974.00000 -0.000000036000
+51979.00000 -0.000000036000
+51984.00000 -0.000000059000
+51989.00000 -0.000000066000
+51994.00000 -0.000000075000
+51999.00000 -0.000000086000
+52004.00000 -0.000000064000
+52009.00000 -0.000000072000
+52014.00000 -0.000000065000
+52019.00000 -0.000000073000
+52024.00000 -0.000000088000
+52029.00000 -0.000000085000
+52034.00000 -0.000000080000
+52039.00000 -0.000000073000
+52044.00000 -0.000000083000
+52049.00000 -0.000000092000
+52054.00000 -0.000000115000
+52059.00000 -0.000000110000
+52064.00000 -0.000000122000
+52069.00000 -0.000000114000
+52074.00000 -0.000000124000
+52079.00000 -0.000000106000
+52084.00000 -0.000000097000
+52089.00000 -0.000000088000
+52094.00000 -0.000000080000
+52099.00000 -0.000000077000
+52104.00000 -0.000000073000
+52109.00000 -0.000000040000
+52114.00000 -0.000000034000
+52119.00000 -0.000000037000
+52124.00000 -0.000000041000
+52129.00000 -0.000000050000
+52134.00000 -0.000000045000
+52139.00000 -0.000000034000
+52144.00000 -0.000000027000
+52149.00000 -0.000000029000
+52154.00000 -0.000000016000
+52159.00000 -0.000000010000
+52164.00000 -0.000000008000
+52169.00000 -0.000000016000
+52174.00000 -0.000000008000
+52179.00000 -0.000000016000
+52184.00000 -0.000000015000
+52189.00000 -0.000000018000
+52194.00000 -0.000000026000
+52199.00000 -0.000000018000
+52204.00000 -0.000000024000
+52209.00000 -0.000000022000
+52214.00000 -0.000000028000
+52219.00000 -0.000000051000
+52224.00000 -0.000000055000
+52229.00000 -0.000000051000
+52234.00000 -0.000000064000
+52239.00000 -0.000000067000
+52244.00000 -0.000000068000
+52249.00000 -0.000000090000
+52254.00000 -0.000000099000
+52259.00000 -0.000000103000
+52264.00000 -0.000000099000
+52269.00000 -0.000000095000
+52274.00000 -0.000000083000
+52279.00000 -0.000000078000
+52284.00000 -0.000000091000
+52289.00000 -0.000000090000
+52294.00000 -0.000000091000
+52299.00000 -0.000000078000
+52304.00000 -0.000000078000
+52309.00000 -0.000000079000
+52314.00000 -0.000000092000
+52319.00000 -0.000000088000
+52324.00000 -0.000000096000
+52329.00000 -0.000000082000
+52334.00000 -0.000000077000
+52339.00000 -0.000000099000
+52344.00000 -0.000000092000
+52349.00000 -0.000000091000
+52354.00000 -0.000000083000
+52359.00000 -0.000000069000
+52364.00000 -0.000000070000
+52369.00000 -0.000000079000
+52374.00000 -0.000000094000
+52379.00000 -0.000000097000
+52384.00000 -0.000000088000
+52389.00000 -0.000000079000
+52394.00000 -0.000000067000
+52399.00000 -0.000000067000
+52404.00000 -0.000000075000
+52409.00000 -0.000000090000
+52414.00000 -0.000000094000
+52419.00000 -0.000000110000
+52424.00000 -0.000000124000
+52429.00000 -0.000000128000
+52434.00000 -0.000000120000
+52439.00000 -0.000000125000
+52444.00000 -0.000000122000
+52449.00000 -0.000000128000
+52454.00000 -0.000000130000
+52459.00000 -0.000000132000
+52464.00000 -0.000000111000
+52469.00000 -0.000000101000
+52474.00000 -0.000000096000
+52479.00000 -0.000000088000
+52484.00000 -0.000000096000
+52489.00000 -0.000000117000
+52494.00000 -0.000000126000
+52499.00000 -0.000000114000
+52504.00000 -0.000000105000
+52509.00000 -0.000000101000
+52514.00000 -0.000000104000
+52519.00000 -0.000000101000
+52524.00000 -0.000000091000
+52529.00000 -0.000000083000
+52534.00000 -0.000000083000
+52539.00000 -0.000000081000
+52544.00000 -0.000000081000
+52549.00000 -0.000000099000
+52554.00000 -0.000000097000
+52559.00000 -0.000000090000
+52564.00000 -0.000000070000
+52569.00000 -0.000000062000
+52574.00000 -0.000000072000
+52579.00000 -0.000000076000
+52584.00000 -0.000000067000
+52589.00000 -0.000000085000
+52594.00000 -0.000000079000
+52599.00000 -0.000000075000
+52604.00000 -0.000000068000
+52609.00000 -0.000000079000
+52614.00000 -0.000000075000
+52619.00000 -0.000000058000
+52624.00000 -0.000000060000
+52629.00000 -0.000000067000
+52634.00000 -0.000000084000
+52639.00000 -0.000000084000
+52644.00000 -0.000000098000
+52649.00000 -0.000000089000
+52654.00000 -0.000000095000
+52659.00000 -0.000000111000
+52664.00000 -0.000000123000
+52669.00000 -0.000000145000
+52674.00000 -0.000000145000
+52679.00000 -0.000000168000
+52684.00000 -0.000000168000
+52689.00000 -0.000000163000
+52694.00000 -0.000000170000
+52699.00000 -0.000000174000
+52704.00000 -0.000000179000
+52709.00000 -0.000000199000
+52714.00000 -0.000000190000
+52719.00000 -0.000000173000
+52724.00000 -0.000000186000
+52729.00000 -0.000000201200
+52734.00000 -0.000000217000
+52739.00000 -0.000000218000
+52744.00000 -0.000000220300
+52749.00000 -0.000000213600
+52754.00000 -0.000000217800
+52759.00000 -0.000000238200
+52764.00000 -0.000000243600
+52769.00000 -0.000000263000
+52774.00000 -0.000000270500
+52779.00000 -0.000000293400
+52784.00000 -0.000000297800
+52789.00000 -0.000000311400
+52794.00000 -0.000000303000
+52799.00000 -0.000000302500
+52804.00000 -0.000000292900
+52809.00000 -0.000000304700
+52814.00000 -0.000000293400
+52819.00000 -0.000000277500
+52824.00000 -0.000000274200
+52829.00000 -0.000000293400
+52834.00000 -0.000000311000
+52839.00000 -0.000000306400
+52844.00000 -0.000000325100
+52849.00000 -0.000000329200
+52854.00000 -0.000000349500
+52859.00000 -0.000000353300
+52864.00000 -0.000000357000
+52869.00000 -0.000000355400
+52874.00000 -0.000000359600
+52879.00000 -0.000000370100
+52884.00000 -0.000000366200
+52889.00000 -0.000000365500
+52894.00000 -0.000000363700
+52899.00000 -0.000000367900
+52904.00000 -0.000000369900
+52909.00000 -0.000000386400
+52914.00000 -0.000000382700
+52919.00000 -0.000000392300
+52924.00000 -0.000000397400
+52929.00000 -0.000000406900
+52934.00000 -0.000000406800
+52939.00000 -0.000000398500
+52944.00000 -0.000000395700
+52949.00000 -0.000000394500
+52954.00000 -0.000000403700
+52959.00000 -0.000000424100
+52964.00000 -0.000000419200
+52969.00000 -0.000000417500
+52974.00000 -0.000000396800
+52979.00000 -0.000000402600
+52984.00000 -0.000000402400
+52989.00000 -0.000000413400
+52994.00000 -0.000000423300
+52999.00000 -0.000000418000
+53004.00000 -0.000000428000
+53009.00000 -0.000000438800
+53014.00000 -0.000000462300
+53019.00000 -0.000000465400
+53024.00000 -0.000000463800
+53029.00000 -0.000000453500
+53034.00000 -0.000000461100
+53039.00000 -0.000000449100
+53044.00000 -0.000000452400
+53049.00000 -0.000000456300
+53054.00000 -0.000000447000
+53059.00000 -0.000000445000
+53064.00000 -0.000000454500
+53069.00000 -0.000000445300
+53074.00000 -0.000000431400
+53079.00000 -0.000000421100
+53084.00000 -0.000000429400
+53089.00000 -0.000000432100
+53094.00000 -0.000000425100
+53099.00000 -0.000000426500
+53104.00000 -0.000000439100
+53109.00000 -0.000000449000
+53114.00000 -0.000000448000
+53119.00000 -0.000000451900
+53124.00000 -0.000000449500
+53129.00000 -0.000000462700
+53134.00000 -0.000000463000
+53139.00000 -0.000000447800
+53144.00000 -0.000000455900
+53149.00000 -0.000000467200
+53154.00000 -0.000000452100
+53159.00000 -0.000000443300
+53164.00000 -0.000000451800
+53169.00000 -0.000000466700
+53174.00000 -0.000000473500
+53179.00000 -0.000000498600
+53184.00000 -0.000000498200
+53189.00000 -0.000000491500
+53194.00000 -0.000000487200
+53199.00000 -0.000000488200
+53204.00000 -0.000000501800
+53209.00000 -0.000000507400
+53214.00000 -0.000000500700
+53219.00000 -0.000000508300
+53224.00000 -0.000000510600
+53229.00000 -0.000000519600
+53234.00000 -0.000000518300
+53239.00000 -0.000000519400
+53244.00000 -0.000000525300
+53249.00000 -0.000000516500
+53254.00000 -0.000000505200
+53259.00000 -0.000000502600
+53264.00000 -0.000000495400
+53269.00000 -0.000000470500
+53274.00000 -0.000000480900
+53279.00000 -0.000000446600
+53284.00000 -0.000000450100
+53289.00000 -0.000000431600
+53294.00000 -0.000000436600
+53299.00000 -0.000000427300
+53304.00000 -0.000000434000
+53309.00000 -0.000000435500
+53314.00000 -0.000000432000
+53319.00000 -0.000000437400
+53324.00000 -0.000000420800
+53329.00000 -0.000000424000
+53334.00000 -0.000000416000
+53339.00000 -0.000000412500
+53344.00000 -0.000000421100
+53349.00000 -0.000000412200
+53354.00000 -0.000000405900
+53359.00000 -0.000000411500
+53364.00000 -0.000000407400
+53369.00000 -0.000000401700
+53374.00000 -0.000000396000
+53379.00000 -0.000000400000
+53384.00000 -0.000000408200
+53389.00000 -0.000000416100
+53394.00000 -0.000000431000
+53399.00000 -0.000000430400
+53404.00000 -0.000000436300
+53409.00000 -0.000000441400
+53414.00000 -0.000000456800
+53419.00000 -0.000000463200
+53424.00000 -0.000000470100
+53429.00000 -0.000000480700
+53434.00000 -0.000000499000
+53439.00000 -0.000000501900
+53444.00000 -0.000000508300
+53449.00000 -0.000000520400
+53454.00000 -0.000000526400
+53459.00000 -0.000000541100
+53464.00000 -0.000000547900
+53469.00000 -0.000000556500
+53474.00000 -0.000000561700
+53479.00000 -0.000000574000
+53484.00000 -0.000000590800
+53489.00000 -0.000000608200
+53494.00000 -0.000000600100
+53499.00000 -0.000000599800
+53504.00000 -0.000000598200
+53509.00000 -0.000000603500
+53514.00000 -0.000000607900
+53519.00000 -0.000000615100
+53524.00000 -0.000000611400
+53529.00000 -0.000000616700
+53534.00000 -0.000000617300
+53539.00000 -0.000000620000
+53544.00000 -0.000000620400
+53549.00000 -0.000000631300
+53554.00000 -0.000000636200
+53559.00000 -0.000000637700
+53564.00000 -0.000000642600
+53569.00000 -0.000000646900
+53574.00000 -0.000000643200
+53579.00000 -0.000000638100
+53584.00000 -0.000000647100
+53589.00000 -0.000000653600
+53594.00000 -0.000000639000
+53599.00000 -0.000000645400
+53604.00000 -0.000000653100
+53609.00000 -0.000000655100
+53614.00000 -0.000000641200
+53619.00000 -0.000000648800
+53624.00000 -0.000000638000
+53629.00000 -0.000000637000
+53634.00000 -0.000000645000
+53639.00000 -0.000000651100
+53644.00000 -0.000000653200
+53649.00000 -0.000000653100
+53654.00000 -0.000000651600
+53659.00000 -0.000000654300
+53664.00000 -0.000000675200
+53669.00000 -0.000000670100
+53674.00000 -0.000000670800
+53679.00000 -0.000000678100
+53684.00000 -0.000000675300
+53689.00000 -0.000000705300
+53694.00000 -0.000000710300
+53699.00000 -0.000000722900
+53704.00000 -0.000000740100
+53709.00000 -0.000000750900
+53714.00000 -0.000000759200
+53719.00000 -0.000000753500
+53724.00000 -0.000000749600
+53729.00000 -0.000000751200
+53734.00000 -0.000000755400
+53739.00000 -0.000000754200
+53744.00000 -0.000000747000
+53749.00000 -0.000000766400
+53754.00000 -0.000000772200
+53759.00000 -0.000000762700
+53764.00000 -0.000000774700
+53769.00000 -0.000000782000
+53774.00000 -0.000000780500
+53779.00000 -0.000000789700
+53784.00000 -0.000000803600
+53789.00000 -0.000000791600
+53794.00000 -0.000000802900
+53799.00000 -0.000000806400
+53804.00000 -0.000000826200
+53809.00000 -0.000000809000
+53814.00000 -0.000000805700
+53819.00000 -0.000000791700
+53824.00000 -0.000000776300
+53829.00000 -0.000000754000
+53834.00000 -0.000000751600
+53839.00000 -0.000000745100
+53844.00000 -0.000000738700
+53849.00000 -0.000000726600
+53854.00000 -0.000000707900
+53859.00000 -0.000000686900
+53864.00000 -0.000000658800
+53869.00000 -0.000000643600
+53874.00000 -0.000000635200
+53879.00000 -0.000000609800
+53884.00000 -0.000000598200
+53889.00000 -0.000000592300
+53894.00000 -0.000000591200
+53899.00000 -0.000000581000
+53904.00000 -0.000000540700
+53909.00000 -0.000000536000
+53914.00000 -0.000000529000
+53919.00000 -0.000000498600
+53924.00000 -0.000000490100
+53929.00000 -0.000000489200
+53934.00000 -0.000000475200
+53939.00000 -0.000000445100
+53944.00000 -0.000000437400
+53949.00000 -0.000000430500
+53954.00000 -0.000000412400
+53959.00000 -0.000000403300
+53964.00000 -0.000000403700
+53969.00000 -0.000000399400
+53974.00000 -0.000000388800
+53979.00000 -0.000000376000
+53984.00000 -0.000000361500
+53989.00000 -0.000000335600
+53994.00000 -0.000000308600
+53999.00000 -0.000000299600
+54004.00000 -0.000000292000
+54009.00000 -0.000000276800
+54014.00000 -0.000000270300
+54019.00000 -0.000000267600
+54024.00000 -0.000000254400
+54029.00000 -0.000000257000
+54034.00000 -0.000000249900
+54039.00000 -0.000000246200
+54044.00000 -0.000000243500
+54049.00000 -0.000000247000
+54054.00000 -0.000000238500
+54059.00000 -0.000000226100
+54064.00000 -0.000000207800
+54069.00000 -0.000000177700
+54074.00000 -0.000000174200
+54079.00000 -0.000000155300
+54084.00000 -0.000000158500
+54089.00000 -0.000000151000
+54094.00000 -0.000000142500
+54099.00000 -0.000000128500
+54104.00000 -0.000000114100
+54109.00000 -0.000000114100
+54114.00000 -0.000000098300
+54119.00000 -0.000000074700
+54124.00000 -0.000000059500
+54129.00000 -0.000000037100
+54134.00000 -0.000000018700
+54139.00000 0.000000002300
+54144.00000 0.000000015400
+54149.00000 0.000000009200
+54154.00000 0.000000028600
+54159.00000 0.000000058000
+54164.00000 0.000000068200
+54169.00000 0.000000063700
+54174.00000 0.000000081500
+54179.00000 0.000000080400
+54184.00000 0.000000112300
+54189.00000 0.000000102500
+54194.00000 0.000000094800
+54199.00000 0.000000096800
+54204.00000 0.000000092000
+54209.00000 0.000000100400
+54214.00000 0.000000107900
+54219.00000 0.000000113100
+54224.00000 0.000000116600
+54229.00000 0.000000112600
+54234.00000 0.000000119400
+54239.00000 0.000000114700
+54244.00000 0.000000106700
+54249.00000 0.000000112700
+54254.00000 0.000000114000
+54259.00000 0.000000134800
+54264.00000 0.000000139000
+54269.00000 0.000000146000
+54274.00000 0.000000154800
+54279.00000 0.000000149200
+54284.00000 0.000000145900
+54289.00000 0.000000151900
+54294.00000 0.000000149300
+54299.00000 0.000000144800
+54304.00000 0.000000134800
+54309.00000 0.000000141100
+54314.00000 0.000000130000
+54319.00000 0.000000118000
+54324.00000 0.000000117000
+54329.00000 0.000000118500
+54334.00000 0.000000114900
+54339.00000 0.000000121000
+54344.00000 0.000000107400
+54349.00000 0.000000101300
+54354.00000 0.000000096200
+54359.00000 0.000000090200
+54364.00000 0.000000074100
+54369.00000 0.000000078500
+54374.00000 0.000000075100
+54379.00000 0.000000080500
+54384.00000 0.000000082200
+54389.00000 0.000000079500
+54394.00000 0.000000087900
+54399.00000 0.000000102100
+54404.00000 0.000000115700
+54409.00000 0.000000121400
+54414.00000 0.000000135400
+54419.00000 0.000000132900
+54424.00000 0.000000130900
+54429.00000 0.000000127000
+54434.00000 0.000000123200
+54439.00000 0.000000129100
+54444.00000 0.000000124900
+54449.00000 0.000000126000
+54454.00000 0.000000123000
+54459.00000 0.000000136800
+54464.00000 0.000000129000
+54469.00000 0.000000124800
+54474.00000 0.000000126100
+54479.00000 0.000000129900
+54484.00000 0.000000130400
+54489.00000 0.000000121900
+54494.00000 0.000000106900
+54499.00000 0.000000096000
+54504.00000 0.000000113900
+54509.00000 0.000000115400
+54514.00000 0.000000124500
+54519.00000 0.000000126100
+54524.00000 0.000000127300
+54529.00000 0.000000109100
+54534.00000 0.000000108000
+54539.00000 0.000000120100
+54544.00000 0.000000129300
+54549.00000 0.000000114400
+54554.00000 0.000000116400
+54559.00000 0.000000120400
+54564.00000 0.000000121000
+54569.00000 0.000000131000
+54574.00000 0.000000130300
+54579.00000 0.000000143800
+54584.00000 0.000000128200
+54589.00000 0.000000143800
+54594.00000 0.000000146600
+54599.00000 0.000000147100
+54604.00000 0.000000143800
+54609.00000 0.000000151200
+54614.00000 0.000000155200
+54619.00000 0.000000161800
+54624.00000 0.000000166600
+54629.00000 0.000000172800
+54634.00000 0.000000181700
+54639.00000 0.000000193100
+54644.00000 0.000000202400
+54649.00000 0.000000209100
+54654.00000 0.000000204800
+54659.00000 0.000000216300
+54664.00000 0.000000221000
+54669.00000 0.000000221000
+54674.00000 0.000000228300
+54679.00000 0.000000238100
+54684.00000 0.000000249000
+54689.00000 0.000000261600
+54694.00000 0.000000272600
+54699.00000 0.000000291300
+54704.00000 0.000000307100
+54709.00000 0.000000322400
+54714.00000 0.000000342100
+54719.00000 0.000000353300
+54724.00000 0.000000364500
+54729.00000 0.000000387600
+54734.00000 0.000000408900
+54739.00000 0.000000429200
+54744.00000 0.000000449500
+54749.00000 0.000000469400
+54754.00000 0.000000485100
+54759.00000 0.000000508400
+54764.00000 0.000000528700
+54769.00000 0.000000552600
+54774.00000 0.000000577600
+54779.00000 0.000000596900
+54784.00000 0.000000626600
+54789.00000 0.000000642600
+54794.00000 0.000000662700
+54799.00000 0.000000687500
+54804.00000 0.000000714300
+54809.00000 0.000000743600
+54814.00000 0.000000760600
+54819.00000 0.000000781200
+54824.00000 0.000000814800
+54829.00000 0.000000841700
+54834.00000 0.000000867200
+54839.00000 0.000000895600
+54844.00000 0.000000924000
+54849.00000 0.000000948900
+54854.00000 0.000000975300
+54859.00000 0.000001006000
+54864.00000 0.000001034900
+54869.00000 0.000001055900
+54874.00000 0.000001049600
+54879.00000 0.000001032300
+54884.00000 0.000001022000
+54889.00000 0.000001014100
+54894.00000 0.000001009400
+54899.00000 0.000001007700
+54904.00000 0.000001000900
+54909.00000 0.000000985200
+54914.00000 0.000000976900
+54919.00000 0.000000974300
+54924.00000 0.000000974900
+54929.00000 0.000000975200
+54934.00000 0.000000970100
+54939.00000 0.000000969900
+54944.00000 0.000000962000
+54949.00000 0.000000957800
+54954.00000 0.000000953500
+54959.00000 0.000000959500
+54964.00000 0.000000955800
+54969.00000 0.000000956600
+54974.00000 0.000000962100
+54979.00000 0.000000957800
+54984.00000 0.000000950200
+54989.00000 0.000000946700
+54994.00000 0.000000943100
+54999.00000 0.000000947300
+55004.00000 0.000000942900
+55009.00000 0.000000938000
+55014.00000 0.000000941800
+55019.00000 0.000000947800
+55024.00000 0.000000947200
+55029.00000 0.000000953800
+55034.00000 0.000000954600
+55039.00000 0.000000953500
+55044.00000 0.000000955600
+55049.00000 0.000000966600
+55054.00000 0.000000973900
+55059.00000 0.000000978100
+55064.00000 0.000000983300
+55069.00000 0.000000992100
+55074.00000 0.000001005000
+55079.00000 0.000001013500
+55084.00000 0.000001017800
+55089.00000 0.000001027100
+55094.00000 0.000001024600
+55099.00000 0.000000989000
+55104.00000 0.000000969900
+55109.00000 0.000000942200
+55114.00000 0.000000923900
+55119.00000 0.000000896600
+55124.00000 0.000000879500
+55129.00000 0.000000857700
+55134.00000 0.000000838000
+55139.00000 0.000000811700
+55144.00000 0.000000788300
+55149.00000 0.000000774200
+55154.00000 0.000000758300
+55159.00000 0.000000733600
+55164.00000 0.000000711300
+55169.00000 0.000000695900
+55174.00000 0.000000673400
+55179.00000 0.000000657000
+55184.00000 0.000000632800
+55189.00000 0.000000615600
+55194.00000 0.000000591600
+55199.00000 0.000000569300
+55204.00000 0.000000549700
+55209.00000 0.000000522800
+55214.00000 0.000000505400
+55219.00000 0.000000478600
+55224.00000 0.000000448600
+55229.00000 0.000000421000
+55234.00000 0.000000407700
+55239.00000 0.000000384400
+55244.00000 0.000000360100
+55249.00000 0.000000340200
+55254.00000 0.000000313200
+55259.00000 0.000000301100
+55264.00000 0.000000278400
+55269.00000 0.000000263400
+55274.00000 0.000000254000
+55279.00000 0.000000243400
+55284.00000 0.000000227700
+55289.00000 0.000000206400
+55294.00000 0.000000185200
+55299.00000 0.000000166800
+55304.00000 0.000000160000
+55309.00000 0.000000144400
+55314.00000 0.000000128800
+55319.00000 0.000000114800
+55324.00000 0.000000102600
+55329.00000 0.000000088300
+55334.00000 0.000000070500
+55339.00000 0.000000065500
+55344.00000 0.000000053300
+55349.00000 0.000000041100
+55354.00000 0.000000036200
+55359.00000 0.000000028300
+55364.00000 0.000000030200
+55369.00000 0.000000031300
+55374.00000 0.000000030600
+55379.00000 0.000000023100
+55384.00000 0.000000026500
+55389.00000 0.000000025200
+55394.00000 0.000000034100
+55399.00000 0.000000037500
+55404.00000 0.000000038100
+55409.00000 0.000000055500
+55414.00000 0.000000058100
+55419.00000 0.000000071800
+55424.00000 0.000000070900
+55429.00000 0.000000073900
+55434.00000 0.000000075600
+55439.00000 0.000000080100
+55444.00000 0.000000095100
+55449.00000 0.000000106800
+55454.00000 0.000000117700
+55459.00000 0.000000118300
+55464.00000 0.000000126400
+55469.00000 0.000000146300
+55474.00000 0.000000151700
+55479.00000 0.000000158300
+55484.00000 0.000000165700
+55489.00000 0.000000170900
+55494.00000 0.000000180900
+55499.00000 0.000000196200
+55504.00000 0.000000208000
+55509.00000 0.000000212600
+55514.00000 0.000000229600
+55519.00000 0.000000233600
+55524.00000 0.000000247200
+55529.00000 0.000000256000
+55534.00000 0.000000262800
+55539.00000 0.000000270600
+55544.00000 0.000000273700
+55549.00000 0.000000279200
+55554.00000 0.000000296800
+55559.00000 0.000000310200
+55564.00000 0.000000307800
+55569.00000 0.000000318200
+55574.00000 0.000000337700
+55579.00000 0.000000343200
+55584.00000 0.000000355600
+55589.00000 0.000000379800
+55594.00000 0.000000399700
+55599.00000 0.000000416300
+55604.00000 0.000000431400
+55609.00000 0.000000449900
+55614.00000 0.000000469300
+55619.00000 0.000000482700
+55624.00000 0.000000493300
+55629.00000 0.000000504700
+55634.00000 0.000000526700
+55639.00000 0.000000547100
+55644.00000 0.000000554800
+55649.00000 0.000000569800
+55654.00000 0.000000586500
+55659.00000 0.000000597900
+55664.00000 0.000000602900
+55669.00000 0.000000617200
+55674.00000 0.000000625200
+55679.00000 0.000000651400
+55684.00000 0.000000669600
+55689.00000 0.000000691200
+55694.00000 0.000000708800
+55699.00000 0.000000718300
+55704.00000 0.000000734500
+55709.00000 0.000000737300
+55714.00000 0.000000740800
+55719.00000 0.000000752400
+55724.00000 0.000000765700
+55729.00000 0.000000777300
+55734.00000 0.000000777400
+55739.00000 0.000000795100
+55744.00000 0.000000805700
+55749.00000 0.000000819200
+55754.00000 0.000000827700
+55759.00000 0.000000841200
+55764.00000 0.000000856300
+55769.00000 0.000000875500
+55774.00000 0.000000902800
+55779.00000 0.000000914300
+55784.00000 0.000000937500
+55789.00000 0.000000959100
+55794.00000 0.000000972100
+55799.00000 0.000000958000
+55804.00000 0.000000944800
+55809.00000 0.000000923800
+55814.00000 0.000000910900
+55819.00000 0.000000897100
+55824.00000 0.000000901400
+55829.00000 0.000000898800
+55834.00000 0.000000889500
+55839.00000 0.000000875200
+55844.00000 0.000000871300
+55849.00000 0.000000866900
+55854.00000 0.000000853900
+55859.00000 0.000000855200
+55864.00000 0.000000842000
+55869.00000 0.000000832600
+55874.00000 0.000000833000
+55879.00000 0.000000819100
+55884.00000 0.000000805300
+55889.00000 0.000000792400
+55894.00000 0.000000792200
+55899.00000 0.000000783400
+55904.00000 0.000000775600
+55909.00000 0.000000774800
+55914.00000 0.000000771600
+55919.00000 0.000000778300
+55924.00000 0.000000776500
+55929.00000 0.000000782200
+55934.00000 0.000000773400
+55939.00000 0.000000760900
+55944.00000 0.000000751800
+55949.00000 0.000000737700
+55954.00000 0.000000736600
+55959.00000 0.000000740600
+55964.00000 0.000000738300
+55969.00000 0.000000730000
+55974.00000 0.000000728400
+55979.00000 0.000000712800
+55984.00000 0.000000701800
+55989.00000 0.000000689100
+55994.00000 0.000000681500
+55999.00000 0.000000669100
+56004.00000 0.000000650800
+56009.00000 0.000000643600
+56014.00000 0.000000637100
+56019.00000 0.000000632600
+56024.00000 0.000000620800
+56029.00000 0.000000622200
+56034.00000 0.000000618400
+56039.00000 0.000000607900
+56044.00000 0.000000602000
+56049.00000 0.000000587000
+56054.00000 0.000000586000
+56059.00000 0.000000571800
+56064.00000 0.000000561400
+56069.00000 0.000000546800
+56074.00000 0.000000546600
+56079.00000 0.000000550900
+56084.00000 0.000000536300
+56089.00000 0.000000532800
+56094.00000 0.000000531700
+56099.00000 0.000000524800
+56104.00000 0.000000522800
+56109.00000 0.000000521400
+56114.00000 0.000000508700
+56119.00000 0.000000501200
+56124.00000 0.000000504800
+56129.00000 0.000000500700
+56134.00000 0.000000494100
+56139.00000 0.000000490100
+56144.00000 0.000000492900
+56149.00000 0.000000502000
+56154.00000 0.000000494000
+56159.00000 0.000000488300
+56164.00000 0.000000481400
+56169.00000 0.000000465600
+56174.00000 0.000000480800
+56179.00000 0.000000480600
+56184.00000 0.000000473400
+56189.00000 0.000000467400
+56194.00000 0.000000470700
+56199.00000 0.000000458600
+56204.00000 0.000000454400
+56209.00000 0.000000460600
+56214.00000 0.000000444300
+56219.00000 0.000000439500
+56224.00000 0.000000425400
+56229.00000 0.000000423500
+56234.00000 0.000000424800
+56239.00000 0.000000437000
+56244.00000 0.000000425800
+56249.00000 0.000000420700
+56254.00000 0.000000418100
+56259.00000 0.000000422600
+56264.00000 0.000000422000
+56269.00000 0.000000441100
+56274.00000 0.000000440100
+56279.00000 0.000000440100
+56284.00000 0.000000436600
+56289.00000 0.000000440300
+56294.00000 0.000000428100
+56299.00000 0.000000436200
+56304.00000 0.000000441700
+56309.00000 0.000000437400
+56314.00000 0.000000429100
+56319.00000 0.000000415600
+56324.00000 0.000000416100
+56329.00000 0.000000414000
+56334.00000 0.000000413500
+56339.00000 0.000000409100
+56344.00000 0.000000403900
+56349.00000 0.000000406100
+56354.00000 0.000000405200
+56359.00000 0.000000403700
+56364.00000 0.000000402800
+56369.00000 0.000000401000
+56374.00000 0.000000407000
+56379.00000 0.000000414900
+56384.00000 0.000000417900
+56389.00000 0.000000417500
+56394.00000 0.000000412600
+56399.00000 0.000000407000
+56404.00000 0.000000398300
+56409.00000 0.000000391100
+56414.00000 0.000000388300
+56419.00000 0.000000375500
+56424.00000 0.000000378900
+56429.00000 0.000000376800
+56434.00000 0.000000366500
+56439.00000 0.000000353300
+56444.00000 0.000000347600
+56449.00000 0.000000343300
+56454.00000 0.000000343000
+56459.00000 0.000000342600
+56464.00000 0.000000336400
+56469.00000 0.000000330100
+56474.00000 0.000000310700
+56479.00000 0.000000304200
+56484.00000 0.000000298500
+56489.00000 0.000000294200
+56494.00000 0.000000285300
+56499.00000 0.000000286000
+56504.00000 0.000000282700
+56509.00000 0.000000267800
+56514.00000 0.000000260600
+56519.00000 0.000000257600
+56524.00000 0.000000256900
+56529.00000 0.000000251400
+56534.00000 0.000000249700
+56539.00000 0.000000253700
+56544.00000 0.000000258400
+56549.00000 0.000000260600
+56554.00000 0.000000244600
+56559.00000 0.000000242300
+56564.00000 0.000000225600
+56569.00000 0.000000217800
+56574.00000 0.000000216700
+56579.00000 0.000000213600
+56584.00000 0.000000212100
+56589.00000 0.000000205200
+56594.00000 0.000000201400
+56599.00000 0.000000190800
+56604.00000 0.000000209500
+56609.00000 0.000000212300
+56614.00000 0.000000201500
+56619.00000 0.000000192000
+56624.00000 0.000000196700
+56629.00000 0.000000195900
+56634.00000 0.000000193000
+56639.00000 0.000000181400
+56644.00000 0.000000171700
+56649.00000 0.000000168300
+56654.00000 0.000000156400
+56659.00000 0.000000152400
+56664.00000 0.000000153400
+56669.00000 0.000000136800
+56674.00000 0.000000125500
+56679.00000 0.000000125000
+56684.00000 0.000000106800
+56689.00000 0.000000107300
+56694.00000 0.000000100000
+56699.00000 0.000000089100
+56704.00000 0.000000078400
+56709.00000 0.000000078300
+56714.00000 0.000000076700
+56719.00000 0.000000070000
+56724.00000 0.000000061400
+56729.00000 0.000000063100
+56734.00000 0.000000068400
+56739.00000 0.000000067000
+56744.00000 0.000000067500
+56749.00000 0.000000062800
+56754.00000 0.000000066200
+56759.00000 0.000000065700
+56764.00000 0.000000056800
+56769.00000 0.000000045600
+56774.00000 0.000000042900
+56779.00000 0.000000041400
+56784.00000 0.000000040700
+56789.00000 0.000000039000
+56794.00000 0.000000036600
+56799.00000 0.000000039400
+56804.00000 0.000000027100
+56809.00000 0.000000013400
+56814.00000 -0.000000000400
+56819.00000 0.000000005400
+56824.00000 -0.000000001000
+56829.00000 -0.000000000300
+56834.00000 -0.000000015200
+56839.00000 -0.000000030100
+56844.00000 -0.000000044400
+56849.00000 -0.000000054000
+56854.00000 -0.000000064200
+56859.00000 -0.000000072300
+56864.00000 -0.000000085200
+56869.00000 -0.000000098200
+56874.00000 -0.000000098600
+56879.00000 -0.000000110300
+56884.00000 -0.000000124500
+56889.00000 -0.000000134300
+56894.00000 -0.000000150100
+56899.00000 -0.000000153400
+56904.00000 -0.000000150400
+56909.00000 -0.000000164000
+56914.00000 -0.000000170900
+56919.00000 -0.000000185400
+56924.00000 -0.000000194700
+56929.00000 -0.000000207200
+56934.00000 -0.000000219100
+56939.00000 -0.000000224500
+56944.00000 -0.000000234000
+56949.00000 -0.000000251200
+56954.00000 -0.000000258000
+56959.00000 -0.000000260600
+56964.00000 -0.000000277000
+56969.00000 -0.000000289700
+56974.00000 -0.000000303900
+56979.00000 -0.000000317700
+56984.00000 -0.000000318200
+56989.00000 -0.000000321900
