@@ -1,6 +1,6 @@
 # file                                  format   Update interval (days)
 tempo/clock/time3_gbt.dat               tempo    7
-tempo/clock/time_ao.dat                 tempo    7
+tempo/clock/time_ao.dat                 tempo    inf
 tempo/clock/time_bonn.dat               tempo    7
 tempo/clock/time_chime.dat              tempo    7
 tempo/clock/time_gb140.dat              tempo    7
@@ -12,8 +12,8 @@ tempo/clock/time_nuppi.dat              tempo    7
 tempo/clock/time_pks.dat                tempo    7
 tempo/clock/time_vla.dat                tempo    7
 tempo/clock/time_wsrt.dat               tempo    7
-T2runtime/clock/ao2gps.clk              tempo2   7
-T2runtime/clock/ao2nist.clk             tempo2   7
+T2runtime/clock/ao2gps.clk              tempo2   inf
+T2runtime/clock/ao2nist.clk             tempo2   inf
 T2runtime/clock/aus2utc.clk             tempo2   7
 T2runtime/clock/ced2gps.clk             tempo2   7
 T2runtime/clock/eff2gps.clk             tempo2   7
