@@ -36,3 +36,15 @@ Other tools
 ===========
 
 For more advanced usage of this package you will want to install PINT.
+
+Updating the clock corrections
+------------------------------
+
+Some telescopes provide downloadable copies of their current clock correction
+files; ideally all would do so. There is initial code to download and validate
+these files in support of automatic updates.
+
+Longer-term, the hosting system's CI (for example Github Actions) could
+probably be made to run these updating scripts automatically and check the
+results into git, ensuring that this repository is up to date without human
+intervention.
