@@ -1,5 +1,5 @@
 # file                                  format   Update interval (days)
-tempo/clock/time3_gbt.dat               tempo    7
+tempo/clock/time3_gbt.dat               tempo    1
 tempo/clock/time_ao.dat                 tempo    inf
 tempo/clock/time_bonn.dat               tempo    7
 tempo/clock/time_chime.dat              tempo    7
