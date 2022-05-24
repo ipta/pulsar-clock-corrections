@@ -9,7 +9,7 @@ Since the telescope collapse, this file should not need additional updates.
 |:--- |:--- |
 | File | `tempo/clock/time_ao.dat` |
 | Authority | temporary |
-| Download URL | https://raw.githubusercontent.com/nanograv/tempo/master/clock/time_ao.dat |
+| Download URL | <https://raw.githubusercontent.com/nanograv/tempo/master/clock/time_ao.dat> |
 | Format | tempo |
 | Bogus last entry | False |
 | Clock file start | 1982-11-29 MJD 45302.8 |

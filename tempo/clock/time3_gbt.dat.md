@@ -11,7 +11,7 @@ If questions arise, contact ???
 |:--- |:--- |
 | File | `tempo/clock/time3_gbt.dat` |
 | Authority | observatory |
-| Download URL | https://www.gb.nrao.edu/~fghigo/timer/time_gbt.dat |
+| Download URL | <https://www.gb.nrao.edu/~fghigo/timer/time_gbt.dat> |
 | Format | tempo |
 | Bogus last entry | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |

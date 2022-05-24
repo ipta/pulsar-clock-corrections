@@ -9,7 +9,7 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `tempo/clock/time_jb.dat` |
 | Authority | temporary |
-| Download URL | https://raw.githubusercontent.com/nanograv/tempo/master/clock/time_jb.dat |
+| Download URL | <https://raw.githubusercontent.com/nanograv/tempo/master/clock/time_jb.dat> |
 | Format | tempo |
 | Bogus last entry | True |
 | Clock file start | 2006-10-13 MJD 54021.4 |
