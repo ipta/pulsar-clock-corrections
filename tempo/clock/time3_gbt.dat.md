@@ -6,6 +6,7 @@ GBT clock correction file
 The observatory distributes this file on the Web, updated about daily.
 
 If questions arise, contact ???
+
 |     |     |
 |:--- |:--- |
 | File | `tempo/clock/time3_gbt.dat` |

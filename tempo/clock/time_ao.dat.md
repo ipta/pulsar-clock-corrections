@@ -4,6 +4,7 @@ Arecibo
 Arecibo clock correction file
 
 Since the telescope collapse, this file should not need additional updates.
+
 |     |     |
 |:--- |:--- |
 | File | `tempo/clock/time_ao.dat` |
