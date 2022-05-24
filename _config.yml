@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+include: 
+- tempo/clock/
+- T2runtime/clock/
