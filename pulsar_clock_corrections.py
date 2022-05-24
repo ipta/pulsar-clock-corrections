@@ -149,7 +149,7 @@ class ClockFileUpdater:
             dedent(
                 f"""
             {self.short_description}
-            ===========================
+            ---------------------------
             """
             )
         )
@@ -333,7 +333,7 @@ class PagesUpdater:
                 dedent(
                     """
                 Clock correction status
-                =======================
+                -----------------------
 
                 This automatically generated file summarizes the status of the clock
                 corrections. It reports the date range covered by the clock corrections
