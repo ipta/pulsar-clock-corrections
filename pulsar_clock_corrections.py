@@ -162,7 +162,7 @@ class ClockFileUpdater:
             |:--- |:--- |
             | File | `{self.filename}` |
             | Authority | {self.authority} |
-            | Download URL | {self.download_url} |
+            | Download URL | <{self.download_url}> |
             | Format | {self.format} |
             | Bogus last entry | {self.bogus_last_entry} |
             | Clock file start | {short_date(tstart)} MJD {tstart.mjd:.1f} |
