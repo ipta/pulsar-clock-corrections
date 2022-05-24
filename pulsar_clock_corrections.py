@@ -157,6 +157,7 @@ class ClockFileUpdater:
         f.write(
             dedent(
                 f"""
+
             |     |     |
             |:--- |:--- |
             | File | `{self.filename}` |
