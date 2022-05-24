@@ -1,0 +1,25 @@
+
+WSRT
+---------------------------
+Westerbork Synthesis Radio Telescope clock corrections
+
+This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+
+|     |     |
+|:--- |:--- |
+| File | `T2runtime/clock/wsrt2gps.clk` |
+| Authority | temporary |
+| Download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/wsrt2gps.clk> |
+| Format | tempo2 |
+| Bogus last entry | False |
+| Clock file start | 1999-01-01 MJD 51179.5 |
+| Clock file end | 2015-06-29 MJD 57202.1 |
+| Update interval (days) | 7 |
+| Last update attempt | 2022-05-24 |
+| Last update result | Unchanged |
+
+Log entries from the last few update attempts:
+```
+2022-05-24 17:59:45.940 - Unchanged
+```
+[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/wsrt2gps.clk.log)

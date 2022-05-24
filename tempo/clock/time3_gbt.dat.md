@@ -1,6 +1,6 @@
 
 GBT
-===========================
+---------------------------
 GBT clock correction file
 
 The observatory distributes this file on the Web, updated about daily.
@@ -24,5 +24,6 @@ Log entries from the last few update attempts:
 ```
 2022-05-24 15:36:39.494 - Unchanged
 2022-05-24 16:28:58.063 - Unchanged
+2022-05-24 17:59:42.356 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time3_gbt.dat.log)

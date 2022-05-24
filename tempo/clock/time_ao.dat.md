@@ -1,6 +1,6 @@
 
 Arecibo
-===========================
+---------------------------
 Arecibo clock correction file
 
 Since the telescope collapse, this file should not need additional updates.
@@ -22,5 +22,6 @@ Log entries from the last few update attempts:
 ```
 2022-05-24 15:36:40.733 - Validation failed: New version of tempo/clock/time_ao.dat MJDs differ from old version where they overlap in 8609 places
 2022-05-24 16:28:59.665 - Validation failed: New version of tempo/clock/time_ao.dat MJDs differ from old version where they overlap in 8609 places
+2022-05-24 17:59:44.362 - Validation failed: New version of tempo/clock/time_ao.dat MJDs differ from old version where they overlap in 8609 places
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_ao.dat.log)

@@ -1,6 +1,6 @@
 
 Jodrell Bank
-===========================
+---------------------------
 Jodrell Bank clock correction file
 
 This file is pulled from the TEMPO repository and may not be fully up-to-date.
@@ -22,5 +22,6 @@ Log entries from the last few update attempts:
 ```
 2022-05-24 15:36:40.563 - Unchanged
 2022-05-24 16:28:59.118 - Unchanged
+2022-05-24 17:59:43.857 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_jb.dat.log)
