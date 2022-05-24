@@ -189,6 +189,7 @@ class ClockFileUpdater:
 
 
 tempo_repository_url = "https://raw.githubusercontent.com/nanograv/tempo/master/clock/"
+tempo2_repository_url = "https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/"
 
 updaters = [
     ClockFileUpdater(
@@ -233,16 +234,82 @@ updaters = [
         """,
     ),
     ClockFileUpdater(
+        "VLA",
+        "tempo/clock/time_vla.dat",
+        download_url="https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_vla.dat",
+        authority="temporary",
+        format="tempo",
+        obscode="6",
+        description="""Very Large Array clock corrections
+
+            This file is pulled from the PINT repository and may not be fully up-to-date.
+            (I think PINT has a more recent version than TEMPO or TEMPO2.)
+        """,
+    ),
+    ClockFileUpdater(
         "FAST",
         "tempo/clock/time_fast.dat",
         download_url="https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_fast.dat",
         authority="temporary",
         format="tempo",
         obscode="k",
-        bogus_last_entry=True,
         description="""FAST clock correction file
 
             This file is pulled from the PINT repository and may not be fully up-to-date.
+            (TEMPO doesn't seem to have this file at all.)
+        """,
+    ),
+    ClockFileUpdater(
+        "WSRT",
+        "T2runtime/clock/wsrt2gps.clk",
+        download_url=tempo2_repository_url + "wsrt2gps.clk",
+        authority="temporary",
+        format="tempo2",
+        description="""Westerbork Synthesis Radio Telescope clock corrections
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    ),
+    ClockFileUpdater(
+        "WSRT (TEMPO)",
+        "tempo/clock/time_wsrt.dat",
+        download_url=tempo_repository_url + "time_wsrt.dat",
+        authority="temporary",
+        format="tempo",
+        obscode="i",
+        description="""WSRT clock corrections (TEMPO-format)
+
+            This file is pulled from the TEMPO repository and may not be fully up-to-date.
+
+            This file may or may not agree with the TEMPO2-format version of what
+            should be the same information.
+        """,
+    ),
+    ClockFileUpdater(
+        "NUPPI",
+        "tempo/clock/time_nuppi.dat",
+        download_url=tempo_repository_url + "time_nuppi.dat",
+        authority="temporary",
+        format="tempo",
+        description="""Clock corrections specifically for the NUPPI backend at Nancay
+
+            This file is pulled from the TEMPO repository and may not be fully up-to-date.
+        """,
+    ),
+    ClockFileUpdater(
+        "Parkes (TEMPO)",
+        "tempo/clock/time_pks.dat",
+        download_url=tempo_repository_url + "time_pks.dat",
+        authority="temporary",
+        format="tempo",
+        obscode="7",
+        bogus_last_entry=True,
+        description="""Parkes observatory clock corrections (TEMPO format)
+
+            This file is pulled from the TEMPO repository and may not be fully up-to-date.
+
+            Note that this file has some clock (non-)correction data for other telescopes
+            in the same file, distinguished only by observatory code.
         """,
     ),
 ]
@@ -276,11 +343,12 @@ def updater_summary_table(detail_urls=False):
         f"| File "
         f"| Corrections start "
         f"| Corrections end "
+        f"| Origin "
         f"| Last check date "
         f"| Last check result ",
         file=o,
     )
-    print(f"|:--- |:--- | --- | --- | --- |:--- ", file=o)
+    print(f"|:--- |:--- | --- | --- | --- | --- |:--- ", file=o)
     for u in updaters:
         tstart = u.clock_file.time[0]
         tend = u.clock_file.time[-2 if u.bogus_last_entry else -1]
@@ -294,6 +362,7 @@ def updater_summary_table(detail_urls=False):
                 f"| `{u.filename}` "
                 f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
                 f"| {short_date(tend)} MJD {tend.mjd:.1f} "
+                f"| {u.authority} ",
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
@@ -304,6 +373,7 @@ def updater_summary_table(detail_urls=False):
                 f"| `{u.filename}` "
                 f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
                 f"| {short_date(tend)} MJD {tend.mjd:.1f} "
+                f"| {u.authority} ",
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,

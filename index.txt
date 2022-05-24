@@ -8,7 +8,6 @@ tempo/clock/time_gb853.dat              tempo    7
 tempo/clock/time_gbt.dat                tempo    7
 tempo/clock/time_fast.dat               tempo    7
 tempo/clock/time_jb.dat                 tempo    7
-tempo/clock/time_nancay.dat             tempo    7
 tempo/clock/time_nuppi.dat              tempo    7
 tempo/clock/time_pks.dat                tempo    7
 tempo/clock/time_vla.dat                tempo    7
