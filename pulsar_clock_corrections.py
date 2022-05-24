@@ -1,3 +1,4 @@
+from textwrap import dedent
 from io import StringIO
 import re
 import os
@@ -97,15 +98,17 @@ class ClockFileUpdater:
             bogus_last_entry=self.bogus_last_entry,
             obscode=self.obscode,
         )
+        if len(old.time)>len(new.time):
+            raise ValidationError(f"New version of {self.filename} has decreased from {len(old.clock)} to {len(new.clock)} measurements.")
         d = old.time != new.time[: len(old.time)]
         if np.any(d):
             raise ValidationError(
-                f"New version of {old_file} MJDs differ from old version where they overlap in {np.sum(d)} places"
+                f"New version of {self.filename} MJDs differ from old version where they overlap in {np.sum(d)} places"
             )
         d = old.clock != new.clock[: len(old.clock)]
         if np.any(d):
             raise ValidationError(
-                f"New version of {old_file} clock corrections differ from old version where they overlap in {np.sum(d)} places"
+                f"New version of {self.filename} clock corrections differ from old version where they overlap in {np.sum(d)} places"
             )
 
     def try_update(self, cache=False):
@@ -179,6 +182,19 @@ updaters = [
             Since the telescope collapse, this file should not need additional updates.
         """,
     ),
+    ClockFileUpdater(
+        "FAST",
+        "tempo/clock/time_fast.dat",
+        download_url="https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_fast.dat",
+        authority="temporary",
+        format="tempo",
+        obscode="k",
+        bogus_last_entry=True,
+        description="""FAST clock correction file
+
+            This file is pulled from the PINT repository and may not be fully up-to-date.
+        """,
+    ),
 ]
 
 
@@ -208,7 +224,7 @@ def updater_summary_table():
         last_date, result, details = u.parse_log_entry(u.last_log_entry)
         print(
             f"| {u.short_description} "
-            f"| {u.filename} "
+            f"| `{u.filename}` "
             f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
             f"| {short_date(tend)} MJD {tend.mjd:.1f} "
             f"| {short_date(last_date)} "
@@ -217,3 +233,37 @@ def updater_summary_table():
         )
     print(file=o)
     return o.getvalue()
+
+class PagesUpdater:
+    """Update the gh_pages site.
+
+    The object should be pointed at a git repository with the gh_pages branch
+    checked out. It will update the information there, overwriting the
+    automatically generated files.
+    """
+    def __init__(self, directory):
+        self.directory = Path(directory)
+        if not (self.directory / ".this_is_gh_pages").exists():
+            raise ValueError(f"Directory {directory} does not appear to contain the gh_pages branch.")
+
+    def update_summary(self):
+        with (self.directory / "status.md").open("wt") as f:
+            f.write(dedent("""
+                Clock correction status
+                =======================
+
+                This automatically generated file summarizes the status of the clock
+                corrections. It reports the date range covered by the clock corrections
+                as well as when the last attempt was made to update the clock corrections
+                and what happened.
+
+                """))
+            f.write("\n\n")
+            f.write(updater_summary_table())
+            f.write("\n\n")
+            f.write(dedent("""
+                Further information:
+
+                - [What is this repository?](index.html)
+                - [Instructions for using this repository with various software](instructions.html)
+                """))
