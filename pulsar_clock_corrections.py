@@ -343,7 +343,6 @@ def updater_summary_table(detail_urls=False):
         f"| File "
         f"| Corrections start "
         f"| Corrections end "
-        f"| Origin "
         f"| Last check date "
         f"| Last check result ",
         file=o,
@@ -362,7 +361,6 @@ def updater_summary_table(detail_urls=False):
                 f"| `{u.filename}` "
                 f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
                 f"| {short_date(tend)} MJD {tend.mjd:.1f} "
-                f"| {u.authority} ",
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
@@ -373,7 +371,6 @@ def updater_summary_table(detail_urls=False):
                 f"| `{u.filename}` "
                 f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
                 f"| {short_date(tend)} MJD {tend.mjd:.1f} "
-                f"| {u.authority} ",
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
