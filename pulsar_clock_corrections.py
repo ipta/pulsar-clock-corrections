@@ -1,14 +1,18 @@
-from textwrap import dedent
-from io import StringIO
-import re
-import os
-from pathlib import Path
 import inspect
+import os
+import re
+from io import StringIO
+from pathlib import Path
+from textwrap import dedent
 
 import numpy as np
 from astropy.time import Time
 from astropy.utils.data import download_file
 from pint.observatory.clock_file import ClockFile
+
+public_repo_url_raw = (
+    "https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/"
+)
 
 
 def base_location():
@@ -42,11 +46,12 @@ class ClockFileUpdater:
         self.filename = filename
         self.short_description = short_description
         self.filepath = base_location() / self.filename
+        self.authority = authority
         self.format = format
         self.bogus_last_entry = bogus_last_entry
         self.download_url = download_url
         self.obscode = obscode
-        self.invalidate_if_older_than = None
+        self.invalidate_if_older_than = invalidate_if_older_than
         self.update_interval_days = update_interval_days
         self.description = inspect.cleandoc(description)
         self._last_log_entry = None
@@ -59,7 +64,7 @@ class ClockFileUpdater:
 
     def add_to_log(self, msg):
         entry = Time.now().iso + " - " + msg + "\n"
-        with open(self.log_file, "w+t") as f:
+        with open(self.log_file, "at") as f:
             f.write(entry)
         self._last_log_entry = entry
 
@@ -98,8 +103,10 @@ class ClockFileUpdater:
             bogus_last_entry=self.bogus_last_entry,
             obscode=self.obscode,
         )
-        if len(old.time)>len(new.time):
-            raise ValidationError(f"New version of {self.filename} has decreased from {len(old.clock)} to {len(new.clock)} measurements.")
+        if len(old.time) > len(new.time):
+            raise ValidationError(
+                f"New version of {self.filename} has decreased from {len(old.clock)} to {len(new.clock)} measurements."
+            )
         d = old.time != new.time[: len(old.time)]
         if np.any(d):
             raise ValidationError(
@@ -131,6 +138,48 @@ class ClockFileUpdater:
         self._clock_file = None
         self.add_to_log(f"Updated")
         return True
+
+    def details_page(self):
+        tstart = self.clock_file.time[0]
+        tend = self.clock_file.time[-2 if self.bogus_last_entry else -1]
+        last_date, result, details = self.parse_log_entry(self.last_log_entry)
+        log_url = public_repo_url_raw + "log/" + self.filename + ".log"
+        f = StringIO()
+        f.write(
+            dedent(
+                f"""
+            {self.short_description}
+            ===========================
+            """
+            )
+        )
+        f.write(self.description)
+        f.write(
+            dedent(
+                f"""
+            |     |     |
+            |:--- |:--- |
+            | File | `{self.filename}` |
+            | Authority | {self.authority} |
+            | Download URL | {self.download_url} |
+            | Format | {self.format} |
+            | Bogus last entry | {self.bogus_last_entry} |
+            | Clock file start | {short_date(tstart)} MJD {tstart.mjd:.1f} |
+            | Clock file end | {short_date(tend)} MJD {tend.mjd:.1f} |
+            | Update interval (days) | {self.update_interval_days} |
+            | Last update attempt | {short_date(last_date)} |
+            | Last update result | {result} |
+
+            Log entries from the last few update attempts:
+            """
+            )
+        )
+        f.write("```\n")
+        for l in self.log_file.open().readlines()[-10:]:
+            f.write(l)
+        f.write("```\n")
+        f.write(f"[Full log]({log_url})\n")
+        return f.getvalue()
 
     def __repr__(self):
         return (
@@ -198,15 +247,28 @@ updaters = [
 ]
 
 
+def get_updater(name):
+    for u in updaters:
+        if (
+            u.short_description.lower() == name.lower()
+            or u.filename == name
+            or Path(u.filename).name == name
+        ):
+            return u
+    else:
+        raise ValueError(f"Unable to find an updater for {name}")
+
+
 def try_all_updates():
     for u in updaters:
         u.try_update()
 
 
 def short_date(t):
-    return t.datetime.strftime('%Y-%m-%d')
+    return t.datetime.strftime("%Y-%m-%d")
 
-def updater_summary_table():
+
+def updater_summary_table(detail_urls=False):
     o = StringIO()
     print(
         f"| Name "
@@ -222,17 +284,32 @@ def updater_summary_table():
         tstart = u.clock_file.time[0]
         tend = u.clock_file.time[-2 if u.bogus_last_entry else -1]
         last_date, result, details = u.parse_log_entry(u.last_log_entry)
-        print(
-            f"| {u.short_description} "
-            f"| `{u.filename}` "
-            f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
-            f"| {short_date(tend)} MJD {tend.mjd:.1f} "
-            f"| {short_date(last_date)} "
-            f"| {result} ",
-            file=o,
-        )
+        if result not in {"Unchanged", "Updated"}:
+            result = "**" + result + "**"
+        detail_url = u.filename + ".html"
+        if detail_urls:
+            print(
+                f"| [{u.short_description}]({detail_url}) "
+                f"| `{u.filename}` "
+                f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
+                f"| {short_date(tend)} MJD {tend.mjd:.1f} "
+                f"| {short_date(last_date)} "
+                f"| {result} ",
+                file=o,
+            )
+        else:
+            print(
+                f"| {u.short_description} "
+                f"| `{u.filename}` "
+                f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
+                f"| {short_date(tend)} MJD {tend.mjd:.1f} "
+                f"| {short_date(last_date)} "
+                f"| {result} ",
+                file=o,
+            )
     print(file=o)
     return o.getvalue()
+
 
 class PagesUpdater:
     """Update the gh_pages site.
@@ -241,29 +318,48 @@ class PagesUpdater:
     checked out. It will update the information there, overwriting the
     automatically generated files.
     """
+
     def __init__(self, directory):
         self.directory = Path(directory)
         if not (self.directory / ".this_is_gh_pages").exists():
-            raise ValueError(f"Directory {directory} does not appear to contain the gh_pages branch.")
+            raise ValueError(
+                f"Directory {directory} does not appear to contain the gh_pages branch."
+            )
 
     def update_summary(self):
         with (self.directory / "status.md").open("wt") as f:
-            f.write(dedent("""
+            f.write(
+                dedent(
+                    """
                 Clock correction status
                 =======================
 
                 This automatically generated file summarizes the status of the clock
                 corrections. It reports the date range covered by the clock corrections
                 as well as when the last attempt was made to update the clock corrections
-                and what happened.
+                and what happened. The name of each clock file links to a page with more
+                details.
 
-                """))
+                """
+                )
+            )
             f.write("\n\n")
-            f.write(updater_summary_table())
+            f.write(updater_summary_table(detail_urls=True))
             f.write("\n\n")
-            f.write(dedent("""
+            f.write(
+                dedent(
+                    """
                 Further information:
 
                 - [What is this repository?](index.html)
                 - [Instructions for using this repository with various software](instructions.html)
-                """))
+                """
+                )
+            )
+
+    def generate_details_pages(self):
+        for updater in updaters:
+            filename = self.directory / (updater.filename + ".md")
+            filename.parent.mkdir(parents=True, exist_ok=True)
+            # FIXME: footer? plots?
+            filename.write_text(updater.details_page())
