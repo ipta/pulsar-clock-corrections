@@ -11,7 +11,7 @@ Since the telescope collapse, this file should not need additional updates.
 | Authority | temporary |
 | Download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_ao.dat?format=raw> |
 | Format | tempo |
-| Bogus last entry | False |
+| Bogus last correction | False |
 | Clock file start | 1982-11-29 MJD 45302.8 |
 | Clock file end | 2020-08-18 MJD 59079.0 |
 | Update interval (days) | inf |
@@ -27,3 +27,13 @@ Log entries from the last few update attempts:
 2022-05-26 08:35:03.527 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_ao.dat.log)
+
+
+All clock corrections:
+
+![plot of all clock corrections](tempo/clock/time_ao.dat.png "All corrections")
+
+Recent clock corrections:
+
+![plot of recent clock corrections](tempo/clock/time_ao.dat.short.png "Recent corrections")
+

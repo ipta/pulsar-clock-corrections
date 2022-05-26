@@ -11,7 +11,7 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 | Authority | temporary |
 | Download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_nuppi.dat?format=raw> |
 | Format | tempo |
-| Bogus last entry | False |
+| Bogus last correction | False |
 | Clock file start | 2005-03-07 MJD 53436.0 |
 | Clock file end | 2015-11-08 MJD 57334.6 |
 | Update interval (days) | 7 |
@@ -25,3 +25,13 @@ Log entries from the last few update attempts:
 2022-05-26 08:35:06.477 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_nuppi.dat.log)
+
+
+All clock corrections:
+
+![plot of all clock corrections](tempo/clock/time_nuppi.dat.png "All corrections")
+
+Recent clock corrections:
+
+![plot of recent clock corrections](tempo/clock/time_nuppi.dat.short.png "Recent corrections")
+

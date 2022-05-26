@@ -13,7 +13,7 @@ If questions arise, contact ???
 | Authority | observatory |
 | Download URL | <https://www.gb.nrao.edu/~fghigo/timer/time_gbt.dat> |
 | Format | tempo |
-| Bogus last entry | False |
+| Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
 | Clock file end | 2022-05-25 MJD 59724.5 |
 | Update interval (days) | 1 |
@@ -32,3 +32,13 @@ Log entries from the last few update attempts:
 2022-05-26 08:35:00.696 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time3_gbt.dat.log)
+
+
+All clock corrections:
+
+![plot of all clock corrections](tempo/clock/time3_gbt.dat.png "All corrections")
+
+Recent clock corrections:
+
+![plot of recent clock corrections](tempo/clock/time3_gbt.dat.short.png "Recent corrections")
+

@@ -13,7 +13,7 @@ Thus these can be expected to be fully up to date.
 | Authority | converted |
 | Download URL | <None> |
 | Format | tempo2 |
-| Bogus last entry | False |
+| Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
 | Clock file end | 2022-05-25 MJD 59724.5 |
 | Update interval (days) | 0 |
@@ -23,5 +23,18 @@ Thus these can be expected to be fully up to date.
 Log entries from the last few update attempts:
 ```
 2022-05-26 14:50:47.642 - Updated
+2022-05-26 18:54:53.491 - Updated
+2022-05-26 19:10:25.757 - Updated
+2022-05-26 19:16:14.424 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps_converted.clk.log)
+
+
+All clock corrections:
+
+![plot of all clock corrections](T2runtime/clock/gbt2gps_converted.clk.png "All corrections")
+
+Recent clock corrections:
+
+![plot of recent clock corrections](T2runtime/clock/gbt2gps_converted.clk.short.png "Recent corrections")
+

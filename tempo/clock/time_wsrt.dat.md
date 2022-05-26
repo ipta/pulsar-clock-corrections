@@ -14,7 +14,7 @@ should be the same information.
 | Authority | temporary |
 | Download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_wsrt.dat?format=raw> |
 | Format | tempo |
-| Bogus last entry | False |
+| Bogus last correction | False |
 | Clock file start | 1987-07-24 MJD 47000.0 |
 | Clock file end | 2007-12-24 MJD 54458.0 |
 | Update interval (days) | 7 |
@@ -28,3 +28,13 @@ Log entries from the last few update attempts:
 2022-05-26 08:35:05.738 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_wsrt.dat.log)
+
+
+All clock corrections:
+
+![plot of all clock corrections](tempo/clock/time_wsrt.dat.png "All corrections")
+
+Recent clock corrections:
+
+![plot of recent clock corrections](tempo/clock/time_wsrt.dat.short.png "Recent corrections")
+

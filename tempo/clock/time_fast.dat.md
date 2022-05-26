@@ -12,7 +12,7 @@ This file is pulled from the PINT repository and may not be fully up-to-date.
 | Authority | temporary |
 | Download URL | <https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_fast.dat> |
 | Format | tempo |
-| Bogus last entry | False |
+| Bogus last correction | False |
 | Clock file start | 2017-07-26 MJD 57960.4 |
 | Clock file end | 2019-09-18 MJD 58744.0 |
 | Update interval (days) | 7 |
@@ -28,3 +28,13 @@ Log entries from the last few update attempts:
 2022-05-26 08:35:04.487 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_fast.dat.log)
+
+
+All clock corrections:
+
+![plot of all clock corrections](tempo/clock/time_fast.dat.png "All corrections")
+
+Recent clock corrections:
+
+![plot of recent clock corrections](tempo/clock/time_fast.dat.short.png "Recent corrections")
+

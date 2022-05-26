@@ -12,7 +12,7 @@ This file is pulled from the PINT repository and may not be fully up-to-date.
 | Authority | temporary |
 | Download URL | <https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_vla.dat> |
 | Format | tempo |
-| Bogus last entry | False |
+| Bogus last correction | False |
 | Clock file start | 1990-10-27 MJD 48191.2 |
 | Clock file end | 2021-03-07 MJD 59280.5 |
 | Update interval (days) | 7 |
@@ -26,3 +26,13 @@ Log entries from the last few update attempts:
 2022-05-26 08:35:04.394 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_vla.dat.log)
+
+
+All clock corrections:
+
+![plot of all clock corrections](tempo/clock/time_vla.dat.png "All corrections")
+
+Recent clock corrections:
+
+![plot of recent clock corrections](tempo/clock/time_vla.dat.short.png "Recent corrections")
+
