@@ -1,7 +1,7 @@
 
 Arecibo (TEMPO2)
 ---------------------------
-Arecibo clock corrections (TEMPO2 version)
+Arecibo clock corrections to GPS (TEMPO2 version)
 
 This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 
