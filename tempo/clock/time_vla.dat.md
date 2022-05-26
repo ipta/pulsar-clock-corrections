@@ -30,9 +30,9 @@ Log entries from the last few update attempts:
 
 All clock corrections:
 
-![plot of all clock corrections](tempo/clock/time_vla.dat.png "All corrections")
+![plot of all clock corrections](time_vla.dat.png "All corrections")
 
 Recent clock corrections:
 
-![plot of recent clock corrections](tempo/clock/time_vla.dat.short.png "Recent corrections")
+![plot of recent clock corrections](time_vla.dat.short.png "Recent corrections")
 

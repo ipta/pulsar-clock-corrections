@@ -32,9 +32,9 @@ Log entries from the last few update attempts:
 
 All clock corrections:
 
-![plot of all clock corrections](T2runtime/clock/gbt2gps_converted.clk.png "All corrections")
+![plot of all clock corrections](gbt2gps_converted.clk.png "All corrections")
 
 Recent clock corrections:
 
-![plot of recent clock corrections](T2runtime/clock/gbt2gps_converted.clk.short.png "Recent corrections")
+![plot of recent clock corrections](gbt2gps_converted.clk.short.png "Recent corrections")
 

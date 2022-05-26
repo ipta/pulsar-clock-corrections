@@ -28,9 +28,9 @@ Log entries from the last few update attempts:
 
 All clock corrections:
 
-![plot of all clock corrections](T2runtime/clock/ao2gps.clk.png "All corrections")
+![plot of all clock corrections](ao2gps.clk.png "All corrections")
 
 Recent clock corrections:
 
-![plot of recent clock corrections](T2runtime/clock/ao2gps.clk.short.png "Recent corrections")
+![plot of recent clock corrections](ao2gps.clk.short.png "Recent corrections")
 
