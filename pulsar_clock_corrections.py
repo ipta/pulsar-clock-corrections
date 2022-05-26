@@ -51,6 +51,7 @@ class FileUpdater:
         self._last_log_entry = None
         self.log_entry_re = re.compile(r"([0-9 :.-]+) - ([^:]+)(: (.*))?")
         self.interval_fuzz = 1 * u.hour
+        self._clock_file = None
 
     @property
     def log_file(self):
@@ -131,7 +132,7 @@ class ClockFileUpdater(FileUpdater):
         authority="temporary",
         download_url=None,
         format="tempo",
-        bogus_last_entry=False,
+        bogus_last_correction=False,
         obscode=None,
         invalidate_if_older_than=None,
         update_interval_days=7,
@@ -146,12 +147,11 @@ class ClockFileUpdater(FileUpdater):
             description=description,
         )
         self.format = format
-        self.bogus_last_entry = bogus_last_entry
+        self.bogus_last_correction = bogus_last_correction
         self.download_url = download_url
         self.obscode = obscode
         self._last_log_entry = None
         self.log_entry_re = re.compile(r"([0-9 :.-]+) - ([^:]+)(: (.*))?")
-        self._clock_file = None
 
     def get(self, cache=False):
         return download_file(self.download_url, cache=cache)
@@ -162,7 +162,7 @@ class ClockFileUpdater(FileUpdater):
             self._clock_file = ClockFile.read(
                 str(base_location() / self.filename),
                 format=self.format,
-                bogus_last_entry=self.bogus_last_entry,
+                bogus_last_correction=self.bogus_last_correction,
                 obscode=self.obscode,
             )
         return self._clock_file
@@ -171,9 +171,9 @@ class ClockFileUpdater(FileUpdater):
         old = self.clock_file
         try:
             new = ClockFile.read(
-                new_file,
+                str(new_file),
                 format=self.format,
-                bogus_last_entry=self.bogus_last_entry,
+                bogus_last_correction=self.bogus_last_correction,
                 obscode=self.obscode,
             )
         except ValueError as e:
@@ -193,9 +193,9 @@ class ClockFileUpdater(FileUpdater):
                 f"New version of {self.filename} clock corrections differ from old version where they overlap in {np.sum(d)} places"
             )
 
-    def details_page(self):
+    def details_page(self, make_plots_in_dir=None):
         tstart = self.clock_file.time[0]
-        tend = self.clock_file.time[-2 if self.bogus_last_entry else -1]
+        tend = self.clock_file.time[-2 if self.bogus_last_correction else -1]
         last_date, result, details = self.parse_log_entry(self.last_log_entry)
         log_url = public_repo_url_raw + "log/" + self.filename + ".log"
         f = StringIO()
@@ -218,7 +218,7 @@ class ClockFileUpdater(FileUpdater):
             | Authority | {self.authority} |
             | Download URL | <{self.download_url}> |
             | Format | {self.format} |
-            | Bogus last entry | {self.bogus_last_entry} |
+            | Bogus last correction | {self.bogus_last_correction} |
             | Clock file start | {short_date(tstart)} MJD {tstart.mjd:.1f} |
             | Clock file end | {short_date(tend)} MJD {tend.mjd:.1f} |
             | Update interval (days) | {self.update_interval_days} |
@@ -234,6 +234,48 @@ class ClockFileUpdater(FileUpdater):
             f.write(l)
         f.write("```\n")
         f.write(f"[Full log]({log_url})\n")
+        if make_plots_in_dir:
+            import matplotlib.pyplot as plt
+            from astropy.visualization import quantity_support
+
+            size = (5, 2)
+            dpi = 144
+            plt.figure()
+            plt.plot(self.clock_file.time.mjd, self.clock_file.clock.to(u.ns), ".")
+            plt.xlabel("MJD")
+            plt.ylabel("corr. (ns)")
+            plt.title(self.filename)
+            plt.gcf().set_size_inches(size)
+            plt.savefig(make_plots_in_dir / (self.filename + ".png"), dpi=dpi)
+
+            plt.figure()
+            n = 90
+            plt.plot(
+                self.clock_file.time.mjd[-n:], self.clock_file.clock[-n:].to(u.ns), "."
+            )
+            # m = self.clock_file.time.mjd
+            # plt.xlim(m[-1]-60, m[-1])
+            plt.xlabel("MJD")
+            plt.ylabel("corr. (ns)")
+            plt.title(self.filename)
+            plt.gcf().set_size_inches(size)
+            plt.savefig(make_plots_in_dir / (self.filename + ".short.png"), dpi=dpi)
+            f.write(
+                dedent(
+                    f"""
+
+                    All clock corrections:
+
+                    ![plot of all clock corrections]({self.filepath.name+'.png'} "All corrections")
+
+                    Recent clock corrections:
+
+                    ![plot of recent clock corrections]({self.filepath.name+'.short.png'} "Recent corrections")
+
+                    """
+                )
+            )
+
         return f.getvalue()
 
 
@@ -334,7 +376,7 @@ def updater_summary_table(detail_urls=False):
     print(f"|:--- |:--- | --- | --- | --- |:--- ", file=o)
     for u in updaters:
         tstart = u.clock_file.time[0]
-        tend = u.clock_file.time[-2 if u.bogus_last_entry else -1]
+        tend = u.clock_file.time[-2 if u.bogus_last_correction else -1]
         last_date, result, details = u.parse_log_entry(u.last_log_entry)
         if result not in {"Unchanged", "Updated"}:
             result = "**" + result + "**"
@@ -414,7 +456,11 @@ class PagesUpdater:
             filename = self.directory / (updater.filename + ".md")
             filename.parent.mkdir(parents=True, exist_ok=True)
             # FIXME: footer? plots?
-            filename.write_text(updater.details_page())
+            filename.write_text(
+                updater.details_page(
+                    make_plots_in_dir=self.directory
+                )
+            )
 
 
 updaters.append(
@@ -424,7 +470,7 @@ updaters.append(
         download_url=tempo2_repository_url.format("gps2utc.clk"),
         authority="temporary",
         format="tempo2",
-        bogus_last_entry=True,
+        bogus_last_correction=True,
         description="""GPS to UTC clock corrections
 
             This file is used in the clock correction process for almost all
@@ -495,10 +541,23 @@ updaters.append(
         authority="temporary",
         format="tempo",
         obscode="8",
-        bogus_last_entry=True,
+        bogus_last_correction=True,
         description="""Jodrell Bank clock correction file
 
             This file is pulled from the TEMPO repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Jodrell Bank (TEMPO2)",
+        "T2runtime/clock/jb2gps.clk",
+        download_url=tempo2_repository_url.format("jb2gps.clk"),
+        authority="temporary",
+        format="tempo2",
+        description="""Jodrell Bank clock corrections file (TEMPO2)
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
         """,
     )
 )
@@ -524,7 +583,20 @@ updaters.append(
         download_url=tempo2_repository_url.format("ao2gps.clk"),
         authority="temporary",
         format="tempo2",
-        description="""Arecibo clock corrections (TEMPO2 version)
+        description="""Arecibo clock corrections to GPS (TEMPO2 version)
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Arecibo to NIST (TEMPO2)",
+        "T2runtime/clock/ao2nist.clk",
+        download_url=tempo2_repository_url.format("ao2nist.clk"),
+        authority="temporary",
+        format="tempo2",
+        description="""Arecibo clock corrections to UTC(NIST) (TEMPO2 version)
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
         """,
@@ -542,6 +614,32 @@ updaters.append(
 
             This file is pulled from the PINT repository and may not be fully up-to-date.
             (I think PINT has a more recent version than TEMPO or TEMPO2.)
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "VLA (TEMPO2)",
+        "T2runtime/clock/vla2gps.clk",
+        download_url=tempo2_repository_url.format("vla2gps.clk"),
+        authority="temporary",
+        format="tempo2",
+        description="""Very Large Array clock corrections (TEMPO2)
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "VLA to NIST",
+        "T2runtime/clock/vla2nist.clk",
+        download_url=tempo2_repository_url.format("vla2nist.clk"),
+        authority="temporary",
+        format="tempo2",
+        description="""Very Large Array to NIST clock corrections (TEMPO2)
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
         """,
     )
 )
@@ -592,14 +690,27 @@ updaters.append(
 )
 updaters.append(
     ClockFileUpdater(
-        "NUPPI",
-        "tempo/clock/time_nuppi.dat",
-        download_url=tempo_repository_url.format("time_nuppi.dat"),
+        "Parkes",
+        "T2runtime/clock/pks2gps.clk",
+        download_url=tempo2_repository_url.format("pks2gps.clk"),
         authority="temporary",
-        format="tempo",
-        description="""Clock corrections specifically for the NUPPI backend at Nancay
+        format="tempo2",
+        description="""Parkes observatory clock corrections
 
-            This file is pulled from the TEMPO repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+
+            The comments read:
+
+                Tie of Parkes clock to GPS time standard. Sources are listed below.
+                Where two clock systems existed simultaneously, the dates refer to
+                periods when the given clock was supplied as the observatory 1 PPS
+
+                (before this, clock was tied to Tidbinbilla clock: see pks2tid.clk)
+                MJD 50844    - 52311.17     Mark IV clock vs Totally Accurate Clock (GPS)
+                                              from: update_clkcorr -t pksgps4 gps??.dat
+                MJD 52311.17 - now          Mark VI clock vs GPS East
+                                              from: update_clkcorr -t pksgps6 pkclk00.*
+                -- Russell Edwards 24 September 2004
         """,
     )
 )
@@ -611,13 +722,68 @@ updaters.append(
         authority="temporary",
         format="tempo",
         obscode="7",
-        bogus_last_entry=True,
+        bogus_last_correction=True,
         description="""Parkes observatory clock corrections (TEMPO format)
 
             This file is pulled from the TEMPO repository and may not be fully up-to-date.
 
             Note that this file has some clock (non-)correction data for other telescopes
             in the same file, distinguished only by observatory code.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "SRT",
+        "T2runtime/clock/srt2gps.clk",
+        download_url=tempo2_repository_url.format("srt2gps.clk"),
+        authority="temporary",
+        format="tempo2",
+        description="""Sardinia Radio Telescope clock corrections
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Effelsberg",
+        "T2runtime/clock/eff2gps.clk",
+        download_url=tempo2_repository_url.format("eff2gps.clk"),
+        authority="temporary",
+        format="tempo2",
+        description="""Effelsberg telescope clock corrections
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+
+            Originally made from time_bonn.dat with an awk script, according to
+            the comments.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Effelsberg Asterix/PSRix",
+        "T2runtime/clock/effix2gps.clk",
+        download_url=tempo2_repository_url.format("effix2gps.clk"),
+        authority="temporary",
+        format="tempo2",
+        description="""Effelsberg Asterix/PSRix clock correction file
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "NUPPI",
+        "tempo/clock/time_nuppi.dat",
+        download_url=tempo_repository_url.format("time_nuppi.dat"),
+        authority="temporary",
+        format="tempo",
+        description="""Clock corrections specifically for the NUPPI backend at Nancay
+
+            This file is pulled from the TEMPO repository and may not be fully up-to-date.
         """,
     )
 )

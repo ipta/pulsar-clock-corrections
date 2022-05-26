@@ -1,5 +1,5 @@
 # # UTC(GBT) UTC(GPS)
-# # This file was automatically converted from ['T2runtime/clock/gps2utc.clk', 'tempo/clock/time3_gbt.dat', 'T2runtime/clock/gbt2gps.clk', 'T2runtime/clock/gbt2gps_converted.clk', 'tempo/clock/time_jb.dat', 'tempo/clock/time_ao.dat', 'T2runtime/clock/ao2gps.clk', 'tempo/clock/time_vla.dat', 'tempo/clock/time_fast.dat', 'T2runtime/clock/wsrt2gps.clk', 'tempo/clock/time_wsrt.dat', 'tempo/clock/time_nuppi.dat', 'tempo/clock/time_pks.dat'] on 2022-05-26 14:50:47.609
+# # This file was automatically converted from ['T2runtime/clock/gps2utc.clk', 'tempo/clock/time3_gbt.dat', 'T2runtime/clock/gbt2gps.clk', 'T2runtime/clock/gbt2gps_converted.clk', 'tempo/clock/time_jb.dat', 'T2runtime/clock/jb2gps.clk', 'tempo/clock/time_ao.dat', 'T2runtime/clock/ao2gps.clk', 'T2runtime/clock/ao2nist.clk', 'tempo/clock/time_vla.dat', 'T2runtime/clock/vla2gps.clk', 'T2runtime/clock/vla2nist.clk', 'tempo/clock/time_fast.dat', 'T2runtime/clock/wsrt2gps.clk', 'tempo/clock/time_wsrt.dat', 'T2runtime/clock/pks2gps.clk', 'tempo/clock/time_pks.dat', 'T2runtime/clock/srt2gps.clk', 'T2runtime/clock/eff2gps.clk', 'T2runtime/clock/effix2gps.clk', 'tempo/clock/time_nuppi.dat'] on 2022-05-26 20:40:01.092
 # 
 5.190950000000000000e+04 -3.140000000000000006e-06
 5.191050000000000000e+04 -3.138999999999999507e-06
