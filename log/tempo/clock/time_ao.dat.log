@@ -1,3 +1,5 @@
 2022-05-24 15:36:40.733 - Validation failed: New version of tempo/clock/time_ao.dat MJDs differ from old version where they overlap in 8609 places
 2022-05-24 16:28:59.665 - Validation failed: New version of tempo/clock/time_ao.dat MJDs differ from old version where they overlap in 8609 places
 2022-05-24 17:59:44.362 - Validation failed: New version of tempo/clock/time_ao.dat MJDs differ from old version where they overlap in 8609 places
+2022-05-26 08:30:05.009 - Validation failed: Unable to read new version of tempo/clock/time_ao.dat: Clock file /tmp/astropy-download-15491-z0oxpt3s in format tempo appears to be out of order
+2022-05-26 08:35:03.527 - Updated
