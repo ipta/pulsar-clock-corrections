@@ -53,6 +53,24 @@ class FileUpdater:
         self.interval_fuzz = 1 * u.hour
         self._clock_file = None
 
+    def needs_update(self):
+        """Check whether the update process needs to run.
+
+        This normally involves checking the current time against
+        the update schedule, but subclasses may override this
+        (for example checking whether other files have changed
+        recently).
+        """
+        try:
+            t, r, m = self.parse_log_entry(self.last_log_entry)
+        except FileNotFoundError:
+            # Never looked before, go ahead
+            return True
+        else:
+            return (Time.now() - t).sec > (
+                self.update_interval_days * u.day - self.interval_fuzz
+            ).to_value(u.s)
+
     @property
     def log_file(self):
         return base_location() / "log" / (self.filename + ".log")
@@ -83,17 +101,9 @@ class FileUpdater:
         raise NotImplementedError
 
     def try_update(self, cache=False, respect_interval=True, force=False):
-        try:
-            t, r, m = self.parse_log_entry(self.last_log_entry)
-        except FileNotFoundError:
-            # Never looked before, go ahead
-            pass
-        else:
-            if not force and (Time.now() - t).sec < (
-                self.update_interval_days * u.day - self.interval_fuzz
-            ).to_value(u.s):
-                # No new data to be had, no log entry
-                return True
+        if not force and not self.needs_update():
+            # No new data to be had, no log entry
+            return True
         try:
             f = self.get(cache=cache)
         except IOError as e:
@@ -309,6 +319,37 @@ class ClockFileConverterUpdater(ClockFileUpdater):
         self.hdrline = hdrline
         self.updater = updater
 
+    def needs_update(self):
+        """Check whether the converted file needs an update.
+
+        Essentially we need to check whether the last update of this file is
+        newer than the last update of the file it was converted from.
+        """
+        try:
+            our_log = self.log_file.open().readlines()
+        except IOError:
+            return True
+        try:
+            other_log = self.updater.log_file.open().readlines()
+        except IOError:
+            # If *it* doesn't have a log file we're in trouble
+            return True
+        for e in our_log[::-1]:
+            our_t, msg, _ = self.parse_log_entry(e)
+            if msg.startswith("Updated"):
+                break
+        else:
+            # Seems we've never updated the file
+            return True
+        for e in other_log[::-1]:
+            other_t, msg, _ = self.parse_log_entry(e)
+            if msg.startswith("Updated"):
+                break
+        else:
+            # Seems we've never updated the other file?
+            return True
+        return our_t < other_t
+
     def get(self, cache=False):
         # combine self.updaters and write out an appropriate file
         # need to write this somewhere temporary but persistent enough to last until
@@ -461,11 +502,7 @@ class PagesUpdater:
             filename = self.directory / (updater.filename + ".md")
             filename.parent.mkdir(parents=True, exist_ok=True)
             # FIXME: footer? plots?
-            filename.write_text(
-                updater.details_page(
-                    make_plots_in_dir=self.directory
-                )
-            )
+            filename.write_text(updater.details_page(make_plots_in_dir=self.directory))
 
 
 updaters.append(
