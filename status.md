@@ -17,7 +17,7 @@ details.
 | [GBT (TEMPO2)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2020-02-25 MJD 58904.5 | 2022-05-26 | Unchanged 
 | [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps_converted.clk.html) | `T2runtime/clock/gbt2gps_converted.clk` | 2000-12-31 MJD 51909.5 | 2022-05-30 MJD 59729.5 | 2022-05-31 | Updated 
 | [Jodrell Bank](tempo/clock/time_jb.dat.html) | `tempo/clock/time_jb.dat` | 2006-10-13 MJD 54021.4 | 2019-05-13 MJD 58616.1 | 2022-05-26 | Unchanged 
-| [Jodrell Bank (TEMPO2)](T2runtime/clock/jb2gps.clk.html) | `T2runtime/clock/jb2gps.clk` | 2006-10-13 MJD 54021.4 | 2132-08-31 MJD 99999.0 | 2022-05-26 | Unchanged 
+| [Jodrell Bank (TEMPO2)](T2runtime/clock/jb2gps.clk.html) | `T2runtime/clock/jb2gps.clk` | 2006-10-13 MJD 54021.4 | 2021-11-02 MJD 59521.0 | 2022-05-26 | Unchanged 
 | [Arecibo](tempo/clock/time_ao.dat.html) | `tempo/clock/time_ao.dat` | 1982-11-29 MJD 45302.8 | 2020-08-18 MJD 59079.0 | 2022-05-26 | Updated 
 | [Arecibo (TEMPO2)](T2runtime/clock/ao2gps.clk.html) | `T2runtime/clock/ao2gps.clk` | 1996-03-13 MJD 50155.0 | 2019-12-18 MJD 58835.0 | 2022-05-26 | Unchanged 
 | [Arecibo to NIST (TEMPO2)](T2runtime/clock/ao2nist.clk.html) | `T2runtime/clock/ao2nist.clk` | 1982-11-29 MJD 45302.8 | 1994-11-29 MJD 49685.4 | 2022-05-26 | Unchanged 
@@ -30,7 +30,7 @@ details.
 | [Parkes](T2runtime/clock/pks2gps.clk.html) | `T2runtime/clock/pks2gps.clk` | 1858-11-17 MJD 0.0 | 2019-07-31 MJD 58695.4 | 2022-05-26 | Unchanged 
 | [Parkes (TEMPO)](tempo/clock/time_pks.dat.html) | `tempo/clock/time_pks.dat` | 1979-05-07 MJD 44000.0 | 2011-07-02 MJD 55745.0 | 2022-05-26 | Unchanged 
 | [SRT](T2runtime/clock/srt2gps.clk.html) | `T2runtime/clock/srt2gps.clk` | 2013-03-20 MJD 56371.0 | 2019-12-11 MJD 58828.0 | 2022-05-26 | Unchanged 
-| [Effelsberg](T2runtime/clock/eff2gps.clk.html) | `T2runtime/clock/eff2gps.clk` | 1993-11-29 MJD 49320.0 | 2023-02-25 MJD 60000.0 | 2022-05-26 | Unchanged 
+| [Effelsberg](T2runtime/clock/eff2gps.clk.html) | `T2runtime/clock/eff2gps.clk` | 1993-11-29 MJD 49320.0 | 2015-06-21 MJD 57194.5 | 2022-05-26 | Unchanged 
 | [Effelsberg Asterix/PSRix](T2runtime/clock/effix2gps.clk.html) | `T2runtime/clock/effix2gps.clk` | 2011-01-01 MJD 55562.5 | 2021-03-21 MJD 59294.5 | 2022-05-26 | Unchanged 
 | [NUPPI](tempo/clock/time_nuppi.dat.html) | `tempo/clock/time_nuppi.dat` | 2005-03-07 MJD 53436.0 | 2015-11-08 MJD 57334.6 | 2022-05-26 | Unchanged 
 
