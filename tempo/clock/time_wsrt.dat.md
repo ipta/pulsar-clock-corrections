@@ -12,7 +12,8 @@ should be the same information.
 |:--- |:--- |
 | File | `tempo/clock/time_wsrt.dat` |
 | Authority | temporary |
-| Download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_wsrt.dat?format=raw> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_wsrt.dat> |
+| Original download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_wsrt.dat?format=raw> |
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 1987-07-24 MJD 47000.0 |

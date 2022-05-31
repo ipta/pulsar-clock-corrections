@@ -9,7 +9,8 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `T2runtime/clock/vla2nist.clk` |
 | Authority | temporary |
-| Download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/vla2nist.clk> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/vla2nist.clk> |
+| Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/vla2nist.clk> |
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1990-10-27 MJD 48191.2 |

@@ -10,7 +10,8 @@ This file is pulled from the PINT repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `tempo/clock/time_vla.dat` |
 | Authority | temporary |
-| Download URL | <https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_vla.dat> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_vla.dat> |
+| Original download URL | <https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_vla.dat> |
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 1990-10-27 MJD 48191.2 |

@@ -9,11 +9,12 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `T2runtime/clock/jb2gps.clk` |
 | Authority | temporary |
-| Download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/jb2gps.clk> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/jb2gps.clk> |
+| Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/jb2gps.clk> |
 | Format | tempo2 |
-| Bogus last correction | False |
+| Bogus last correction | True |
 | Clock file start | 2006-10-13 MJD 54021.4 |
-| Clock file end | 2132-08-31 MJD 99999.0 |
+| Clock file end | 2021-11-02 MJD 59521.0 |
 | Update interval (days) | 7 |
 | Last update attempt | 2022-05-26 |
 | Last update result | Unchanged |

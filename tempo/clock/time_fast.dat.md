@@ -6,11 +6,19 @@ FAST clock correction file
 This file is pulled from the PINT repository and may not be fully up-to-date.
 (TEMPO doesn't seem to have this file at all.)
 
+The original file is currently hand-generated upon request, but it is
+planned to make the process automatic and the file downloadable (at
+which point we will make it update automatically here).
+
+If you have any questions about these clock corrections, the person
+to contact is 缪晨晨 <miaocc@bao.ac.cn>, Chenchen Miao.
+
 |     |     |
 |:--- |:--- |
 | File | `tempo/clock/time_fast.dat` |
 | Authority | temporary |
-| Download URL | <https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_fast.dat> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_fast.dat> |
+| Original download URL | <https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_fast.dat> |
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 2017-07-26 MJD 57960.4 |

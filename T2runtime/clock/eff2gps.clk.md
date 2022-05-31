@@ -12,11 +12,12 @@ the comments.
 |:--- |:--- |
 | File | `T2runtime/clock/eff2gps.clk` |
 | Authority | temporary |
-| Download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/eff2gps.clk> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/eff2gps.clk> |
+| Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/eff2gps.clk> |
 | Format | tempo2 |
-| Bogus last correction | False |
+| Bogus last correction | True |
 | Clock file start | 1993-11-29 MJD 49320.0 |
-| Clock file end | 2023-02-25 MJD 60000.0 |
+| Clock file end | 2015-06-21 MJD 57194.5 |
 | Update interval (days) | 7 |
 | Last update attempt | 2022-05-26 |
 | Last update result | Unchanged |

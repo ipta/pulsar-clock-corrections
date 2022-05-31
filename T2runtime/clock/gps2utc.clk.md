@@ -19,7 +19,8 @@ are from the column C0').
 |:--- |:--- |
 | File | `T2runtime/clock/gps2utc.clk` |
 | Authority | temporary |
-| Download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/gps2utc.clk> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/gps2utc.clk> |
+| Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/gps2utc.clk> |
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 1996-03-27 MJD 50169.0 |

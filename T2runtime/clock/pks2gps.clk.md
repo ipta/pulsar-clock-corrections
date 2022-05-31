@@ -18,11 +18,17 @@ The comments read:
                                   from: update_clkcorr -t pksgps6 pkclk00.*
     -- Russell Edwards 24 September 2004
 
+The file includes a first entry on MJD 0.00521 with a clock
+correction of 1.04 us; while normally we automatically ignore MJD 0
+for plotting purposes, this value must be in there for a reason so
+we retain it.
+
 |     |     |
 |:--- |:--- |
 | File | `T2runtime/clock/pks2gps.clk` |
 | Authority | temporary |
-| Download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/pks2gps.clk> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/pks2gps.clk> |
+| Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/pks2gps.clk> |
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1858-11-17 MJD 0.0 |

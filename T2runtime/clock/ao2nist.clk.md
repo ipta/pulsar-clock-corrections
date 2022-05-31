@@ -9,7 +9,8 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `T2runtime/clock/ao2nist.clk` |
 | Authority | temporary |
-| Download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/ao2nist.clk> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/ao2nist.clk> |
+| Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/ao2nist.clk> |
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1982-11-29 MJD 45302.8 |

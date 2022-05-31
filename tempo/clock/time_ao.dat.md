@@ -9,7 +9,8 @@ Since the telescope collapse, this file should not need additional updates.
 |:--- |:--- |
 | File | `tempo/clock/time_ao.dat` |
 | Authority | temporary |
-| Download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_ao.dat?format=raw> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_ao.dat> |
+| Original download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_ao.dat?format=raw> |
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 1982-11-29 MJD 45302.8 |

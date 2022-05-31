@@ -3,22 +3,25 @@ GBT
 ---------------------------
 Green Bank Telescope clock correction file
 
+This file records the difference between UTC(GBT) and UTC(GPS).
+
 The observatory distributes this file on the Web, updated about daily.
 
-If questions arise, contact ???
+If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
 
 |     |     |
 |:--- |:--- |
 | File | `tempo/clock/time3_gbt.dat` |
 | Authority | observatory |
-| Download URL | <https://www.gb.nrao.edu/~fghigo/timer/time_gbt.dat> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time3_gbt.dat> |
+| Original download URL | <https://www.gb.nrao.edu/~fghigo/timer/time_gbt.dat> |
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2022-05-25 MJD 59724.5 |
+| Clock file end | 2022-05-30 MJD 59729.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-05-26 |
-| Last update result | Unchanged |
+| Last update attempt | 2022-05-31 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
@@ -30,6 +33,7 @@ Log entries from the last few update attempts:
 2022-05-26 08:25:44.334 - Unchanged
 2022-05-26 08:30:03.621 - Unchanged
 2022-05-26 08:35:00.696 - Unchanged
+2022-05-31 11:30:47.824 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time3_gbt.dat.log)
 

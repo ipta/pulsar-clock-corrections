@@ -12,7 +12,8 @@ in the same file, distinguished only by observatory code.
 |:--- |:--- |
 | File | `tempo/clock/time_pks.dat` |
 | Authority | temporary |
-| Download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_pks.dat?format=raw> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_pks.dat> |
+| Original download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_pks.dat?format=raw> |
 | Format | tempo |
 | Bogus last correction | True |
 | Clock file start | 1979-05-07 MJD 44000.0 |

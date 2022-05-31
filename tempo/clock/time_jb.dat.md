@@ -9,7 +9,8 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `tempo/clock/time_jb.dat` |
 | Authority | temporary |
-| Download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_jb.dat?format=raw> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_jb.dat> |
+| Original download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_jb.dat?format=raw> |
 | Format | tempo |
 | Bogus last correction | True |
 | Clock file start | 2006-10-13 MJD 54021.4 |

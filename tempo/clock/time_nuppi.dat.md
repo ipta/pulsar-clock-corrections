@@ -9,7 +9,8 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `tempo/clock/time_nuppi.dat` |
 | Authority | temporary |
-| Download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_nuppi.dat?format=raw> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_nuppi.dat> |
+| Original download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_nuppi.dat?format=raw> |
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 2005-03-07 MJD 53436.0 |
