@@ -11,6 +11,10 @@ https://github.com/marketplace/actions/git-auto-commit This could be combined
 with a script run daily (?) to pull in new GBT/BIPM/etc. clock corrections in
 order to get steady version-controlled updates pulled in from various sources.
 
+I'd like to automate the updating but can't really until this runs on a stock
+PINT that can easily be pip installed. Currently I'm working off a PR that adds
+clock correction file writing.
+
 Reporting
 ---------
 
