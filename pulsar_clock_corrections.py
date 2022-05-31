@@ -10,7 +10,7 @@ import astropy.units as u
 import numpy as np
 from astropy.time import Time
 from astropy.utils.data import download_file
-from pint.observatory.clock_file import ClockFile, write_tempo2_clock_file
+from pint.observatory.clock_file import ClockFile
 
 public_repo_url_raw = (
     "https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/"
@@ -82,14 +82,14 @@ class FileUpdater:
     def validate(self, new_file):
         raise NotImplementedError
 
-    def try_update(self, cache=False, respect_interval=True):
+    def try_update(self, cache=False, respect_interval=True, force=False):
         try:
             t, r, m = self.parse_log_entry(self.last_log_entry)
         except FileNotFoundError:
             # Never looked before, go ahead
             pass
         else:
-            if (Time.now() - t).sec < (
+            if not force and (Time.now() - t).sec < (
                 self.update_interval_days * u.day - self.interval_fuzz
             ).to_value(u.s):
                 # No new data to be had, no log entry
@@ -112,10 +112,14 @@ class FileUpdater:
                 self.validate(f)
             except ValidationError as e:
                 self.add_to_log(f"Validation failed: {e}")
-                return False
+                if not force:
+                    return False
         self.filepath.write_text(new_contents)
         self._clock_file = None
-        self.add_to_log(f"Updated")
+        if force:
+            self.add_to_log(f"Updated overriding validation failure")
+        else:
+            self.add_to_log(f"Updated")
         return True
 
     def __repr__(self):
@@ -216,7 +220,8 @@ class ClockFileUpdater(FileUpdater):
             |:--- |:--- |
             | File | `{self.filename}` |
             | Authority | {self.authority} |
-            | Download URL | <{self.download_url}> |
+            | URL in repository | <{public_repo_url_raw + self.filename}> |
+            | Original download URL | <{self.download_url}> |
             | Format | {self.format} |
             | Bogus last correction | {self.bogus_last_correction} |
             | Clock file start | {short_date(tstart)} MJD {tstart.mjd:.1f} |
@@ -284,7 +289,7 @@ class ClockFileConverterUpdater(ClockFileUpdater):
         self,
         short_description,
         filename,
-        updaters,
+        updater,
         format="tempo2",
         update_interval_days=0,
         hdrline="",
@@ -300,10 +305,9 @@ class ClockFileConverterUpdater(ClockFileUpdater):
             description=description,
         )
 
+        # FIXME: allow merging
         self.hdrline = hdrline
-        self.updaters = (
-            [updaters] if isinstance(updaters, ClockFileUpdater) else updaters
-        )
+        self.updater = updater
 
     def get(self, cache=False):
         # combine self.updaters and write out an appropriate file
@@ -314,14 +318,15 @@ class ClockFileConverterUpdater(ClockFileUpdater):
 
         filename = Path(tempfile.mkdtemp()) / "converted"
 
-        names = [u.filename for u in updaters]
-        comments = f"# This file was automatically converted from {names} on {Time.now().iso}\n"
+        # FIXME: this results in a changed file every time the update checker
+        # is run, just because the conversion date is updated. We need to
+        # check and do updates only if the source file has been updated.
+        comments = f"# This file was automatically converted from {self.updater.filename} on {Time.now().iso}\n"
         if self.format == "tempo2":
-            write_tempo2_clock_file(
+            self.updater.clock_file.write_tempo2_clock_file(
                 str(filename),
                 self.hdrline,
-                [u.clock_file for u in self.updaters],
-                comments=comments,
+                extra_comment=comments,
             )
         else:
             raise ValueError(f"Unknown format {self.format}")
@@ -498,9 +503,11 @@ updaters.append(
         update_interval_days=1,
         description="""Green Bank Telescope clock correction file
 
+            This file records the difference between UTC(GBT) and UTC(GPS).
+
             The observatory distributes this file on the Web, updated about daily.
 
-            If questions arise, contact ???
+            If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
         """,
     )
 )
@@ -526,10 +533,11 @@ updaters.append(
 
             This file is automativally converted from the TEMPO-format GBT
             clock corrections, which are obtained directly from the observatory.
-            Thus these can be expected to be fully up to date.
+            Thus these can be expected to be fully up to date. Please see the
+            GBT clock corrections file entry for further details.
         """,
         hdrline="# UTC(GBT) UTC(GPS)",
-        updaters=get_updater("GBT"),
+        updater=get_updater("GBT"),
     )
 )
 
@@ -555,6 +563,7 @@ updaters.append(
         download_url=tempo2_repository_url.format("jb2gps.clk"),
         authority="temporary",
         format="tempo2",
+        bogus_last_correction=True,
         description="""Jodrell Bank clock corrections file (TEMPO2)
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
@@ -655,6 +664,14 @@ updaters.append(
 
             This file is pulled from the PINT repository and may not be fully up-to-date.
             (TEMPO doesn't seem to have this file at all.)
+
+            The original file is currently hand-generated upon request, but it is
+            planned to make the process automatic and the file downloadable (at
+            which point we will make it update automatically here).
+
+            If you have any questions about these clock corrections, the person
+            to contact is 缪晨晨 <miaocc@bao.ac.cn>, Chenchen Miao.
+
         """,
     )
 )
@@ -711,6 +728,12 @@ updaters.append(
                 MJD 52311.17 - now          Mark VI clock vs GPS East
                                               from: update_clkcorr -t pksgps6 pkclk00.*
                 -- Russell Edwards 24 September 2004
+
+            The file includes a first entry on MJD 0.00521 with a clock
+            correction of 1.04 us; while normally we automatically ignore MJD 0
+            for plotting purposes, this value must be in there for a reason so
+            we retain it.
+
         """,
     )
 )
@@ -752,6 +775,7 @@ updaters.append(
         download_url=tempo2_repository_url.format("eff2gps.clk"),
         authority="temporary",
         format="tempo2",
+        bogus_last_correction=True,
         description="""Effelsberg telescope clock corrections
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.

@@ -3,3 +3,14 @@
 2022-05-26 19:10:25.757 - Updated
 2022-05-26 19:16:14.424 - Updated
 2022-05-26 20:40:01.207 - Updated
+2022-05-31 11:31:35.068 - Failed to download: [Errno 2] No such file or directory: '/tmp/tmpt1h_ib14/converted'
+2022-05-31 11:33:41.208 - Failed to download: [Errno 2] No such file or directory: '/tmp/tmp1hj6wxtp/converted'
+2022-05-31 12:15:45.911 - Failed to download: [Errno 2] No such file or directory: '/tmp/tmp6i51oi7y/converted'
+2022-05-31 12:17:50.361 - Failed to download: [Errno 2] No such file or directory: '/tmp/tmpginukduv/converted'
+2022-05-31 12:26:53.684 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
+2022-05-31 12:46:48.129 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
+2022-05-31 12:57:25.481 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
+2022-05-31 13:00:05.288 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
+2022-05-31 13:00:16.239 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
+2022-05-31 13:00:16.240 - Updated overriding validation failure
+2022-05-31 13:00:50.465 - Updated

@@ -1,0 +1,9 @@
+name: update-clock-corrections
+on: [push]
+jobs:
+    run-update-script:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - run: pip install -r requirements.txt
+            - run: python update_clock_corrections.py
