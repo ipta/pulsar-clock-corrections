@@ -1,6 +1,6 @@
 
-FAST
----------------------------
+## FAST
+
 FAST clock correction file
 
 This file is pulled from the PINT repository and may not be fully up-to-date.

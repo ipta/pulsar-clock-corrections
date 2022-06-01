@@ -1,6 +1,6 @@
 
-VLA to NIST
----------------------------
+## VLA to NIST
+
 Very Large Array to NIST clock corrections (TEMPO2)
 
 This file is pulled from the TEMPO2 repository and may not be fully up-to-date.

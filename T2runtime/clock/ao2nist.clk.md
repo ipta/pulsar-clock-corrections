@@ -1,6 +1,6 @@
 
-Arecibo to NIST (TEMPO2)
----------------------------
+## Arecibo to NIST (TEMPO2)
+
 Arecibo clock corrections to UTC(NIST) (TEMPO2 version)
 
 This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
@@ -15,7 +15,7 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Bogus last correction | False |
 | Clock file start | 1982-11-29 MJD 45302.8 |
 | Clock file end | 1994-11-29 MJD 49685.4 |
-| Update interval (days) | 7 |
+| Update interval (days) | inf |
 | Last update attempt | 2022-05-26 |
 | Last update result | Unchanged |
 

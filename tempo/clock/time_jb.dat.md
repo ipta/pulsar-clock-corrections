@@ -1,6 +1,6 @@
 
-Jodrell Bank
----------------------------
+## Jodrell Bank
+
 Jodrell Bank clock correction file
 
 This file is pulled from the TEMPO repository and may not be fully up-to-date.

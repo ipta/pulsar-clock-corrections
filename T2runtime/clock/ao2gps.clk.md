@@ -1,6 +1,6 @@
 
-Arecibo (TEMPO2)
----------------------------
+## Arecibo (TEMPO2)
+
 Arecibo clock corrections to GPS (TEMPO2 version)
 
 This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
@@ -15,7 +15,7 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Bogus last correction | False |
 | Clock file start | 1996-03-13 MJD 50155.0 |
 | Clock file end | 2019-12-18 MJD 58835.0 |
-| Update interval (days) | 7 |
+| Update interval (days) | inf |
 | Last update attempt | 2022-05-26 |
 | Last update result | Unchanged |
 

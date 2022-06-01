@@ -1,6 +1,6 @@
 
-GBT (TEMPO2 converted from TEMPO)
----------------------------
+## GBT (TEMPO2 converted from TEMPO)
+
 Green Bank Telescope clock corrections (TEMPO2 converted version)
 
 This file is automativally converted from the TEMPO-format GBT
@@ -18,7 +18,7 @@ GBT clock corrections file entry for further details.
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
 | Clock file end | 2022-05-30 MJD 59729.5 |
-| Update interval (days) | 0 |
+| Update interval (days) | 1 |
 | Last update attempt | 2022-05-31 |
 | Last update result | Updated |
 

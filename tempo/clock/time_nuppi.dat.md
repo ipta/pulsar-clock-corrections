@@ -1,6 +1,6 @@
 
-NUPPI
----------------------------
+## NUPPI
+
 Clock corrections specifically for the NUPPI backend at Nancay
 
 This file is pulled from the TEMPO repository and may not be fully up-to-date.

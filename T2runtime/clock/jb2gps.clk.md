@@ -1,6 +1,6 @@
 
-Jodrell Bank (TEMPO2)
----------------------------
+## Jodrell Bank (TEMPO2)
+
 Jodrell Bank clock corrections file (TEMPO2)
 
 This file is pulled from the TEMPO2 repository and may not be fully up-to-date.

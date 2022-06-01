@@ -1,6 +1,6 @@
 
-GPS to UTC
----------------------------
+## GPS to UTC
+
 GPS to UTC clock corrections
 
 This file is used in the clock correction process for almost all

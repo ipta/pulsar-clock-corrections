@@ -1,6 +1,6 @@
 
-Parkes (TEMPO)
----------------------------
+## Parkes (TEMPO)
+
 Parkes observatory clock corrections (TEMPO format)
 
 This file is pulled from the TEMPO repository and may not be fully up-to-date.

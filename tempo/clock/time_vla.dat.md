@@ -1,6 +1,6 @@
 
-VLA
----------------------------
+## VLA
+
 Very Large Array clock corrections
 
 This file is pulled from the PINT repository and may not be fully up-to-date.

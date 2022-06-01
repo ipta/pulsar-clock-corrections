@@ -1,6 +1,6 @@
 
-VLA (TEMPO2)
----------------------------
+## VLA (TEMPO2)
+
 Very Large Array clock corrections (TEMPO2)
 
 This file is pulled from the TEMPO2 repository and may not be fully up-to-date.

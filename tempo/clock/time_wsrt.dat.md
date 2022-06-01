@@ -1,6 +1,6 @@
 
-WSRT (TEMPO)
----------------------------
+## WSRT (TEMPO)
+
 WSRT clock corrections (TEMPO-format)
 
 This file is pulled from the TEMPO repository and may not be fully up-to-date.
