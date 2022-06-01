@@ -37,7 +37,7 @@ class FileUpdater:
         short_description,
         filename,
         authority="temporary",
-        invalidate_if_older_than=None,
+        invalid_if_older_than=None,
         update_interval_days=7,
         description="",
     ):
@@ -45,7 +45,7 @@ class FileUpdater:
         self.short_description = short_description
         self.filepath = base_location() / self.filename
         self.authority = authority
-        self.invalidate_if_older_than = invalidate_if_older_than
+        self.invalid_if_older_than = invalid_if_older_than
         self.update_interval_days = update_interval_days
         self.description = inspect.cleandoc(description)
         self._last_log_entry = None
@@ -148,7 +148,7 @@ class ClockFileUpdater(FileUpdater):
         format="tempo",
         bogus_last_correction=False,
         obscode=None,
-        invalidate_if_older_than=None,
+        invalid_if_older_than=None,
         update_interval_days=7,
         description="",
     ):
@@ -156,7 +156,7 @@ class ClockFileUpdater(FileUpdater):
             short_description,
             filename,
             authority=authority,
-            invalidate_if_older_than=invalidate_if_older_than,
+            invalid_if_older_than=invalid_if_older_than,
             update_interval_days=update_interval_days,
             description=description,
         )
@@ -409,6 +409,16 @@ def short_date(t):
     return t.datetime.strftime("%Y-%m-%d")
 
 
+def generate_index_txt():
+    with open(base_location()/"index.txt", "wt") as f:
+        print(f"{'# File':40s} {'Update (days)':13s}   Invalid if older than", file=f)
+        for u in updaters:
+            if u.invalid_if_older_than is not None:
+                d = short_date(u.invalid_if_older_than)
+            else:
+                d = "---"
+            print(f"{u.filename:40s} {u.update_interval_days:13.1f}   {d}", file=f)
+
 def updater_summary_table(updaters, detail_urls=False):
     o = StringIO()
     print(
@@ -633,6 +643,7 @@ updaters.append(
         format="tempo",
         obscode="3",
         update_interval_days=np.inf,
+        invalid_if_older_than=Time("2022-05-20", format="iso"),
         description="""Arecibo clock correction file
 
             Since the telescope collapse, this file should not need additional updates.
@@ -646,6 +657,7 @@ updaters.append(
         download_url=tempo2_repository_url.format("ao2gps.clk"),
         authority="temporary",
         format="tempo2",
+        update_interval_days=np.inf,
         description="""Arecibo clock corrections to GPS (TEMPO2 version)
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
@@ -659,6 +671,7 @@ updaters.append(
         download_url=tempo2_repository_url.format("ao2nist.clk"),
         authority="temporary",
         format="tempo2",
+        update_interval_days=np.inf,
         description="""Arecibo clock corrections to UTC(NIST) (TEMPO2 version)
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
