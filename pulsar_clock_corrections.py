@@ -583,7 +583,7 @@ updaters.append(
     ClockFileUpdater(
         "GBT (TEMPO2)",
         "T2runtime/clock/gbt2gps.clk",
-        download_url=tempo2_repository_url.format("gbt2gps.clk"),
+        download_url=tempo2_repository_url.format("gbt2gps_tempo2.clk"),
         authority="temporary",
         format="tempo2",
         description="""Green Bank Telescope clock corrections (TEMPO2 version)
@@ -595,7 +595,7 @@ updaters.append(
 updaters.append(
     ClockFileConverterUpdater(
         "GBT (TEMPO2 converted from TEMPO)",
-        "T2runtime/clock/gbt2gps_converted.clk",
+        "T2runtime/clock/gbt2gps.clk",
         format="tempo2",
         description="""Green Bank Telescope clock corrections (TEMPO2 converted version)
 
@@ -650,14 +650,32 @@ updaters.append(
         invalid_if_older_than=Time("2022-05-20", format="iso"),
         description="""Arecibo clock correction file
 
-            Since the telescope collapse, this file should not need additional updates.
+            This file covers clock corrections up to the final shut-down before
+            the collapse. Any updates are expected to be retroactive
+            corrections.
         """,
     )
 )
 updaters.append(
+    ClockFileConverterUpdater(
+        "Arecibo (TEMPO2 converted from TEMPO)",
+        "T2runtime/clock/ao2gps.clk",
+        format="tempo2",
+        description="""Arecibo clock corrections (TEMPO2 converted version)
+
+            This file is automativally converted from the TEMPO-format Arecibo
+            clock corrections, which cover the observatory's full operational
+            history. Please see the Arecibo clock corrections for details.
+        """,
+        hdrline="# UTC(AO) UTC(GPS)",
+        updater=get_updater("Arecibo"),
+    )
+)
+
+updaters.append(
     ClockFileUpdater(
         "Arecibo (TEMPO2)",
-        "T2runtime/clock/ao2gps.clk",
+        "T2runtime/clock/ao2gps_tempo2.clk",
         download_url=tempo2_repository_url.format("ao2gps.clk"),
         authority="temporary",
         format="tempo2",
