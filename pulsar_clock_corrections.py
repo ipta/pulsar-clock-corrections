@@ -653,6 +653,12 @@ updaters.append(
             This file covers clock corrections up to the final shut-down before
             the collapse. Any updates are expected to be retroactive
             corrections.
+
+            The earliest clock corrections in this file predate GPS and are
+            actually referenced to NIST time directly. Clock corrections from
+            after 1995 are referenced to GPS. This file does not distinguish
+            between the two.
+
         """,
     )
 )
@@ -666,6 +672,11 @@ updaters.append(
             This file is automativally converted from the TEMPO-format Arecibo
             clock corrections, which cover the observatory's full operational
             history. Please see the Arecibo clock corrections for details.
+
+            The earliest clock corrections in this file predate GPS and are
+            actually referenced to NIST time directly. Clock corrections from
+            after 1995 are referenced to GPS. This file does not distinguish
+            between the two, claiming to be entirely referenced to NIST.
         """,
         hdrline="# UTC(AO) UTC(GPS)",
         updater=get_updater("Arecibo"),
@@ -682,6 +693,12 @@ updaters.append(
         update_interval_days=np.inf,
         description="""Arecibo clock corrections to GPS (TEMPO2 version)
 
+            The early clock corrections for Arecibo predate GPS and are
+            actually referenced directly to NIST. This clock correction file
+            separates these out so their corrections can be handled using a
+            different clock chain. Unfortunately it does not include
+            clock corrections for the last months of operation of Arecibo.
+
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
         """,
     )
@@ -695,6 +712,11 @@ updaters.append(
         format="tempo2",
         update_interval_days=np.inf,
         description="""Arecibo clock corrections to UTC(NIST) (TEMPO2 version)
+
+            The early clock corrections for Arecibo predate GPS and are
+            actually referenced directly to NIST. This clock correction file
+            separates these out so their corrections can be handled using a
+            different clock chain.
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
         """,
@@ -726,6 +748,7 @@ updaters.append(
         download_url=tempo_repository_url.format("time_gb853.dat"),
         authority="temporary",
         format="tempo",
+        bogus_last_correction=True,
         update_interval_days=np.inf,
         description="""Green Bank 85-3 telescope
 
