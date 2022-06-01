@@ -3,7 +3,9 @@
 
 Arecibo clock correction file
 
-Since the telescope collapse, this file should not need additional updates.
+This file covers clock corrections up to the final shut-down before
+the collapse. Any updates are expected to be retroactive
+corrections.
 
 |     |     |
 |:--- |:--- |

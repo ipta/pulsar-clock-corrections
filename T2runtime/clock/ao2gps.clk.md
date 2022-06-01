@@ -1,28 +1,29 @@
 
-## Arecibo (TEMPO2)
+## Arecibo (TEMPO2 converted from TEMPO)
 
-Arecibo clock corrections to GPS (TEMPO2 version)
+Arecibo clock corrections (TEMPO2 converted version)
 
-This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+This file is automativally converted from the TEMPO-format Arecibo
+clock corrections, which cover the observatory's full operational
+history. Please see the Arecibo clock corrections for details.
 
 |     |     |
 |:--- |:--- |
 | File | `T2runtime/clock/ao2gps.clk` |
-| Authority | temporary |
+| Authority | converted |
 | URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/ao2gps.clk> |
-| Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/ao2gps.clk> |
+| Original download URL | <None> |
 | Format | tempo2 |
 | Bogus last correction | False |
-| Clock file start | 1996-03-13 MJD 50155.0 |
-| Clock file end | 2019-12-18 MJD 58835.0 |
+| Clock file start | 1982-11-29 MJD 45302.8 |
+| Clock file end | 2020-08-18 MJD 59079.0 |
 | Update interval (days) | inf |
-| Last update attempt | 2022-05-26 |
-| Last update result | Unchanged |
+| Last update attempt | 2022-06-01 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-05-26 08:30:05.733 - Unchanged
-2022-05-26 08:35:04.319 - Unchanged
+2022-06-01 14:19:54.628 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/ao2gps.clk.log)
 

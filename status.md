@@ -14,7 +14,7 @@ name of each clock file links to a page with more details.
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
 | [GBT](tempo/clock/time3_gbt.dat.html) | `tempo/clock/time3_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-05-30 MJD 59729.5 | 2022-06-01 | Unchanged 
-| [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps_converted.clk.html) | `T2runtime/clock/gbt2gps_converted.clk` | 2000-12-31 MJD 51909.5 | 2022-05-30 MJD 59729.5 | 2022-05-31 | Updated 
+| [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-05-30 MJD 59729.5 | 2022-05-31 | Updated 
 
 
 
@@ -23,7 +23,8 @@ name of each clock file links to a page with more details.
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
 | [Arecibo](tempo/clock/time_ao.dat.html) | `tempo/clock/time_ao.dat` | 1982-11-29 MJD 45302.8 | 2020-08-18 MJD 59079.0 | 2022-05-26 | Updated 
-| [Arecibo (TEMPO2)](T2runtime/clock/ao2gps.clk.html) | `T2runtime/clock/ao2gps.clk` | 1996-03-13 MJD 50155.0 | 2019-12-18 MJD 58835.0 | 2022-05-26 | Unchanged 
+| [Arecibo (TEMPO2 converted from TEMPO)](T2runtime/clock/ao2gps.clk.html) | `T2runtime/clock/ao2gps.clk` | 1982-11-29 MJD 45302.8 | 2020-08-18 MJD 59079.0 | 2022-06-01 | Updated 
+| [Arecibo (TEMPO2)](T2runtime/clock/ao2gps_tempo2.clk.html) | `T2runtime/clock/ao2gps_tempo2.clk` | 1996-03-13 MJD 50155.0 | 2019-12-18 MJD 58835.0 | 2022-05-26 | Unchanged 
 | [Arecibo to NIST (TEMPO2)](T2runtime/clock/ao2nist.clk.html) | `T2runtime/clock/ao2nist.clk` | 1982-11-29 MJD 45302.8 | 1994-11-29 MJD 49685.4 | 2022-05-26 | Unchanged 
 | [GB140](tempo/clock/time_gb140.dat.html) | `tempo/clock/time_gb140.dat` | 1993-11-29 MJD 49320.5 | 1999-07-31 MJD 51390.5 | 2022-06-01 | Updated 
 | [GB853](tempo/clock/time_gb853.dat.html) | `tempo/clock/time_gb853.dat` | 1997-07-04 MJD 50634.0 | 2132-08-31 MJD 99999.0 | 2022-06-01 | Unchanged 
@@ -35,7 +36,7 @@ name of each clock file links to a page with more details.
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
 | [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1996-03-27 MJD 50169.0 | 2020-10-26 MJD 59148.0 | 2022-05-26 | Unchanged 
-| [GBT (TEMPO2)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2020-02-25 MJD 58904.5 | 2022-05-26 | Unchanged 
+| [GBT (TEMPO2)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-05-30 MJD 59729.5 | 2022-05-31 | Updated 
 | [Jodrell Bank](tempo/clock/time_jb.dat.html) | `tempo/clock/time_jb.dat` | 2006-10-13 MJD 54021.4 | 2019-05-13 MJD 58616.1 | 2022-05-26 | Unchanged 
 | [Jodrell Bank (TEMPO2)](T2runtime/clock/jb2gps.clk.html) | `T2runtime/clock/jb2gps.clk` | 2006-10-13 MJD 54021.4 | 2021-11-02 MJD 59521.0 | 2022-05-26 | Unchanged 
 | [VLA](tempo/clock/time_vla.dat.html) | `tempo/clock/time_vla.dat` | 1990-10-27 MJD 48191.2 | 2021-03-07 MJD 59280.5 | 2022-05-26 | Unchanged 
