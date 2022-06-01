@@ -22,9 +22,9 @@ If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
 | URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_gb853.dat> |
 | Original download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_gb853.dat?format=raw> |
 | Format | tempo |
-| Bogus last correction | False |
+| Bogus last correction | True |
 | Clock file start | 1997-07-04 MJD 50634.0 |
-| Clock file end | 2132-08-31 MJD 99999.0 |
+| Clock file end | 1997-08-28 MJD 50688.4 |
 | Update interval (days) | inf |
 | Last update attempt | 2022-06-01 |
 | Last update result | Unchanged |

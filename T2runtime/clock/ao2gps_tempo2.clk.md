@@ -3,6 +3,12 @@
 
 Arecibo clock corrections to GPS (TEMPO2 version)
 
+The early clock corrections for Arecibo predate GPS and are
+actually referenced directly to NIST. This clock correction file
+separates these out so their corrections can be handled using a
+different clock chain. Unfortunately it does not include
+clock corrections for the last months of operation of Arecibo.
+
 This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 
 |     |     |

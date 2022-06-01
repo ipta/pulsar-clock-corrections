@@ -27,7 +27,7 @@ name of each clock file links to a page with more details.
 | [Arecibo (TEMPO2)](T2runtime/clock/ao2gps_tempo2.clk.html) | `T2runtime/clock/ao2gps_tempo2.clk` | 1996-03-13 MJD 50155.0 | 2019-12-18 MJD 58835.0 | 2022-05-26 | Unchanged 
 | [Arecibo to NIST (TEMPO2)](T2runtime/clock/ao2nist.clk.html) | `T2runtime/clock/ao2nist.clk` | 1982-11-29 MJD 45302.8 | 1994-11-29 MJD 49685.4 | 2022-05-26 | Unchanged 
 | [GB140](tempo/clock/time_gb140.dat.html) | `tempo/clock/time_gb140.dat` | 1993-11-29 MJD 49320.5 | 1999-07-31 MJD 51390.5 | 2022-06-01 | Updated 
-| [GB853](tempo/clock/time_gb853.dat.html) | `tempo/clock/time_gb853.dat` | 1997-07-04 MJD 50634.0 | 2132-08-31 MJD 99999.0 | 2022-06-01 | Unchanged 
+| [GB853](tempo/clock/time_gb853.dat.html) | `tempo/clock/time_gb853.dat` | 1997-07-04 MJD 50634.0 | 1997-08-28 MJD 50688.4 | 2022-06-01 | Unchanged 
 
 
 

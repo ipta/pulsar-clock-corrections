@@ -7,6 +7,11 @@ This file is automativally converted from the TEMPO-format Arecibo
 clock corrections, which cover the observatory's full operational
 history. Please see the Arecibo clock corrections for details.
 
+The earliest clock corrections in this file predate GPS and are
+actually referenced to NIST time directly. Clock corrections from
+after 1995 are referenced to GPS. This file does not distinguish
+between the two, claiming to be entirely referenced to NIST.
+
 |     |     |
 |:--- |:--- |
 | File | `T2runtime/clock/ao2gps.clk` |

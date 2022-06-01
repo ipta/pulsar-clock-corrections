@@ -7,6 +7,11 @@ This file covers clock corrections up to the final shut-down before
 the collapse. Any updates are expected to be retroactive
 corrections.
 
+The earliest clock corrections in this file predate GPS and are
+actually referenced to NIST time directly. Clock corrections from
+after 1995 are referenced to GPS. This file does not distinguish
+between the two.
+
 |     |     |
 |:--- |:--- |
 | File | `tempo/clock/time_ao.dat` |
