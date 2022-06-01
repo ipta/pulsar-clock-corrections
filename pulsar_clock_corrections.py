@@ -216,9 +216,9 @@ class ClockFileUpdater(FileUpdater):
         f.write(
             dedent(
                 f"""
-            {self.short_description}
-            ---------------------------
-            """
+                ## {self.short_description}
+
+                """
             )
         )
         f.write(self.description)
@@ -410,7 +410,7 @@ def short_date(t):
 
 
 def generate_index_txt():
-    with open(base_location()/"index.txt", "wt") as f:
+    with open(base_location() / "index.txt", "wt") as f:
         print(f"{'# File':40s} {'Update (days)':13s}   Invalid if older than", file=f)
         for u in updaters:
             if u.invalid_if_older_than is not None:
@@ -418,6 +418,7 @@ def generate_index_txt():
             else:
                 d = "---"
             print(f"{u.filename:40s} {u.update_interval_days:13.1f}   {d}", file=f)
+
 
 def updater_summary_table(updaters, detail_urls=False):
     o = StringIO()
@@ -482,7 +483,11 @@ class PagesUpdater:
         static_updaters = []
         default_updaters = []
         for u in updaters:
-            if u.authority == "observatory" or u.authority == "converted" and u.updater.authority == "observatory":
+            if (
+                u.authority == "observatory"
+                or u.authority == "converted"
+                and u.updater.authority == "observatory"
+            ):
                 good_updaters.append(u)
             elif not np.isfinite(u.update_interval_days):
                 static_updaters.append(u)
@@ -492,16 +497,15 @@ class PagesUpdater:
             f.write(
                 dedent(
                     """
-                Clock correction status
-                -----------------------
+                    ## Clock correction status
 
-                This automatically generated file summarizes the status of the clock
-                corrections. It reports the date range covered by the clock corrections
-                as well as when the last attempt was made to update the clock corrections
-                and what happened. The name of each clock file links to a page with more
-                details.
+                    This automatically generated file summarizes the status of
+                    the clock corrections. It reports the date range covered by
+                    the clock corrections as well as when the last attempt was
+                    made to update the clock corrections and what happened. The
+                    name of each clock file links to a page with more details.
 
-                """
+                    """
                 )
             )
             f.write("\n\n")
@@ -675,6 +679,49 @@ updaters.append(
         description="""Arecibo clock corrections to UTC(NIST) (TEMPO2 version)
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "GB140",
+        "tempo/clock/time_gb140.dat",
+        download_url=tempo_repository_url.format("time_gb140.dat"),
+        authority="temporary",
+        format="tempo",
+        update_interval_days=np.inf,
+        description="""Green Bank 140-foot telescope
+
+            This telescope is not currently operating and so updated clock
+            corrections should not be necessary. That said, this clock
+            correction file is pulled from the TEMPO repository and may not
+            cover the entire time that the telescope was operational.
+
+            If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "GB853",
+        "tempo/clock/time_gb853.dat",
+        download_url=tempo_repository_url.format("time_gb853.dat"),
+        authority="temporary",
+        format="tempo",
+        update_interval_days=np.inf,
+        description="""Green Bank 85-3 telescope
+
+            This is one telescope of a set of three built as a sort of
+            prototype interferometer for the VLA. It was operated as a pulsar
+            observing instrument for some time after its initial purpose was
+            satisfied.
+
+            This telescope is not currently operating and so updated clock
+            corrections should not be necessary. That said, this clock
+            correction file is pulled from the TEMPO repository and may not
+            cover the entire time that the telescope was operational.
+
+            If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
         """,
     )
 )
@@ -878,4 +925,17 @@ updaters.append(
         """,
     )
 )
-
+#updaters.append(
+#    ClockFileUpdater(
+#        "GMRT",
+#        "T2runtime/clock/gmrt2gps.clk",
+#        download_url=tempo2_repository_url.format("gmrt2gps.clk"),
+#        authority="temporary",
+#        format="tempo2",
+#        bogus_last_correction=True,
+#        description="""Giant Metrewave Radio Telescope clock corrections
+#
+#            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+#        """,
+#    )
+#)

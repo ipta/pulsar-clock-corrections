@@ -8,6 +8,8 @@ T2runtime/clock/jb2gps.clk                         7.0   ---
 tempo/clock/time_ao.dat                            inf   2022-05-20
 T2runtime/clock/ao2gps.clk                         inf   ---
 T2runtime/clock/ao2nist.clk                        inf   ---
+tempo/clock/time_gb140.dat                         inf   ---
+tempo/clock/time_gb853.dat                         inf   ---
 tempo/clock/time_vla.dat                           7.0   ---
 T2runtime/clock/vla2gps.clk                        7.0   ---
 T2runtime/clock/vla2nist.clk                       7.0   ---
