@@ -262,6 +262,7 @@ class ClockFileUpdater(FileUpdater):
             plt.title(self.filename)
             plt.gcf().set_size_inches(size)
             plt.savefig(make_plots_in_dir / (self.filename + ".png"), dpi=dpi)
+            plt.close()
 
             plt.figure()
             n = 90
@@ -275,6 +276,7 @@ class ClockFileUpdater(FileUpdater):
             plt.title(self.filename)
             plt.gcf().set_size_inches(size)
             plt.savefig(make_plots_in_dir / (self.filename + ".short.png"), dpi=dpi)
+            plt.close()
             f.write(
                 dedent(
                     f"""
@@ -301,7 +303,6 @@ class ClockFileConverterUpdater(ClockFileUpdater):
         filename,
         updater,
         format="tempo2",
-        update_interval_days=0,
         hdrline="",
         description="",
     ):
@@ -311,7 +312,7 @@ class ClockFileConverterUpdater(ClockFileUpdater):
             filename,
             authority="converted",
             format=format,
-            update_interval_days=update_interval_days,
+            update_interval_days=updater.update_interval_days,
             description=description,
         )
 
@@ -408,7 +409,7 @@ def short_date(t):
     return t.datetime.strftime("%Y-%m-%d")
 
 
-def updater_summary_table(detail_urls=False):
+def updater_summary_table(updaters, detail_urls=False):
     o = StringIO()
     print(
         f"| Name "
@@ -467,6 +468,16 @@ class PagesUpdater:
             )
 
     def update_summary(self):
+        good_updaters = []
+        static_updaters = []
+        default_updaters = []
+        for u in updaters:
+            if u.authority == "observatory" or u.authority == "converted" and u.updater.authority == "observatory":
+                good_updaters.append(u)
+            elif not np.isfinite(u.update_interval_days):
+                static_updaters.append(u)
+            else:
+                default_updaters.append(u)
         with (self.directory / "status.md").open("wt") as f:
             f.write(
                 dedent(
@@ -484,8 +495,14 @@ class PagesUpdater:
                 )
             )
             f.write("\n\n")
-            f.write(updater_summary_table(detail_urls=True))
+            f.write("### Files with fully automatic updates\n\n")
+            f.write(updater_summary_table(good_updaters, detail_urls=True))
             f.write("\n\n")
+            f.write("### Files that should be static\n\n")
+            f.write(updater_summary_table(static_updaters, detail_urls=True))
+            f.write("\n\n")
+            f.write("### Files that require manual updates\n\n")
+            f.write(updater_summary_table(default_updaters, detail_urls=True))
             f.write(
                 dedent(
                     """
@@ -848,3 +865,4 @@ updaters.append(
         """,
     )
 )
+
