@@ -20,8 +20,7 @@ public_repo_url_raw = (
 
 
 def download_corrections():
-    """Download clock corrections to a repository.
-    """ # FIXME: be able to do this in a directory that will stick around
+    """Download clock corrections to a repository."""  # FIXME: be able to do this in a directory that will stick around
     # for troubleshooting; mostly means make appropriate subdirectories
     index_url = public_repo_url_raw + "index.txt"
     log.info(f"Downloading index from {index_url}")
@@ -59,7 +58,9 @@ def download_corrections():
             if old_contents == contents:
                 log.info(f"Not updating {filename} as contents are unchanged")
             else:
-                log.info(f"New version of {filename} has {lc} lines and old version has {loc} lines, updating")
+                log.info(
+                    f"New version of {filename} has {lc} lines and old version has {loc} lines, updating"
+                )
                 local_filename.write_text(contents)
         else:
             local_filename.parent.mkdir(parents=True, exist_ok=True)
@@ -67,7 +68,6 @@ def download_corrections():
             local_filename.write_text(contents)
 
 
-
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
     download_corrections()
