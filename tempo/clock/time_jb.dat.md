@@ -16,7 +16,7 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 | Clock file start | 2006-10-13 MJD 54021.4 |
 | Clock file end | 2019-05-13 MJD 58616.1 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-05-26 |
+| Last update attempt | 2022-06-02 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
@@ -29,6 +29,7 @@ Log entries from the last few update attempts:
 2022-05-26 08:25:44.553 - Unchanged
 2022-05-26 08:30:04.557 - Unchanged
 2022-05-26 08:35:02.198 - Unchanged
+2022-06-02 11:47:03.062 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_jb.dat.log)
 

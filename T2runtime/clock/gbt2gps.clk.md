@@ -17,14 +17,13 @@ GBT clock corrections file entry for further details.
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2022-05-30 MJD 59729.5 |
+| Clock file end | 2022-06-01 MJD 59731.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-05-31 |
+| Last update attempt | 2022-06-02 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-05-31 11:33:41.208 - Failed to download: [Errno 2] No such file or directory: '/tmp/tmp1hj6wxtp/converted'
 2022-05-31 12:15:45.911 - Failed to download: [Errno 2] No such file or directory: '/tmp/tmp6i51oi7y/converted'
 2022-05-31 12:17:50.361 - Failed to download: [Errno 2] No such file or directory: '/tmp/tmpginukduv/converted'
 2022-05-31 12:26:53.684 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
@@ -34,6 +33,7 @@ Log entries from the last few update attempts:
 2022-05-31 13:00:16.239 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
 2022-05-31 13:00:16.240 - Updated overriding validation failure
 2022-05-31 13:00:50.465 - Updated
+2022-06-02 11:47:01.838 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 

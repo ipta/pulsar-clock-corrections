@@ -26,12 +26,13 @@ are from the column C0').
 | Clock file start | 1996-03-27 MJD 50169.0 |
 | Clock file end | 2020-10-26 MJD 59148.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-05-26 |
+| Last update attempt | 2022-06-02 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
 2022-05-26 09:15:32.872 - Unchanged
+2022-06-02 11:46:29.631 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc.clk.log)
 
