@@ -52,3 +52,12 @@ Wishlist
     - `nist2tai.clk`
     - `nist2tt_nist.clk`
     - `nist2utc.clk`
+
+Questions
+---------
+
+- Changing reference time scales: how to handle this? Particularly when converting formats?
+    - Older Arecibo clock corrections were not referenced to GPS, but to "NIST" (not quite sure what this means). TEMPO2 separates the two time ranges in the clock corrections files, while the TEMPO clock file simply treats them all the same. 
+    - Parkes may have a similar situation.
+- Should static clock correction files really have a download URL? Particularly ones where the maintainers of this repository had to change them (e.g. split the converted-from-TEMPO Arecibo clock file based on reference clock)?
+- Should we try to handle composing time scales to get all TEMPO clock corrections referenced to the same scale? If so, what scale? - TEMPO doesn't distinguish between GPS and other global time scales.
