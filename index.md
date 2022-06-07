@@ -5,4 +5,4 @@ These pages are meant to be a repository of clock corrections recording the diff
 - [Instructions for using this repository with various software](instructions.html)
 - [Status page](status.html)
 
-This repository is currently maintained by Anne Archibald <anne.archibald@nanograv.org>.
+This repository is currently maintained by Anne Archibald <anne.archibald@newcastle.ac.uk>.

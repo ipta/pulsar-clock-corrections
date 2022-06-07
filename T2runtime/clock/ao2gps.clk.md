@@ -3,24 +3,31 @@
 
 Arecibo clock corrections (TEMPO2 converted version)
 
-This file is automativally converted from the TEMPO-format Arecibo
-clock corrections, which cover the observatory's full operational
-history. Please see the Arecibo clock corrections for details.
+This file was automativally converted from the TEMPO-format Arecibo
+clock corrections (time_ao.dat), which cover the observatory's full
+operational history. Please see the Arecibo clock corrections for
+details, provenance, and contact information for the original data.
 
-The earliest clock corrections in this file predate GPS and are
+The earliest clock corrections in time_ao.dat predate GPS and are
 actually referenced to NIST time directly. Clock corrections from
-after 1995 are referenced to GPS. This file does not distinguish
-between the two, claiming to be entirely referenced to NIST.
+after 1995 are referenced to GPS. This file has been manually trimmed
+to contain only the GPS-referenced data.
+
+If questions arise about the original data, contact David Nice
+<niced@lafayette.edu>.
+
+If questions arise about the conversion, contact Anne Archibald
+<anne.archibald@newcastle.ac.uk>.
 
 |     |     |
 |:--- |:--- |
 | File | `T2runtime/clock/ao2gps.clk` |
-| Authority | converted |
+| Authority | temporary |
 | URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/ao2gps.clk> |
 | Original download URL | <None> |
 | Format | tempo2 |
 | Bogus last correction | False |
-| Clock file start | 1982-11-29 MJD 45302.8 |
+| Clock file start | 1996-03-13 MJD 50155.0 |
 | Clock file end | 2020-08-18 MJD 59079.0 |
 | Update interval (days) | inf |
 | Last update attempt | 2022-06-01 |

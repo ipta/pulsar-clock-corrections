@@ -90,3 +90,10 @@ there is a pull request under active development to make PINT request
 up-to-date clock corrections directly from the repository. Long-term, the
 intention of the PINT developers is that you need not do anything to obtain
 up-to-date clock corrections from this repository.
+
+
+### Further information:
+
+- [What is this repository?](index.html)
+- [Status page](status.html)
+

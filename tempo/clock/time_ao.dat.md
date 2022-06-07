@@ -12,6 +12,8 @@ actually referenced to NIST time directly. Clock corrections from
 after 1995 are referenced to GPS. This file does not distinguish
 between the two.
 
+If questions arise, contact David Nice <niced@lafayette.edu>.
+
 |     |     |
 |:--- |:--- |
 | File | `tempo/clock/time_ao.dat` |

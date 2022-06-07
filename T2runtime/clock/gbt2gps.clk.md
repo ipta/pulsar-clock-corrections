@@ -8,6 +8,12 @@ clock corrections, which are obtained directly from the observatory.
 Thus these can be expected to be fully up to date. Please see the
 GBT clock corrections file entry for further details.
 
+If questions arise about the original data, contact Ryan S. Lynch
+<rlynch@nrao.edu>.
+
+If questions arise about the conversion, contact Anne Archibald
+<anne.archibald@newcastle.ac.uk>.
+
 |     |     |
 |:--- |:--- |
 | File | `T2runtime/clock/gbt2gps.clk` |
