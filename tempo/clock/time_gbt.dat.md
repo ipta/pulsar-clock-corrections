@@ -11,9 +11,9 @@ If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
 
 |     |     |
 |:--- |:--- |
-| File | `tempo/clock/time3_gbt.dat` |
+| File | `tempo/clock/time_gbt.dat` |
 | Authority | observatory |
-| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time3_gbt.dat> |
+| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_gbt.dat> |
 | Original download URL | <https://www.gb.nrao.edu/~fghigo/timer/time_gbt.dat> |
 | Format | tempo |
 | Bogus last correction | False |
@@ -36,14 +36,14 @@ Log entries from the last few update attempts:
 2022-06-02 11:46:30.678 - Updated
 2022-06-07 13:34:26.629 - Updated
 ```
-[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time3_gbt.dat.log)
+[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_gbt.dat.log)
 
 
 All clock corrections:
 
-![plot of all clock corrections](time3_gbt.dat.png "All corrections")
+![plot of all clock corrections](time_gbt.dat.png "All corrections")
 
 Recent clock corrections:
 
-![plot of recent clock corrections](time3_gbt.dat.short.png "Recent corrections")
+![plot of recent clock corrections](time_gbt.dat.short.png "Recent corrections")
 

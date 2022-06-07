@@ -13,7 +13,7 @@ name of each clock file links to a page with more details.
 
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
-| [GBT](tempo/clock/time3_gbt.dat.html) | `tempo/clock/time3_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-06-06 MJD 59736.5 | 2022-06-07 | Updated 
+| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-06-06 MJD 59736.5 | 2022-06-07 | Updated 
 | [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-06-06 MJD 59736.5 | 2022-06-07 | Updated 
 
 

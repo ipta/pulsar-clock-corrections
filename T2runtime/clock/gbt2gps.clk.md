@@ -30,8 +30,6 @@ If questions arise about the conversion, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
-2022-05-31 12:17:50.361 - Failed to download: [Errno 2] No such file or directory: '/tmp/tmpginukduv/converted'
-2022-05-31 12:26:53.684 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
 2022-05-31 12:46:48.129 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
 2022-05-31 12:57:25.481 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
 2022-05-31 13:00:05.288 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
@@ -40,6 +38,8 @@ Log entries from the last few update attempts:
 2022-05-31 13:00:50.465 - Updated
 2022-06-02 11:47:01.838 - Updated
 2022-06-07 13:34:26.688 - Updated
+2022-06-07 16:28:36.231 - No way to download: 'T2runtime/clock/gbt2gps.clk'
+2022-06-07 16:28:36.314 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 
