@@ -525,11 +525,11 @@ class PagesUpdater:
             f.write(
                 dedent(
                     """
-                Further information:
+                    ### Further information:
 
-                - [What is this repository?](index.html)
-                - [Instructions for using this repository with various software](instructions.html)
-                """
+                    - [What is this repository?](index.html)
+                    - [Instructions for using this repository with various software](instructions.html)
+                    """
                 )
             )
 
@@ -664,6 +664,7 @@ updaters.append(
             after 1995 are referenced to GPS. This file does not distinguish
             between the two.
 
+            If questions arise, contact David Nice <niced@lafayette.edu>.
         """,
     )
 )
@@ -674,15 +675,22 @@ updaters.append(
         format="tempo2",
         description="""Arecibo clock corrections (TEMPO2 converted version)
 
-            This file is automativally converted from the TEMPO-format Arecibo
+            This file was automativally converted from the TEMPO-format Arecibo
             clock corrections (time_ao.dat), which cover the observatory's full
             operational history. Please see the Arecibo clock corrections for
-            details.
+            details, provenance, and contact information for the original data.
 
             The earliest clock corrections in time_ao.dat predate GPS and are
             actually referenced to NIST time directly. Clock corrections from
             after 1995 are referenced to GPS. This file has been manually trimmed
             to contain only the GPS-referenced data.
+
+            If questions arise about the original data, contact David Nice
+            <niced@lafayette.edu>.
+
+            If questions arise about the conversion, contact Anne Archibald
+            <anne.archibald@newcastle.ac.uk>.
+
         """,
         download_url=None,
         invalid_if_older_than=Time("2022-06-07", format="iso"),
