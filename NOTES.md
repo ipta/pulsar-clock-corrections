@@ -52,6 +52,10 @@ Wishlist
     - `nist2tai.clk`
     - `nist2tt_nist.clk`
     - `nist2utc.clk`
+- Actual StaticClockFile class for clock files that don't come from anywhere but don't change
+    - AO GPS/NIST files that are cut from `time_ao.dat`
+
+
 
 Questions
 ---------
