@@ -568,7 +568,7 @@ updaters.append(
 updaters.append(
     ClockFileUpdater(
         "GBT",
-        "tempo/clock/time3_gbt.dat",
+        "tempo/clock/time_gbt.dat",
         download_url="https://www.gb.nrao.edu/~fghigo/timer/time_gbt.dat",
         authority="observatory",
         format="tempo",
