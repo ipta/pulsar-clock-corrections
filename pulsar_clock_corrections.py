@@ -587,8 +587,8 @@ updaters.append(
 updaters.append(
     ClockFileUpdater(
         "GBT (TEMPO2)",
-        "T2runtime/clock/gbt2gps.clk",
-        download_url=tempo2_repository_url.format("gbt2gps_tempo2.clk"),
+        "T2runtime/clock/gbt2gps_tempo2.clk",
+        download_url=tempo2_repository_url.format("gbt2gps.clk"),
         authority="temporary",
         format="tempo2",
         description="""Green Bank Telescope clock corrections (TEMPO2 version)
@@ -608,6 +608,12 @@ updaters.append(
             clock corrections, which are obtained directly from the observatory.
             Thus these can be expected to be fully up to date. Please see the
             GBT clock corrections file entry for further details.
+
+            If questions arise about the original data, contact Ryan S. Lynch
+            <rlynch@nrao.edu>.
+
+            If questions arise about the conversion, contact Anne Archibald
+            <anne.archibald@newcastle.ac.uk>.
         """,
         hdrline="# UTC(GBT) UTC(GPS)",
         updater=get_updater("GBT"),

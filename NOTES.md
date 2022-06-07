@@ -37,7 +37,7 @@ Wishlist
 - Github action
 - Delta value / delta t plots
 - Check anomalous points (particularly recent!)
-- Check how to tell TEMPO and TEMPO2 which files to actually use if they're taking our clock directories
+- Check how to tell TEMPO and TEMPO2 which files to actually use if they're taking our clock directories in case they want to choose between (say) TEMPO2's `ao2gps.clk` and the one we generate
     - Tempo - time.dat; files must contain an obscode
     - T2?
 - Clock files generated from other sources (can we take advantage of Astropy?)
@@ -54,6 +54,7 @@ Wishlist
     - `nist2utc.clk`
 - Actual StaticClockFile class for clock files that don't come from anywhere but don't change
     - AO GPS/NIST files that are cut from `time_ao.dat`
+    - Or just use `download_url=None`
 
 
 
@@ -64,4 +65,6 @@ Questions
     - Older Arecibo clock corrections were not referenced to GPS, but to "NIST" (not quite sure what this means). TEMPO2 separates the two time ranges in the clock corrections files, while the TEMPO clock file simply treats them all the same. 
     - Parkes may have a similar situation.
 - Should static clock correction files really have a download URL? Particularly ones where the maintainers of this repository had to change them (e.g. split the converted-from-TEMPO Arecibo clock file based on reference clock)?
+    - Conclusion: no.
 - Should we try to handle composing time scales to get all TEMPO clock corrections referenced to the same scale? If so, what scale? - TEMPO doesn't distinguish between GPS and other global time scales.
+    - PINT uses `include_gps` and `include_bipm` to compensate for this, I think?
