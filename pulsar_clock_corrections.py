@@ -684,7 +684,6 @@ updaters.append(
             after 1995 are referenced to GPS. This file has been manually trimmed
             to contain only the GPS-referenced data.
         """,
-        hdrline="# UTC(AO) UTC(GPS)",
         download_url=None,
         invalid_if_older_than=Time("2022-06-07", format="iso"),
         update_interval_days=np.inf,
