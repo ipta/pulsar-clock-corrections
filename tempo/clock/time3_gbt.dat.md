@@ -18,14 +18,13 @@ If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2022-06-01 MJD 59731.5 |
+| Clock file end | 2022-06-06 MJD 59736.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-06-02 |
+| Last update attempt | 2022-06-07 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-05-24 16:28:58.063 - Unchanged
 2022-05-24 17:59:42.356 - Unchanged
 2022-05-26 08:18:46.068 - Updated
 2022-05-26 08:24:34.193 - Unchanged
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2022-05-31 11:30:47.824 - Updated
 2022-06-01 11:50:23.149 - Unchanged
 2022-06-02 11:46:30.678 - Updated
+2022-06-07 13:34:26.629 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time3_gbt.dat.log)
 

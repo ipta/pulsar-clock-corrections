@@ -34,12 +34,13 @@ we retain it.
 | Clock file start | 1858-11-17 MJD 0.0 |
 | Clock file end | 2019-07-31 MJD 58695.4 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-05-26 |
+| Last update attempt | 2022-06-07 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
 2022-05-26 20:40:06.950 - Unchanged
+2022-06-07 13:34:30.482 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/pks2gps.clk.log)
 

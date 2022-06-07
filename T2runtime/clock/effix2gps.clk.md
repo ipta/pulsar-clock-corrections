@@ -16,12 +16,13 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Clock file start | 2011-01-01 MJD 55562.5 |
 | Clock file end | 2021-03-21 MJD 59294.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-05-26 |
+| Last update attempt | 2022-06-07 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
 2022-05-26 20:40:09.004 - Unchanged
+2022-06-07 13:34:32.473 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/effix2gps.clk.log)
 
