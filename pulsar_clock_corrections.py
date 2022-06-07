@@ -1001,3 +1001,31 @@ updaters.append(
 #        """,
 #    )
 #)
+updaters.append(
+    ClockFileUpdater(
+        "Meerkat",
+        "T2runtime/clock/mk2utc.clk",
+        download_url=tempo2_repository_url.format("mk2utc.clk"),
+        authority="temporary",
+        format="tempo2",
+        bogus_last_correction=True,
+        description="""MeerKAT clock corrections file (TEMPO2)
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "MOST",
+        "T2runtime/clock/mo2gps.clk",
+        download_url=tempo2_repository_url.format("mo2gps.clk"),
+        authority="temporary",
+        format="tempo2",
+        bogus_last_correction=True,
+        description="""Molonglo Observatory Synthesis Telescope clock corrections file (TEMPO2)
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
