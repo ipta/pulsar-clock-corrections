@@ -104,6 +104,8 @@ class FileUpdater:
         if not force and not self.needs_update():
             # No new data to be had, no log entry
             return True
+        if self.download_url is None:
+            self.add_to_log(f"No way to download: {self.filename!r}")
         try:
             f = self.get(cache=cache)
         except IOError as e:
@@ -168,7 +170,10 @@ class ClockFileUpdater(FileUpdater):
         self.log_entry_re = re.compile(r"([0-9 :.-]+) - ([^:]+)(: (.*))?")
 
     def get(self, cache=False):
-        return download_file(self.download_url, cache=cache)
+        if self.download_url is not None:
+            return download_file(self.download_url, cache=cache)
+        else:
+            return None
 
     @property
     def clock_file(self):
@@ -663,23 +668,26 @@ updaters.append(
     )
 )
 updaters.append(
-    ClockFileConverterUpdater(
+    ClockFileUpdater(
         "Arecibo (TEMPO2 converted from TEMPO)",
         "T2runtime/clock/ao2gps.clk",
         format="tempo2",
         description="""Arecibo clock corrections (TEMPO2 converted version)
 
             This file is automativally converted from the TEMPO-format Arecibo
-            clock corrections, which cover the observatory's full operational
-            history. Please see the Arecibo clock corrections for details.
+            clock corrections (time_ao.dat), which cover the observatory's full
+            operational history. Please see the Arecibo clock corrections for
+            details.
 
-            The earliest clock corrections in this file predate GPS and are
+            The earliest clock corrections in time_ao.dat predate GPS and are
             actually referenced to NIST time directly. Clock corrections from
-            after 1995 are referenced to GPS. This file does not distinguish
-            between the two, claiming to be entirely referenced to NIST.
+            after 1995 are referenced to GPS. This file has been manually trimmed
+            to contain only the GPS-referenced data.
         """,
         hdrline="# UTC(AO) UTC(GPS)",
-        updater=get_updater("Arecibo"),
+        download_url=None,
+        invalid_if_older_than=Time("2022-06-07", format="iso"),
+        update_interval_days=np.inf,
     )
 )
 
