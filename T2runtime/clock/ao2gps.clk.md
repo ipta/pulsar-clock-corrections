@@ -39,6 +39,22 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/ao2gps.clk.log)
 
+Leading comments from clock file:
+
+    # This file was automatically converted from tempo/clock/time_ao.dat on 2022-06-01 14:19:54.601
+    # Early data in time_ao.dat is referenced to NIST rather than to GPS, so
+    # that data has been removed and is present in ao2nist.clk.
+    #
+    # May 2022: it was noticed that the following are out of time order,
+    #    so Tempo won't use them correctly.
+    # Their origin is unknown.  They look like a hack.
+    #    They are being commented outfor now.
+    #  49528.1       73.492      71.487 3 f  25-JUN-94  raw readouts
+    #  49544.9       72.0        73.0   3 f  11-JUL-94  no data, rough interp.-->
+    #  49545.9       72.0        73.1   3 f  12-JUL-94  --> need more precision
+    #  49557.79      74.213      74.287 3 f  24-JUL-94  your time.dat
+
+
 
 All clock corrections:
 

@@ -31,6 +31,17 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_pks.dat.log)
 
+Leading comments from clock file:
+
+    # Irrelevant. -Anne Archibald 2022 May 26
+    #  44000.0       0.0               2    ATCA
+    #  60000.0       0.0               2    ATCA
+    #  44000.0       0.0               H    JBmk2
+    #  60000.0       0.0               H    JBmk2
+    #  44000.0       0.0               E    MOST
+    #  60000.0       0.0               E    MOST
+
+
 
 All clock corrections:
 

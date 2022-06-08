@@ -43,6 +43,11 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 
+Leading comments from clock file:
+
+    # This file was automatically converted from tempo/clock/time_gbt.dat on 2022-06-07 16:28:36.232
+
+
 
 All clock corrections:
 

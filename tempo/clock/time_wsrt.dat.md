@@ -31,6 +31,14 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_wsrt.dat.log)
 
+Leading comments from clock file:
+
+    # following clock offsets are from file:
+    #   ~/tree/timing/1518+4904/work_08Jan01/from_gemma/wsrtgps.clk
+    # converted to standard tempo format by:
+    #   ~/tree/timing/1518+4904/work_08Jan01/do.convert.wsrtclk
+
+
 
 All clock corrections:
 

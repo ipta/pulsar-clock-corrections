@@ -26,6 +26,24 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/effix2gps.clk.log)
 
+Leading comments from clock file:
+
+    # Effelsberg Asterix/PSRix clock correction file
+    # Generated on Jan 27, 2021 by Huanchen Hu
+    # Measurements until 24/07/2021, the new maser-gps recording starts from 24/03/2021, an offset may occur.
+    # 08/10/2020, Correct the offsets on MJD 56720 and 56981, add offset on MJD 57000 based on LEAP. Remove the jumps in the MJD range 57240 - 57400.
+    # 08/09/2020, Add new measurements from MJD 58611 to now
+    # 04/03,2020, Add VLBI maser measurement to the old clock file, MJD 57790 to 58611
+    # The following clock offsets are included:
+    #    MJD:  -inf to 56230; offset=0.000000000 s
+    #    MJD: 56230 to 56490; offset=-0.097284254 s
+    #    MJD: 56490 to 56720; offset=-0.409268005 s
+    #    MJD: 56720 to 56981; offset=-0.000001111 s
+    #    MJD: 56981 to 57000; offset=-0.000000545 s
+    #    MJD: 57000 to   inf; offset=-0.000000374 s
+    #
+
+
 
 All clock corrections:
 

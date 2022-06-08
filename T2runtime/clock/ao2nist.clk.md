@@ -30,6 +30,14 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/ao2nist.clk.log)
 
+Leading comments from clock file:
+
+    # From old tempo time_ao.dat:
+    # awk '$1<50000 {printf("%11.5f %10.5e\n",$1,($3-$2)/1.e6)}' time_ao.dat
+    #  > $TEMPO2/clock/ao2nist.clk
+    #
+
+
 
 All clock corrections:
 

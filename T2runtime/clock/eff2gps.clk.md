@@ -29,6 +29,14 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/eff2gps.clk.log)
 
+Leading comments from clock file:
+
+    # From old tempo time_bonn.dat:
+    # awk '{printf("%11.5f %10.5e\n",$1,$3/1.e6)}' time_bonn.dat
+    #  > $TEMPO2/clock/eff2gps.clk
+    #
+
+
 
 All clock corrections:
 

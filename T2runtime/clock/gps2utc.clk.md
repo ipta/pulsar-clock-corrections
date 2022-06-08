@@ -42,6 +42,33 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc.clk.log)
 
+Leading comments from clock file:
+
+    # Corrections from GPS to UTC.
+    # Leap seconds do not appear here.
+    #
+    # Note that the GPS "almanac" signal also includes predictions of the
+    # Combined Clock's deviations from UTC, so a suitable receiver can produce a
+    # good approximation of UTC.
+    #
+    # The BIPM publishes these values as "C0'", from about 2011 to the present.
+    # The BIPM also publishes corrections for the Combined Clock, going back to
+    # 1993. This file contains both: when available, we use C0', before that we
+    # use C0. This may or may not resemble what your GPS receiver system uses.
+    #
+    # The first values in this file are from the BIPM yearly summary tables
+    # available for years YY=93 to 03 from
+    # ftp://ftp2.bipm.org/pub/tai/scale/UTCGPS/utcgpsYY.ar
+    # and for years YY=03 to 11 from
+    # ftp://ftp2.bipm.org/pub/tai/scale/UTCGPSGLO/utcgpsgloYY.ar
+    # Later entries in the file (there is a comment to mark the place)
+    # are obtained from
+    # https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss
+    # which is updated monthly.
+    #
+    # These entries are based on C0 values.
+
+
 
 All clock corrections:
 

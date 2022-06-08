@@ -28,6 +28,11 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/wsrt2gps.clk.log)
 
+Leading comments from clock file:
+
+    ##51178.5 1.6347e-05 66.287 GPSWB1 1jan 1999, leap sec
+
+
 
 All clock corrections:
 

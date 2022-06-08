@@ -25,6 +25,17 @@ Log entries from the last few update attempts:
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc.clk.log)
 
+Leading comments from clock file:
+
+    # Tie of Karoo Telescope Time to UTC
+    # This file is from the KTT-GNSS sensor, and does not include circular-T
+    # MJD = (SensorTime(us)/86400e6)+40587    15-minute snapshots
+    # Created at unix time 1614080015.929991 from KTT mySQL database.
+    #
+    # MJD (days)   KTT-UTC (seconds)
+    #------------------------------------------------------
+
+
 
 All clock corrections:
 
