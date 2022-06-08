@@ -12,6 +12,8 @@ from astropy.time import Time
 from astropy.utils.data import download_file
 from pint.observatory.clock_file import ClockFile
 
+import import_bipm
+
 public_repo_url_raw = (
     "https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/"
 )
@@ -381,6 +383,44 @@ class ClockFileConverterUpdater(ClockFileUpdater):
         return filename
 
 
+class ClockFileCallableUpdater(ClockFileUpdater):
+    def __init__(
+        self,
+        short_description,
+        filename,
+        authority,
+        callable,
+        update_interval_days=1,
+        format="tempo2",
+        description="",
+    ):
+
+        super().__init__(
+            short_description,
+            filename,
+            authority=authority,
+            format=format,
+            update_interval_days=update_interval_days,
+            description=description,
+        )
+
+        # FIXME: allow merging
+        self.callable = callable
+
+    def get(self, cache=False):
+        # FIXME: get should return contents not a filename
+
+        filename = Path(tempfile.mkdtemp()) / "converted"
+
+        clock_file = self.callable()
+        if self.format == "tempo2":
+            clock_file.write_tempo2_clock_file(filename)
+        else:
+            raise ValueError(f"Unknown format {self.format}")
+
+        return filename
+
+
 # tempo_repository_url = "https://raw.githubusercontent.com/nanograv/tempo/master/clock/{}"
 tempo_repository_url = (
     "https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/{}?format=raw"
@@ -543,8 +583,8 @@ class PagesUpdater:
 
 updaters.append(
     ClockFileUpdater(
-        "GPS to UTC",
-        "T2runtime/clock/gps2utc.clk",
+        "GPS to UTC (TEMPO2)",
+        "T2runtime/clock/gps2utc_tempo2.clk",
         download_url=tempo2_repository_url.format("gps2utc.clk"),
         authority="temporary",
         format="tempo2",
@@ -562,6 +602,85 @@ updaters.append(
             a change in entries as Circular T has redefined what it publishes
             (early entries in this file are from the column C0, later entries
             are from the column C0').
+        """,
+    )
+)
+updaters.append(
+    ClockFileCallableUpdater(
+        "GPS to UTC",
+        "T2runtime/clock/gps2utc.clk",
+        authority="observatory",
+        callable=import_bipm.get_gps_merged,
+        description="""GPS to UTC clock corrections
+
+            This file is constructed from BIPM published data and should be up-to-date.
+
+            The BIPM publishes two different corrections from GPS to UTC:
+            the first, C0, corrects from the GPS Combined Clock to UTC. The second,
+            C0', corrects from a timescale that takes advantage of the broadcast
+            GPS almanac data to track UTC more closely.
+
+            This file uses C0' data when available, but that is only since 2011.
+            Prior to that this uses C0.
+
+            You may want to consider whether your GPS time standard is returning
+            the Combined Clock or whether it is using the almanac data. There are
+            more specific correction files suitable for one case or the other.
+
+            If you have questions about this, contact Anne Archibald
+            <anne.archibald@newcastle.ac.uk>. For more detailed questions
+            about the BIPM's published corrections, contact <tai@bipm.org>.
+        """,
+    )
+)
+updaters.append(
+    ClockFileCallableUpdater(
+        "GPS to UTC (Combined Clock)",
+        "T2runtime/clock/gps2utc_cc.clk",
+        authority="observatory",
+        callable=import_bipm.get_gps_c0,
+        description="""GPS to UTC clock corrections (Combined Clock)
+
+            This file is constructed from BIPM published data and should be up-to-date.
+
+            The BIPM publishes two different corrections from GPS to UTC:
+            the first, C0, corrects from the GPS Combined Clock to UTC. The second,
+            C0', corrects from a timescale that takes advantage of the broadcast
+            GPS almanac data to track UTC more closely.
+
+            This file uses C0 data, that is, it is for GPS time standards that
+            do not take advantage of the almanac data to improve their time
+            correction.
+
+            If you have questions about this, contact Anne Archibald
+            <anne.archibald@newcastle.ac.uk>. For more detailed questions
+            about the BIPM's published corrections, contact <tai@bipm.org>.
+        """,
+    )
+)
+updaters.append(
+    ClockFileCallableUpdater(
+        "GPS to UTC (Corrected)",
+        "T2runtime/clock/gps2utc_c0p.clk",
+        authority="observatory",
+        callable=import_bipm.get_gps_c0p,
+        description="""GPS to UTC clock corrections (Corrected)
+
+            This file is constructed from BIPM published data and should be up-to-date.
+
+            The BIPM publishes two different corrections from GPS to UTC:
+            the first, C0, corrects from the GPS Combined Clock to UTC. The second,
+            C0', corrects from a timescale that takes advantage of the broadcast
+            GPS almanac data to track UTC more closely.
+
+            This file uses C0' data, that is, it is for GPS time standards that
+            take advantage of the almanac data to improve their time correction.
+            Unfortunately the BIPM only publishes these corrections going back
+            to 2011.
+
+            If you have questions about this, contact Anne Archibald
+            <anne.archibald@newcastle.ac.uk>. For more detailed questions
+            about the BIPM's published corrections, contact <tai@bipm.org>.
         """,
     )
 )
@@ -987,7 +1106,7 @@ updaters.append(
         """,
     )
 )
-#updaters.append(
+# updaters.append(
 #    ClockFileUpdater(
 #        "GMRT",
 #        "T2runtime/clock/gmrt2gps.clk",
@@ -1000,7 +1119,7 @@ updaters.append(
 #            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 #        """,
 #    )
-#)
+# )
 updaters.append(
     ClockFileUpdater(
         "Meerkat",

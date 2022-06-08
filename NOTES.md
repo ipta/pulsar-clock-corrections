@@ -19,7 +19,7 @@ clock correction file writing.
 Observatory contacts
 --------------------
 
-- FAST - Weiwei Zhu <zhuww@nao.cas.cn>
+- FAST - 
 - Effelsberg - Joris Verbiest
 - GBT - Ryan Lynch?
 - Jodrell Bank - ?
@@ -41,10 +41,10 @@ Wishlist
     - Tempo - time.dat; files must contain an obscode
     - T2?
 - Clock files generated from other sources (can we take advantage of Astropy?)
-    - `gps2utc.clk` - BIPM Cicular T?
-    - `tai2tt_bipm2019.clk` and the like
+    - `gps2utc.clk` - BIPM Cicular T, related files, it's a mess; C0 or C0'?
+    - `tai2tt_bipm2019.clk` and the like - easy to parse from https://www.bipm.org/en/time-ftp/tt-bipm- 
     - `bipmnist.*`
-    - `leap.sec`
+    - `leap.sec` - Astropy gets this
     - `ut1.dat`
     - `utccorr.dat`
     - `utc2tai.clk`
