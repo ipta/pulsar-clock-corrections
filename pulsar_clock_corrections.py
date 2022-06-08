@@ -4,7 +4,7 @@ import re
 import tempfile
 from io import StringIO
 from pathlib import Path
-from textwrap import dedent
+from textwrap import dedent, indent
 
 import astropy.units as u
 import numpy as np
@@ -256,6 +256,14 @@ class ClockFileUpdater(FileUpdater):
             f.write(l)
         f.write("```\n")
         f.write(f"[Full log]({log_url})\n")
+        if self.clock_file.leading_comment:
+            f.write("\n")
+            f.write("Leading comments from clock file:\n")
+            f.write("\n")
+            f.write(indent(self.clock_file.leading_comment, 4*" "))
+            f.write("\n")
+            f.write("\n")
+
         if make_plots_in_dir:
             import matplotlib.pyplot as plt
             from astropy.visualization import quantity_support
@@ -1143,6 +1151,34 @@ updaters.append(
         format="tempo2",
         bogus_last_correction=True,
         description="""Molonglo Observatory Synthesis Telescope clock corrections file (TEMPO2)
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Nancay to obspm",
+        "T2runtime/clock/ncyobs2obspm.clk",
+        download_url=tempo2_repository_url.format("ncyobs2obspm.clk"),
+        authority="temporary",
+        format="tempo2",
+        bogus_last_correction=True,
+        description="""Nancay-related clock corrections?
+
+            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "obspm",
+        "T2runtime/clock/obspm2gps.clk",
+        download_url=tempo2_repository_url.format("obspm2gps.clk"),
+        authority="temporary",
+        format="tempo2",
+        bogus_last_correction=True,
+        description="""Nancay-related clock corrections?
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
         """,
