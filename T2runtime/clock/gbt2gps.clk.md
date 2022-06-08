@@ -23,15 +23,13 @@ If questions arise about the conversion, contact Anne Archibald
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2022-06-06 MJD 59736.5 |
+| Clock file end | 2022-06-07 MJD 59737.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-06-07 |
+| Last update attempt | 2022-06-08 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-05-31 12:46:48.129 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
-2022-05-31 12:57:25.481 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
 2022-05-31 13:00:05.288 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
 2022-05-31 13:00:16.239 - Validation failed: New version of T2runtime/clock/gbt2gps_converted.clk MJDs differ from old version where they overlap in 4 places
 2022-05-31 13:00:16.240 - Updated overriding validation failure
@@ -40,12 +38,14 @@ Log entries from the last few update attempts:
 2022-06-07 13:34:26.688 - Updated
 2022-06-07 16:28:36.231 - No way to download: 'T2runtime/clock/gbt2gps.clk'
 2022-06-07 16:28:36.314 - Updated
+2022-06-08 17:10:52.667 - No way to download: 'T2runtime/clock/gbt2gps.clk'
+2022-06-08 17:10:52.727 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 
 Leading comments from clock file:
 
-    # This file was automatically converted from tempo/clock/time_gbt.dat on 2022-06-07 16:28:36.232
+    # This file was automatically converted from tempo/clock/time_gbt.dat on 2022-06-08 17:10:52.667
 
 
 
