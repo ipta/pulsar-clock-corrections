@@ -13,6 +13,9 @@ name of each clock file links to a page with more details.
 
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
+| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2022-04-30 MJD 59699.0 | 2022-06-08 | Updated 
+| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2022-04-30 MJD 59699.0 | 2022-06-08 | Updated 
+| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2022-04-30 MJD 59699.0 | 2022-06-08 | Updated 
 | [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-06-06 MJD 59736.5 | 2022-06-07 | Updated 
 | [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-06-06 MJD 59736.5 | 2022-06-07 | Updated 
 
@@ -35,7 +38,7 @@ name of each clock file links to a page with more details.
 
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
-| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1996-03-27 MJD 50169.0 | 2020-10-26 MJD 59148.0 | 2022-06-02 | Unchanged 
+| [GPS to UTC (TEMPO2)](T2runtime/clock/gps2utc_tempo2.clk.html) | `T2runtime/clock/gps2utc_tempo2.clk` | 1996-03-27 MJD 50169.0 | 2020-10-26 MJD 59148.0 | 2022-06-02 | Unchanged 
 | [GBT (TEMPO2)](T2runtime/clock/gbt2gps_tempo2.clk.html) | `T2runtime/clock/gbt2gps_tempo2.clk` | 2000-12-31 MJD 51909.5 | 2020-02-25 MJD 58904.5 | 2022-06-07 | Unchanged 
 | [Jodrell Bank](tempo/clock/time_jb.dat.html) | `tempo/clock/time_jb.dat` | 2006-10-13 MJD 54021.4 | 2019-05-13 MJD 58616.1 | 2022-06-02 | Unchanged 
 | [Jodrell Bank (TEMPO2)](T2runtime/clock/jb2gps.clk.html) | `T2runtime/clock/jb2gps.clk` | 2006-10-13 MJD 54021.4 | 2021-11-02 MJD 59521.0 | 2022-06-07 | Unchanged 
