@@ -17,34 +17,9 @@ up-to-date clock correction files.
 The intention is that this package be useful to users of the three major pieces
 of pulsar timing software: TEMPO, TEMPO2, and PINT.
 
-Getting clock corrections
-=========================
+This package includes both the repository itself (with detailed logs of the
+updating process) and some tools for maintaining it. The maintenance tools
+use Python, Astropy, and PINT, but most users should have no need to run them.
 
-With TEMPO or TEMPO2
---------------------
-
-Simply `git clone` this repository, then set the environment variable `$TEMPO`
-to point to the `tempo` subdirectory and `$TEMPO` to point to the `T2runtime` subdirectory.
-
-With PINT
----------
-
-PINT should automatically download the clock corrections from this repository
-and prefer them over its own.
-
-Other tools
-===========
-
-For more advanced usage of this package you will want to install PINT.
-
-Updating the clock corrections
-------------------------------
-
-Some telescopes provide downloadable copies of their current clock correction
-files; ideally all would do so. There is initial code to download and validate
-these files in support of automatic updates.
-
-Longer-term, the hosting system's CI (for example Github Actions) could
-probably be made to run these updating scripts automatically and check the
-results into git, ensuring that this repository is up to date without human
-intervention.
+To browse the repository, and for instructions on how to use the files in it,
+please visit https://ipta.github.io/pulsar-clock-corrections/
