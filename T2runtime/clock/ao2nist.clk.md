@@ -14,7 +14,7 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `T2runtime/clock/ao2nist.clk` |
 | Authority | temporary |
-| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/ao2nist.clk> |
+| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/ao2nist.clk> |
 | Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/ao2nist.clk> |
 | Format | tempo2 |
 | Bogus last correction | False |
@@ -28,7 +28,7 @@ Log entries from the last few update attempts:
 ```
 2022-05-26 20:40:04.320 - Unchanged
 ```
-[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/ao2nist.clk.log)
+[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ao2nist.clk.log)
 
 Leading comments from clock file:
 

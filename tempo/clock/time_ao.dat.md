@@ -18,7 +18,7 @@ If questions arise, contact David Nice <niced@lafayette.edu>.
 |:--- |:--- |
 | File | `tempo/clock/time_ao.dat` |
 | Authority | temporary |
-| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/tempo/clock/time_ao.dat> |
+| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/tempo/clock/time_ao.dat> |
 | Original download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_ao.dat?format=raw> |
 | Format | tempo |
 | Bogus last correction | False |
@@ -36,7 +36,7 @@ Log entries from the last few update attempts:
 2022-05-26 08:30:05.009 - Validation failed: Unable to read new version of tempo/clock/time_ao.dat: Clock file /tmp/astropy-download-15491-z0oxpt3s in format tempo appears to be out of order
 2022-05-26 08:35:03.527 - Updated
 ```
-[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/tempo/clock/time_ao.dat.log)
+[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_ao.dat.log)
 
 
 All clock corrections:

@@ -9,7 +9,7 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 |:--- |:--- |
 | File | `T2runtime/clock/mk2utc.clk` |
 | Authority | temporary |
-| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/mk2utc.clk> |
+| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/mk2utc.clk> |
 | Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/mk2utc.clk> |
 | Format | tempo2 |
 | Bogus last correction | True |
@@ -23,7 +23,7 @@ Log entries from the last few update attempts:
 ```
 2022-06-07 16:57:58.682 - Unchanged
 ```
-[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc.clk.log)
+[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc.clk.log)
 
 Leading comments from clock file:
 

@@ -18,7 +18,7 @@ If questions arise about the conversion, contact Anne Archibald
 |:--- |:--- |
 | File | `T2runtime/clock/gbt2gps.clk` |
 | Authority | converted |
-| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/gbt2gps.clk> |
+| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/gbt2gps.clk> |
 | Original download URL | <None> |
 | Format | tempo2 |
 | Bogus last correction | False |
@@ -41,7 +41,7 @@ Log entries from the last few update attempts:
 2022-06-08 17:10:52.667 - No way to download: 'T2runtime/clock/gbt2gps.clk'
 2022-06-08 17:10:52.727 - Updated
 ```
-[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
+[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 
 Leading comments from clock file:
 

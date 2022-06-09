@@ -23,7 +23,7 @@ If questions arise about the conversion, contact Anne Archibald
 |:--- |:--- |
 | File | `T2runtime/clock/ao2gps.clk` |
 | Authority | temporary |
-| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/ao2gps.clk> |
+| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/ao2gps.clk> |
 | Original download URL | <None> |
 | Format | tempo2 |
 | Bogus last correction | False |
@@ -37,7 +37,7 @@ Log entries from the last few update attempts:
 ```
 2022-06-01 14:19:54.628 - Updated
 ```
-[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/ao2gps.clk.log)
+[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ao2gps.clk.log)
 
 Leading comments from clock file:
 

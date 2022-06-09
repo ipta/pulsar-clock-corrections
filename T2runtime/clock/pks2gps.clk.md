@@ -27,7 +27,7 @@ we retain it.
 |:--- |:--- |
 | File | `T2runtime/clock/pks2gps.clk` |
 | Authority | temporary |
-| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/pks2gps.clk> |
+| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/pks2gps.clk> |
 | Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/pks2gps.clk> |
 | Format | tempo2 |
 | Bogus last correction | False |
@@ -42,7 +42,7 @@ Log entries from the last few update attempts:
 2022-05-26 20:40:06.950 - Unchanged
 2022-06-07 13:34:30.482 - Unchanged
 ```
-[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/pks2gps.clk.log)
+[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/pks2gps.clk.log)
 
 Leading comments from clock file:
 

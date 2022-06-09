@@ -25,22 +25,24 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 |:--- |:--- |
 | File | `T2runtime/clock/gps2utc.clk` |
 | Authority | observatory |
-| URL in repository | <https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/T2runtime/clock/gps2utc.clk> |
+| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/gps2utc.clk> |
 | Original download URL | <None> |
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1993-01-01 MJD 48988.0 |
 | Clock file end | 2022-04-30 MJD 59699.0 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-06-08 |
-| Last update result | Updated |
+| Last update attempt | 2022-06-09 |
+| Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
 2022-06-08 10:42:42.759 - No way to download: 'T2runtime/clock/gps2utc.clk'
 2022-06-08 10:42:42.787 - Updated
+2022-06-09 13:27:33.364 - No way to download: 'T2runtime/clock/gps2utc.clk'
+2022-06-09 13:27:33.445 - Unchanged
 ```
-[Full log](https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc.clk.log)
+[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc.clk.log)
 
 Leading comments from clock file:
 
