@@ -15,7 +15,7 @@ from pint.observatory.clock_file import ClockFile
 import import_bipm
 
 public_repo_url_raw = (
-    "https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/"
+    "https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/"
 )
 
 

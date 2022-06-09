@@ -15,7 +15,7 @@ from urllib.request import urlopen
 log = logging.getLogger(__name__)
 
 public_repo_url_raw = (
-    "https://raw.githubusercontent.com/nanograv/pulsar-clock-corrections/main/"
+    "https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/"
 )
 
 
