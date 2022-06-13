@@ -1233,3 +1233,59 @@ for y in import_bipm.list_recent_ttbipmxy()[::-1]:
             """,
         )
     )
+for y in [
+    2019,
+    2018,
+    2017,
+    2016,
+    2015,
+    2014,
+    2013,
+    2012,
+    2010,
+    "06",
+    "05",
+    2004,
+    2003,
+    "01",
+    92,
+]:
+    updaters.append(
+        ClockFileUpdater(
+            f"TAI to TT(BIPM{y})",
+            f"T2runtime/clock/tai2tt_bipm{y}.clk",
+            download_url=tempo2_repository_url.format(f"tai2tt_bipm{y}.clk"),
+            authority="temporary",
+            format="tempo2",
+            update_interval_days=np.inf,
+            description=f"""TAI to BIPM-updated TT, {y} version
+
+                This file is constructed from BIPM published data and should
+                never change; updated versions will appear approximately
+                yearly, and do revise old data. Aa result they are given different
+                clock file names, and are treated as different time scales.
+
+                The time scale TT is supposed to be a basis for TDB, and is meant
+                to be a stable clock for describing the motions of the solar system.
+                Of necessity it is derived from the practical time scale TAI,
+                which is produced by an ensemble of atomic clocks. A simple
+                realization of TT, such as that implemented by Astropy,
+                simply yields TT = TAI + 32.184 s.
+
+                Atomic clocks do wander, and the BIPM can sometimes estimate
+                that wander in retrospect.  Rather than revise TAI, the BIPM
+                offers versions of TT that are more stable because they
+                compensate for variations in TAI. These are defined by yearly
+                bulletins, and are referred to in TEMPO2 as TT(BIPMyyyy), where
+                yyyy is the year of the bulletin.
+
+                Each bulletin publishes corrections from TAI to TT. It may
+                revise earlier corrections up to about 10 years back, and it
+                contains a formula for making predictions past the end of the
+                data it contains.
+
+                This file is pulled from the TEMPO2 repository but is based on
+                BIPM data and should be unchanging.
+            """,
+        )
+    )
