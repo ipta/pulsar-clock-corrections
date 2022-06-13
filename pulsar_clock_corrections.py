@@ -260,7 +260,7 @@ class ClockFileUpdater(FileUpdater):
             f.write("\n")
             f.write("Leading comments from clock file:\n")
             f.write("\n")
-            f.write(indent(self.clock_file.leading_comment, 4*" "))
+            f.write(indent(self.clock_file.leading_comment, 4 * " "))
             f.write("\n")
             f.write("\n")
 
@@ -536,7 +536,9 @@ class PagesUpdater:
         static_updaters = []
         default_updaters = []
         for u in updaters:
-            if (
+            if not np.isfinite(u.update_interval_days):
+                static_updaters.append(u)
+            elif (
                 u.authority == "observatory"
                 or u.authority == "converted"
                 and u.updater.authority == "observatory"
@@ -1184,3 +1186,50 @@ updaters.append(
         """,
     )
 )
+for y in import_bipm.list_recent_ttbipmxy()[::-1]:
+    updaters.append(
+        ClockFileCallableUpdater(
+            f"TAI to TT(BIPM{y})",
+            f"T2runtime/clock/tai2tt_bipm{y}.clk",
+            authority="observatory",
+            callable=lambda: import_bipm.get_ttbipmxy_corrections_clock(
+                y, include_forecast=1000
+            ),
+            update_interval_days=np.inf,
+            description=f"""TAI to BIPM-updated TT, {y} version
+
+                This file is constructed from BIPM published data and should
+                never change; updated versions will appear approximately
+                yearly, and do revise old data. Aa result they are given different
+                clock file names, and are treated as different time scales.
+
+                The time scale TT is supposed to be a basis for TDB, and is meant
+                to be a stable clock for describing the motions of the solar system.
+                Of necessity it is derived from the practical time scale TAI,
+                which is produced by an ensemble of atomic clocks. A simple
+                realization of TT, such as that implemented by Astropy,
+                simply yields TT = TAI + 32.184 s.
+
+                Atomic clocks do wander, and the BIPM can sometimes estimate
+                that wander in retrospect.  Rather than revise TAI, the BIPM
+                offers versions of TT that are more stable because they
+                compensate for variations in TAI. These are defined by yearly
+                bulletins, and are referred to in TEMPO2 as TT(BIPMyyyy), where
+                yyyy is the year of the bulletin.
+
+                Each bulletin publishes corrections from TAI to TT. It may
+                revise earlier corrections up to about 10 years back, and it
+                contains a formula for making predictions past the end of the
+                data it contains.
+
+                This clock file is automatically generated from the bulletin
+                for {y}. It contains forecasted values for 1000 days past the
+                end of the tabulated data. This is marked by a comment in the
+                clock file itself.
+
+                If you have questions about this, contact Anne Archibald
+                <anne.archibald@newcastle.ac.uk>. For more detailed questions
+                about the BIPM's published corrections, contact <tai@bipm.org>.
+            """,
+        )
+    )

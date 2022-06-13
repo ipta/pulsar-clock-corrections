@@ -42,19 +42,20 @@ Wishlist
     - T2?
 - Clock files generated from other sources (can we take advantage of Astropy?)
     - `gps2utc.clk` - BIPM Cicular T, related files, it's a mess; C0 or C0'?
-    - `tai2tt_bipm2019.clk` and the like - easy to parse from https://www.bipm.org/en/time-ftp/tt-bipm- 
-    - `bipmnist.*`
+    - `tai2tt_bipm2019.clk` and the like - easy to parse from https://www.bipm.org/en/time-ftp/tt-bipm- but how to handle the profusion of files (including detecting new ones)?
+    - `bipmnist.*` - Totally without metadata, better ask what this is but it looks static
     - `leap.sec` - Astropy gets this
-    - `ut1.dat`
-    - `utccorr.dat`
-    - `utc2tai.clk`
-    - `utc2ut1.clk`
-    - `nist2tai.clk`
-    - `nist2tt_nist.clk`
-    - `nist2utc.clk`
+    - `ut1.dat` - Astropy's IERS A/B code gets this
+    - `utccorr.tot` - Ends 49889 so no updates needed?
+    - `utc2tai.clk` - "# UTC TAI" but including what?
+    - `utc2ut1.clk` - Should be IERS A/B and thus in Astropy
+    - `nist2tai.clk` - 50000-54000 only - maybe we don't have recent data referenced to NIST?
+    - `nist2tt_nist.clk` - Supposed to emulate TEMPO?
+    - `nist2utc.clk` - Based on Circular T - maybe we don't have recent data referenced to NIST?
 - Actual StaticClockFile class for clock files that don't come from anywhere but don't change
     - AO GPS/NIST files that are cut from `time_ao.dat`
-    - Or just use `download_url=None`
+    - Maybe not needed?
+- Is WSRT data static? If so, can we generate the TEMPO file from the TEMPO2 one? Does the TEMPO2 one cover the whole history?
 
 
 

@@ -9,6 +9,7 @@ two different versions (C0 and C0').
 
 """
 import re
+from io import StringIO
 from textwrap import dedent
 
 import numpy as np
@@ -95,7 +96,7 @@ def read_old_gps_corrections():
                     continue
                 if not 40000 < mjd < 60000:
                     continue
-                if mjds and mjd<mjds[-1]:
+                if mjds and mjd < mjds[-1]:
                     # print(f"MJD {mjd} less than last previous mjd: {mjds[-10:]}")
                     continue
                 try:
@@ -129,7 +130,7 @@ def read_old_gps_corrections():
                     c0 = float(ls[3])
                 except ValueError:
                     continue
-                if mjds and mjd<mjds[-1]:
+                if mjds and mjd < mjds[-1]:
                     # print(f"MJD {mjd} less than last previous mjd: {mjds[-10:]}")
                     continue
                 mjds.append(mjd)
@@ -145,7 +146,7 @@ def get_gps_c0():
     """Obtain BIPM measurements of GPS CC to UTC correction as a ClockFile."""
     a = read_old_gps_corrections()
     b = read_recent_gps_corrections()
-    if a[-1,0] > b[0,0]:
+    if a[-1, 0] > b[0, 0]:
         raise ValueError(f"MJDs overlap: {a[-10:]} vs {b[:10]}")
     mjds = np.concatenate([a[:, 0], b[:, 0]])
     c0s = np.concatenate([a[:, 1], b[:, 1]])
@@ -228,7 +229,6 @@ def get_gps_c0p():
     return c
 
 
-
 def get_gps_merged():
     """Obtain a best-effort clock correction as a ClockFile.
 
@@ -236,7 +236,7 @@ def get_gps_merged():
     """
     a = read_old_gps_corrections()
     b = read_recent_gps_corrections()
-    if a[-1,0] > b[0,0]:
+    if a[-1, 0] > b[0, 0]:
         raise ValueError(f"MJDs overlap: {a[-10:]} vs {b[:10]}")
     mjds = np.concatenate([a[:, 0], b[:, 0]])
     c0s = np.concatenate([a[:, 1], b[:, 2]])
@@ -280,4 +280,92 @@ def get_gps_merged():
     )
     c.leading_comment = leading_comment
     c.header = hdrline
+    return c
+
+
+ttbipmxy_url = "https://webtai.bipm.org/ftp/pub/tai/ttbipm/TTBIPM.{}"
+
+
+def list_recent_ttbipmxy():
+    # Start from the first year not in the TEMPO2 repository
+    year = 2020
+
+    years = []
+    while True:
+        try:
+            f = astropy.utils.data.download_file(ttbipmxy_url.format(year), cache=True)
+        except IOError:
+            break
+        else:
+            years.append(year)
+            year += 1
+    return years
+
+
+prediction_re = re.compile(
+    "^TT\(BIPM..\) = TAI \+ (\d+\.\d+) s \+ (\d+\.\d+) ns ([-+]) (\d+\.\d+)x\(MJD-(\d+)\) ns\s*$"
+)
+column_re = re.compile(
+    r'^ +3rd +" +: TT.BIPM... - TAI - (\d+\.\d+) s, unit is one microsecond\s*$'
+)
+
+
+def get_ttbipmxy_corrections(year, include_forecast=1000):
+    """Get the TAI to TT corrections from the BIPM"""
+    # FIXME: which way do these corrections go? The BIPM is clear but what
+    # does TEMPO2 want? PINT?
+    with open(
+        astropy.utils.data.download_file(ttbipmxy_url.format(year), cache=True)
+    ) as f:
+        leading_comment_io = StringIO()
+        for line in f:
+            leading_comment_io.write("# ")
+            leading_comment_io.write(line)
+            if m := prediction_re.match(line):
+                prediction_offset_s = float(m.group(1))
+                prediction_offset_ns = float(m.group(2))
+                prediction_rate_ns_per_day = float(m.group(3)+m.group(4))
+                prediction_base_mjd = float(m.group(5))
+                break
+        else:
+            raise ValueError("Prediction line not recognized")
+        for line in f:
+            leading_comment_io.write("# ")
+            leading_comment_io.write(line)
+            if m := column_re.match(line):
+                tai_offset = float(m.group(1))
+                break
+        else:
+            raise ValueError("Column definition not recognized")
+        data = np.loadtxt(f)
+    mjds = data[:, 0]
+    values_us = data[:, 2]
+    corr_s = tai_offset + values_us * 1e-6
+
+    extra_mjds = mjds[-1] + np.arange(1, include_forecast + 1)
+    extra_corr_s = (
+        prediction_offset_s
+        + (
+            prediction_offset_ns
+            + prediction_rate_ns_per_day * (extra_mjds - prediction_base_mjd)
+        )
+        * 1e-9
+    )
+
+    return leading_comment_io.getvalue(), mjds, corr_s, extra_mjds, extra_corr_s
+
+def get_ttbipmxy_corrections_clock(year, include_forecast=1000):
+    leading_comment, mjds, corr_s, extra_mjds, extra_corr_s = get_ttbipmxy_corrections(year, include_forecast=include_forecast)
+    all_mjds = np.concatenate([mjds, extra_mjds])
+    all_corr_s = np.concatenate([corr_s, extra_corr_s])
+    comments = [""] * len(all_mjds)
+    comments[len(mjds)-1] = "\n# Extrapolation starts here"
+    c = pint.observatory.clock_file.ConstructedClockFile(
+        mjd=all_mjds,
+        clock=all_corr_s * u.s,
+        comments=comments,
+        filename=f"tai2tt_bipm{year}.clk",
+    )
+    c.leading_comment = leading_comment
+    c.header = "# TAI TT(BIPM2019)"
     return c

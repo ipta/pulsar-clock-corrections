@@ -30,3 +30,5 @@ T2runtime/clock/mk2utc.clk                         7.0   ---
 T2runtime/clock/mo2gps.clk                         7.0   ---
 T2runtime/clock/ncyobs2obspm.clk                   7.0   ---
 T2runtime/clock/obspm2gps.clk                      7.0   ---
+T2runtime/clock/tai2tt_bipm2021.clk                inf   ---
+T2runtime/clock/tai2tt_bipm2020.clk                inf   ---
