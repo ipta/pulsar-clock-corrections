@@ -45,7 +45,7 @@ Wishlist
     - `tai2tt_bipm2019.clk` and the like - easy to parse from https://www.bipm.org/en/time-ftp/tt-bipm- but how to handle the profusion of files (including detecting new ones)?
     - `bipmnist.*` - Totally without metadata, better ask what this is but it looks static
     - `leap.sec` - Astropy gets this
-    - `ut1.dat` - Astropy's IERS A/B code gets this
+    - `ut1.dat` - Astropy's IERS A/B code gets this; TEMPO has perl scripts to update this, and the format is cryptic
     - `utccorr.tot` - Ends 49889 so no updates needed?
     - `utc2tai.clk` - "# UTC TAI" but including what?
     - `utc2ut1.clk` - Should be IERS A/B and thus in Astropy
