@@ -17,7 +17,7 @@ This file is pulled from the PINT repository and may not be fully up-to-date.
 | Clock file start | 1990-10-27 MJD 48191.2 |
 | Clock file end | 2021-03-07 MJD 59280.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-06-09 |
+| Last update attempt | 2022-06-16 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
@@ -27,6 +27,7 @@ Log entries from the last few update attempts:
 2022-05-26 08:35:04.394 - Unchanged
 2022-06-02 11:47:03.505 - Unchanged
 2022-06-09 13:27:35.487 - Unchanged
+2022-06-16 18:26:24.163 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_vla.dat.log)
 

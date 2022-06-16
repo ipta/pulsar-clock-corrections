@@ -19,7 +19,7 @@ in the same file, distinguished only by observatory code.
 | Clock file start | 1979-05-07 MJD 44000.0 |
 | Clock file end | 2011-07-02 MJD 55745.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-06-09 |
+| Last update attempt | 2022-06-16 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
@@ -29,6 +29,7 @@ Log entries from the last few update attempts:
 2022-05-26 08:35:06.984 - Unchanged
 2022-06-02 11:47:05.758 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-24192-5sncxo_8 in format tempo appears to be out of order
 2022-06-09 13:27:38.008 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-10364-7jnkh3d2 in format tempo appears to be out of order
+2022-06-16 18:26:27.550 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-16102-wl7_58mt in format tempo appears to be out of order
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_pks.dat.log)
 
