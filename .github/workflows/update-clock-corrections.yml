@@ -20,6 +20,7 @@ jobs:
                 git add .
                 git commit -am "Routine gh-pages update from Github action `date`"
                 git log -n 1
+                git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
                 git push
 
 
