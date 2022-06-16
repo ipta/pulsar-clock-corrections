@@ -2,7 +2,7 @@ name: update-clock-corrections
 on: 
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '23,5353535353 * * * *'
+    - cron:  '23,53 * * * *'
 jobs:
     run-update-script:
         runs-on: ubuntu-latest
