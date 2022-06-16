@@ -1,1 +1,1 @@
-pint_pulsar
+git+https://github.com/nanograv/PINT.git
