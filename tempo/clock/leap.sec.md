@@ -26,7 +26,6 @@ If there are any questions, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
-2022-06-16 18:27:53.035 - Updated
 2022-06-16 19:06:10.668 - Exception: Problem computing new value: Input values did not match the format class mjd:
 2022-06-16 19:10:19.803 - Exception: Problem computing new value Input values did not match the format class mjd: TypeError: Input values for mjd class must be finite doubles
 2022-06-16 19:11:15.424 - Unchanged
@@ -36,5 +35,6 @@ Log entries from the last few update attempts:
 2022-06-16 20:31:46.553 - Unchanged
 2022-06-16 20:40:22.041 - Unchanged
 2022-06-16 21:33:08.142 - Unchanged
+2022-06-16 21:56:51.445 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/leap.sec.log)
