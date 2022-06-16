@@ -8,6 +8,16 @@ jobs:
             - run: pip install -r requirements.txt
             - run: git clone https://github.com/ipta/pulsar-clock-corrections.git  --branch gh-pages --single-branch /tmp/gh-pages --depth 1
             - run: python update_clock_corrections.py --gh-pages /tmp/gh-pages
-            - run: git status
-            - run: (cd /tmp/gh-pages && git status)
+            - run: |
+                git config --global user.name "Anne Archibald"
+                git config --global user.email 'aarchiba@users.noreply.github.com'
+                git add tempo T2runtime log
+                git commit -am "Routine repo update from Github action `date`"
+                git log -n 1
+            - run: |
+                cd /tmp/gh-pages 
+                git add .
+                git commit -am "Routine gh-pages update from Github action `date`"
+                git log -n 1
+
 
