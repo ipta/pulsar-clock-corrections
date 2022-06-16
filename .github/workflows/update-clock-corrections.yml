@@ -14,10 +14,12 @@ jobs:
                 git add tempo T2runtime log
                 git commit -am "Routine repo update from Github action `date`"
                 git log -n 1
+                git push
             - run: |
                 cd /tmp/gh-pages 
                 git add .
                 git commit -am "Routine gh-pages update from Github action `date`"
                 git log -n 1
+                git push
 
 
