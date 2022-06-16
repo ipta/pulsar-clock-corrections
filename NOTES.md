@@ -69,3 +69,6 @@ Questions
     - Conclusion: no.
 - Should we try to handle composing time scales to get all TEMPO clock corrections referenced to the same scale? If so, what scale? - TEMPO doesn't distinguish between GPS and other global time scales.
     - PINT uses `include_gps` and `include_bipm` to compensate for this, I think?
+- Do we include static files full of zeros for telescopes that don't need corrections?
+    - PINT just lists these as not needing corrections
+    - It makes their zero correction explicit, making it clear it's not just that we haven't got them

@@ -12,7 +12,8 @@ from astropy.time import Time
 from astropy.utils.data import download_file
 from pint.observatory.clock_file import ClockFile
 
-import import_bipm
+import bipm
+import iers
 
 public_repo_url_raw = (
     "https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/"
@@ -54,6 +55,16 @@ class FileUpdater:
         self.log_entry_re = re.compile(r"([0-9 :.-]+) - ([^:]+)(: (.*))?")
         self.interval_fuzz = 1 * u.hour
         self._clock_file = None
+        self._tstart = None
+        self._tend = None
+
+    @property
+    def tstart(self):
+        return self._tstart
+
+    @property
+    def tend(self):
+        return self._tend
 
     def needs_update(self):
         """Check whether the update process needs to run.
@@ -78,7 +89,7 @@ class FileUpdater:
         return base_location() / "log" / (self.filename + ".log")
 
     def add_to_log(self, msg):
-        entry = Time.now().iso + " - " + msg + "\n"
+        entry = Time.now().iso + " - " + msg.replace("\n", " ") + "\n"
         with open(self.log_file, "at") as f:
             f.write(entry)
         self._last_log_entry = entry
@@ -106,8 +117,6 @@ class FileUpdater:
         if not force and not self.needs_update():
             # No new data to be had, no log entry
             return True
-        if self.download_url is None:
-            self.add_to_log(f"No way to download: {self.filename!r}")
         try:
             f = self.get(cache=cache)
         except IOError as e:
@@ -175,6 +184,7 @@ class ClockFileUpdater(FileUpdater):
         if self.download_url is not None:
             return download_file(self.download_url, cache=cache)
         else:
+            self.add_to_log(f"No way to download: {self.filename!r}")
             return None
 
     @property
@@ -187,6 +197,14 @@ class ClockFileUpdater(FileUpdater):
                 obscode=self.obscode,
             )
         return self._clock_file
+
+    @property
+    def tstart(self):
+        return self.clock_file.time[0]
+
+    @property
+    def tend(self):
+        return self._clock_file.time[-2 if self.bogus_last_correction else -1]
 
     def validate(self, new_file):
         old = self.clock_file
@@ -215,8 +233,9 @@ class ClockFileUpdater(FileUpdater):
             )
 
     def details_page(self, make_plots_in_dir=None):
-        tstart = self.clock_file.time[0]
-        tend = self.clock_file.time[-2 if self.bogus_last_correction else -1]
+        # Just ensure that this was loaded
+        self.clock_file
+
         last_date, result, details = self.parse_log_entry(self.last_log_entry)
         log_url = public_repo_url_raw + "log/" + self.filename + ".log"
         f = StringIO()
@@ -241,8 +260,8 @@ class ClockFileUpdater(FileUpdater):
             | Original download URL | <{self.download_url}> |
             | Format | {self.format} |
             | Bogus last correction | {self.bogus_last_correction} |
-            | Clock file start | {short_date(tstart)} MJD {tstart.mjd:.1f} |
-            | Clock file end | {short_date(tend)} MJD {tend.mjd:.1f} |
+            | Clock file start | {short_date(self.tstart)} MJD {self.tstart.mjd:.1f} |
+            | Clock file end | {short_date(self.tend)} MJD {self.tend.mjd:.1f} |
             | Update interval (days) | {self.update_interval_days} |
             | Last update attempt | {short_date(last_date)} |
             | Last update result | {result} |
@@ -429,6 +448,82 @@ class ClockFileCallableUpdater(ClockFileUpdater):
         return filename
 
 
+class CallableUpdater(FileUpdater):
+    """Updater for files that aren't clock files exactly."""
+    def __init__(
+        self,
+        short_description,
+        filename,
+        authority,
+        callable,
+        update_interval_days=0,
+        description="",
+    ):
+
+        super().__init__(
+            short_description,
+            filename,
+            authority=authority,
+            update_interval_days=update_interval_days,
+            description=description,
+        )
+
+        self.callable = callable
+
+    def get(self, cache=False):
+        try:
+            contents, tstart, tend = self.callable()
+        except (IOError, ValueError) as e:
+            self.add_to_log(f"Exception: Problem computing new value {e}")
+            raise
+        # FIXME: no way to get tstart/tend if there hasn't been a get()
+        self._tstart, self._tend = tstart, tend
+        filename = Path(tempfile.mkdtemp()) / "generated"
+        filename.write_text(contents)
+        return filename
+
+    def validate(self, filename):
+        # No idea what to check, sorry
+        pass
+
+    def details_page(self, make_plots_in_dir=None):
+        last_date, result, details = self.parse_log_entry(self.last_log_entry)
+        log_url = public_repo_url_raw + "log/" + self.filename + ".log"
+        f = StringIO()
+        f.write(
+            dedent(
+                f"""
+                ## {self.short_description}
+
+                """
+            )
+        )
+        f.write(self.description)
+        f.write(
+            dedent(
+                f"""
+
+            |     |     |
+            |:--- |:--- |
+            | File | `{self.filename}` |
+            | Authority | {self.authority} |
+            | Update interval (days) | {self.update_interval_days} |
+            | Last update attempt | {short_date(last_date)} |
+            | Last update result | {result} |
+
+            Log entries from the last few update attempts:
+            """
+            )
+        )
+        f.write("```\n")
+        for l in self.log_file.open().readlines()[-10:]:
+            f.write(l)
+        f.write("```\n")
+        f.write(f"[Full log]({log_url})\n")
+
+        return f.getvalue()
+
+
 # tempo_repository_url = "https://raw.githubusercontent.com/nanograv/tempo/master/clock/{}"
 tempo_repository_url = (
     "https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/{}?format=raw"
@@ -486,8 +581,14 @@ def updater_summary_table(updaters, detail_urls=False):
     )
     print(f"|:--- |:--- | --- | --- | --- |:--- ", file=o)
     for u in updaters:
-        tstart = u.clock_file.time[0]
-        tend = u.clock_file.time[-2 if u.bogus_last_correction else -1]
+        if u.tstart is not None:
+            tstart_str = f"{short_date(u.tstart)} MJD {u.tstart.mjd:.1f}"
+        else:
+            tstart_str = "---"
+        if u.tend is not None:
+            tend_str = f"{short_date(u.tend)} MJD {u.tend.mjd:.1f}"
+        else:
+            tend_str = "---"
         last_date, result, details = u.parse_log_entry(u.last_log_entry)
         if result not in {"Unchanged", "Updated"}:
             result = "**" + result + "**"
@@ -496,8 +597,8 @@ def updater_summary_table(updaters, detail_urls=False):
             print(
                 f"| [{u.short_description}]({detail_url}) "
                 f"| `{u.filename}` "
-                f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
-                f"| {short_date(tend)} MJD {tend.mjd:.1f} "
+                f"| {tstart_str} "
+                f"| {tend_str} "
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
@@ -506,8 +607,8 @@ def updater_summary_table(updaters, detail_urls=False):
             print(
                 f"| {u.short_description} "
                 f"| `{u.filename}` "
-                f"| {short_date(tstart)} MJD {tstart.mjd:.1f} "
-                f"| {short_date(tend)} MJD {tend.mjd:.1f} "
+                f"| {tstart_str} "
+                f"| {tend_str} "
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
@@ -620,7 +721,7 @@ updaters.append(
         "GPS to UTC",
         "T2runtime/clock/gps2utc.clk",
         authority="observatory",
-        callable=import_bipm.get_gps_merged,
+        callable=bipm.get_gps_merged,
         description="""GPS to UTC clock corrections
 
             This file is constructed from BIPM published data and should be up-to-date.
@@ -648,7 +749,7 @@ updaters.append(
         "GPS to UTC (Combined Clock)",
         "T2runtime/clock/gps2utc_cc.clk",
         authority="observatory",
-        callable=import_bipm.get_gps_c0,
+        callable=bipm.get_gps_c0,
         description="""GPS to UTC clock corrections (Combined Clock)
 
             This file is constructed from BIPM published data and should be up-to-date.
@@ -673,7 +774,7 @@ updaters.append(
         "GPS to UTC (Corrected)",
         "T2runtime/clock/gps2utc_c0p.clk",
         authority="observatory",
-        callable=import_bipm.get_gps_c0p,
+        callable=bipm.get_gps_c0p,
         description="""GPS to UTC clock corrections (Corrected)
 
             This file is constructed from BIPM published data and should be up-to-date.
@@ -1186,13 +1287,64 @@ updaters.append(
         """,
     )
 )
-for y in import_bipm.list_recent_ttbipmxy()[::-1]:
+updaters.append(
+    CallableUpdater(
+        "Leap seconds",
+        "tempo/clock/leap.sec",
+        callable=iers.make_leap_sec,
+        authority="observatory",
+        description="""Leap seconds table
+
+            This file lists the MJDs of leap seconds, starting from 41499.
+            The format can only accommodate positive leap seconds (but all
+            leap seconds so far have been positive).
+
+            This file is generated from Astropy's parsing of the IERS
+            bulletins. It should be updated at least six months in advance
+            of any planned leap second (and not otherwise).
+
+            If there are any questions, contact Anne Archibald
+            <anne.archibald@newcastle.ac.uk>.
+        """,
+    )
+)
+updaters.append(
+    CallableUpdater(
+        "UT1 table",
+        "tempo/clock/ut1.dat",
+        callable=iers.make_ut1_dat,
+        authority="observatory",
+        description="""UT1 table
+
+            This file records the Earth's actual rotation in the form of
+            corrections TAI-UT1 in a format readable by TEMPO.
+
+            This file is generated from Astropy's parsing of the IERS
+            bulletins. It should be updated approximately monthly, and it
+            includes the IERS predictions covering about a year after the
+            publication date.
+
+            This differs slightly from the version traditionally distributed
+            with TEMPO - that is generated by a combination of a perl script
+            parsing the output from the IERS web form and a custom C program
+            generating predictions. As a result, this generated file may not
+            extend as far into the future as the conventional ut1.dat does.
+            There are also minor differences in some of the early values; the
+            origin of these early values is not completely clear, and some of
+            them predate the earliest values in the IERS bulletins Astropy uses.
+
+            If there are any questions, contact Anne Archibald
+            <anne.archibald@newcastle.ac.uk>.
+        """,
+    )
+)
+for y in bipm.list_recent_ttbipmxy()[::-1]:
     updaters.append(
         ClockFileCallableUpdater(
             f"TAI to TT(BIPM{y})",
             f"T2runtime/clock/tai2tt_bipm{y}.clk",
             authority="observatory",
-            callable=lambda: import_bipm.get_ttbipmxy_corrections_clock(
+            callable=lambda: bipm.get_ttbipmxy_corrections_clock(
                 y, include_forecast=1000
             ),
             update_interval_days=np.inf,
