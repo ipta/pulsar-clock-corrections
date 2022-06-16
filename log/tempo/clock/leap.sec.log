@@ -2,3 +2,5 @@
 2022-06-16 19:06:10.668 - Exception: Problem computing new value: Input values did not match the format class mjd:
 2022-06-16 19:10:19.803 - Exception: Problem computing new value Input values did not match the format class mjd: TypeError: Input values for mjd class must be finite doubles
 2022-06-16 19:11:15.424 - Unchanged
+2022-06-16 19:17:28.624 - Unchanged
+2022-06-16 19:19:35.220 - Unchanged

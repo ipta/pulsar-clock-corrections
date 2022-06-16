@@ -507,6 +507,8 @@ class CallableUpdater(FileUpdater):
             |:--- |:--- |
             | File | `{self.filename}` |
             | Authority | {self.authority} |
+            | File start | {short_date(self.tstart)} MJD {self.tstart.mjd:.1f} |
+            | File end | {short_date(self.tend)} MJD {self.tend.mjd:.1f} |
             | Update interval (days) | {self.update_interval_days} |
             | Last update attempt | {short_date(last_date)} |
             | Last update result | {result} |
