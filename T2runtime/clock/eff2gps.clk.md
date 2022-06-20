@@ -17,7 +17,7 @@ the comments.
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 1993-11-29 MJD 49320.0 |
-| Clock file end | 2015-06-21 MJD 57194.5 |
+| Clock file end | 2015-06-22 MJD 57195.5 |
 | Update interval (days) | 7 |
 | Last update attempt | 2022-06-15 |
 | Last update result | Unchanged |

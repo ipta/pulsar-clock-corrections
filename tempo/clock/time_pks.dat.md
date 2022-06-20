@@ -17,7 +17,7 @@ in the same file, distinguished only by observatory code.
 | Format | tempo |
 | Bogus last correction | True |
 | Clock file start | 1979-05-07 MJD 44000.0 |
-| Clock file end | 2011-07-02 MJD 55745.0 |
+| Clock file end | 2011-07-03 MJD 55745.8 |
 | Update interval (days) | 7 |
 | Last update attempt | 2022-06-16 |
 | Last update result | Validation failed |

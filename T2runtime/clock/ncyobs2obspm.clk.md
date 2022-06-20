@@ -14,7 +14,7 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 1988-05-18 MJD 47299.6 |
-| Clock file end | 2021-11-01 MJD 59519.0 |
+| Clock file end | 2021-11-01 MJD 59519.6 |
 | Update interval (days) | 7 |
 | Last update attempt | 2022-06-15 |
 | Last update result | Unchanged |

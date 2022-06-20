@@ -24,7 +24,7 @@ are from the column C0').
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 1996-03-27 MJD 50169.0 |
-| Clock file end | 2020-10-26 MJD 59148.0 |
+| Clock file end | 2020-10-27 MJD 59149.0 |
 | Update interval (days) | 7 |
 | Last update attempt | 2022-06-16 |
 | Last update result | Unchanged |

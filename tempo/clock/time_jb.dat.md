@@ -14,7 +14,7 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 | Format | tempo |
 | Bogus last correction | True |
 | Clock file start | 2006-10-13 MJD 54021.4 |
-| Clock file end | 2019-05-13 MJD 58616.1 |
+| Clock file end | 2019-05-13 MJD 58616.2 |
 | Update interval (days) | 7 |
 | Last update attempt | 2022-06-16 |
 | Last update result | Unchanged |
