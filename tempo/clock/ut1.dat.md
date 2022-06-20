@@ -35,8 +35,6 @@ If there are any questions, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
-2022-06-18 20:32:01.076 - Unchanged
-2022-06-19 20:32:51.833 - Unchanged
 2022-06-20 20:34:16.038 - Unchanged
 2022-06-20 22:09:01.968 - Updated
 2022-06-20 22:10:42.058 - Unchanged
@@ -45,5 +43,7 @@ Log entries from the last few update attempts:
 2022-06-20 22:16:33.900 - Unchanged
 2022-06-20 22:20:22.571 - Unchanged
 2022-06-20 22:21:52.605 - Unchanged
+2022-06-20 23:00:56.286 - Unchanged
+2022-06-20 23:01:14.223 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/ut1.dat.log)
