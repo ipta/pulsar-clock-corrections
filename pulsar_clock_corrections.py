@@ -597,8 +597,11 @@ def updater_summary_table(updaters, detail_urls=False):
     print(f"|:--- |:--- | --- | --- | --- |:--- ", file=o)
     for u in updaters:
         last_date, result, details = u.parse_log_entry(u.last_log_entry)
-        if result not in {"Unchanged", "Updated"}:
+        if hasattr(u, "download_url") and u.download_url is None and not np.isfinite(u.update_interval_days):
+            result = "Static"
+        elif result not in {"Unchanged", "Updated"}:
             result = "**" + result + "**"
+
         detail_url = u.filename + ".html"
         if detail_urls:
             print(
