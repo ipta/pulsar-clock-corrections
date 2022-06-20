@@ -29,6 +29,8 @@ tempo/clock/time_nuppi.dat                         7.0   ---
 T2runtime/clock/mk2utc.clk                         7.0   ---
 T2runtime/clock/mo2gps.clk                         7.0   ---
 T2runtime/clock/ncyobs2obspm.clk                   7.0   ---
+T2runtime/clock/chime2gps.clk                      inf   ---
+T2runtime/clock/gmrt2gps.clk                       inf   ---
 T2runtime/clock/obspm2gps.clk                      7.0   ---
 tempo/clock/leap.sec                               0.0   ---
 tempo/clock/ut1.dat                                0.0   ---

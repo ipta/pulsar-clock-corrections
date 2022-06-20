@@ -200,11 +200,19 @@ class ClockFileUpdater(FileUpdater):
 
     @property
     def tstart(self):
+        if self.clock_file is None:
+            return None
+        if len(self.clock_file.time)==0:
+            return None
         return self.clock_file.time[0]
 
     @property
     def tend(self):
-        return self._clock_file.time[-2 if self.bogus_last_correction else -1]
+        if self.clock_file is None:
+            return None
+        if len(self.clock_file.time)==0:
+            return None
+        return self._clock_file.time[-1]
 
     def validate(self, new_file):
         old = self.clock_file
@@ -260,8 +268,8 @@ class ClockFileUpdater(FileUpdater):
             | Original download URL | <{self.download_url}> |
             | Format | {self.format} |
             | Bogus last correction | {self.bogus_last_correction} |
-            | Clock file start | {short_date(self.tstart)} MJD {self.tstart.mjd:.1f} |
-            | Clock file end | {short_date(self.tend)} MJD {self.tend.mjd:.1f} |
+            | Clock file start | {short_date_and_mjd(self.tstart)} |
+            | Clock file end | {short_date_and_mjd(self.tend)} |
             | Update interval (days) | {self.update_interval_days} |
             | Last update attempt | {short_date(last_date)} |
             | Last update result | {result} |
@@ -507,8 +515,8 @@ class CallableUpdater(FileUpdater):
             |:--- |:--- |
             | File | `{self.filename}` |
             | Authority | {self.authority} |
-            | File start | {short_date(self.tstart)} MJD {self.tstart.mjd:.1f} |
-            | File end | {short_date(self.tend)} MJD {self.tend.mjd:.1f} |
+            | File start | {short_date_and_mjd(self.tstart)} |
+            | File end | {short_date_and_mjd(self.tend)} |
             | Update interval (days) | {self.update_interval_days} |
             | Last update attempt | {short_date(last_date)} |
             | Last update result | {result} |
@@ -556,18 +564,23 @@ def try_all_updates(respect_interval=True):
 
 
 def short_date(t):
-    return t.datetime.strftime("%Y-%m-%d")
+    if t is None:
+        return "---"
+    else:
+        return t.datetime.strftime("%Y-%m-%d")
+
+def short_date_and_mjd(t):
+    if t is None:
+        return "---"
+    else:
+        return f"{short_date(t)} MJD {t.mjd:.1f}"
 
 
 def generate_index_txt():
     with open(base_location() / "index.txt", "wt") as f:
         print(f"{'# File':40s} {'Update (days)':13s}   Invalid if older than", file=f)
         for u in updaters:
-            if u.invalid_if_older_than is not None:
-                d = short_date(u.invalid_if_older_than)
-            else:
-                d = "---"
-            print(f"{u.filename:40s} {u.update_interval_days:13.1f}   {d}", file=f)
+            print(f"{u.filename:40s} {u.update_interval_days:13.1f}   {short_date(u.invalid_if_older_than)}", file=f)
 
 
 def updater_summary_table(updaters, detail_urls=False):
@@ -583,14 +596,6 @@ def updater_summary_table(updaters, detail_urls=False):
     )
     print(f"|:--- |:--- | --- | --- | --- |:--- ", file=o)
     for u in updaters:
-        if u.tstart is not None:
-            tstart_str = f"{short_date(u.tstart)} MJD {u.tstart.mjd:.1f}"
-        else:
-            tstart_str = "---"
-        if u.tend is not None:
-            tend_str = f"{short_date(u.tend)} MJD {u.tend.mjd:.1f}"
-        else:
-            tend_str = "---"
         last_date, result, details = u.parse_log_entry(u.last_log_entry)
         if result not in {"Unchanged", "Updated"}:
             result = "**" + result + "**"
@@ -599,8 +604,8 @@ def updater_summary_table(updaters, detail_urls=False):
             print(
                 f"| [{u.short_description}]({detail_url}) "
                 f"| `{u.filename}` "
-                f"| {tstart_str} "
-                f"| {tend_str} "
+                f"| {short_date_and_mjd(u.tstart)} "
+                f"| {short_date_and_mjd(u.tend)} "
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
@@ -609,8 +614,8 @@ def updater_summary_table(updaters, detail_urls=False):
             print(
                 f"| {u.short_description} "
                 f"| `{u.filename}` "
-                f"| {tstart_str} "
-                f"| {tend_str} "
+                f"| {short_date_and_mjd(u.tstart)} "
+                f"| {short_date_and_mjd(u.tend)} "
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
@@ -1219,20 +1224,6 @@ updaters.append(
         """,
     )
 )
-# updaters.append(
-#    ClockFileUpdater(
-#        "GMRT",
-#        "T2runtime/clock/gmrt2gps.clk",
-#        download_url=tempo2_repository_url.format("gmrt2gps.clk"),
-#        authority="temporary",
-#        format="tempo2",
-#        bogus_last_correction=True,
-#        description="""Giant Metrewave Radio Telescope clock corrections
-#
-#            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
-#        """,
-#    )
-# )
 updaters.append(
     ClockFileUpdater(
         "Meerkat",
@@ -1272,6 +1263,38 @@ updaters.append(
         description="""Nancay-related clock corrections?
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "CHIME",
+        "T2runtime/clock/chime2gps.clk",
+        authority="observatory",
+        format="tempo2",
+        bogus_last_correction=True,
+        update_interval_days=np.inf,
+        description="""CHIME (null) clock corrections
+
+            CHIME records data directly against GPS time, and thus no clock
+            corrections are necessary. This file is a placeholder to make that
+            obvious.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "GMRT",
+        "T2runtime/clock/gmrt2gps.clk",
+        authority="observatory",
+        format="tempo2",
+        bogus_last_correction=True,
+        update_interval_days=np.inf,
+        description="""GMRT (null) clock corrections
+
+            The GMRT records data directly against GPS time, and thus no clock
+            corrections are necessary. This file is a placeholder to make that
+            obvious.
         """,
     )
 )

@@ -1,0 +1,6 @@
+# UTC(GMRT) UTC(GPS)
+# The GMRT references its data directly to GPS time and therefore
+# requires no clock corrections. This file exists to make that 
+# explicit.
+0 0
+99999 0
