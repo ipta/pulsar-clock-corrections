@@ -13,13 +13,13 @@ name of each clock file links to a page with more details.
 
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
-| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2022-05-30 MJD 59729.0 | 2022-06-20 | Unchanged 
-| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2022-05-30 MJD 59729.0 | 2022-06-20 | Unchanged 
-| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2022-05-30 MJD 59729.0 | 2022-06-20 | Unchanged 
-| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-06-19 MJD 59749.5 | 2022-06-20 | Updated 
-| [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-06-19 MJD 59749.5 | 2022-06-20 | Updated 
-| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2022-06-20 | Unchanged 
-| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2023-06-17 MJD 60112.0 | 2022-06-20 | Unchanged 
+| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2022-05-30 MJD 59729.0 | 2022-06-21 | Unchanged 
+| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2022-05-30 MJD 59729.0 | 2022-06-21 | Unchanged 
+| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2022-05-30 MJD 59729.0 | 2022-06-21 | Unchanged 
+| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-06-20 MJD 59750.5 | 2022-06-21 | Updated 
+| [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-06-20 MJD 59750.5 | 2022-06-21 | Updated 
+| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2022-06-21 | Unchanged 
+| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2023-06-24 MJD 60119.0 | 2022-06-21 | Updated 
 
 
 
@@ -28,15 +28,15 @@ name of each clock file links to a page with more details.
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
 | [Arecibo](tempo/clock/time_ao.dat.html) | `tempo/clock/time_ao.dat` | 1982-11-29 MJD 45302.8 | 2020-08-18 MJD 59079.0 | 2022-05-26 | Updated 
-| [Arecibo (TEMPO2 converted from TEMPO)](T2runtime/clock/ao2gps.clk.html) | `T2runtime/clock/ao2gps.clk` | 1996-03-13 MJD 50155.0 | 2020-08-18 MJD 59079.0 | 2022-06-01 | Updated 
+| [Arecibo (TEMPO2 converted from TEMPO)](T2runtime/clock/ao2gps.clk.html) | `T2runtime/clock/ao2gps.clk` | 1996-03-13 MJD 50155.0 | 2020-08-18 MJD 59079.0 | 2022-06-01 | Static 
 | [Arecibo (TEMPO2)](T2runtime/clock/ao2gps_tempo2.clk.html) | `T2runtime/clock/ao2gps_tempo2.clk` | 1996-03-13 MJD 50155.0 | 2019-12-18 MJD 58835.0 | 2022-05-26 | Unchanged 
 | [Arecibo to NIST (TEMPO2)](T2runtime/clock/ao2nist.clk.html) | `T2runtime/clock/ao2nist.clk` | 1982-11-29 MJD 45302.8 | 1994-11-29 MJD 49685.4 | 2022-05-26 | Unchanged 
 | [GB140](tempo/clock/time_gb140.dat.html) | `tempo/clock/time_gb140.dat` | 1993-11-29 MJD 49320.5 | 1999-07-31 MJD 51390.5 | 2022-06-01 | Updated 
 | [GB853](tempo/clock/time_gb853.dat.html) | `tempo/clock/time_gb853.dat` | 1997-07-04 MJD 50634.0 | 1997-08-28 MJD 50688.4 | 2022-06-01 | Unchanged 
-| [CHIME](T2runtime/clock/chime2gps.clk.html) | `T2runtime/clock/chime2gps.clk` | --- | --- | 2022-06-20 | **No way to download** 
-| [GMRT](T2runtime/clock/gmrt2gps.clk.html) | `T2runtime/clock/gmrt2gps.clk` | --- | --- | 2022-06-01 | **Failed to download** 
-| [TAI to TT(BIPM2021)](T2runtime/clock/tai2tt_bipm2021.clk.html) | `T2runtime/clock/tai2tt_bipm2021.clk` | 1975-06-26 MJD 42589.0 | 2024-09-26 MJD 60579.0 | 2022-06-13 | Updated 
-| [TAI to TT(BIPM2020)](T2runtime/clock/tai2tt_bipm2020.clk.html) | `T2runtime/clock/tai2tt_bipm2020.clk` | 1975-06-26 MJD 42589.0 | 2024-09-26 MJD 60579.0 | 2022-06-13 | Updated 
+| [CHIME](T2runtime/clock/chime2gps.clk.html) | `T2runtime/clock/chime2gps.clk` | --- | --- | 2022-06-20 | Static 
+| [GMRT](T2runtime/clock/gmrt2gps.clk.html) | `T2runtime/clock/gmrt2gps.clk` | --- | --- | 2022-06-01 | Static 
+| [TAI to TT(BIPM2021)](T2runtime/clock/tai2tt_bipm2021.clk.html) | `T2runtime/clock/tai2tt_bipm2021.clk` | 1975-06-26 MJD 42589.0 | 2024-09-26 MJD 60579.0 | 2022-06-13 | Static 
+| [TAI to TT(BIPM2020)](T2runtime/clock/tai2tt_bipm2020.clk.html) | `T2runtime/clock/tai2tt_bipm2020.clk` | 1975-06-26 MJD 42589.0 | 2024-09-26 MJD 60579.0 | 2022-06-13 | Static 
 | [TAI to TT(BIPM2019)](T2runtime/clock/tai2tt_bipm2019.clk.html) | `T2runtime/clock/tai2tt_bipm2019.clk` | 1975-06-26 MJD 42589.0 | 2050-07-13 MJD 70000.0 | 2022-06-13 | Unchanged 
 | [TAI to TT(BIPM2018)](T2runtime/clock/tai2tt_bipm2018.clk.html) | `T2runtime/clock/tai2tt_bipm2018.clk` | 1975-06-26 MJD 42589.0 | 2036-11-03 MJD 65000.0 | 2022-06-13 | Unchanged 
 | [TAI to TT(BIPM2017)](T2runtime/clock/tai2tt_bipm2017.clk.html) | `T2runtime/clock/tai2tt_bipm2017.clk` | 1975-06-26 MJD 42589.0 | 2020-10-27 MJD 59149.0 | 2022-06-13 | Unchanged 
