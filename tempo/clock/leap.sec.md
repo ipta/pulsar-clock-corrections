@@ -21,7 +21,7 @@ If there are any questions, contact Anne Archibald
 | File start | 1972-07-01 MJD 41499.0 |
 | File end | 2017-01-01 MJD 57754.0 |
 | Update interval (days) | 0 |
-| Last update attempt | 2022-06-20 |
+| Last update attempt | 2022-06-22 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:

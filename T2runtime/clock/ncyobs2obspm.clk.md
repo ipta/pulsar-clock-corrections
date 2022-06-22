@@ -16,13 +16,14 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Clock file start | 1988-05-18 MJD 47299.6 |
 | Clock file end | 2021-11-01 MJD 59519.6 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-06-15 |
+| Last update attempt | 2022-06-22 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
 2022-06-08 17:10:53.579 - Unchanged
 2022-06-15 16:45:35.324 - Unchanged
+2022-06-22 20:32:55.121 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ncyobs2obspm.clk.log)
 
