@@ -83,14 +83,10 @@ $ git clone https://github.com/nanograv/pulsar-clock-corrections.git
 
 ### PINT
 
-If you use PINT, you are probably aware that it is in active development. At
-the moment, the best way to get up-to-date clock corrections is to ask the
-maintainers to update the clock corrections in PINT. But as of 2022 June 2,
-there is a pull request under active development to make PINT request
-up-to-date clock corrections directly from the repository. Long-term, the
-intention of the PINT developers is that you need not do anything to obtain
-up-to-date clock corrections from this repository.
-
+As of 2022 June 22, the current version of PINT automatically fetches
+up-to-date versions of these clock files. You need do nothing; if you need to operate
+PINT without Net access, or you want to override these clock files, see the
+PINT documentation.
 
 ### Further information:
 
