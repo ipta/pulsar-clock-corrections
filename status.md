@@ -18,8 +18,9 @@ name of each clock file links to a page with more details.
 | [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2022-05-30 MJD 59729.0 | 2022-06-22 | Unchanged 
 | [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-06-21 MJD 59751.5 | 2022-06-22 | Updated 
 | [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-06-21 MJD 59751.5 | 2022-06-22 | Updated 
-| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2022-06-22 | Unchanged 
-| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2023-06-24 MJD 60119.0 | 2022-06-22 | Unchanged 
+| [Meerkat (observatory)](T2runtime/clock/mk2utc_observatory.clk.html) | `T2runtime/clock/mk2utc_observatory.clk` | 2019-01-01 MJD 58484.0 | 2022-06-16 MJD 59747.0 | 2022-06-23 | Updated 
+| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2022-06-23 | Unchanged 
+| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2023-06-17 MJD 60112.0 | 2022-06-23 | Unchanged 
 
 
 
@@ -75,7 +76,7 @@ name of each clock file links to a page with more details.
 | [Effelsberg](T2runtime/clock/eff2gps.clk.html) | `T2runtime/clock/eff2gps.clk` | 1993-11-29 MJD 49320.0 | 2015-06-22 MJD 57195.5 | 2022-06-22 | Unchanged 
 | [Effelsberg Asterix/PSRix](T2runtime/clock/effix2gps.clk.html) | `T2runtime/clock/effix2gps.clk` | 2011-01-01 MJD 55562.5 | 2021-03-21 MJD 59294.5 | 2022-06-22 | Unchanged 
 | [NUPPI](tempo/clock/time_nuppi.dat.html) | `tempo/clock/time_nuppi.dat` | 2005-03-07 MJD 53436.0 | 2015-11-08 MJD 57334.6 | 2022-06-16 | Unchanged 
-| [Meerkat](T2runtime/clock/mk2utc.clk.html) | `T2runtime/clock/mk2utc.clk` | 2019-01-01 MJD 58484.0 | 2021-02-22 MJD 59268.0 | 2022-06-22 | Unchanged 
+| [Meerkat (TEMPO2)](T2runtime/clock/mk2utc.clk.html) | `T2runtime/clock/mk2utc.clk` | 2019-01-01 MJD 58484.0 | 2021-02-22 MJD 59268.0 | 2022-06-22 | Unchanged 
 | [MOST](T2runtime/clock/mo2gps.clk.html) | `T2runtime/clock/mo2gps.clk` | 2003-12-27 MJD 53000.0 | 2018-09-06 MJD 58367.0 | 2022-06-22 | Unchanged 
 | [Nancay to obspm](T2runtime/clock/ncyobs2obspm.clk.html) | `T2runtime/clock/ncyobs2obspm.clk` | 1988-05-18 MJD 47299.6 | 2021-11-01 MJD 59519.6 | 2022-06-22 | Unchanged 
 | [obspm](T2runtime/clock/obspm2gps.clk.html) | `T2runtime/clock/obspm2gps.clk` | 2003-12-01 MJD 52974.0 | 2021-08-28 MJD 59454.0 | 2022-06-22 | Unchanged 

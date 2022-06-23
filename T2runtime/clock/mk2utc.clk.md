@@ -1,5 +1,5 @@
 
-## Meerkat
+## Meerkat (TEMPO2)
 
 MeerKAT clock corrections file (TEMPO2)
 
