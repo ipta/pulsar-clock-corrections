@@ -1242,6 +1242,7 @@ updaters.append(
             for TEMPO2 as it has a header line "# UTC(MK) UTC" when TEMPO2
             would expect "# UTC(meerkat) UTC" or "# UTC(meerkat) UTC(GPS)".
 
+            If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
         """,
     )
 )
