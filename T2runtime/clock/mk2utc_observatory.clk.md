@@ -8,6 +8,8 @@ clock difference from (I think) GPS. It may cause some problems
 for TEMPO2 as it has a header line "# UTC(MK) UTC" when TEMPO2
 would expect "# UTC(meerkat) UTC" or "# UTC(meerkat) UTC(GPS)".
 
+If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
+
 |     |     |
 |:--- |:--- |
 | File | `T2runtime/clock/mk2utc_observatory.clk` |
