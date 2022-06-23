@@ -114,7 +114,7 @@ class FileUpdater:
         raise NotImplementedError
 
     def try_update(self, cache=False, respect_interval=True, force=False):
-        if not force and not self.needs_update():
+        if not force and respect_interval and not self.needs_update():
             # No new data to be had, no log entry
             return True
         try:
@@ -1229,7 +1229,25 @@ updaters.append(
 )
 updaters.append(
     ClockFileUpdater(
-        "Meerkat",
+        "Meerkat (observatory)",
+        "T2runtime/clock/mk2utc_observatory.clk",
+        download_url="https://archive-gw-1.kat.ac.za/public/tfr/mk2utc.clk",
+        authority="observatory",
+        format="tempo2",
+        bogus_last_correction=False,
+        description="""MeerKAT clock corrections file
+
+            This file is distributed by the observatory. It records the local
+            clock difference from (I think) GPS. It may cause some problems
+            for TEMPO2 as it has a header line "# UTC(MK) UTC" when TEMPO2
+            would expect "# UTC(meerkat) UTC" or "# UTC(meerkat) UTC(GPS)".
+
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Meerkat (TEMPO2)",
         "T2runtime/clock/mk2utc.clk",
         download_url=tempo2_repository_url.format("mk2utc.clk"),
         authority="temporary",
