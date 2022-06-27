@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Download up-to-date clock corrections to $TEMPO or $TEMPO2.
 
 This script should run on any system with python3 - it should *not* require
@@ -50,7 +51,7 @@ def download_corrections():
         file_url = public_repo_url_raw + str(filename)
         log.info(f"Downloading {filename} from {file_url} to {local_filename}")
         # FIXME: make sure the file was successfully downloaded before writing anything
-        contents = urlopen(index_url).read().decode("utf-8")
+        contents = urlopen(file_url).read().decode("utf-8")
         if local_filename.exists():
             old_contents = local_filename.read_text()
             lc = len(contents.split("\n"))
