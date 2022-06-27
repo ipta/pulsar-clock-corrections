@@ -9,7 +9,7 @@ but I will recommend a specific simple approach.
 
 ### TEMPO and TEMPO2
 
-The script `download-clock-corrections.py` downloads all clock files into the
+The script [`download-clock-corrections.py`](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/download-clock-corrections.py) downloads all clock files into the
 directories pointed to by your `$TEMPO` and `$TEMPO2` environment variables. Simply
 running the script should immediately replace (!) all clock files with the
 versions stored in the repository. You will get reports on the update process -
