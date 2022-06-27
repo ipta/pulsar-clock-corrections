@@ -4,6 +4,10 @@
 Effelsberg Asterix/PSRix clock correction file
 
 This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+The European Pulsar Timing Array maintains an internal repository
+of clock corrections, which they have transferred to the TEMPO2
+repository, so  EPTA telescope data in the TEMPO2 repository (and
+thus here) can be expected to be somewhat up to date.
 
 |     |     |
 |:--- |:--- |
