@@ -190,12 +190,19 @@ class ClockFileUpdater(FileUpdater):
     @property
     def clock_file(self):
         if self._clock_file is None:
-            self._clock_file = ClockFile.read(
-                str(base_location() / self.filename),
-                format=self.format,
-                bogus_last_correction=self.bogus_last_correction,
-                obscode=self.obscode,
-            )
+            if self.obscode is not None:
+                self._clock_file = ClockFile.read(
+                    str(base_location() / self.filename),
+                    format=self.format,
+                    bogus_last_correction=self.bogus_last_correction,
+                    obscode=self.obscode,
+                )
+            else:
+                self._clock_file = ClockFile.read(
+                    str(base_location() / self.filename),
+                    format=self.format,
+                    bogus_last_correction=self.bogus_last_correction,
+                )
         return self._clock_file
 
     @property
@@ -217,12 +224,19 @@ class ClockFileUpdater(FileUpdater):
     def validate(self, new_file):
         old = self.clock_file
         try:
-            new = ClockFile.read(
-                str(new_file),
-                format=self.format,
-                bogus_last_correction=self.bogus_last_correction,
-                obscode=self.obscode,
-            )
+            if self.obscode is not None:
+                new = ClockFile.read(
+                    str(new_file),
+                    format=self.format,
+                    bogus_last_correction=self.bogus_last_correction,
+                    obscode=self.obscode,
+                )
+            else:
+                new = ClockFile.read(
+                    str(new_file),
+                    format=self.format,
+                    bogus_last_correction=self.bogus_last_correction,
+                )
         except ValueError as e:
             raise ValidationError(f"Unable to read new version of {self.filename}: {e}")
         if len(old.time) > len(new.time):
@@ -886,6 +900,11 @@ updaters.append(
         description="""Jodrell Bank clock corrections file (TEMPO2)
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+
+            The European Pulsar Timing Array maintains an internal repository
+            of clock corrections, which they have transferred to the TEMPO2
+            repository, so  EPTA telescope data in the TEMPO2 repository (and
+            thus here) can be expected to be somewhat up to date.
         """,
     )
 )
@@ -1211,6 +1230,10 @@ updaters.append(
         description="""Effelsberg Asterix/PSRix clock correction file
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            The European Pulsar Timing Array maintains an internal repository
+            of clock corrections, which they have transferred to the TEMPO2
+            repository, so  EPTA telescope data in the TEMPO2 repository (and
+            thus here) can be expected to be somewhat up to date.
         """,
     )
 )
@@ -1285,6 +1308,11 @@ updaters.append(
         description="""Nancay-related clock corrections?
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+
+            The European Pulsar Timing Array maintains an internal repository
+            of clock corrections, which they have transferred to the TEMPO2
+            repository, so  EPTA telescope data in the TEMPO2 repository (and
+            thus here) can be expected to be somewhat up to date.
         """,
     )
 )
@@ -1331,6 +1359,11 @@ updaters.append(
         description="""Nancay-related clock corrections?
 
             This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+
+            The European Pulsar Timing Array maintains an internal repository
+            of clock corrections, which they have transferred to the TEMPO2
+            repository, so  EPTA telescope data in the TEMPO2 repository (and
+            thus here) can be expected to be somewhat up to date.
         """,
     )
 )

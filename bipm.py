@@ -181,7 +181,7 @@ def get_gps_c0():
     comments[
         len(a) - 1
     ] = "\n# These entries are from https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss"
-    c = pint.observatory.clock_file.ConstructedClockFile(
+    c = pint.observatory.clock_file.ClockFile(
         mjd=mjds,
         clock=c0s * u.ns,
         comments=comments,
@@ -218,7 +218,7 @@ def get_gps_c0p():
     """
     )
     comments = [""] * len(c0ps)
-    c = pint.observatory.clock_file.ConstructedClockFile(
+    c = pint.observatory.clock_file.ClockFile(
         mjd=mjds,
         clock=c0ps * u.ns,
         comments=comments,
@@ -272,7 +272,7 @@ def get_gps_merged():
     comments[
         len(a) - 1
     ] = "\n# These entries are from https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss\n# These entries are based on C0' values."
-    c = pint.observatory.clock_file.ConstructedClockFile(
+    c = pint.observatory.clock_file.ClockFile(
         mjd=mjds,
         clock=c0s * u.ns,
         comments=comments,
@@ -360,7 +360,7 @@ def get_ttbipmxy_corrections_clock(year, include_forecast=1000):
     all_corr_s = np.concatenate([corr_s, extra_corr_s])
     comments = [""] * len(all_mjds)
     comments[len(mjds)-1] = "\n# Extrapolation starts here"
-    c = pint.observatory.clock_file.ConstructedClockFile(
+    c = pint.observatory.clock_file.ClockFile(
         mjd=all_mjds,
         clock=all_corr_s * u.s,
         comments=comments,
