@@ -876,7 +876,7 @@ updaters.append(
 
 updaters.append(
     ClockFileUpdater(
-        "Jodrell Bank",
+        "Jodrell Bank (TEMPO)",
         "tempo/clock/time_jb.dat",
         download_url=tempo_repository_url.format("time_jb.dat"),
         authority="temporary",
@@ -891,20 +891,65 @@ updaters.append(
 )
 updaters.append(
     ClockFileUpdater(
-        "Jodrell Bank (TEMPO2)",
+        "Jodrell Bank",
         "T2runtime/clock/jb2gps.clk",
         download_url=tempo2_repository_url.format("jb2gps.clk"),
-        authority="temporary",
+        authority="observatory",
         format="tempo2",
         bogus_last_correction=True,
         description="""Jodrell Bank clock corrections file (TEMPO2)
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            Michael Keith periodically generates, manually checks, and updates
+            this file in the TEMPO2 repository.
 
-            The European Pulsar Timing Array maintains an internal repository
-            of clock corrections, which they have transferred to the TEMPO2
-            repository, so  EPTA telescope data in the TEMPO2 repository (and
-            thus here) can be expected to be somewhat up to date.
+            Note that this contains only corrections for the main site clock;
+            data observed with a specific backend (Roach or DFB) also
+            need the corrections associated with that backend.
+
+            If questions arise, contact Michael Keith
+            <Michael.Keith@manchester.ac.uk>.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Jodrell Bank Roach",
+        "T2runtime/clock/jbroach2jb.clk",
+        download_url=tempo2_repository_url.format("jbroach2jb.clk"),
+        authority="observatory",
+        format="tempo2",
+        bogus_last_correction=True,
+        description="""Jodrell Bank Roach backend
+
+            Michael Keith periodically generates, manually checks, and updates
+            this file in the TEMPO2 repository.
+
+            Note that this contains corrections for the Roach backend referenced
+            to the observatory clock.
+
+            If questions arise, contact Michael Keith
+            <Michael.Keith@manchester.ac.uk>.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Jodrell Bank DFB",
+        "T2runtime/clock/jbdfb2jb.clk",
+        download_url=tempo2_repository_url.format("jbdfb2jb.clk"),
+        authority="observatory",
+        format="tempo2",
+        bogus_last_correction=True,
+        description="""Jodrell Bank DFB backend
+
+            Michael Keith periodically generates, manually checks, and updates
+            this file in the TEMPO2 repository.
+
+            Note that this contains corrections for the DFB backend referenced
+            to the observatory clock.
+
+            If questions arise, contact Michael Keith
+            <Michael.Keith@manchester.ac.uk>.
         """,
     )
 )
