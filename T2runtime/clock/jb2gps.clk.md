@@ -24,7 +24,7 @@ If questions arise, contact Michael Keith
 | Clock file start | 2006-10-13 MJD 54021.4 |
 | Clock file end | 2021-11-03 MJD 59521.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-06-22 |
+| Last update attempt | 2022-06-29 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
@@ -33,6 +33,7 @@ Log entries from the last few update attempts:
 2022-06-07 13:34:28.162 - Unchanged
 2022-06-15 16:45:26.848 - Unchanged
 2022-06-22 20:32:53.220 - Unchanged
+2022-06-29 20:36:07.527 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/jb2gps.clk.log)
 
