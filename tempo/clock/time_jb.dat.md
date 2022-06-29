@@ -1,5 +1,5 @@
 
-## Jodrell Bank
+## Jodrell Bank (TEMPO)
 
 Jodrell Bank clock correction file
 

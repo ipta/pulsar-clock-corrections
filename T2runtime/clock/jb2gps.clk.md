@@ -1,19 +1,22 @@
 
-## Jodrell Bank (TEMPO2)
+## Jodrell Bank
 
 Jodrell Bank clock corrections file (TEMPO2)
 
-This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+Michael Keith periodically generates, manually checks, and updates
+this file in the TEMPO2 repository.
 
-The European Pulsar Timing Array maintains an internal repository
-of clock corrections, which they have transferred to the TEMPO2
-repository, so  EPTA telescope data in the TEMPO2 repository (and
-thus here) can be expected to be somewhat up to date.
+Note that this contains only corrections for the main site clock;
+data observed with a specific backend (Roach or DFB) also
+need the corrections associated with that backend.
+
+If questions arise, contact Michael Keith
+<Michael.Keith@manchester.ac.uk>.
 
 |     |     |
 |:--- |:--- |
 | File | `T2runtime/clock/jb2gps.clk` |
-| Authority | temporary |
+| Authority | observatory |
 | URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/jb2gps.clk> |
 | Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/jb2gps.clk> |
 | Format | tempo2 |
