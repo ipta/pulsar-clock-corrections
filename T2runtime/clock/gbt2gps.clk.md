@@ -23,29 +23,29 @@ If questions arise about the conversion, contact Anne Archibald
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2022-06-30 MJD 59760.5 |
+| Clock file end | 2022-07-03 MJD 59763.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-07-01 |
-| Last update result | Updated |
+| Last update attempt | 2022-07-04 |
+| Last update result | Updated overriding validation failure |
 
 Log entries from the last few update attempts:
 ```
-2022-06-19 20:32:41.912 - Updated
-2022-06-20 20:34:08.816 - Updated
-2022-06-21 20:33:33.404 - Updated
-2022-06-22 20:32:52.827 - Updated
-2022-06-23 20:34:02.144 - Updated
-2022-06-27 10:54:30.838 - Updated
-2022-06-28 20:35:07.591 - Updated
-2022-06-29 20:36:06.578 - Updated
-2022-06-30 20:34:24.689 - Updated
 2022-07-01 20:35:04.611 - Updated
+2022-07-04 14:51:04.770 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 1 places
+2022-07-04 14:52:36.474 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 1 places
+2022-07-04 14:55:55.238 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 1 places
+2022-07-04 14:56:57.961 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 1 places
+2022-07-04 14:57:39.357 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 1 places
+2022-07-04 14:57:51.318 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 1 places
+2022-07-04 14:57:57.807 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 1 places
+2022-07-04 14:58:15.056 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 1 places
+2022-07-04 14:58:15.056 - Updated overriding validation failure
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 
 Leading comments from clock file:
 
-    # This file was automatically converted from tempo/clock/time_gbt.dat on 2022-07-01 20:35:04.543
+    # This file was automatically converted from tempo/clock/time_gbt.dat on 2022-07-04 14:58:15.019
 
 
 
