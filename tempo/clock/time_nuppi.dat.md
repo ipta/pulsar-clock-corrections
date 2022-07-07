@@ -16,7 +16,7 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 | Clock file start | 2005-03-07 MJD 53436.0 |
 | Clock file end | 2015-11-08 MJD 57334.6 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-06-30 |
+| Last update attempt | 2022-07-07 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
@@ -29,6 +29,7 @@ Log entries from the last few update attempts:
 2022-06-16 18:26:29.347 - Unchanged
 2022-06-23 20:34:10.893 - Unchanged
 2022-06-30 20:34:34.072 - Unchanged
+2022-07-07 20:34:07.912 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_nuppi.dat.log)
 
