@@ -2,3 +2,5 @@ theme: jekyll-theme-cayman
 include: 
 - tempo/clock/
 - T2runtime/clock/
+title: Pulsar Clock Corrections
+description: A global repository of observatory clock corrections suitable for precision pulsar timing. Clock corrections in this repository are kept up to date.
