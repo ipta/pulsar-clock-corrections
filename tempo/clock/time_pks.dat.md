@@ -19,12 +19,11 @@ in the same file, distinguished only by observatory code.
 | Clock file start | 1979-05-07 MJD 44000.0 |
 | Clock file end | 2011-07-03 MJD 55745.8 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-07-21 |
+| Last update attempt | 2022-07-28 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2022-05-26 08:30:09.101 - Unchanged
 2022-05-26 08:35:06.984 - Unchanged
 2022-06-02 11:47:05.758 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-24192-5sncxo_8 in format tempo appears to be out of order
 2022-06-09 13:27:38.008 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-10364-7jnkh3d2 in format tempo appears to be out of order
@@ -34,6 +33,7 @@ Log entries from the last few update attempts:
 2022-07-07 20:34:07.360 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1640-8l29dqds appears to be out of order
 2022-07-14 20:34:56.831 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1679-msdd286f appears to be out of order
 2022-07-21 20:36:18.364 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2016-9yjuxc1r appears to be out of order
+2022-07-28 20:35:31.301 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1680-r06lf7o3 appears to be out of order
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_pks.dat.log)
 
