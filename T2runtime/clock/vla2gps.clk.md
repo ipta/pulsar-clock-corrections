@@ -16,7 +16,7 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Clock file start | 2015-02-01 MJD 57054.6 |
 | Clock file end | 2021-03-07 MJD 59280.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-07-27 |
+| Last update attempt | 2022-08-03 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
@@ -30,6 +30,7 @@ Log entries from the last few update attempts:
 2022-07-13 20:34:15.178 - Unchanged
 2022-07-20 20:36:47.734 - Unchanged
 2022-07-27 20:33:00.380 - Unchanged
+2022-08-03 20:34:45.876 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/vla2gps.clk.log)
 
