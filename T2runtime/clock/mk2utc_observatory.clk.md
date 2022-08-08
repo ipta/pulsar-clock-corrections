@@ -19,10 +19,10 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2019-01-01 MJD 58484.0 |
-| Clock file end | 2022-07-12 MJD 59773.0 |
+| Clock file end | 2022-07-26 MJD 59787.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-08-01 |
-| Last update result | Unchanged |
+| Last update attempt | 2022-08-08 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
@@ -34,6 +34,7 @@ Log entries from the last few update attempts:
 2022-07-18 20:34:30.484 - Unchanged
 2022-07-25 20:33:31.267 - Updated
 2022-08-01 20:37:43.896 - Unchanged
+2022-08-08 20:35:15.765 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
@@ -42,7 +43,7 @@ Leading comments from clock file:
     # Tie of Karoo Telescope Time to UTC
     # This file is from the KTT-GNSS sensor, and does not include circular-T
     # MJD = (SensorTime(us)/86400e6)+40587    15-minute snapshots
-    # Created at unix time 1658476499.660149 from KTT mySQL database.
+    # Created at unix time 1659513538.403479 from KTT mySQL database.
     #
     # MJD (days)   KTT-UTC (seconds)
     #------------------------------------------------------
