@@ -27,14 +27,13 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1993-01-01 MJD 48988.0 |
-| Clock file end | 2022-06-29 MJD 59759.0 |
+| Clock file end | 2022-07-29 MJD 59789.0 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-08-10 |
-| Last update result | Unchanged |
+| Last update attempt | 2022-08-11 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-08-01 20:37:40.520 - Unchanged
 2022-08-02 20:33:42.351 - Unchanged
 2022-08-03 20:34:42.933 - Unchanged
 2022-08-04 20:34:37.146 - Unchanged
@@ -44,6 +43,7 @@ Log entries from the last few update attempts:
 2022-08-08 20:35:10.673 - Unchanged
 2022-08-09 20:35:11.485 - Unchanged
 2022-08-10 20:34:01.785 - Unchanged
+2022-08-11 20:33:37.250 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc_cc.clk.log)
 
