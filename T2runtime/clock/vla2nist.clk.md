@@ -16,12 +16,11 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Clock file start | 1990-10-27 MJD 48191.2 |
 | Clock file end | 1993-11-13 MJD 49304.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-08-10 |
+| Last update attempt | 2022-08-17 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-06-07 13:34:29.524 - Unchanged
 2022-06-15 16:45:28.575 - Unchanged
 2022-06-22 20:32:53.609 - Unchanged
 2022-06-29 20:36:08.172 - Unchanged
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2022-07-27 20:33:00.871 - Unchanged
 2022-08-03 20:34:46.251 - Unchanged
 2022-08-10 20:34:05.733 - Unchanged
+2022-08-17 20:34:04.884 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/vla2nist.clk.log)
 
