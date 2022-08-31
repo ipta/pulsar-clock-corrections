@@ -209,7 +209,7 @@ class ClockFileUpdater(FileUpdater):
     def tstart(self):
         if self.clock_file is None:
             return None
-        if len(self.clock_file.time)==0:
+        if len(self.clock_file.time) == 0:
             return None
         return self.clock_file.time[0]
 
@@ -217,7 +217,7 @@ class ClockFileUpdater(FileUpdater):
     def tend(self):
         if self.clock_file is None:
             return None
-        if len(self.clock_file.time)==0:
+        if len(self.clock_file.time) == 0:
             return None
         return self._clock_file.time[-1]
 
@@ -248,7 +248,10 @@ class ClockFileUpdater(FileUpdater):
             raise ValidationError(
                 f"New version of {self.filename} MJDs differ from old version where they overlap in {np.sum(d)} places"
             )
-        d = old.clock != new.clock[: len(old.clock)]
+        if len(old.clock) > 0:
+            d = old.clock[:-1] != new.clock[: len(old.clock) - 1]
+        else:
+            d = old.clock != new.clock[: len(old.clock)]
         if np.any(d):
             raise ValidationError(
                 f"New version of {self.filename} clock corrections differ from old version where they overlap in {np.sum(d)} places"
@@ -472,6 +475,7 @@ class ClockFileCallableUpdater(ClockFileUpdater):
 
 class CallableUpdater(FileUpdater):
     """Updater for files that aren't clock files exactly."""
+
     def __init__(
         self,
         short_description,
@@ -583,6 +587,7 @@ def short_date(t):
     else:
         return t.datetime.strftime("%Y-%m-%d")
 
+
 def short_date_and_mjd(t):
     if t is None:
         return "---"
@@ -594,7 +599,10 @@ def generate_index_txt():
     with open(base_location() / "index.txt", "wt") as f:
         print(f"{'# File':40s} {'Update (days)':13s}   Invalid if older than", file=f)
         for u in updaters:
-            print(f"{u.filename:40s} {u.update_interval_days:13.1f}   {short_date(u.invalid_if_older_than)}", file=f)
+            print(
+                f"{u.filename:40s} {u.update_interval_days:13.1f}   {short_date(u.invalid_if_older_than)}",
+                file=f,
+            )
 
 
 def updater_summary_table(updaters, detail_urls=False):
@@ -611,7 +619,11 @@ def updater_summary_table(updaters, detail_urls=False):
     print(f"|:--- |:--- | --- | --- | --- |:--- ", file=o)
     for u in updaters:
         last_date, result, details = u.parse_log_entry(u.last_log_entry)
-        if hasattr(u, "download_url") and u.download_url is None and not np.isfinite(u.update_interval_days):
+        if (
+            hasattr(u, "download_url")
+            and u.download_url is None
+            and not np.isfinite(u.update_interval_days)
+        ):
             result = "Static"
         elif result not in {"Unchanged", "Updated"}:
             result = "**" + result + "**"
