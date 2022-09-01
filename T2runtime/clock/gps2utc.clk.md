@@ -30,14 +30,13 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1993-01-01 MJD 48988.0 |
-| Clock file end | 2022-06-29 MJD 59759.0 |
+| Clock file end | 2022-07-29 MJD 59789.0 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-08-31 |
-| Last update result | Validation failed |
+| Last update attempt | 2022-09-01 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-08-22 20:33:33.953 - Validation failed: New version of T2runtime/clock/gps2utc.clk clock corrections differ from old version where they overlap in 1 places
 2022-08-23 20:34:34.032 - Validation failed: New version of T2runtime/clock/gps2utc.clk clock corrections differ from old version where they overlap in 1 places
 2022-08-24 20:34:32.712 - Validation failed: New version of T2runtime/clock/gps2utc.clk clock corrections differ from old version where they overlap in 1 places
 2022-08-25 20:34:52.214 - Validation failed: New version of T2runtime/clock/gps2utc.clk clock corrections differ from old version where they overlap in 1 places
@@ -47,6 +46,7 @@ Log entries from the last few update attempts:
 2022-08-29 20:35:23.082 - Validation failed: New version of T2runtime/clock/gps2utc.clk clock corrections differ from old version where they overlap in 1 places
 2022-08-30 20:35:27.491 - Validation failed: New version of T2runtime/clock/gps2utc.clk clock corrections differ from old version where they overlap in 1 places
 2022-08-31 16:37:46.504 - Validation failed: New version of T2runtime/clock/gps2utc.clk has decreased from 10828 to 10798 measurements.
+2022-09-01 20:35:40.693 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc.clk.log)
 
