@@ -23,14 +23,13 @@ If questions arise about the conversion, contact Anne Archibald
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2022-08-31 MJD 59822.5 |
+| Clock file end | 2022-09-01 MJD 59823.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-09-01 |
+| Last update attempt | 2022-09-02 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-07-25 20:33:27.419 - Updated
 2022-07-26 20:32:24.976 - Updated
 2022-07-27 20:32:57.918 - Updated
 2022-07-28 20:35:28.492 - Updated
@@ -40,12 +39,13 @@ Log entries from the last few update attempts:
 2022-08-01 20:37:41.202 - Updated
 2022-08-31 16:39:03.349 - Updated
 2022-09-01 20:35:41.180 - Updated
+2022-09-02 20:34:53.274 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 
 Leading comments from clock file:
 
-    # This file was automatically converted from tempo/clock/time_gbt.dat on 2022-09-01 20:35:41.097
+    # This file was automatically converted from tempo/clock/time_gbt.dat on 2022-09-02 20:34:53.208
 
 
 
