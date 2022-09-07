@@ -16,12 +16,11 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Clock file start | 2013-03-20 MJD 56371.0 |
 | Clock file end | 2019-12-11 MJD 58828.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-08-31 |
+| Last update attempt | 2022-09-07 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-06-29 20:36:09.137 - Unchanged
 2022-07-06 20:33:09.809 - Unchanged
 2022-07-13 20:34:15.833 - Unchanged
 2022-07-20 20:36:48.508 - Unchanged
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2022-08-17 20:34:05.471 - Unchanged
 2022-08-24 20:34:37.625 - Unchanged
 2022-08-31 20:34:57.967 - Unchanged
+2022-09-07 20:40:07.975 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/srt2gps.clk.log)
 
