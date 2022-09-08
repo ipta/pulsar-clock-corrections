@@ -17,12 +17,11 @@ This file is pulled from the PINT repository and may not be fully up-to-date.
 | Clock file start | 1990-10-27 MJD 48191.2 |
 | Clock file end | 2021-03-07 MJD 59280.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-09-01 |
+| Last update attempt | 2022-09-08 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2022-06-30 20:34:30.703 - Failed to download: HTTP Error 404: Not Found
 2022-07-07 20:34:04.693 - Failed to download: HTTP Error 404: Not Found
 2022-07-14 20:34:55.420 - Failed to download: HTTP Error 404: Not Found
 2022-07-21 20:36:16.688 - Failed to download: HTTP Error 404: Not Found
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2022-08-18 20:36:50.640 - Failed to download: HTTP Error 404: Not Found
 2022-08-25 20:34:56.643 - Failed to download: HTTP Error 404: Not Found
 2022-09-01 20:35:42.422 - Failed to download: HTTP Error 404: Not Found
+2022-09-08 20:39:24.865 - Failed to download: HTTP Error 404: Not Found
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_vla.dat.log)
 
