@@ -32,12 +32,11 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 | Clock file start | 1993-01-01 MJD 48988.0 |
 | Clock file end | 2022-08-28 MJD 59819.0 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-09-09 |
-| Last update result | Updated |
+| Last update attempt | 2022-09-10 |
+| Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-08-31 16:37:46.504 - Validation failed: New version of T2runtime/clock/gps2utc.clk has decreased from 10828 to 10798 measurements.
 2022-09-01 20:35:40.693 - Updated
 2022-09-02 20:34:52.673 - Unchanged
 2022-09-03 20:34:22.297 - Unchanged
@@ -47,6 +46,7 @@ Log entries from the last few update attempts:
 2022-09-07 20:40:06.054 - Unchanged
 2022-09-08 20:39:22.234 - Unchanged
 2022-09-09 20:38:12.778 - Updated
+2022-09-10 20:36:42.366 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc.clk.log)
 
