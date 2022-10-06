@@ -19,12 +19,11 @@ should be the same information.
 | Clock file start | 1987-07-24 MJD 47000.0 |
 | Clock file end | 2007-12-24 MJD 54458.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-09-29 |
+| Last update attempt | 2022-10-06 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2022-07-28 20:35:31.041 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1680-ud_zwd6k appears to be out of order
 2022-08-04 20:34:40.942 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1668-scc6b50b appears to be out of order
 2022-08-11 20:33:40.256 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1654-l2sd24rf appears to be out of order
 2022-08-18 20:36:51.805 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1707-xtq_0u1k appears to be out of order
@@ -34,6 +33,7 @@ Log entries from the last few update attempts:
 2022-09-15 20:41:00.601 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1665-5wox4f37 appears to be out of order
 2022-09-22 20:39:27.254 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1731-9z7agicr appears to be out of order
 2022-09-29 20:43:08.152 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1670-r1ox93xv appears to be out of order
+2022-10-06 20:41:54.543 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1835-gtjyjp4z appears to be out of order
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_wsrt.dat.log)
 
