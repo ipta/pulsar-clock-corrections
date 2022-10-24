@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2022-10-05 MJD 59858.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-10-17 |
-| Last update result | Updated |
+| Last update attempt | 2022-10-24 |
+| Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-08-15 20:34:21.731 - Failed to download: The read operation timed out
 2022-08-22 20:33:37.370 - Unchanged
 2022-08-29 20:35:28.170 - Updated
 2022-09-05 20:35:40.782 - Failed to download: The read operation timed out
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2022-10-03 20:42:23.768 - Failed to download: The read operation timed out
 2022-10-10 20:41:57.569 - Updated
 2022-10-17 20:42:44.233 - Updated
+2022-10-24 20:43:28.588 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
