@@ -20,12 +20,11 @@ thus here) can be expected to be somewhat up to date.
 | Clock file start | 2011-01-01 MJD 55562.5 |
 | Clock file end | 2021-03-21 MJD 59294.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-10-26 |
+| Last update attempt | 2022-11-02 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-08-24 20:34:38.582 - Unchanged
 2022-08-31 20:34:58.353 - Unchanged
 2022-09-07 20:40:08.299 - Unchanged
 2022-09-14 20:39:54.477 - Unchanged
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2022-10-12 20:43:18.576 - Unchanged
 2022-10-19 20:43:39.877 - Unchanged
 2022-10-26 20:37:22.732 - Unchanged
+2022-11-02 20:34:13.535 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/effix2gps.clk.log)
 
