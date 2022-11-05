@@ -30,12 +30,11 @@ If there are any questions, contact Anne Archibald
 | File start | 1973-01-02 MJD 41684.0 |
 | File end | 2023-11-11 MJD 60259.0 |
 | Update interval (days) | 0 |
-| Last update attempt | 2022-11-04 |
+| Last update attempt | 2022-11-05 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-10-26 20:37:31.620 - Unchanged
 2022-10-27 20:36:50.659 - Updated
 2022-10-28 20:37:55.490 - Unchanged
 2022-10-29 20:35:27.827 - Unchanged
@@ -45,5 +44,6 @@ Log entries from the last few update attempts:
 2022-11-02 20:34:25.370 - Unchanged
 2022-11-03 20:29:02.697 - Updated
 2022-11-04 20:36:50.815 - Unchanged
+2022-11-05 20:35:49.505 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/ut1.dat.log)
