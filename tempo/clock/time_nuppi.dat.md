@@ -16,12 +16,11 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 | Clock file start | 2005-03-07 MJD 53436.0 |
 | Clock file end | 2015-11-08 MJD 57334.6 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-11-03 |
+| Last update attempt | 2022-11-10 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-09-01 20:35:43.966 - Unchanged
 2022-09-08 20:39:26.296 - Unchanged
 2022-09-15 20:41:02.222 - Unchanged
 2022-09-22 20:39:27.986 - Unchanged
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2022-10-20 20:43:24.439 - Unchanged
 2022-10-27 20:36:43.119 - Unchanged
 2022-11-03 20:28:54.505 - Unchanged
+2022-11-10 20:35:54.965 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_nuppi.dat.log)
 
