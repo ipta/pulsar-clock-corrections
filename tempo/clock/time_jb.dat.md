@@ -16,12 +16,11 @@ This file is pulled from the TEMPO repository and may not be fully up-to-date.
 | Clock file start | 2006-10-13 MJD 54021.4 |
 | Clock file end | 2019-05-13 MJD 58616.2 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-11-10 |
+| Last update attempt | 2022-11-17 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-09-08 20:39:24.726 - Unchanged
 2022-09-15 20:40:59.504 - Unchanged
 2022-09-22 20:39:26.199 - Unchanged
 2022-09-29 20:43:06.998 - Unchanged
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2022-10-27 20:36:41.705 - Unchanged
 2022-11-03 20:28:52.787 - Unchanged
 2022-11-10 20:35:53.189 - Unchanged
+2022-11-17 20:32:51.337 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_jb.dat.log)
 
