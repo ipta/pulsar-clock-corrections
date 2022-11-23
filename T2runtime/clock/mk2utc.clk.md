@@ -16,12 +16,11 @@ This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2021-02-22 MJD 59268.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-11-16 |
+| Last update attempt | 2022-11-23 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-09-14 20:39:54.819 - Unchanged
 2022-09-21 20:38:54.732 - Unchanged
 2022-09-28 20:41:29.302 - Unchanged
 2022-10-05 20:42:19.128 - Unchanged
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2022-11-02 20:34:14.261 - Unchanged
 2022-11-09 20:34:51.283 - Unchanged
 2022-11-16 20:33:03.374 - Unchanged
+2022-11-23 20:30:51.765 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc.clk.log)
 
