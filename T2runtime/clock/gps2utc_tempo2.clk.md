@@ -24,14 +24,13 @@ are from the column C0').
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 1996-03-27 MJD 50169.0 |
-| Clock file end | 2020-10-27 MJD 59149.0 |
+| Clock file end | 2022-10-27 MJD 59879.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-11-24 |
-| Last update result | Unchanged |
+| Last update attempt | 2022-12-01 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-09-22 20:38:59.345 - Unchanged
 2022-09-29 20:42:32.142 - Unchanged
 2022-10-06 20:41:31.643 - Unchanged
 2022-10-13 20:42:16.517 - Unchanged
@@ -41,6 +40,7 @@ Log entries from the last few update attempts:
 2022-11-10 20:35:17.885 - Unchanged
 2022-11-17 20:32:23.074 - Unchanged
 2022-11-24 20:30:02.667 - Unchanged
+2022-12-01 20:28:26.849 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc_tempo2.clk.log)
 
@@ -3902,6 +3902,54 @@ Leading comments from clock file:
     #>Tue Nov 10 17:42:47 2020 Imported from file cirt.393
     #Comments from merged data file:
     #>Tue Nov 10 17:42:47 2020 Imported from file cirt.394
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.395
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.396
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.397
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.398
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.399
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.400
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.401
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.402
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.403
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.404
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.405
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.406
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.407
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.408
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.409
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.410
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.411
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.412
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.413
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.414
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.415
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.416
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.417
+    #Comments from merged data file:
+    #>Tue Nov 29 16:07:08 2022 Imported from file cirt.418
 
 
 
