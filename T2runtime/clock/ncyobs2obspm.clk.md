@@ -21,12 +21,11 @@ thus here) can be expected to be somewhat up to date.
 | Clock file start | 1988-05-18 MJD 47299.6 |
 | Clock file end | 2021-11-01 MJD 59519.6 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-11-30 |
+| Last update attempt | 2022-12-07 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-09-28 20:41:30.061 - Unchanged
 2022-10-05 20:42:20.037 - Unchanged
 2022-10-12 20:43:20.320 - Unchanged
 2022-10-19 20:43:41.580 - Unchanged
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2022-11-16 20:33:04.125 - Unchanged
 2022-11-23 20:30:52.507 - Unchanged
 2022-11-30 20:31:27.500 - Unchanged
+2022-12-07 20:29:41.622 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ncyobs2obspm.clk.log)
 
