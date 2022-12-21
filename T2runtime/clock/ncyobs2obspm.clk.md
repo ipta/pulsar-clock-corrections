@@ -19,14 +19,13 @@ thus here) can be expected to be somewhat up to date.
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 1988-05-18 MJD 47299.6 |
-| Clock file end | 2021-11-01 MJD 59519.6 |
+| Clock file end | 2022-11-26 MJD 59909.6 |
 | Update interval (days) | 7 |
-| Last update attempt | 2022-12-14 |
-| Last update result | Unchanged |
+| Last update attempt | 2022-12-21 |
+| Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2022-10-12 20:43:20.320 - Unchanged
 2022-10-19 20:43:41.580 - Unchanged
 2022-10-26 20:37:23.392 - Unchanged
 2022-11-02 20:34:15.013 - Unchanged
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2022-11-30 20:31:27.500 - Unchanged
 2022-12-07 20:29:41.622 - Unchanged
 2022-12-14 20:29:48.335 - Unchanged
+2022-12-21 20:28:17.588 - Validation failed: New version of T2runtime/clock/ncyobs2obspm.clk has decreased from 19563 to 18783 measurements.
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ncyobs2obspm.clk.log)
 
