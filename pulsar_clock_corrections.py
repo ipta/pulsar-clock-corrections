@@ -5,7 +5,7 @@ import tempfile
 from io import StringIO
 from pathlib import Path
 from textwrap import dedent, indent
-from typing import List, Optional, Iterable
+from typing import List, Optional, Iterable, Union
 
 import astropy.units as u
 import numpy as np
@@ -108,7 +108,7 @@ class FileUpdater:
             reason = ""
         return Time(r.group(1), format="iso"), r.group(2), reason
 
-    def get(self, cache=False):
+    def get(self, cache=False) -> Path:
         raise NotImplementedError
 
     def validate(self, new_file):
@@ -183,7 +183,7 @@ class ClockFileUpdater(FileUpdater):
 
     def get(self, cache=False):
         if self.download_url is not None:
-            return download_file(self.download_url, cache=cache)
+            return Path(download_file(self.download_url, cache=cache))
         self.add_to_log(f"No way to download: {self.filename!r}")
         return None
 
@@ -234,7 +234,9 @@ class ClockFileUpdater(FileUpdater):
                     bogus_last_correction=self.bogus_last_correction,
                 )
         except ValueError as e:
-            raise ValidationError(f"Unable to read new version of {self.filename}: {e}")
+            raise ValidationError(
+                f"Unable to read new version of {self.filename}: {e}"
+            ) from e
         if len(old.time) > len(new.time):
             raise ValidationError(
                 f"New version of {self.filename} has decreased from {len(old.clock)} "
@@ -256,7 +258,7 @@ class ClockFileUpdater(FileUpdater):
                 f"version where they overlap in {np.sum(d)} places"
             )
 
-    def details_page(self, make_plots_in_dir=None):
+    def details_page(self, make_plots_in_dir: Optional[Path] = None) -> str:
         # Just ensure that this was loaded
         self.clock_file
 
@@ -306,19 +308,17 @@ class ClockFileUpdater(FileUpdater):
             self._write_plot(make_plots_in_dir, f)
         return f.getvalue()
 
-    def _write_plot(self, make_plots_in_dir, f):
+    def _write_plot(self, make_plots_in_dir: Path, f):
         import matplotlib.pyplot as plt
         from astropy.visualization import quantity_support
 
         quantity_support()
 
         size = (5, 2)
-        dpi = 144
         plt.figure()
         plt.plot(self.clock_file.time.mjd, self.clock_file.clock.to(u.ns), ".")
-        self._add_plot_title_and_labels(plt)
-        plt.gcf().set_size_inches(size)
-        plt.tight_layout()
+        self._finalize_plot(plt, size)
+        dpi = 144
         plt.savefig(make_plots_in_dir / f"{self.filename}.png", dpi=dpi)
         plt.close()
 
@@ -327,9 +327,7 @@ class ClockFileUpdater(FileUpdater):
         plt.plot(
             self.clock_file.time.mjd[-n:], self.clock_file.clock[-n:].to(u.ns), "."
         )
-        self._add_plot_title_and_labels(plt)
-        plt.gcf().set_size_inches(size)
-        plt.tight_layout()
+        self._finalize_plot(plt, size)
         plt.savefig(make_plots_in_dir / f"{self.filename}.short.png", dpi=dpi)
         plt.close()
         f.write(
@@ -348,6 +346,14 @@ class ClockFileUpdater(FileUpdater):
             )
         )
 
+    # TODO Rename this here and in `_write_plot`
+    def _finalize_plot(self, plt, size):
+        plt.xlabel("MJD")
+        plt.ylabel("corr. (ns)")
+        plt.title(self.filename)
+        plt.gcf().set_size_inches(size)
+        plt.tight_layout()
+
     def _write_leading_comment(self, f):
         f.write("\n")
         f.write("Leading comments from clock file:\n")
@@ -355,11 +361,6 @@ class ClockFileUpdater(FileUpdater):
         f.write(indent(self.clock_file.leading_comment, 4 * " "))
         f.write("\n")
         f.write("\n")
-
-    def _add_plot_title_and_labels(self, plt):
-        plt.xlabel("MJD")
-        plt.ylabel("corr. (ns)")
-        plt.title(self.filename)
 
 
 class ClockFileConverterUpdater(ClockFileUpdater):
@@ -572,7 +573,7 @@ tempo2_repository_url = (
 updaters: List[FileUpdater] = []
 
 
-def get_updater(name):
+def get_updater(name: str) -> FileUpdater:
     for updater in updaters:
         if (
             updater.short_description.lower() == name.lower()
@@ -664,7 +665,7 @@ class PagesUpdater:
     automatically generated files.
     """
 
-    def __init__(self, directory):
+    def __init__(self, directory: Union[Path, str]):
         self.directory = Path(directory)
         if not (self.directory / ".this_is_gh_pages").exists():
             raise ValueError(
@@ -721,16 +722,16 @@ class PagesUpdater:
                 )
             )
 
-    def _write_subsection(self, f, arg1, arg2):
+    def _write_subsection(self, f, title, contents):
         f.write("\n\n")
-        f.write(f"### {arg1}\n\n")
-        f.write(updater_summary_table(arg2, detail_urls=True))
+        f.write(f"### {title}\n\n")
+        f.write(updater_summary_table(contents, detail_urls=True))
 
     def generate_details_pages(self):
         for updater in updaters:
             filename = self.directory / f"{updater.filename}.md"
             filename.parent.mkdir(parents=True, exist_ok=True)
-            # FIXME: footer? plots?
+            # FIXME: footer?
             filename.write_text(updater.details_page(make_plots_in_dir=self.directory))
 
 
@@ -866,7 +867,8 @@ updaters.append(
         format="tempo2",
         description="""Green Bank Telescope clock corrections (TEMPO2 version)
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -904,7 +906,8 @@ updaters.append(
         bogus_last_correction=True,
         description="""Jodrell Bank clock correction file
 
-            This file is pulled from the TEMPO repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1116,7 +1119,8 @@ updaters.append(
     ClockFileUpdater(
         "VLA",
         "tempo/clock/time_vla.dat",
-        download_url="https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_vla.dat",
+        download_url="https://raw.githubusercontent.com/"
+        "nanograv/PINT/master/src/pint/data/runtime/time_vla.dat",
         authority="temporary",
         format="tempo",
         obscode="6",
@@ -1160,7 +1164,8 @@ updaters.append(
     ClockFileUpdater(
         "FAST",
         "tempo/clock/time_fast.dat",
-        download_url="https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_fast.dat",
+        download_url="https://raw.githubusercontent.com/"
+        "nanograv/PINT/master/src/pint/data/runtime/time_fast.dat",
         authority="temporary",
         format="tempo",
         obscode="k",
