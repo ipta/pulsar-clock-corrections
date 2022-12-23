@@ -33,7 +33,7 @@ end of the tabulated data. This is marked by a comment in the
 clock file itself.
 
 If you have questions about this, contact Anne Archibald
-<anne.archibald@newcastle.ac.uk>. For more detailed questions
+<anne.archibald@nanograv.org>. For more detailed questions
 about the BIPM's published corrections, contact <tai@bipm.org>.
 
 |     |     |

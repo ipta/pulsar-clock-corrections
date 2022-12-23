@@ -21,7 +21,7 @@ origin of these early values is not completely clear, and some of
 them predate the earliest values in the IERS bulletins Astropy uses.
 
 If there are any questions, contact Anne Archibald
-<anne.archibald@newcastle.ac.uk>.
+<anne.archibald@nanograv.org>.
 
 |     |     |
 |:--- |:--- |
@@ -35,7 +35,6 @@ If there are any questions, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
-2022-12-22 20:28:41.740 - Updated
 2022-12-23 13:47:32.442 - Updated
 2022-12-23 13:49:27.005 - Unchanged
 2022-12-23 13:58:22.493 - Unchanged
@@ -45,5 +44,6 @@ Log entries from the last few update attempts:
 2022-12-23 14:20:23.091 - Unchanged
 2022-12-23 14:21:40.070 - Unchanged
 2022-12-23 14:23:17.410 - Unchanged
+2022-12-23 15:24:27.986 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/ut1.dat.log)

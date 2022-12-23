@@ -12,7 +12,7 @@ If questions arise about the original data, contact Ryan S. Lynch
 <rlynch@nrao.edu>.
 
 If questions arise about the conversion, contact Anne Archibald
-<anne.archibald@newcastle.ac.uk>.
+<anne.archibald@nanograv.org>.
 
 |     |     |
 |:--- |:--- |

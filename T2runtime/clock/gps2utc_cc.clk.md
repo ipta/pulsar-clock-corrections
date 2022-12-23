@@ -15,7 +15,7 @@ do not take advantage of the almanac data to improve their time
 correction.
 
 If you have questions about this, contact Anne Archibald
-<anne.archibald@newcastle.ac.uk>. For more detailed questions
+<anne.archibald@nanograv.org>. For more detailed questions
 about the BIPM's published corrections, contact <tai@bipm.org>.
 
 |     |     |

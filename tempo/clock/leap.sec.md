@@ -12,7 +12,7 @@ bulletins. It should be updated at least six months in advance
 of any planned leap second (and not otherwise).
 
 If there are any questions, contact Anne Archibald
-<anne.archibald@newcastle.ac.uk>.
+<anne.archibald@nanograv.org>.
 
 |     |     |
 |:--- |:--- |
@@ -26,7 +26,6 @@ If there are any questions, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
-2022-12-22 20:28:30.636 - Unchanged
 2022-12-23 13:47:31.816 - Unchanged
 2022-12-23 13:49:26.402 - Unchanged
 2022-12-23 13:58:21.868 - Unchanged
@@ -36,5 +35,6 @@ Log entries from the last few update attempts:
 2022-12-23 14:20:22.477 - Unchanged
 2022-12-23 14:21:39.449 - Unchanged
 2022-12-23 14:23:16.777 - Unchanged
+2022-12-23 15:24:27.369 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/leap.sec.log)

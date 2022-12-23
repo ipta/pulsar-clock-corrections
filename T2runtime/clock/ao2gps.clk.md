@@ -17,7 +17,7 @@ If questions arise about the original data, contact David Nice
 <niced@lafayette.edu>.
 
 If questions arise about the conversion, contact Anne Archibald
-<anne.archibald@newcastle.ac.uk>.
+<anne.archibald@nanograv.org>.
 
 |     |     |
 |:--- |:--- |

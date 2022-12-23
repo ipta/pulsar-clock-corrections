@@ -18,7 +18,7 @@ the Combined Clock or whether it is using the almanac data. There are
 more specific correction files suitable for one case or the other.
 
 If you have questions about this, contact Anne Archibald
-<anne.archibald@newcastle.ac.uk>. For more detailed questions
+<anne.archibald@nanograv.org>. For more detailed questions
 about the BIPM's published corrections, contact <tai@bipm.org>.
 
 |     |     |

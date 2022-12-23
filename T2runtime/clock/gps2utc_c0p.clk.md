@@ -16,7 +16,7 @@ Unfortunately the BIPM only publishes these corrections going back
 to 2011.
 
 If you have questions about this, contact Anne Archibald
-<anne.archibald@newcastle.ac.uk>. For more detailed questions
+<anne.archibald@nanograv.org>. For more detailed questions
 about the BIPM's published corrections, contact <tai@bipm.org>.
 
 |     |     |
