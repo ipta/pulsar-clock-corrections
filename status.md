@@ -78,6 +78,7 @@ name of each clock file links to a page with more details.
 | [SRT](T2runtime/clock/srt2gps.clk.html) | `T2runtime/clock/srt2gps.clk` | 2013-03-20 MJD 56371.0 | 2019-12-11 MJD 58828.0 | 2022-12-21 | Unchanged 
 | [Effelsberg](T2runtime/clock/eff2gps.clk.html) | `T2runtime/clock/eff2gps.clk` | 1993-11-29 MJD 49320.0 | 2015-06-22 MJD 57195.5 | 2022-12-21 | Unchanged 
 | [Effelsberg Asterix/PSRix](T2runtime/clock/effix2gps.clk.html) | `T2runtime/clock/effix2gps.clk` | 2011-01-01 MJD 55562.5 | 2021-03-21 MJD 59294.5 | 2022-12-21 | Unchanged 
+| [LEAP](T2runtime/clock/leap2effix.clk.html) | `T2runtime/clock/leap2effix.clk` | 2012-10-29 MJD 56230.0 | 2132-08-31 MJD 99999.0 | 2022-12-23 | Unchanged 
 | [NUPPI](tempo/clock/time_nuppi.dat.html) | `tempo/clock/time_nuppi.dat` | 2005-03-07 MJD 53436.0 | 2015-11-08 MJD 57334.6 | 2022-12-22 | Unchanged 
 | [Meerkat (TEMPO2)](T2runtime/clock/mk2utc.clk.html) | `T2runtime/clock/mk2utc.clk` | 2019-01-01 MJD 58484.0 | 2021-02-22 MJD 59268.0 | 2022-12-21 | Unchanged 
 | [MOST](T2runtime/clock/mo2gps.clk.html) | `T2runtime/clock/mo2gps.clk` | 2003-12-27 MJD 53000.0 | 2018-09-06 MJD 58367.0 | 2022-12-21 | Unchanged 
