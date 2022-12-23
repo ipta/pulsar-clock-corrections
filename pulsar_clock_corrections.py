@@ -782,7 +782,7 @@ updaters.append(
             more specific correction files suitable for one case or the other.
 
             If you have questions about this, contact Anne Archibald
-            <anne.archibald@newcastle.ac.uk>. For more detailed questions
+            <anne.archibald@nanograv.org>. For more detailed questions
             about the BIPM's published corrections, contact <tai@bipm.org>.
         """,
     )
@@ -807,7 +807,7 @@ updaters.append(
             correction.
 
             If you have questions about this, contact Anne Archibald
-            <anne.archibald@newcastle.ac.uk>. For more detailed questions
+            <anne.archibald@nanograv.org>. For more detailed questions
             about the BIPM's published corrections, contact <tai@bipm.org>.
         """,
     )
@@ -833,7 +833,7 @@ updaters.append(
             to 2011.
 
             If you have questions about this, contact Anne Archibald
-            <anne.archibald@newcastle.ac.uk>. For more detailed questions
+            <anne.archibald@nanograv.org>. For more detailed questions
             about the BIPM's published corrections, contact <tai@bipm.org>.
         """,
     )
@@ -887,7 +887,7 @@ updaters.append(
             <rlynch@nrao.edu>.
 
             If questions arise about the conversion, contact Anne Archibald
-            <anne.archibald@newcastle.ac.uk>.
+            <anne.archibald@nanograv.org>.
         """,
         hdrline="# UTC(GBT) UTC(GPS)",
         updater=get_updater("GBT"),
@@ -1020,7 +1020,7 @@ updaters.append(
             <niced@lafayette.edu>.
 
             If questions arise about the conversion, contact Anne Archibald
-            <anne.archibald@newcastle.ac.uk>.
+            <anne.archibald@nanograv.org>.
 
         """,
         download_url=None,
@@ -1490,7 +1490,7 @@ updaters.append(
             of any planned leap second (and not otherwise).
 
             If there are any questions, contact Anne Archibald
-            <anne.archibald@newcastle.ac.uk>.
+            <anne.archibald@nanograv.org>.
         """,
     )
 )
@@ -1520,7 +1520,7 @@ updaters.append(
             them predate the earliest values in the IERS bulletins Astropy uses.
 
             If there are any questions, contact Anne Archibald
-            <anne.archibald@newcastle.ac.uk>.
+            <anne.archibald@nanograv.org>.
         """,
     )
 )
@@ -1566,7 +1566,7 @@ for y in bipm.list_recent_ttbipmxy()[::-1]:
                 clock file itself.
 
                 If you have questions about this, contact Anne Archibald
-                <anne.archibald@newcastle.ac.uk>. For more detailed questions
+                <anne.archibald@nanograv.org>. For more detailed questions
                 about the BIPM's published corrections, contact <tai@bipm.org>.
             """,
         )
