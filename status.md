@@ -22,8 +22,8 @@ name of each clock file links to a page with more details.
 | [Jodrell Bank Roach](T2runtime/clock/jbroach2jb.clk.html) | `T2runtime/clock/jbroach2jb.clk` | 2006-10-13 MJD 54021.4 | 2018-03-20 MJD 58197.6 | 2022-12-21 | Unchanged 
 | [Jodrell Bank DFB](T2runtime/clock/jbdfb2jb.clk.html) | `T2runtime/clock/jbdfb2jb.clk` | 2006-10-13 MJD 54021.4 | 2017-05-11 MJD 57884.0 | 2022-12-21 | Unchanged 
 | [Meerkat (observatory)](T2runtime/clock/mk2utc_observatory.clk.html) | `T2runtime/clock/mk2utc_observatory.clk` | 2019-01-01 MJD 58484.0 | 2022-12-09 MJD 59923.0 | 2022-12-19 | Updated 
-| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2022-12-22 | Unchanged 
-| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2023-12-30 MJD 60308.0 | 2022-12-22 | Updated 
+| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2022-12-23 | Unchanged 
+| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2023-12-23 MJD 60301.0 | 2022-12-23 | Unchanged 
 
 
 
@@ -49,6 +49,7 @@ name of each clock file links to a page with more details.
 | [TAI to TT(BIPM2014)](T2runtime/clock/tai2tt_bipm2014.clk.html) | `T2runtime/clock/tai2tt_bipm2014.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-06-13 | Unchanged 
 | [TAI to TT(BIPM2013)](T2runtime/clock/tai2tt_bipm2013.clk.html) | `T2runtime/clock/tai2tt_bipm2013.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-06-13 | Unchanged 
 | [TAI to TT(BIPM2012)](T2runtime/clock/tai2tt_bipm2012.clk.html) | `T2runtime/clock/tai2tt_bipm2012.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2011)](T2runtime/clock/tai2tt_bipm2011.clk.html) | `T2runtime/clock/tai2tt_bipm2011.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-12-23 | **Validation failed** 
 | [TAI to TT(BIPM2010)](T2runtime/clock/tai2tt_bipm2010.clk.html) | `T2runtime/clock/tai2tt_bipm2010.clk` | 1975-06-26 MJD 42589.0 | 2010-12-29 MJD 55559.0 | 2022-06-13 | Unchanged 
 | [TAI to TT(BIPM06)](T2runtime/clock/tai2tt_bipm06.clk.html) | `T2runtime/clock/tai2tt_bipm06.clk` | 1975-06-26 MJD 42589.0 | 2006-12-30 MJD 54099.0 | 2022-06-13 | Unchanged 
 | [TAI to TT(BIPM05)](T2runtime/clock/tai2tt_bipm05.clk.html) | `T2runtime/clock/tai2tt_bipm05.clk` | 1975-06-26 MJD 42589.0 | 2005-12-25 MJD 53729.0 | 2022-06-13 | Unchanged 

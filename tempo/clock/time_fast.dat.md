@@ -3,8 +3,8 @@
 
 FAST clock correction file
 
-This file is pulled from the PINT repository and may not be fully up-to-date.
-(TEMPO doesn't seem to have this file at all.)
+This file is pulled from the PINT repository and may not be fully
+up-to-date. (TEMPO doesn't seem to have this file at all.)
 
 The original file is currently hand-generated upon request, but it is
 planned to make the process automatic and the file downloadable (at

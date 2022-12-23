@@ -3,7 +3,8 @@
 
 Parkes observatory clock corrections
 
-This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+This file is pulled from the TEMPO2 repository and may not be fully
+up-to-date.
 
 The comments read:
 

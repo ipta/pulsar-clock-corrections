@@ -9,7 +9,8 @@ separates these out so their corrections can be handled using a
 different clock chain. Unfortunately it does not include
 clock corrections for the last months of operation of Arecibo.
 
-This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+This file is pulled from the TEMPO2 repository and may not be fully
+up-to-date.
 
 |     |     |
 |:--- |:--- |

@@ -3,10 +3,11 @@
 
 Parkes observatory clock corrections (TEMPO format)
 
-This file is pulled from the TEMPO repository and may not be fully up-to-date.
+This file is pulled from the TEMPO repository and may not be fully
+up-to-date.
 
-Note that this file has some clock (non-)correction data for other telescopes
-in the same file, distinguished only by observatory code.
+Note that this file has some clock (non-)correction data for other
+telescopes in the same file, distinguished only by observatory code.
 
 |     |     |
 |:--- |:--- |

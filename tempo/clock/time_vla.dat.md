@@ -3,8 +3,9 @@
 
 Very Large Array clock corrections
 
-This file is pulled from the PINT repository and may not be fully up-to-date.
-(I think PINT has a more recent version than TEMPO or TEMPO2.)
+This file is pulled from the PINT repository and may not be fully
+up-to-date. (I think PINT has a more recent version than TEMPO or
+TEMPO2.)
 
 |     |     |
 |:--- |:--- |

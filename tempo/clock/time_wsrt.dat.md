@@ -3,7 +3,8 @@
 
 WSRT clock corrections (TEMPO-format)
 
-This file is pulled from the TEMPO repository and may not be fully up-to-date.
+This file is pulled from the TEMPO repository and may not be fully
+up-to-date.
 
 This file may or may not agree with the TEMPO2-format version of what
 should be the same information.
