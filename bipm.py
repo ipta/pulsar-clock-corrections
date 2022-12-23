@@ -303,7 +303,7 @@ def list_recent_ttbipmxy():
 
 
 prediction_re = re.compile(
-    "^TT\(BIPM..\) = TAI \+ (\d+\.\d+) s \+ (\d+\.\d+) ns ([-+]) (\d+\.\d+)x\(MJD-(\d+)\) ns\s*$"
+    r"^TT\(BIPM..\) = TAI \+ (\d+\.\d+) s \+ (\d+\.\d+) ns ([-+]) (\d+\.\d+)x\(MJD-(\d+)\) ns\s*$"
 )
 column_re = re.compile(
     r'^ +3rd +" +: TT.BIPM... - TAI - (\d+\.\d+) s, unit is one microsecond\s*$'
@@ -324,7 +324,7 @@ def get_ttbipmxy_corrections(year, include_forecast=1000):
             if m := prediction_re.match(line):
                 prediction_offset_s = float(m.group(1))
                 prediction_offset_ns = float(m.group(2))
-                prediction_rate_ns_per_day = float(m.group(3)+m.group(4))
+                prediction_rate_ns_per_day = float(m.group(3) + m.group(4))
                 prediction_base_mjd = float(m.group(5))
                 break
         else:
@@ -354,12 +354,15 @@ def get_ttbipmxy_corrections(year, include_forecast=1000):
 
     return leading_comment_io.getvalue(), mjds, corr_s, extra_mjds, extra_corr_s
 
+
 def get_ttbipmxy_corrections_clock(year, include_forecast=1000):
-    leading_comment, mjds, corr_s, extra_mjds, extra_corr_s = get_ttbipmxy_corrections(year, include_forecast=include_forecast)
+    leading_comment, mjds, corr_s, extra_mjds, extra_corr_s = get_ttbipmxy_corrections(
+        year, include_forecast=include_forecast
+    )
     all_mjds = np.concatenate([mjds, extra_mjds])
     all_corr_s = np.concatenate([corr_s, extra_corr_s])
     comments = [""] * len(all_mjds)
-    comments[len(mjds)-1] = "\n# Extrapolation starts here"
+    comments[len(mjds) - 1] = "\n# Extrapolation starts here"
     c = pint.observatory.clock_file.ClockFile(
         mjd=all_mjds,
         clock=all_corr_s * u.s,

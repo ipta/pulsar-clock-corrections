@@ -1,10 +1,11 @@
+"""Maintain up-to-date clock corrections."""
 import inspect
-import os
 import re
 import tempfile
 from io import StringIO
 from pathlib import Path
 from textwrap import dedent, indent
+from typing import List, Optional
 
 import astropy.units as u
 import numpy as np
@@ -86,10 +87,10 @@ class FileUpdater:
 
     @property
     def log_file(self):
-        return base_location() / "log" / (self.filename + ".log")
+        return base_location() / "log" / f"{self.filename}.log"
 
     def add_to_log(self, msg):
-        entry = Time.now().iso + " - " + msg.replace("\n", " ") + "\n"
+        entry = f"{Time.now().iso} - " + msg.replace("\n", " ") + "\n"
         with open(self.log_file, "at") as f:
             f.write(entry)
         self._last_log_entry = entry
@@ -129,7 +130,7 @@ class FileUpdater:
             pass
         else:
             if old_contents == new_contents:
-                self.add_to_log(f"Unchanged")
+                self.add_to_log("Unchanged")
                 return True
             try:
                 self.validate(f)
@@ -140,9 +141,9 @@ class FileUpdater:
         self.filepath.write_text(new_contents)
         self._clock_file = None
         if force:
-            self.add_to_log(f"Updated overriding validation failure")
+            self.add_to_log("Updated overriding validation failure")
         else:
-            self.add_to_log(f"Updated")
+            self.add_to_log("Updated")
         return True
 
     def __repr__(self):
@@ -177,15 +178,14 @@ class ClockFileUpdater(FileUpdater):
         self.bogus_last_correction = bogus_last_correction
         self.download_url = download_url
         self.obscode = obscode
-        self._last_log_entry = None
+        self._last_log_entry: Optional[str] = None
         self.log_entry_re = re.compile(r"([0-9 :.-]+) - ([^:]+)(: (.*))?")
 
     def get(self, cache=False):
         if self.download_url is not None:
             return download_file(self.download_url, cache=cache)
-        else:
-            self.add_to_log(f"No way to download: {self.filename!r}")
-            return None
+        self.add_to_log(f"No way to download: {self.filename!r}")
+        return None
 
     @property
     def clock_file(self):
@@ -207,17 +207,13 @@ class ClockFileUpdater(FileUpdater):
 
     @property
     def tstart(self):
-        if self.clock_file is None:
-            return None
-        if len(self.clock_file.time) == 0:
+        if self.clock_file is None or len(self.clock_file.time) == 0:
             return None
         return self.clock_file.time[0]
 
     @property
     def tend(self):
-        if self.clock_file is None:
-            return None
-        if len(self.clock_file.time) == 0:
+        if self.clock_file is None or len(self.clock_file.time) == 0:
             return None
         return self._clock_file.time[-1]
 
@@ -241,12 +237,14 @@ class ClockFileUpdater(FileUpdater):
             raise ValidationError(f"Unable to read new version of {self.filename}: {e}")
         if len(old.time) > len(new.time):
             raise ValidationError(
-                f"New version of {self.filename} has decreased from {len(old.clock)} to {len(new.clock)} measurements."
+                f"New version of {self.filename} has decreased from {len(old.clock)} "
+                f"to {len(new.clock)} measurements."
             )
         d = old.time != new.time[: len(old.time)]
         if np.any(d):
             raise ValidationError(
-                f"New version of {self.filename} MJDs differ from old version where they overlap in {np.sum(d)} places"
+                f"New version of {self.filename} MJDs differ from old "
+                f"version where they overlap in {np.sum(d)} places"
             )
         if len(old.clock) > 0:
             d = old.clock[:-1] != new.clock[: len(old.clock) - 1]
@@ -254,7 +252,8 @@ class ClockFileUpdater(FileUpdater):
             d = old.clock != new.clock[: len(old.clock)]
         if np.any(d):
             raise ValidationError(
-                f"New version of {self.filename} clock corrections differ from old version where they overlap in {np.sum(d)} places"
+                f"New version of {self.filename} clock corrections differ from old "
+                f"version where they overlap in {np.sum(d)} places"
             )
 
     def details_page(self, make_plots_in_dir=None):
@@ -262,7 +261,8 @@ class ClockFileUpdater(FileUpdater):
         self.clock_file
 
         last_date, result, details = self.parse_log_entry(self.last_log_entry)
-        log_url = public_repo_url_raw + "log/" + self.filename + ".log"
+        log_url = f"{public_repo_url_raw}log/{self.filename}.log"
+
         f = StringIO()
         f.write(
             dedent(
@@ -277,82 +277,87 @@ class ClockFileUpdater(FileUpdater):
             dedent(
                 f"""
 
-            |     |     |
-            |:--- |:--- |
-            | File | `{self.filename}` |
-            | Authority | {self.authority} |
-            | URL in repository | <{public_repo_url_raw + self.filename}> |
-            | Original download URL | <{self.download_url}> |
-            | Format | {self.format} |
-            | Bogus last correction | {self.bogus_last_correction} |
-            | Clock file start | {short_date_and_mjd(self.tstart)} |
-            | Clock file end | {short_date_and_mjd(self.tend)} |
-            | Update interval (days) | {self.update_interval_days} |
-            | Last update attempt | {short_date(last_date)} |
-            | Last update result | {result} |
+                |     |     |
+                |:--- |:--- |
+                | File | `{self.filename}` |
+                | Authority | {self.authority} |
+                | URL in repository | <{public_repo_url_raw + self.filename}> |
+                | Original download URL | <{self.download_url}> |
+                | Format | {self.format} |
+                | Bogus last correction | {self.bogus_last_correction} |
+                | Clock file start | {short_date_and_mjd(self.tstart)} |
+                | Clock file end | {short_date_and_mjd(self.tend)} |
+                | Update interval (days) | {self.update_interval_days} |
+                | Last update attempt | {short_date(last_date)} |
+                | Last update result | {result} |
 
-            Log entries from the last few update attempts:
+                Log entries from the last few update attempts:
             """
             )
         )
         f.write("```\n")
-        for l in self.log_file.open().readlines()[-10:]:
-            f.write(l)
+        for line in self.log_file.open().readlines()[-10:]:
+            f.write(line)
         f.write("```\n")
         f.write(f"[Full log]({log_url})\n")
         if self.clock_file.leading_comment:
-            f.write("\n")
-            f.write("Leading comments from clock file:\n")
-            f.write("\n")
-            f.write(indent(self.clock_file.leading_comment, 4 * " "))
-            f.write("\n")
-            f.write("\n")
-
+            self._write_leading_comment(f)
         if make_plots_in_dir:
-            import matplotlib.pyplot as plt
-            from astropy.visualization import quantity_support
+            self._write_plot(make_plots_in_dir, f)
+        return f.getvalue()
 
-            size = (5, 2)
-            dpi = 144
-            plt.figure()
-            plt.plot(self.clock_file.time.mjd, self.clock_file.clock.to(u.ns), ".")
-            plt.xlabel("MJD")
-            plt.ylabel("corr. (ns)")
-            plt.title(self.filename)
-            plt.gcf().set_size_inches(size)
-            plt.savefig(make_plots_in_dir / (self.filename + ".png"), dpi=dpi)
-            plt.close()
+    def _write_plot(self, make_plots_in_dir, f):
+        import matplotlib.pyplot as plt
+        from astropy.visualization import quantity_support
 
-            plt.figure()
-            n = 90
-            plt.plot(
-                self.clock_file.time.mjd[-n:], self.clock_file.clock[-n:].to(u.ns), "."
-            )
-            # m = self.clock_file.time.mjd
-            # plt.xlim(m[-1]-60, m[-1])
-            plt.xlabel("MJD")
-            plt.ylabel("corr. (ns)")
-            plt.title(self.filename)
-            plt.gcf().set_size_inches(size)
-            plt.savefig(make_plots_in_dir / (self.filename + ".short.png"), dpi=dpi)
-            plt.close()
-            f.write(
-                dedent(
-                    f"""
+        quantity_support()
+
+        plt.figure()
+        plt.plot(self.clock_file.time.mjd, self.clock_file.clock.to(u.ns), ".")
+        self._add_plot_title_and_labels(plt)
+        size = (5, 2)
+        plt.gcf().set_size_inches(size)
+        dpi = 144
+        plt.savefig(make_plots_in_dir / f"{self.filename}.png", dpi=dpi)
+        plt.close()
+
+        plt.figure()
+        n = 90
+        plt.plot(
+            self.clock_file.time.mjd[-n:], self.clock_file.clock[-n:].to(u.ns), "."
+        )
+        self._add_plot_title_and_labels(plt)
+        plt.gcf().set_size_inches(size)
+        plt.savefig(make_plots_in_dir / f"{self.filename}.short.png", dpi=dpi)
+        plt.close()
+        f.write(
+            dedent(
+                f"""
 
                     All clock corrections:
 
-                    ![plot of all clock corrections]({self.filepath.name+'.png'} "All corrections")
+                    ![plot of all clock corrections]({self.filepath.name}.png "All corrections")
 
                     Recent clock corrections:
 
-                    ![plot of recent clock corrections]({self.filepath.name+'.short.png'} "Recent corrections")
+                    ![plot of recent clock corrections]({self.filepath.name}.short.png "Recent corrections")
 
                     """
-                )
             )
+        )
 
-        return f.getvalue()
+    def _write_leading_comment(self, f):
+        f.write("\n")
+        f.write("Leading comments from clock file:\n")
+        f.write("\n")
+        f.write(indent(self.clock_file.leading_comment, 4 * " "))
+        f.write("\n")
+        f.write("\n")
+
+    def _add_plot_title_and_labels(self, plt):
+        plt.xlabel("MJD")
+        plt.ylabel("corr. (ns)")
+        plt.title(self.filename)
 
 
 class ClockFileConverterUpdater(ClockFileUpdater):
@@ -422,7 +427,10 @@ class ClockFileConverterUpdater(ClockFileUpdater):
         # FIXME: this results in a changed file every time the update checker
         # is run, just because the conversion date is updated. We need to
         # check and do updates only if the source file has been updated.
-        comments = f"# This file was automatically converted from {self.updater.filename} on {Time.now().iso}\n"
+        comments = (
+            f"# This file was automatically converted from "
+            f"{self.updater.filename} on {Time.now().iso}\n"
+        )
         if self.format == "tempo2":
             self.updater.clock_file.write_tempo2_clock_file(
                 str(filename),
@@ -514,7 +522,7 @@ class CallableUpdater(FileUpdater):
 
     def details_page(self, make_plots_in_dir=None):
         last_date, result, details = self.parse_log_entry(self.last_log_entry)
-        log_url = public_repo_url_raw + "log/" + self.filename + ".log"
+        log_url = f"{public_repo_url_raw}log/{self.filename}.log"
         f = StringIO()
         f.write(
             dedent(
@@ -544,15 +552,14 @@ class CallableUpdater(FileUpdater):
             )
         )
         f.write("```\n")
-        for l in self.log_file.open().readlines()[-10:]:
-            f.write(l)
+        for line in self.log_file.open().readlines()[-10:]:
+            f.write(line)
         f.write("```\n")
         f.write(f"[Full log]({log_url})\n")
 
         return f.getvalue()
 
 
-# tempo_repository_url = "https://raw.githubusercontent.com/nanograv/tempo/master/clock/{}"
 tempo_repository_url = (
     "https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/{}?format=raw"
 )
@@ -560,47 +567,41 @@ tempo2_repository_url = (
     "https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/{}"
 )
 
-updaters = []
+updaters: List[FileUpdater] = []
 
 
 def get_updater(name):
-    for u in updaters:
+    for updater in updaters:
         if (
-            u.short_description.lower() == name.lower()
-            or u.filename == name
-            or Path(u.filename).name == name
+            updater.short_description.lower() == name.lower()
+            or updater.filename == name
+            or Path(updater.filename).name == name
         ):
-            return u
-    else:
-        raise ValueError(f"Unable to find an updater for {name}")
+            return updater
+    raise ValueError(f"Unable to find an updater for {name}")
 
 
 def try_all_updates(respect_interval=True):
-    for u in updaters:
-        u.try_update(respect_interval=respect_interval)
-        print(f"{u.short_description:20} {u.last_log_entry.strip()}")
+    for updater in updaters:
+        updater.try_update(respect_interval=respect_interval)
+        print(f"{updater.short_description:20} {updater.last_log_entry.strip()}")
 
 
 def short_date(t):
-    if t is None:
-        return "---"
-    else:
-        return t.datetime.strftime("%Y-%m-%d")
+    return "---" if t is None else t.datetime.strftime("%Y-%m-%d")
 
 
 def short_date_and_mjd(t):
-    if t is None:
-        return "---"
-    else:
-        return f"{short_date(t)} MJD {t.mjd:.1f}"
+    return "---" if t is None else f"{short_date(t)} MJD {t.mjd:.1f}"
 
 
 def generate_index_txt():
     with open(base_location() / "index.txt", "wt") as f:
         print(f"{'# File':40s} {'Update (days)':13s}   Invalid if older than", file=f)
-        for u in updaters:
+        for updater in updaters:
             print(
-                f"{u.filename:40s} {u.update_interval_days:13.1f}   {short_date(u.invalid_if_older_than)}",
+                f"{updater.filename:40s} {updater.update_interval_days:13.1f}   "
+                f"{short_date(updater.invalid_if_older_than)}",
                 file=f,
             )
 
@@ -608,43 +609,43 @@ def generate_index_txt():
 def updater_summary_table(updaters, detail_urls=False):
     o = StringIO()
     print(
-        f"| Name "
-        f"| File "
-        f"| Corrections start "
-        f"| Corrections end "
-        f"| Last check date "
-        f"| Last check result ",
+        "| Name "
+        "| File "
+        "| Corrections start "
+        "| Corrections end "
+        "| Last check date "
+        "| Last check result ",
         file=o,
     )
-    print(f"|:--- |:--- | --- | --- | --- |:--- ", file=o)
-    for u in updaters:
-        last_date, result, details = u.parse_log_entry(u.last_log_entry)
+    print("|:--- |:--- | --- | --- | --- |:--- ", file=o)
+    for updater in updaters:
+        last_date, result, details = updater.parse_log_entry(updater.last_log_entry)
         if (
-            hasattr(u, "download_url")
-            and u.download_url is None
-            and not np.isfinite(u.update_interval_days)
+            hasattr(updater, "download_url")
+            and updater.download_url is None
+            and not np.isfinite(updater.update_interval_days)
         ):
             result = "Static"
         elif result not in {"Unchanged", "Updated"}:
-            result = "**" + result + "**"
+            result = f"**{result}**"
 
-        detail_url = u.filename + ".html"
+        detail_url = f"{updater.filename}.html"
         if detail_urls:
             print(
-                f"| [{u.short_description}]({detail_url}) "
-                f"| `{u.filename}` "
-                f"| {short_date_and_mjd(u.tstart)} "
-                f"| {short_date_and_mjd(u.tend)} "
+                f"| [{updater.short_description}]({detail_url}) "
+                f"| `{updater.filename}` "
+                f"| {short_date_and_mjd(updater.tstart)} "
+                f"| {short_date_and_mjd(updater.tend)} "
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
             )
         else:
             print(
-                f"| {u.short_description} "
-                f"| `{u.filename}` "
-                f"| {short_date_and_mjd(u.tstart)} "
-                f"| {short_date_and_mjd(u.tend)} "
+                f"| {updater.short_description} "
+                f"| `{updater.filename}` "
+                f"| {short_date_and_mjd(updater.tstart)} "
+                f"| {short_date_and_mjd(updater.tend)} "
                 f"| {short_date(last_date)} "
                 f"| {result} ",
                 file=o,
@@ -672,19 +673,19 @@ class PagesUpdater:
         good_updaters = []
         static_updaters = []
         default_updaters = []
-        for u in updaters:
-            if not np.isfinite(u.update_interval_days):
-                static_updaters.append(u)
+        for updater in updaters:
+            if not np.isfinite(updater.update_interval_days):
+                static_updaters.append(updater)
             elif (
-                u.authority == "observatory"
-                or u.authority == "converted"
-                and u.updater.authority == "observatory"
+                updater.authority == "observatory"
+                or updater.authority == "converted"
+                and updater.updater.authority == "observatory"
             ):
-                good_updaters.append(u)
-            elif not np.isfinite(u.update_interval_days):
-                static_updaters.append(u)
+                good_updaters.append(updater)
+            elif not np.isfinite(updater.update_interval_days):
+                static_updaters.append(updater)
             else:
-                default_updaters.append(u)
+                default_updaters.append(updater)
         with (self.directory / "status.md").open("wt") as f:
             f.write(
                 dedent(
@@ -700,15 +701,13 @@ class PagesUpdater:
                     """
                 )
             )
-            f.write("\n\n")
-            f.write("### Files with fully automatic updates\n\n")
-            f.write(updater_summary_table(good_updaters, detail_urls=True))
-            f.write("\n\n")
-            f.write("### Files that should be static\n\n")
-            f.write(updater_summary_table(static_updaters, detail_urls=True))
-            f.write("\n\n")
-            f.write("### Files that require manual updates\n\n")
-            f.write(updater_summary_table(default_updaters, detail_urls=True))
+            self._write_subsection(
+                f, "Files with fully automatic updates", good_updaters
+            )
+            self._write_subsection(f, "Files that should be static", static_updaters)
+            self._write_subsection(
+                f, "Files that require manual updates", default_updaters
+            )
             f.write(
                 dedent(
                     """
@@ -720,9 +719,14 @@ class PagesUpdater:
                 )
             )
 
+    def _write_subsection(self, f, arg1, arg2):
+        f.write("\n\n")
+        f.write(f"### {arg1}\n\n")
+        f.write(updater_summary_table(arg2, detail_urls=True))
+
     def generate_details_pages(self):
         for updater in updaters:
-            filename = self.directory / (updater.filename + ".md")
+            filename = self.directory / f"{updater.filename}.md"
             filename.parent.mkdir(parents=True, exist_ok=True)
             # FIXME: footer? plots?
             filename.write_text(updater.details_page(make_plots_in_dir=self.directory))
@@ -741,7 +745,8 @@ updaters.append(
             This file is used in the clock correction process for almost all
             observatories.
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
 
             In TEMPO2 this file was traditionally generated by a script that parsed
             BIPM Circular T and merged any new data into this file. This has
@@ -1036,7 +1041,8 @@ updaters.append(
             different clock chain. Unfortunately it does not include
             clock corrections for the last months of operation of Arecibo.
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1055,7 +1061,8 @@ updaters.append(
             separates these out so their corrections can be handled using a
             different clock chain.
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1113,8 +1120,9 @@ updaters.append(
         obscode="6",
         description="""Very Large Array clock corrections
 
-            This file is pulled from the PINT repository and may not be fully up-to-date.
-            (I think PINT has a more recent version than TEMPO or TEMPO2.)
+            This file is pulled from the PINT repository and may not be fully
+            up-to-date. (I think PINT has a more recent version than TEMPO or
+            TEMPO2.)
         """,
     )
 )
@@ -1127,7 +1135,8 @@ updaters.append(
         format="tempo2",
         description="""Very Large Array clock corrections (TEMPO2)
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1140,7 +1149,8 @@ updaters.append(
         format="tempo2",
         description="""Very Large Array to NIST clock corrections (TEMPO2)
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1154,8 +1164,8 @@ updaters.append(
         obscode="k",
         description="""FAST clock correction file
 
-            This file is pulled from the PINT repository and may not be fully up-to-date.
-            (TEMPO doesn't seem to have this file at all.)
+            This file is pulled from the PINT repository and may not be fully
+            up-to-date. (TEMPO doesn't seem to have this file at all.)
 
             The original file is currently hand-generated upon request, but it is
             planned to make the process automatic and the file downloadable (at
@@ -1176,7 +1186,8 @@ updaters.append(
         format="tempo2",
         description="""Westerbork Synthesis Radio Telescope clock corrections
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1190,7 +1201,8 @@ updaters.append(
         obscode="i",
         description="""WSRT clock corrections (TEMPO-format)
 
-            This file is pulled from the TEMPO repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO repository and may not be fully
+            up-to-date.
 
             This file may or may not agree with the TEMPO2-format version of what
             should be the same information.
@@ -1206,7 +1218,8 @@ updaters.append(
         format="tempo2",
         description="""Parkes observatory clock corrections
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
 
             The comments read:
 
@@ -1240,10 +1253,11 @@ updaters.append(
         bogus_last_correction=True,
         description="""Parkes observatory clock corrections (TEMPO format)
 
-            This file is pulled from the TEMPO repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO repository and may not be fully
+            up-to-date.
 
-            Note that this file has some clock (non-)correction data for other telescopes
-            in the same file, distinguished only by observatory code.
+            Note that this file has some clock (non-)correction data for other
+            telescopes in the same file, distinguished only by observatory code.
         """,
     )
 )
@@ -1256,7 +1270,8 @@ updaters.append(
         format="tempo2",
         description="""Sardinia Radio Telescope clock corrections
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1270,7 +1285,8 @@ updaters.append(
         bogus_last_correction=True,
         description="""Effelsberg telescope clock corrections
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
 
             Originally made from time_bonn.dat with an awk script, according to
             the comments.
@@ -1286,9 +1302,9 @@ updaters.append(
         format="tempo2",
         description="""Effelsberg Asterix/PSRix clock correction file
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
-            The European Pulsar Timing Array maintains an internal repository
-            of clock corrections, which they have transferred to the TEMPO2
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date. The European Pulsar Timing Array maintains an internal
+            repository of clock corrections, which they have transferred to the TEMPO2
             repository, so  EPTA telescope data in the TEMPO2 repository (and
             thus here) can be expected to be somewhat up to date.
         """,
@@ -1303,7 +1319,8 @@ updaters.append(
         format="tempo",
         description="""Clock corrections specifically for the NUPPI backend at Nancay
 
-            This file is pulled from the TEMPO repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1336,7 +1353,8 @@ updaters.append(
         bogus_last_correction=True,
         description="""MeerKAT clock corrections file (TEMPO2)
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1348,9 +1366,11 @@ updaters.append(
         authority="temporary",
         format="tempo2",
         bogus_last_correction=True,
-        description="""Molonglo Observatory Synthesis Telescope clock corrections file (TEMPO2)
+        description="""\
+            Molonglo Observatory Synthesis Telescope clock corrections file (TEMPO2)
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
         """,
     )
 )
@@ -1364,7 +1384,8 @@ updaters.append(
         bogus_last_correction=True,
         description="""Nancay-related clock corrections?
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
 
             The European Pulsar Timing Array maintains an internal repository
             of clock corrections, which they have transferred to the TEMPO2
@@ -1415,7 +1436,8 @@ updaters.append(
         bogus_last_correction=True,
         description="""Nancay-related clock corrections?
 
-            This file is pulled from the TEMPO2 repository and may not be fully up-to-date.
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date.
 
             The European Pulsar Timing Array maintains an internal repository
             of clock corrections, which they have transferred to the TEMPO2
@@ -1531,6 +1553,7 @@ for y in [
     2014,
     2013,
     2012,
+    2011,
     2010,
     "06",
     "05",

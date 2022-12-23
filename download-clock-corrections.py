@@ -9,7 +9,6 @@ from the global repository being available for use.
 
 import os
 import logging
-import tempfile
 from pathlib import Path
 from urllib.request import urlopen
 
@@ -23,7 +22,7 @@ public_repo_url_raw = (
 def download_corrections():
     """Download clock corrections to a repository."""  # FIXME: be able to do this in a directory that will stick around
     # for troubleshooting; mostly means make appropriate subdirectories
-    index_url = public_repo_url_raw + "index.txt"
+    index_url = f"{public_repo_url_raw}index.txt"
     log.info(f"Downloading index from {index_url}")
     index = urlopen(index_url).read().decode("utf-8")
     for line in index.split("\n"):
