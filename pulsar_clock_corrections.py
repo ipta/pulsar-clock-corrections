@@ -1312,6 +1312,26 @@ updaters.append(
 )
 updaters.append(
     ClockFileUpdater(
+        "LEAP",
+        "T2runtime/clock/leap2effix.clk",
+        download_url=tempo2_repository_url.format("leap2effix.clk"),
+        authority="temporary",
+        format="tempo2",
+        description="""LEAP clock correction file
+
+            This file corrects from the LEAP clock to the Effelsberg Asterix
+            clock; then the effix2gps file can be used to convert to GPS.
+
+            This file is pulled from the TEMPO2 repository and may not be fully
+            up-to-date. The European Pulsar Timing Array maintains an internal
+            repository of clock corrections, which they have transferred to the TEMPO2
+            repository, so  EPTA telescope data in the TEMPO2 repository (and
+            thus here) can be expected to be somewhat up to date.
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
         "NUPPI",
         "tempo/clock/time_nuppi.dat",
         download_url=tempo_repository_url.format("time_nuppi.dat"),

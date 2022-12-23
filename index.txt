@@ -27,6 +27,7 @@ tempo/clock/time_pks.dat                           7.0   ---
 T2runtime/clock/srt2gps.clk                        7.0   ---
 T2runtime/clock/eff2gps.clk                        7.0   ---
 T2runtime/clock/effix2gps.clk                      7.0   ---
+T2runtime/clock/leap2effix.clk                     7.0   ---
 tempo/clock/time_nuppi.dat                         7.0   ---
 T2runtime/clock/mk2utc_observatory.clk             7.0   ---
 T2runtime/clock/mk2utc.clk                         7.0   ---
