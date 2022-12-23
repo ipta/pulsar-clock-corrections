@@ -318,6 +318,7 @@ class ClockFileUpdater(FileUpdater):
         size = (5, 2)
         plt.gcf().set_size_inches(size)
         dpi = 144
+        plt.tight_layout()
         plt.savefig(make_plots_in_dir / f"{self.filename}.png", dpi=dpi)
         plt.close()
 
@@ -328,6 +329,7 @@ class ClockFileUpdater(FileUpdater):
         )
         self._add_plot_title_and_labels(plt)
         plt.gcf().set_size_inches(size)
+        plt.tight_layout()
         plt.savefig(make_plots_in_dir / f"{self.filename}.short.png", dpi=dpi)
         plt.close()
         f.write(
@@ -1317,6 +1319,7 @@ updaters.append(
         download_url=tempo2_repository_url.format("leap2effix.clk"),
         authority="temporary",
         format="tempo2",
+        bogus_last_correction=True,
         description="""LEAP clock correction file
 
             This file corrects from the LEAP clock to the Effelsberg Asterix
@@ -1590,6 +1593,7 @@ for y in [
             authority="temporary",
             format="tempo2",
             update_interval_days=np.inf,
+            bogus_last_correction=True,
             description=f"""TAI to BIPM-updated TT, {y} version
 
                 This file is constructed from BIPM published data and should
