@@ -5,7 +5,7 @@ import tempfile
 from io import StringIO
 from pathlib import Path
 from textwrap import dedent, indent
-from typing import List, Optional
+from typing import List, Optional, Iterable
 
 import astropy.units as u
 import numpy as np
@@ -21,11 +21,11 @@ public_repo_url_raw = (
 )
 
 
-def base_location():
+def base_location() -> Path:
     return Path(__file__).parent
 
 
-def list_candidate_clock_files():
+def list_candidate_clock_files() -> List[Path]:
     return sorted(base_location().glob("tempo/clock/time*_*.dat")) + sorted(
         base_location().glob("T2runtime/clock/*2*.clk")
     )
@@ -38,23 +38,23 @@ class ValidationError(RuntimeError):
 class FileUpdater:
     def __init__(
         self,
-        short_description,
-        filename,
-        authority="temporary",
-        invalid_if_older_than=None,
-        update_interval_days=7,
-        description="",
+        short_description: str,
+        filename: str,
+        authority: str = "temporary",
+        invalid_if_older_than: Optional[Time] = None,
+        update_interval_days: float = 7,
+        description: str = "",
     ):
         self.filename = filename
         self.short_description = short_description
-        self.filepath = base_location() / self.filename
+        self.filepath: Path = base_location() / self.filename
         self.authority = authority
         self.invalid_if_older_than = invalid_if_older_than
         self.update_interval_days = update_interval_days
         self.description = inspect.cleandoc(description)
-        self._last_log_entry = None
+        self._last_log_entry: Optional[str] = None
         self.log_entry_re = re.compile(r"([0-9 :.-]+) - ([^:]+)(: (.*))?")
-        self.interval_fuzz = 1 * u.hour
+        self.interval_fuzz: u.Quantity = 1 * u.hour
         self._clock_file = None
         self._tstart = None
         self._tend = None
@@ -96,7 +96,7 @@ class FileUpdater:
         self._last_log_entry = entry
 
     @property
-    def last_log_entry(self):
+    def last_log_entry(self) -> str:
         if self._last_log_entry is None:
             self._last_log_entry = open(self.log_file, "rt").readlines()[-1]
         return self._last_log_entry
@@ -155,16 +155,16 @@ class FileUpdater:
 class ClockFileUpdater(FileUpdater):
     def __init__(
         self,
-        short_description,
-        filename,
-        authority="temporary",
-        download_url=None,
-        format="tempo",
-        bogus_last_correction=False,
-        obscode=None,
-        invalid_if_older_than=None,
-        update_interval_days=7,
-        description="",
+        short_description: str,
+        filename: str,
+        authority: str = "temporary",
+        download_url: Optional[str] = None,
+        format: str = "tempo",
+        bogus_last_correction: bool = False,
+        obscode: Optional[str] = None,
+        invalid_if_older_than: Time = None,
+        update_interval_days: float = 7,
+        description: str = "",
     ):
         super().__init__(
             short_description,
@@ -589,11 +589,11 @@ def try_all_updates(respect_interval=True):
         print(f"{updater.short_description:20} {updater.last_log_entry.strip()}")
 
 
-def short_date(t):
+def short_date(t: Time) -> str:
     return "---" if t is None else t.datetime.strftime("%Y-%m-%d")
 
 
-def short_date_and_mjd(t):
+def short_date_and_mjd(t: Time) -> str:
     return "---" if t is None else f"{short_date(t)} MJD {t.mjd:.1f}"
 
 
@@ -608,7 +608,7 @@ def generate_index_txt():
             )
 
 
-def updater_summary_table(updaters, detail_urls=False):
+def updater_summary_table(updaters: Iterable[FileUpdater], detail_urls=False) -> str:
     o = StringIO()
     print(
         "| Name "
