@@ -37,16 +37,16 @@ BIPM data and should be unchanging.
 | URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/tai2tt_bipm2011.clk> |
 | Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/tai2tt_bipm2011.clk> |
 | Format | tempo2 |
-| Bogus last correction | False |
+| Bogus last correction | True |
 | Clock file start | 1975-06-26 MJD 42589.0 |
-| Clock file end | 2023-02-25 MJD 60000.0 |
+| Clock file end | 2012-12-28 MJD 56289.0 |
 | Update interval (days) | inf |
 | Last update attempt | 2022-12-23 |
-| Last update result | Validation failed |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2022-12-23 13:47:33.082 - Validation failed: New version of T2runtime/clock/tai2tt_bipm2011.clk MJDs differ from old version where they overlap in 1 places
+2022-12-23 14:21:40.652 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/tai2tt_bipm2011.clk.log)
 

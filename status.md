@@ -41,22 +41,22 @@ name of each clock file links to a page with more details.
 | [GMRT](T2runtime/clock/gmrt2gps.clk.html) | `T2runtime/clock/gmrt2gps.clk` | --- | --- | 2022-06-01 | Static 
 | [TAI to TT(BIPM2021)](T2runtime/clock/tai2tt_bipm2021.clk.html) | `T2runtime/clock/tai2tt_bipm2021.clk` | 1975-06-26 MJD 42589.0 | 2024-09-26 MJD 60579.0 | 2022-06-13 | Static 
 | [TAI to TT(BIPM2020)](T2runtime/clock/tai2tt_bipm2020.clk.html) | `T2runtime/clock/tai2tt_bipm2020.clk` | 1975-06-26 MJD 42589.0 | 2024-09-26 MJD 60579.0 | 2022-06-13 | Static 
-| [TAI to TT(BIPM2019)](T2runtime/clock/tai2tt_bipm2019.clk.html) | `T2runtime/clock/tai2tt_bipm2019.clk` | 1975-06-26 MJD 42589.0 | 2050-07-13 MJD 70000.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2018)](T2runtime/clock/tai2tt_bipm2018.clk.html) | `T2runtime/clock/tai2tt_bipm2018.clk` | 1975-06-26 MJD 42589.0 | 2036-11-03 MJD 65000.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2017)](T2runtime/clock/tai2tt_bipm2017.clk.html) | `T2runtime/clock/tai2tt_bipm2017.clk` | 1975-06-26 MJD 42589.0 | 2020-10-27 MJD 59149.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2016)](T2runtime/clock/tai2tt_bipm2016.clk.html) | `T2runtime/clock/tai2tt_bipm2016.clk` | 1982-01-10 MJD 44979.0 | 2019-11-02 MJD 58789.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2015)](T2runtime/clock/tai2tt_bipm2015.clk.html) | `T2runtime/clock/tai2tt_bipm2015.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2014)](T2runtime/clock/tai2tt_bipm2014.clk.html) | `T2runtime/clock/tai2tt_bipm2014.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2013)](T2runtime/clock/tai2tt_bipm2013.clk.html) | `T2runtime/clock/tai2tt_bipm2013.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2012)](T2runtime/clock/tai2tt_bipm2012.clk.html) | `T2runtime/clock/tai2tt_bipm2012.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2011)](T2runtime/clock/tai2tt_bipm2011.clk.html) | `T2runtime/clock/tai2tt_bipm2011.clk` | 1975-06-26 MJD 42589.0 | 2023-02-25 MJD 60000.0 | 2022-12-23 | **Validation failed** 
-| [TAI to TT(BIPM2010)](T2runtime/clock/tai2tt_bipm2010.clk.html) | `T2runtime/clock/tai2tt_bipm2010.clk` | 1975-06-26 MJD 42589.0 | 2010-12-29 MJD 55559.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM06)](T2runtime/clock/tai2tt_bipm06.clk.html) | `T2runtime/clock/tai2tt_bipm06.clk` | 1975-06-26 MJD 42589.0 | 2006-12-30 MJD 54099.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM05)](T2runtime/clock/tai2tt_bipm05.clk.html) | `T2runtime/clock/tai2tt_bipm05.clk` | 1975-06-26 MJD 42589.0 | 2005-12-25 MJD 53729.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2004)](T2runtime/clock/tai2tt_bipm2004.clk.html) | `T2runtime/clock/tai2tt_bipm2004.clk` | 1975-06-26 MJD 42589.0 | 2004-08-22 MJD 53239.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM2003)](T2runtime/clock/tai2tt_bipm2003.clk.html) | `T2runtime/clock/tai2tt_bipm2003.clk` | 1975-06-26 MJD 42589.0 | 2003-07-29 MJD 52849.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM01)](T2runtime/clock/tai2tt_bipm01.clk.html) | `T2runtime/clock/tai2tt_bipm01.clk` | 1975-06-26 MJD 42589.0 | 2000-12-21 MJD 51899.0 | 2022-06-13 | Unchanged 
-| [TAI to TT(BIPM92)](T2runtime/clock/tai2tt_bipm92.clk.html) | `T2runtime/clock/tai2tt_bipm92.clk` | 1975-06-26 MJD 42589.0 | 1991-12-29 MJD 48619.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2019)](T2runtime/clock/tai2tt_bipm2019.clk.html) | `T2runtime/clock/tai2tt_bipm2019.clk` | 1975-06-26 MJD 42589.0 | 2022-10-27 MJD 59879.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2018)](T2runtime/clock/tai2tt_bipm2018.clk.html) | `T2runtime/clock/tai2tt_bipm2018.clk` | 1975-06-26 MJD 42589.0 | 2018-12-27 MJD 58479.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2017)](T2runtime/clock/tai2tt_bipm2017.clk.html) | `T2runtime/clock/tai2tt_bipm2017.clk` | 1975-06-26 MJD 42589.0 | 2020-10-17 MJD 59139.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2016)](T2runtime/clock/tai2tt_bipm2016.clk.html) | `T2runtime/clock/tai2tt_bipm2016.clk` | 1982-01-10 MJD 44979.0 | 2019-10-23 MJD 58779.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2015)](T2runtime/clock/tai2tt_bipm2015.clk.html) | `T2runtime/clock/tai2tt_bipm2015.clk` | 1975-06-26 MJD 42589.0 | 2015-12-23 MJD 57379.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2014)](T2runtime/clock/tai2tt_bipm2014.clk.html) | `T2runtime/clock/tai2tt_bipm2014.clk` | 1975-06-26 MJD 42589.0 | 2014-12-28 MJD 57019.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2013)](T2runtime/clock/tai2tt_bipm2013.clk.html) | `T2runtime/clock/tai2tt_bipm2013.clk` | 1975-06-26 MJD 42589.0 | 2013-12-23 MJD 56649.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2012)](T2runtime/clock/tai2tt_bipm2012.clk.html) | `T2runtime/clock/tai2tt_bipm2012.clk` | 1975-06-26 MJD 42589.0 | 2013-12-23 MJD 56649.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2011)](T2runtime/clock/tai2tt_bipm2011.clk.html) | `T2runtime/clock/tai2tt_bipm2011.clk` | 1975-06-26 MJD 42589.0 | 2012-12-28 MJD 56289.0 | 2022-12-23 | Updated 
+| [TAI to TT(BIPM2010)](T2runtime/clock/tai2tt_bipm2010.clk.html) | `T2runtime/clock/tai2tt_bipm2010.clk` | 1975-06-26 MJD 42589.0 | 2010-12-24 MJD 55554.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM06)](T2runtime/clock/tai2tt_bipm06.clk.html) | `T2runtime/clock/tai2tt_bipm06.clk` | 1975-06-26 MJD 42589.0 | 2006-12-20 MJD 54089.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM05)](T2runtime/clock/tai2tt_bipm05.clk.html) | `T2runtime/clock/tai2tt_bipm05.clk` | 1975-06-26 MJD 42589.0 | 2005-12-15 MJD 53719.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2004)](T2runtime/clock/tai2tt_bipm2004.clk.html) | `T2runtime/clock/tai2tt_bipm2004.clk` | 1975-06-26 MJD 42589.0 | 2004-08-12 MJD 53229.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM2003)](T2runtime/clock/tai2tt_bipm2003.clk.html) | `T2runtime/clock/tai2tt_bipm2003.clk` | 1975-06-26 MJD 42589.0 | 2003-07-19 MJD 52839.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM01)](T2runtime/clock/tai2tt_bipm01.clk.html) | `T2runtime/clock/tai2tt_bipm01.clk` | 1975-06-26 MJD 42589.0 | 2000-12-11 MJD 51889.0 | 2022-06-13 | Unchanged 
+| [TAI to TT(BIPM92)](T2runtime/clock/tai2tt_bipm92.clk.html) | `T2runtime/clock/tai2tt_bipm92.clk` | 1975-06-26 MJD 42589.0 | 1991-12-19 MJD 48609.0 | 2022-06-13 | Unchanged 
 
 
 
@@ -78,7 +78,7 @@ name of each clock file links to a page with more details.
 | [SRT](T2runtime/clock/srt2gps.clk.html) | `T2runtime/clock/srt2gps.clk` | 2013-03-20 MJD 56371.0 | 2019-12-11 MJD 58828.0 | 2022-12-21 | Unchanged 
 | [Effelsberg](T2runtime/clock/eff2gps.clk.html) | `T2runtime/clock/eff2gps.clk` | 1993-11-29 MJD 49320.0 | 2015-06-22 MJD 57195.5 | 2022-12-21 | Unchanged 
 | [Effelsberg Asterix/PSRix](T2runtime/clock/effix2gps.clk.html) | `T2runtime/clock/effix2gps.clk` | 2011-01-01 MJD 55562.5 | 2021-03-21 MJD 59294.5 | 2022-12-21 | Unchanged 
-| [LEAP](T2runtime/clock/leap2effix.clk.html) | `T2runtime/clock/leap2effix.clk` | 2012-10-29 MJD 56230.0 | 2132-08-31 MJD 99999.0 | 2022-12-23 | Unchanged 
+| [LEAP](T2runtime/clock/leap2effix.clk.html) | `T2runtime/clock/leap2effix.clk` | 2012-10-29 MJD 56230.0 | 2014-03-04 MJD 56720.0 | 2022-12-23 | Unchanged 
 | [NUPPI](tempo/clock/time_nuppi.dat.html) | `tempo/clock/time_nuppi.dat` | 2005-03-07 MJD 53436.0 | 2015-11-08 MJD 57334.6 | 2022-12-22 | Unchanged 
 | [Meerkat (TEMPO2)](T2runtime/clock/mk2utc.clk.html) | `T2runtime/clock/mk2utc.clk` | 2019-01-01 MJD 58484.0 | 2021-02-22 MJD 59268.0 | 2022-12-21 | Unchanged 
 | [MOST](T2runtime/clock/mo2gps.clk.html) | `T2runtime/clock/mo2gps.clk` | 2003-12-27 MJD 53000.0 | 2018-09-06 MJD 58367.0 | 2022-12-21 | Unchanged 

@@ -37,9 +37,9 @@ BIPM data and should be unchanging.
 | URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/tai2tt_bipm2003.clk> |
 | Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/tai2tt_bipm2003.clk> |
 | Format | tempo2 |
-| Bogus last correction | False |
+| Bogus last correction | True |
 | Clock file start | 1975-06-26 MJD 42589.0 |
-| Clock file end | 2003-07-29 MJD 52849.0 |
+| Clock file end | 2003-07-19 MJD 52839.0 |
 | Update interval (days) | inf |
 | Last update attempt | 2022-06-13 |
 | Last update result | Unchanged |
