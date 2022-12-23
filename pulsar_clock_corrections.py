@@ -312,12 +312,12 @@ class ClockFileUpdater(FileUpdater):
 
         quantity_support()
 
+        size = (5, 2)
+        dpi = 144
         plt.figure()
         plt.plot(self.clock_file.time.mjd, self.clock_file.clock.to(u.ns), ".")
         self._add_plot_title_and_labels(plt)
-        size = (5, 2)
         plt.gcf().set_size_inches(size)
-        dpi = 144
         plt.tight_layout()
         plt.savefig(make_plots_in_dir / f"{self.filename}.png", dpi=dpi)
         plt.close()
