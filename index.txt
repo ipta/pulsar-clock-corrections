@@ -47,6 +47,7 @@ T2runtime/clock/tai2tt_bipm2015.clk                inf   ---
 T2runtime/clock/tai2tt_bipm2014.clk                inf   ---
 T2runtime/clock/tai2tt_bipm2013.clk                inf   ---
 T2runtime/clock/tai2tt_bipm2012.clk                inf   ---
+T2runtime/clock/tai2tt_bipm2011.clk                inf   ---
 T2runtime/clock/tai2tt_bipm2010.clk                inf   ---
 T2runtime/clock/tai2tt_bipm06.clk                  inf   ---
 T2runtime/clock/tai2tt_bipm05.clk                  inf   ---
