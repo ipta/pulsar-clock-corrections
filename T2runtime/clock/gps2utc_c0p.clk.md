@@ -30,12 +30,11 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 | Clock file start | 2010-12-29 MJD 55559.0 |
 | Clock file end | 2022-11-26 MJD 59909.0 |
 | Update interval (days) | 1 |
-| Last update attempt | 2022-12-22 |
+| Last update attempt | 2022-12-23 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-12-13 20:30:04.760 - Unchanged
 2022-12-14 20:29:45.571 - Unchanged
 2022-12-15 20:27:46.633 - Unchanged
 2022-12-16 20:28:06.404 - Unchanged
@@ -45,6 +44,7 @@ Log entries from the last few update attempts:
 2022-12-20 20:28:22.398 - Unchanged
 2022-12-21 20:28:10.985 - Unchanged
 2022-12-22 20:28:25.807 - Unchanged
+2022-12-23 20:28:19.761 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc_c0p.clk.log)
 
@@ -75,15 +75,4 @@ All clock corrections:
 Recent clock corrections:
 
 ![plot of recent clock corrections](gps2utc_c0p.clk.short.png "Recent corrections")
-
-
-### Further information
-
-- [Description of this repository](index.html)
-- [Instructions for using this repository with various software](instructions.html)
-- [Status page](status.html)
-
-
-
-This repository is currently maintained by Anne Archibald <anne.archibald@nanograv.org>.
 

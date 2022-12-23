@@ -26,26 +26,15 @@ If there are any questions, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
+2022-12-23 13:49:26.402 - Unchanged
+2022-12-23 13:58:21.868 - Unchanged
+2022-12-23 14:04:34.599 - Unchanged
+2022-12-23 14:18:22.009 - Unchanged
+2022-12-23 14:19:41.943 - Unchanged
+2022-12-23 14:20:22.477 - Unchanged
+2022-12-23 14:21:39.449 - Unchanged
+2022-12-23 14:23:16.777 - Unchanged
 2022-12-23 15:24:27.369 - Unchanged
-2022-12-23 16:55:04.904 - Unchanged
-2022-12-23 16:58:11.672 - Unchanged
-2022-12-23 17:00:07.024 - Unchanged
-2022-12-23 18:05:16.801 - Unchanged
-2022-12-23 18:06:34.635 - Unchanged
-2022-12-23 18:06:54.454 - Unchanged
-2022-12-23 18:07:24.290 - Unchanged
-2022-12-23 18:13:04.240 - Unchanged
-2022-12-23 18:15:56.512 - Unchanged
+2022-12-23 20:28:20.957 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/leap.sec.log)
-
-### Further information
-
-- [Description of this repository](index.html)
-- [Instructions for using this repository with various software](instructions.html)
-- [Status page](status.html)
-
-
-
-This repository is currently maintained by Anne Archibald <anne.archibald@nanograv.org>.
-

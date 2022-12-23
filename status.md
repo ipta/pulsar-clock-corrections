@@ -13,17 +13,17 @@ name of each clock file links to a page with more details.
 
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
-| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2022-11-26 MJD 59909.0 | 2022-12-22 | Unchanged 
-| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2022-11-26 MJD 59909.0 | 2022-12-22 | Unchanged 
-| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2022-11-26 MJD 59909.0 | 2022-12-22 | Unchanged 
-| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-12-21 MJD 59934.5 | 2022-12-22 | Updated 
-| [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-12-21 MJD 59934.5 | 2022-12-22 | Updated 
+| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2022-11-26 MJD 59909.0 | 2022-12-23 | Unchanged 
+| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2022-11-26 MJD 59909.0 | 2022-12-23 | Unchanged 
+| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2022-11-26 MJD 59909.0 | 2022-12-23 | Unchanged 
+| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2022-12-22 MJD 59935.5 | 2022-12-23 | Updated 
+| [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2022-12-22 MJD 59935.5 | 2022-12-23 | Updated 
 | [Jodrell Bank](T2runtime/clock/jb2gps.clk.html) | `T2runtime/clock/jb2gps.clk` | 2006-10-13 MJD 54021.4 | 2021-11-03 MJD 59521.0 | 2022-12-21 | Unchanged 
 | [Jodrell Bank Roach](T2runtime/clock/jbroach2jb.clk.html) | `T2runtime/clock/jbroach2jb.clk` | 2006-10-13 MJD 54021.4 | 2018-03-20 MJD 58197.6 | 2022-12-21 | Unchanged 
 | [Jodrell Bank DFB](T2runtime/clock/jbdfb2jb.clk.html) | `T2runtime/clock/jbdfb2jb.clk` | 2006-10-13 MJD 54021.4 | 2017-05-11 MJD 57884.0 | 2022-12-21 | Unchanged 
 | [Meerkat (observatory)](T2runtime/clock/mk2utc_observatory.clk.html) | `T2runtime/clock/mk2utc_observatory.clk` | 2019-01-01 MJD 58484.0 | 2022-12-09 MJD 59923.0 | 2022-12-19 | Updated 
 | [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2022-12-23 | Unchanged 
-| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2023-12-23 MJD 60301.0 | 2022-12-23 | Unchanged 
+| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2023-12-30 MJD 60308.0 | 2022-12-23 | Updated 
 
 
 
@@ -82,16 +82,11 @@ name of each clock file links to a page with more details.
 | [NUPPI](tempo/clock/time_nuppi.dat.html) | `tempo/clock/time_nuppi.dat` | 2005-03-07 MJD 53436.0 | 2015-11-08 MJD 57334.6 | 2022-12-22 | Unchanged 
 | [Meerkat (TEMPO2)](T2runtime/clock/mk2utc.clk.html) | `T2runtime/clock/mk2utc.clk` | 2019-01-01 MJD 58484.0 | 2021-02-22 MJD 59268.0 | 2022-12-21 | Unchanged 
 | [MOST](T2runtime/clock/mo2gps.clk.html) | `T2runtime/clock/mo2gps.clk` | 2003-12-27 MJD 53000.0 | 2018-09-06 MJD 58367.0 | 2022-12-21 | Unchanged 
-| [Nancay to obspm](T2runtime/clock/ncyobs2obspm.clk.html) | `T2runtime/clock/ncyobs2obspm.clk` | 1988-05-18 MJD 47299.6 | 2022-11-26 MJD 59909.6 | 2022-12-23 | **Validation failed** 
+| [Nancay to obspm](T2runtime/clock/ncyobs2obspm.clk.html) | `T2runtime/clock/ncyobs2obspm.clk` | 1988-05-18 MJD 47299.6 | 2022-11-26 MJD 59909.6 | 2022-12-21 | **Validation failed** 
 | [obspm](T2runtime/clock/obspm2gps.clk.html) | `T2runtime/clock/obspm2gps.clk` | 2003-12-01 MJD 52974.0 | 2022-10-27 MJD 59879.0 | 2022-12-21 | **Validation failed** 
 
 
-### Further information
+### Further information:
 
-- [Description of this repository](index.html)
+- [What is this repository?](index.html)
 - [Instructions for using this repository with various software](instructions.html)
-
-
-
-This repository is currently maintained by Anne Archibald <anne.archibald@nanograv.org>.
-

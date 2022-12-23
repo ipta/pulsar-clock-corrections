@@ -494,14 +494,3 @@ Recent clock corrections:
 
 ![plot of recent clock corrections](pks2gps.clk.short.png "Recent corrections")
 
-
-### Further information
-
-- [Description of this repository](index.html)
-- [Instructions for using this repository with various software](instructions.html)
-- [Status page](status.html)
-
-
-
-This repository is currently maintained by Anne Archibald <anne.archibald@nanograv.org>.
-
