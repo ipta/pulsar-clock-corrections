@@ -67,7 +67,7 @@ class FileUpdater:
     def tend(self):
         return self._tend
 
-    def needs_update(self):
+    def needs_update(self) -> bool:
         """Check whether the update process needs to run.
 
         This normally involves checking the current time against
@@ -342,11 +342,10 @@ class ClockFileUpdater(FileUpdater):
 
                     ![plot of recent clock corrections]({self.filepath.name}.short.png "Recent corrections")
 
-                    """
+                    """  # noqa
             )
         )
 
-    # TODO Rename this here and in `_write_plot`
     def _finalize_plot(self, plt, size):
         plt.xlabel("MJD")
         plt.ylabel("corr. (ns)")
@@ -368,7 +367,7 @@ class ClockFileConverterUpdater(ClockFileUpdater):
         self,
         short_description,
         filename,
-        updater,
+        updater: FileUpdater,
         format="tempo2",
         hdrline="",
         description="",
@@ -718,7 +717,7 @@ class PagesUpdater:
 
                     - [What is this repository?](index.html)
                     - [Instructions for using this repository with various software](instructions.html)
-                    """
+                    """  # noqa
                 )
             )
 
@@ -1246,7 +1245,7 @@ updaters.append(
             for plotting purposes, this value must be in there for a reason so
             we retain it.
 
-        """,
+        """,  # noqa
     )
 )
 updaters.append(
