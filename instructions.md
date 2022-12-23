@@ -1,3 +1,4 @@
+
 ## Using these clock corrections
 
 This repository contains clock files in TEMPO and TEMPO2 format, laid out in
@@ -88,8 +89,13 @@ up-to-date versions of these clock files. You need do nothing; if you need to op
 PINT without Net access, or you want to override these clock files, see the
 PINT documentation.
 
-### Further information:
 
-- [What is this repository?](index.html)
+### Further information
+
+- [Description of this repository](index.html)
 - [Status page](status.html)
+
+
+
+This repository is currently maintained by Anne Archibald <anne.archibald@nanograv.org>.
 

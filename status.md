@@ -82,11 +82,16 @@ name of each clock file links to a page with more details.
 | [NUPPI](tempo/clock/time_nuppi.dat.html) | `tempo/clock/time_nuppi.dat` | 2005-03-07 MJD 53436.0 | 2015-11-08 MJD 57334.6 | 2022-12-22 | Unchanged 
 | [Meerkat (TEMPO2)](T2runtime/clock/mk2utc.clk.html) | `T2runtime/clock/mk2utc.clk` | 2019-01-01 MJD 58484.0 | 2021-02-22 MJD 59268.0 | 2022-12-21 | Unchanged 
 | [MOST](T2runtime/clock/mo2gps.clk.html) | `T2runtime/clock/mo2gps.clk` | 2003-12-27 MJD 53000.0 | 2018-09-06 MJD 58367.0 | 2022-12-21 | Unchanged 
-| [Nancay to obspm](T2runtime/clock/ncyobs2obspm.clk.html) | `T2runtime/clock/ncyobs2obspm.clk` | 1988-05-18 MJD 47299.6 | 2022-11-26 MJD 59909.6 | 2022-12-21 | **Validation failed** 
+| [Nancay to obspm](T2runtime/clock/ncyobs2obspm.clk.html) | `T2runtime/clock/ncyobs2obspm.clk` | 1988-05-18 MJD 47299.6 | 2022-11-26 MJD 59909.6 | 2022-12-23 | **Validation failed** 
 | [obspm](T2runtime/clock/obspm2gps.clk.html) | `T2runtime/clock/obspm2gps.clk` | 2003-12-01 MJD 52974.0 | 2022-10-27 MJD 59879.0 | 2022-12-21 | **Validation failed** 
 
 
-### Further information:
+### Further information
 
-- [What is this repository?](index.html)
+- [Description of this repository](index.html)
 - [Instructions for using this repository with various software](instructions.html)
+
+
+
+This repository is currently maintained by Anne Archibald <anne.archibald@nanograv.org>.
+
