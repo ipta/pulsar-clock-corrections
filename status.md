@@ -13,17 +13,17 @@ name of each clock file links to a page with more details.
 
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
-| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2022-11-26 MJD 59909.0 | 2023-01-08 | Unchanged 
-| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2022-11-26 MJD 59909.0 | 2023-01-08 | Unchanged 
-| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2022-11-26 MJD 59909.0 | 2023-01-08 | Unchanged 
-| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2023-01-07 MJD 59951.5 | 2023-01-08 | Updated 
-| [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2023-01-07 MJD 59951.5 | 2023-01-08 | Updated 
+| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2022-11-26 MJD 59909.0 | 2023-01-09 | Unchanged 
+| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2022-11-26 MJD 59909.0 | 2023-01-09 | Unchanged 
+| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2022-11-26 MJD 59909.0 | 2023-01-09 | Unchanged 
+| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2023-01-08 MJD 59952.5 | 2023-01-09 | Updated 
+| [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2023-01-08 MJD 59952.5 | 2023-01-09 | Updated 
 | [Jodrell Bank](T2runtime/clock/jb2gps.clk.html) | `T2runtime/clock/jb2gps.clk` | 2006-10-13 MJD 54021.4 | 2021-11-03 MJD 59521.0 | 2023-01-04 | Unchanged 
 | [Jodrell Bank Roach](T2runtime/clock/jbroach2jb.clk.html) | `T2runtime/clock/jbroach2jb.clk` | 2006-10-13 MJD 54021.4 | 2018-03-20 MJD 58197.6 | 2023-01-04 | Unchanged 
 | [Jodrell Bank DFB](T2runtime/clock/jbdfb2jb.clk.html) | `T2runtime/clock/jbdfb2jb.clk` | 2006-10-13 MJD 54021.4 | 2017-05-11 MJD 57884.0 | 2023-01-04 | Unchanged 
-| [Meerkat (observatory)](T2runtime/clock/mk2utc_observatory.clk.html) | `T2runtime/clock/mk2utc_observatory.clk` | 2019-01-01 MJD 58484.0 | 2022-12-09 MJD 59923.0 | 2023-01-02 | Unchanged 
-| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2023-01-08 | Unchanged 
-| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2024-01-13 MJD 60322.0 | 2023-01-08 | Unchanged 
+| [Meerkat (observatory)](T2runtime/clock/mk2utc_observatory.clk.html) | `T2runtime/clock/mk2utc_observatory.clk` | 2019-01-01 MJD 58484.0 | 2022-12-09 MJD 59923.0 | 2023-01-09 | Unchanged 
+| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2023-01-09 | Unchanged 
+| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2024-01-13 MJD 60322.0 | 2023-01-09 | Unchanged 
 
 
 
@@ -65,7 +65,7 @@ name of each clock file links to a page with more details.
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
 | [GPS to UTC (TEMPO2)](T2runtime/clock/gps2utc_tempo2.clk.html) | `T2runtime/clock/gps2utc_tempo2.clk` | 1996-03-27 MJD 50169.0 | 2022-10-27 MJD 59879.0 | 2023-01-05 | Unchanged 
-| [GBT (TEMPO2)](T2runtime/clock/gbt2gps_tempo2.clk.html) | `T2runtime/clock/gbt2gps_tempo2.clk` | 2000-12-31 MJD 51909.5 | 2020-02-25 MJD 58904.5 | 2023-01-02 | Unchanged 
+| [GBT (TEMPO2)](T2runtime/clock/gbt2gps_tempo2.clk.html) | `T2runtime/clock/gbt2gps_tempo2.clk` | 2000-12-31 MJD 51909.5 | 2020-02-25 MJD 58904.5 | 2023-01-09 | Unchanged 
 | [Jodrell Bank (TEMPO)](tempo/clock/time_jb.dat.html) | `tempo/clock/time_jb.dat` | 2006-10-13 MJD 54021.4 | 2019-05-13 MJD 58616.2 | 2023-01-05 | Unchanged 
 | [VLA](tempo/clock/time_vla.dat.html) | `tempo/clock/time_vla.dat` | 1990-10-27 MJD 48191.2 | 2021-03-07 MJD 59280.5 | 2023-01-05 | **Failed to download** 
 | [VLA (TEMPO2)](T2runtime/clock/vla2gps.clk.html) | `T2runtime/clock/vla2gps.clk` | 2015-02-01 MJD 57054.6 | 2021-03-07 MJD 59280.5 | 2023-01-04 | Unchanged 
