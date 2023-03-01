@@ -23,12 +23,11 @@ If questions arise, contact Michael Keith
 | Clock file start | 2006-10-13 MJD 54021.4 |
 | Clock file end | 2017-05-11 MJD 57884.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-02-22 |
+| Last update attempt | 2023-03-01 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2022-12-21 20:28:13.248 - Unchanged
 2022-12-28 20:27:38.282 - Unchanged
 2023-01-04 20:29:16.879 - Unchanged
 2023-01-11 20:29:43.303 - Unchanged
@@ -38,6 +37,7 @@ Log entries from the last few update attempts:
 2023-02-08 20:29:38.831 - Unchanged
 2023-02-15 20:29:55.015 - Unchanged
 2023-02-22 20:30:00.009 - Unchanged
+2023-03-01 20:30:50.941 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/jbdfb2jb.clk.log)
 
