@@ -18,12 +18,11 @@ TEMPO2.)
 | Clock file start | 1990-10-27 MJD 48191.2 |
 | Clock file end | 2021-03-07 MJD 59280.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-03-02 |
+| Last update attempt | 2023-03-09 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2022-12-29 20:28:03.408 - Failed to download: HTTP Error 404: Not Found
 2023-01-05 20:30:11.466 - Failed to download: HTTP Error 404: Not Found
 2023-01-12 20:29:55.200 - Failed to download: HTTP Error 404: Not Found
 2023-01-19 20:29:25.849 - Failed to download: HTTP Error 404: Not Found
@@ -33,6 +32,7 @@ Log entries from the last few update attempts:
 2023-02-16 20:29:19.768 - Failed to download: HTTP Error 404: Not Found
 2023-02-23 20:30:36.844 - Failed to download: HTTP Error 404: Not Found
 2023-03-02 20:30:47.319 - Failed to download: HTTP Error 404: Not Found
+2023-03-09 20:31:03.981 - Failed to download: HTTP Error 404: Not Found
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_vla.dat.log)
 
