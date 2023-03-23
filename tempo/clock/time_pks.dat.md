@@ -20,12 +20,11 @@ telescopes in the same file, distinguished only by observatory code.
 | Clock file start | 1979-05-07 MJD 44000.0 |
 | Clock file end | 2011-07-03 MJD 55745.8 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-03-16 |
+| Last update attempt | 2023-03-23 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2023-01-12 20:29:56.319 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1768-ocro3wpf appears to be out of order
 2023-01-19 20:29:27.268 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1776-mnk33jo5 appears to be out of order
 2023-01-26 20:27:52.361 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1727-mtkw35or appears to be out of order
 2023-02-02 20:29:10.866 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1774-g45b96pq appears to be out of order
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2023-03-02 20:30:48.526 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1706-_i5l6zu0 appears to be out of order
 2023-03-09 20:31:05.060 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1730-tvhmpzn8 appears to be out of order
 2023-03-16 20:29:09.497 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1726-u716fwx7 appears to be out of order
+2023-03-23 20:27:47.249 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1727-75z30o3m appears to be out of order
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_pks.dat.log)
 
