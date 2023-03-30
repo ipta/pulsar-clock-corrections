@@ -24,12 +24,11 @@ to contact is 缪晨晨 <miaocc@bao.ac.cn>, Chenchen Miao.
 | Clock file start | 2017-07-26 MJD 57960.4 |
 | Clock file end | 2019-09-18 MJD 58744.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-03-23 |
+| Last update attempt | 2023-03-30 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2023-01-19 20:29:26.054 - Failed to download: HTTP Error 404: Not Found
 2023-01-26 20:27:51.518 - Failed to download: HTTP Error 404: Not Found
 2023-02-02 20:29:09.391 - Failed to download: HTTP Error 404: Not Found
 2023-02-09 20:29:59.076 - Failed to download: HTTP Error 404: Not Found
@@ -39,6 +38,7 @@ Log entries from the last few update attempts:
 2023-03-09 20:31:04.083 - Failed to download: HTTP Error 404: Not Found
 2023-03-16 20:29:07.910 - Failed to download: HTTP Error 404: Not Found
 2023-03-23 20:27:45.848 - Failed to download: HTTP Error 404: Not Found
+2023-03-30 20:27:42.186 - Failed to download: HTTP Error 404: Not Found
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_fast.dat.log)
 
