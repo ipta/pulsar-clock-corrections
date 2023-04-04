@@ -303,3 +303,4 @@
 2023-04-01 20:25:31.467 - Validation failed: New version of tempo/clock/time_gbt.dat has decreased from 8001 to 7999 measurements.
 2023-04-02 20:24:49.456 - Validation failed: New version of tempo/clock/time_gbt.dat MJDs differ from old version where they overlap in 2 places
 2023-04-03 20:26:04.661 - Validation failed: New version of tempo/clock/time_gbt.dat MJDs differ from old version where they overlap in 2 places
+2023-04-04 20:27:41.007 - Validation failed: New version of tempo/clock/time_gbt.dat MJDs differ from old version where they overlap in 2 places
