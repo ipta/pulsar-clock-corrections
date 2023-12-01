@@ -1535,7 +1535,7 @@ for y in bipm.list_recent_ttbipmxy()[::-1]:
             f"T2runtime/clock/tai2tt_bipm{y}.clk",
             authority="observatory",
             callable=partial(
-                bipm.get_ttbipmxy_corrections_clock, y, include_forecast=10000
+                bipm.get_ttbipmxy_corrections_clock, y, include_forecast=1000
             ),
             update_interval_days=np.inf,
             description=f"""TAI to BIPM-updated TT, {y} version
