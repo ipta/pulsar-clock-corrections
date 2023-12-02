@@ -1222,9 +1222,9 @@ updaters.append(
         format="tempo2",
         description="""Parkes observatory clock corrections
 
-            This file is pulled from the TEMPO2 repository and may not be fully
-            up-to-date.
-
+            This file is pulled from the Parkes observatory repository and should 
+            be up-to-date.
+            
             The comments read:
 
                 Tie of Parkes clock to GPS time standard. Sources are listed below.
