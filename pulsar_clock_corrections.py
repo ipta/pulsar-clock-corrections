@@ -15,6 +15,7 @@ from pint.observatory.clock_file import ClockFile
 
 import bipm
 import iers
+import pks
 
 public_repo_url_raw = (
     "https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/"
@@ -372,7 +373,6 @@ class ClockFileConverterUpdater(ClockFileUpdater):
         hdrline="",
         description="",
     ):
-
         super().__init__(
             short_description,
             filename,
@@ -456,7 +456,6 @@ class ClockFileCallableUpdater(ClockFileUpdater):
         format="tempo2",
         description="",
     ):
-
         super().__init__(
             short_description,
             filename,
@@ -495,7 +494,6 @@ class CallableUpdater(FileUpdater):
         update_interval_days=0,
         description="",
     ):
-
         super().__init__(
             short_description,
             filename,
@@ -1219,7 +1217,7 @@ updaters.append(
     ClockFileUpdater(
         "Parkes",
         "T2runtime/clock/pks2gps.clk",
-        download_url=tempo2_repository_url.format("pks2gps.clk"),
+        download_url=pks.get_mostrecent_pks_url(),
         authority="temporary",
         format="tempo2",
         description="""Parkes observatory clock corrections
