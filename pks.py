@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import pint.observatory.clock_file
 
 
-clockfilebaseurl = "https://www.parkes.atnf.csiro.au/observing/clockfilesAA/"
+clockfilebaseurl = "https://www.parkes.atnf.csiro.au/observing/clockfiles/"
 
 
 def get_mostrecent_pks_url():
