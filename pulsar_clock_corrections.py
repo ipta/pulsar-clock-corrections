@@ -1213,11 +1213,14 @@ updaters.append(
         """,
     )
 )
+pks_url = pks.get_mostrecent_pks_url()
+if pks_url is None:
+    pks_url = tempo2_repository_url.format("pks2gps.clk")
 updaters.append(
     ClockFileUpdater(
         "Parkes",
         "T2runtime/clock/pks2gps.clk",
-        download_url=pks.get_mostrecent_pks_url(),
+        download_url=pks_url,
         authority="temporary",
         format="tempo2",
         description="""Parkes observatory clock corrections
