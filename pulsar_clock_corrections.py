@@ -125,7 +125,6 @@ class FileUpdater:
         if not force and respect_interval and not self.needs_update():
             # No new data to be had, no log entry
             return True
-        f = self.get(cache=cache)
         try:
             f = self.get(cache=cache)
         except IOError as e:
