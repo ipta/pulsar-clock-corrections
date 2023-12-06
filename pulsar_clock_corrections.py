@@ -15,6 +15,7 @@ from pint.observatory.clock_file import ClockFile
 
 import bipm
 import iers
+import pks
 
 public_repo_url_raw = (
     "https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/"
@@ -372,7 +373,6 @@ class ClockFileConverterUpdater(ClockFileUpdater):
         hdrline="",
         description="",
     ):
-
         super().__init__(
             short_description,
             filename,
@@ -456,7 +456,6 @@ class ClockFileCallableUpdater(ClockFileUpdater):
         format="tempo2",
         description="",
     ):
-
         super().__init__(
             short_description,
             filename,
@@ -495,7 +494,6 @@ class CallableUpdater(FileUpdater):
         update_interval_days=0,
         description="",
     ):
-
         super().__init__(
             short_description,
             filename,
@@ -1215,18 +1213,21 @@ updaters.append(
         """,
     )
 )
+pks_url = pks.get_mostrecent_pks_url()
+if pks_url is None:
+    pks_url = tempo2_repository_url.format("pks2gps.clk")
 updaters.append(
     ClockFileUpdater(
         "Parkes",
         "T2runtime/clock/pks2gps.clk",
-        download_url=tempo2_repository_url.format("pks2gps.clk"),
+        download_url=pks_url,
         authority="temporary",
         format="tempo2",
         description="""Parkes observatory clock corrections
 
-            This file is pulled from the TEMPO2 repository and may not be fully
-            up-to-date.
-
+            This file is pulled from the Parkes observatory repository and should 
+            be up-to-date.
+            
             The comments read:
 
                 Tie of Parkes clock to GPS time standard. Sources are listed below.
