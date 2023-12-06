@@ -4,6 +4,7 @@ import re
 import tempfile
 from io import StringIO
 from pathlib import Path
+from functools import partial
 from textwrap import dedent, indent
 from typing import List, Optional, Iterable, Union
 
@@ -88,7 +89,13 @@ class FileUpdater:
 
     @property
     def log_file(self):
-        return base_location() / "log" / f"{self.filename}.log"
+        """Return the name of the log file.  If it does not exist, also initialize."""
+        logfilename = base_location() / "log" / f"{self.filename}.log"
+        if not logfilename.exists():
+            with open(logfilename, "w") as f:
+                entry = f"{Time.now().iso} - " + "Initialized" + "\n"
+                f.write(entry)
+        return logfilename
 
     def add_to_log(self, msg):
         entry = f"{Time.now().iso} - " + msg.replace("\n", " ") + "\n"
@@ -472,7 +479,6 @@ class ClockFileCallableUpdater(ClockFileUpdater):
         # FIXME: get should return contents not a filename
 
         filename = Path(tempfile.mkdtemp()) / "converted"
-
         clock_file = self.callable()
         if self.format == "tempo2":
             clock_file.write_tempo2_clock_file(filename)
@@ -1519,8 +1525,8 @@ for y in bipm.list_recent_ttbipmxy()[::-1]:
             f"TAI to TT(BIPM{y})",
             f"T2runtime/clock/tai2tt_bipm{y}.clk",
             authority="observatory",
-            callable=lambda: bipm.get_ttbipmxy_corrections_clock(
-                y, include_forecast=1000
+            callable=partial(
+                bipm.get_ttbipmxy_corrections_clock, y, include_forecast=1000
             ),
             update_interval_days=np.inf,
             description=f"""TAI to BIPM-updated TT, {y} version

@@ -370,5 +370,5 @@ def get_ttbipmxy_corrections_clock(year, include_forecast=1000):
         filename=f"tai2tt_bipm{year}.clk",
     )
     c.leading_comment = leading_comment
-    c.header = "# TAI TT(BIPM2019)"
+    c.header = f"# TAI TT(BIPM{year})"
     return c
