@@ -43,3 +43,6 @@
 2023-03-29 20:28:32.380 - Unchanged
 2023-04-05 20:28:50.634 - Unchanged
 2023-04-12 20:26:24.229 - Unchanged
+2023-12-04 18:55:35.017 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 597 places
+2023-12-04 21:02:53.225 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 597 places
+2023-12-04 21:02:53.228 - Updated overriding validation failure

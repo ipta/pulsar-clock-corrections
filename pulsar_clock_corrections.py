@@ -1116,16 +1116,14 @@ updaters.append(
     ClockFileUpdater(
         "VLA",
         "tempo/clock/time_vla.dat",
-        download_url="https://raw.githubusercontent.com/"
-        "nanograv/PINT/master/src/pint/data/runtime/time_vla.dat",
+        download_url=tempo_repository_url.format("time_vla.dat"),
         authority="temporary",
         format="tempo",
         obscode="6",
         description="""Very Large Array clock corrections
 
-            This file is pulled from the PINT repository and may not be fully
-            up-to-date. (I think PINT has a more recent version than TEMPO or
-            TEMPO2.)
+            This file is pulled from the TEMPO repository and may not be fully
+            up-to-date. 
         """,
     )
 )
@@ -1161,23 +1159,13 @@ updaters.append(
     ClockFileUpdater(
         "FAST",
         "tempo/clock/time_fast.dat",
-        download_url="https://raw.githubusercontent.com/"
-        "nanograv/PINT/master/src/pint/data/runtime/time_fast.dat",
+        download_url="https://raw.githubusercontent.com/NAOC-pulsar/FAST_ClockFile/master/time_fast.dat",
         authority="temporary",
         format="tempo",
         obscode="k",
         description="""FAST clock correction file
 
-            This file is pulled from the PINT repository and may not be fully
-            up-to-date. (TEMPO doesn't seem to have this file at all.)
-
-            The original file is currently hand-generated upon request, but it is
-            planned to make the process automatic and the file downloadable (at
-            which point we will make it update automatically here).
-
-            If you have any questions about these clock corrections, the person
-            to contact is 缪晨晨 <miaocc@bao.ac.cn>, Chenchen Miao.
-
+            This file is pulled from the FAST_ClockFile repository.
         """,
     )
 )

@@ -43,3 +43,8 @@
 2023-03-29 20:28:33.139 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-04-05 20:28:51.268 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-04-12 20:26:24.889 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
+2023-12-04 18:55:36.397 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
+2023-12-06 14:53:13.314 - Validation failed: New version of T2runtime/clock/obspm2gps.clk MJDs differ from old version where they overlap in 5467 places
+2023-12-06 14:55:03.110 - Validation failed: New version of T2runtime/clock/obspm2gps.clk MJDs differ from old version where they overlap in 5467 places
+2023-12-06 14:56:11.336 - Validation failed: New version of T2runtime/clock/obspm2gps.clk MJDs differ from old version where they overlap in 5467 places
+2023-12-06 14:56:11.338 - Updated overriding validation failure
