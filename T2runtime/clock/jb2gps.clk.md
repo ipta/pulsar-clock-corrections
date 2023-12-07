@@ -22,14 +22,13 @@ If questions arise, contact Michael Keith
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 2006-10-13 MJD 54021.4 |
-| Clock file end | 2021-11-03 MJD 59521.0 |
+| Clock file end | 2023-12-04 MJD 60282.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-04-12 |
-| Last update result | Unchanged |
+| Last update attempt | 2023-12-07 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2023-02-08 20:29:37.962 - Unchanged
 2023-02-15 20:29:54.674 - Unchanged
 2023-02-22 20:29:59.678 - Unchanged
 2023-03-01 20:30:50.351 - Unchanged
@@ -39,6 +38,7 @@ Log entries from the last few update attempts:
 2023-03-29 20:28:30.528 - Unchanged
 2023-04-05 20:28:48.640 - Unchanged
 2023-04-12 20:26:22.548 - Unchanged
+2023-12-07 20:29:35.592 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/jb2gps.clk.log)
 

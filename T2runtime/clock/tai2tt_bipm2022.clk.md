@@ -1,7 +1,7 @@
 
-## TAI to TT(BIPM2020)
+## TAI to TT(BIPM2022)
 
-TAI to BIPM-updated TT, 2020 version
+TAI to BIPM-updated TT, 2022 version
 
 This file is constructed from BIPM published data and should
 never change; updated versions will appear approximately
@@ -28,7 +28,7 @@ contains a formula for making predictions past the end of the
 data it contains.
 
 This clock file is automatically generated from the bulletin
-for 2020. It contains forecasted values for 1000 days past the
+for 2022. It contains forecasted values for 1000 days past the
 end of the tabulated data. This is marked by a comment in the
 clock file itself.
 
@@ -38,24 +38,23 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 
 |     |     |
 |:--- |:--- |
-| File | `T2runtime/clock/tai2tt_bipm2020.clk` |
+| File | `T2runtime/clock/tai2tt_bipm2022.clk` |
 | Authority | observatory |
-| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/tai2tt_bipm2020.clk> |
+| URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/tai2tt_bipm2022.clk> |
 | Original download URL | <None> |
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1975-06-26 MJD 42589.0 |
-| Clock file end | 2023-09-22 MJD 60209.0 |
+| Clock file end | 2025-09-21 MJD 60939.0 |
 | Update interval (days) | inf |
-| Last update attempt | 2022-06-13 |
-| Last update result | Updated |
+| Last update attempt | 2023-12-01 |
+| Last update result | Initialized |
 
 Log entries from the last few update attempts:
 ```
-2022-06-13 13:43:53.353 - No way to download: 'T2runtime/clock/tai2tt_bipm2020.clk'
-2022-06-13 13:43:53.362 - Updated
+2023-12-01 15:07:54.109 - Initialized
 ```
-[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/tai2tt_bipm2020.clk.log)
+[Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/tai2tt_bipm2022.clk.log)
 
 Leading comments from clock file:
 
@@ -68,37 +67,37 @@ Leading comments from clock file:
     #
     # TT(BIPM) = TAI + 32.184 s on 1977 January 1st, 0 h TAI.
     #
-    # TT(BIPM20) has been established according to the principles described in
+    # TT(BIPM21) has been established according to the principles described in
     # (Guinot B., Atomic time scales for pulsar studies and other demanding
     # applications, Astron. Astrophys., 192, 1988, pp. 370-373), updated in 2003
     # (Petit G., A new realization of Terrestrial Time, Proc. 35th PTTI, 2003,
     # pp. 307-317) using data from all available primary and secondary frequency standards
-    # until December 2020. Following Recommendation S2 (1996) of the CCDS, a frequency
+    # until December 2022. Following Recommendation S2 (1996) of the CCDS, a frequency
     # correction for the black-body radiation shift is applied to all frequency standard results.
     #
-    # The computation interval of TT(BIPM20) starts on MJD 56289 (28 December 2012). Before
-    # that date, TT(BIPM20) is by construction identical to the past realization TT(BIPM19).
-    # Then the maximum difference between TT(BIPM20) and TT(BIPM19) is -0.3 ns.
-    # The difference between TT(BIPM20) and the formula extending TT(BIPM19) over the year 2020
-    # (see the file TTBIPM.19) is between -7.9 ns and -0.6 ns.
+    # The computation interval of TT(BIPM22) starts on MJD 57019 (28 December 2014). Before
+    # that date, TT(BIPM22) is by construction identical to the past realization TT(BIPM21).
+    # Then the maximum difference between TT(BIPM22) and TT(BIPM21) is 0.3 ns.
+    # The difference between TT(BIPM22) and the formula extending TT(BIPM21) over the year 2022
+    # (see the file TTBIPM.2021) is between -6.8 ns and 0.2 ns.
     #
-    # Starting MJD 52729, TT(BIPM20) is provided with 0.1 ns resolution, consistent with
+    # Starting MJD 52729, TT(BIPM22) is provided with 0.1 ns resolution, consistent with
     # the resolution of TAI.
     #
-    # Until the next realization, users can extend TT(BIPM20) after MJD 59209 as
-    # TT(BIPM20) = TAI + 32.184 s + 27665.3 ns - 0.01x(MJD-59209) ns
+    # Until the next realization, users can extend TT(BIPM22) after MJD 59939 as
+    # TT(BIPM22) = TAI + 32.184 s + 27670.6 ns - 0.01x(MJD-59939) ns
     #
     #   1st column : MJD at 0 h UTC
-    #   2nd   "    : TT(BIPM20) - EAL - 32.184 s, unit is one microsecond
-    #   3rd   "    : TT(BIPM20) - TAI - 32.184 s, unit is one microsecond
+    #   2nd   "    : TT(BIPM22) - EAL - 32.184 s, unit is one microsecond
+    #   3rd   "    : TT(BIPM22) - TAI - 32.184 s, unit is one microsecond
 
 
 
 All clock corrections:
 
-![plot of all clock corrections](tai2tt_bipm2020.clk.png "All corrections")
+![plot of all clock corrections](tai2tt_bipm2022.clk.png "All corrections")
 
 Recent clock corrections:
 
-![plot of recent clock corrections](tai2tt_bipm2020.clk.short.png "Recent corrections")
+![plot of recent clock corrections](tai2tt_bipm2022.clk.short.png "Recent corrections")
 

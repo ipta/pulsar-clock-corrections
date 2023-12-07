@@ -20,23 +20,23 @@ thus here) can be expected to be somewhat up to date.
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 2003-12-01 MJD 52974.0 |
-| Clock file end | 2022-10-27 MJD 59879.0 |
+| Clock file end | 2023-10-27 MJD 60244.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-04-12 |
-| Last update result | Validation failed |
+| Last update attempt | 2023-12-06 |
+| Last update result | Updated overriding validation failure |
 
 Log entries from the last few update attempts:
 ```
-2023-02-08 20:29:44.508 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
-2023-02-15 20:29:57.099 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
-2023-02-22 20:30:01.950 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
-2023-03-01 20:30:54.916 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
-2023-03-08 20:30:17.588 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-03-15 20:29:38.358 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-03-22 20:26:19.069 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-03-29 20:28:33.139 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-04-05 20:28:51.268 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-04-12 20:26:24.889 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
+2023-12-04 18:55:36.397 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
+2023-12-06 14:53:13.314 - Validation failed: New version of T2runtime/clock/obspm2gps.clk MJDs differ from old version where they overlap in 5467 places
+2023-12-06 14:55:03.110 - Validation failed: New version of T2runtime/clock/obspm2gps.clk MJDs differ from old version where they overlap in 5467 places
+2023-12-06 14:56:11.336 - Validation failed: New version of T2runtime/clock/obspm2gps.clk MJDs differ from old version where they overlap in 5467 places
+2023-12-06 14:56:11.338 - Updated overriding validation failure
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/obspm2gps.clk.log)
 

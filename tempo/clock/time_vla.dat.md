@@ -3,27 +3,25 @@
 
 Very Large Array clock corrections
 
-This file is pulled from the PINT repository and may not be fully
-up-to-date. (I think PINT has a more recent version than TEMPO or
-TEMPO2.)
+This file is pulled from the TEMPO repository and may not be fully
+up-to-date. 
 
 |     |     |
 |:--- |:--- |
 | File | `tempo/clock/time_vla.dat` |
 | Authority | temporary |
 | URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/tempo/clock/time_vla.dat> |
-| Original download URL | <https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_vla.dat> |
+| Original download URL | <https://sourceforge.net/p/tempo/tempo/ci/master/tree/clock/time_vla.dat?format=raw> |
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 1990-10-27 MJD 48191.2 |
 | Clock file end | 2021-03-07 MJD 59280.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-04-06 |
-| Last update result | Failed to download |
+| Last update attempt | 2023-12-07 |
+| Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2023-02-02 20:29:09.171 - Failed to download: HTTP Error 404: Not Found
 2023-02-09 20:29:58.716 - Failed to download: HTTP Error 404: Not Found
 2023-02-16 20:29:19.768 - Failed to download: HTTP Error 404: Not Found
 2023-02-23 20:30:36.844 - Failed to download: HTTP Error 404: Not Found
@@ -33,6 +31,7 @@ Log entries from the last few update attempts:
 2023-03-23 20:27:45.649 - Failed to download: HTTP Error 404: Not Found
 2023-03-30 20:27:41.991 - Failed to download: HTTP Error 404: Not Found
 2023-04-06 20:26:09.970 - Failed to download: HTTP Error 404: Not Found
+2023-12-07 20:29:36.501 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_vla.dat.log)
 

@@ -3,33 +3,24 @@
 
 FAST clock correction file
 
-This file is pulled from the PINT repository and may not be fully
-up-to-date. (TEMPO doesn't seem to have this file at all.)
-
-The original file is currently hand-generated upon request, but it is
-planned to make the process automatic and the file downloadable (at
-which point we will make it update automatically here).
-
-If you have any questions about these clock corrections, the person
-to contact is 缪晨晨 <miaocc@bao.ac.cn>, Chenchen Miao.
+This file is pulled from the FAST_ClockFile repository.
 
 |     |     |
 |:--- |:--- |
 | File | `tempo/clock/time_fast.dat` |
 | Authority | temporary |
 | URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/tempo/clock/time_fast.dat> |
-| Original download URL | <https://raw.githubusercontent.com/nanograv/PINT/master/src/pint/data/runtime/time_fast.dat> |
+| Original download URL | <https://raw.githubusercontent.com/NAOC-pulsar/FAST_ClockFile/master/time_fast.dat> |
 | Format | tempo |
 | Bogus last correction | False |
-| Clock file start | 2017-07-26 MJD 57960.4 |
-| Clock file end | 2019-09-18 MJD 58744.0 |
+| Clock file start | 2017-07-27 MJD 57961.0 |
+| Clock file end | 2023-12-05 MJD 60284.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-04-06 |
-| Last update result | Failed to download |
+| Last update attempt | 2023-12-07 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2023-02-02 20:29:09.391 - Failed to download: HTTP Error 404: Not Found
 2023-02-09 20:29:59.076 - Failed to download: HTTP Error 404: Not Found
 2023-02-16 20:29:19.851 - Failed to download: HTTP Error 404: Not Found
 2023-02-23 20:30:36.971 - Failed to download: HTTP Error 404: Not Found
@@ -39,6 +30,7 @@ Log entries from the last few update attempts:
 2023-03-23 20:27:45.848 - Failed to download: HTTP Error 404: Not Found
 2023-03-30 20:27:42.186 - Failed to download: HTTP Error 404: Not Found
 2023-04-06 20:26:10.143 - Failed to download: HTTP Error 404: Not Found
+2023-12-07 20:29:37.182 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_fast.dat.log)
 
