@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2023-10-18 MJD 60235.9 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-12-04 |
-| Last update result | Updated overriding validation failure |
+| Last update attempt | 2023-12-11 |
+| Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2023-03-01 20:30:53.755 - Unchanged
 2023-03-08 20:30:17.025 - Unchanged
 2023-03-15 20:29:36.706 - Unchanged
 2023-03-22 20:26:18.528 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2023-12-04 18:55:35.017 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 597 places
 2023-12-04 21:02:53.225 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 597 places
 2023-12-04 21:02:53.228 - Updated overriding validation failure
+2023-12-11 20:29:42.878 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc.clk.log)
 
