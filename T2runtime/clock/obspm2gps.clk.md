@@ -22,12 +22,11 @@ thus here) can be expected to be somewhat up to date.
 | Clock file start | 2003-12-01 MJD 52974.0 |
 | Clock file end | 2023-10-27 MJD 60244.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-12-06 |
-| Last update result | Updated overriding validation failure |
+| Last update attempt | 2023-12-13 |
+| Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2023-03-15 20:29:38.358 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-03-22 20:26:19.069 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-03-29 20:28:33.139 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
 2023-04-05 20:28:51.268 - Validation failed: New version of T2runtime/clock/obspm2gps.clk has decreased from 6851 to 6426 measurements.
@@ -37,6 +36,7 @@ Log entries from the last few update attempts:
 2023-12-06 14:55:03.110 - Validation failed: New version of T2runtime/clock/obspm2gps.clk MJDs differ from old version where they overlap in 5467 places
 2023-12-06 14:56:11.336 - Validation failed: New version of T2runtime/clock/obspm2gps.clk MJDs differ from old version where they overlap in 5467 places
 2023-12-06 14:56:11.338 - Updated overriding validation failure
+2023-12-13 20:29:55.539 - Failed to download: The read operation timed out
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/obspm2gps.clk.log)
 
