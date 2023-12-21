@@ -14,14 +14,13 @@ This file is pulled from the FAST_ClockFile repository.
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 2017-07-27 MJD 57961.0 |
-| Clock file end | 2023-12-12 MJD 60291.0 |
+| Clock file end | 2023-12-16 MJD 60295.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-12-14 |
+| Last update attempt | 2023-12-21 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2023-02-16 20:29:19.851 - Failed to download: HTTP Error 404: Not Found
 2023-02-23 20:30:36.971 - Failed to download: HTTP Error 404: Not Found
 2023-03-02 20:30:47.511 - Failed to download: HTTP Error 404: Not Found
 2023-03-09 20:31:04.083 - Failed to download: HTTP Error 404: Not Found
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2023-04-06 20:26:10.143 - Failed to download: HTTP Error 404: Not Found
 2023-12-07 20:29:37.182 - Updated
 2023-12-14 20:29:33.419 - Updated
+2023-12-21 20:29:34.482 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_fast.dat.log)
 

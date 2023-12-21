@@ -20,12 +20,11 @@ the comments.
 | Clock file start | 1993-11-29 MJD 49320.0 |
 | Clock file end | 2015-06-22 MJD 57195.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-12-14 |
+| Last update attempt | 2023-12-21 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2023-02-22 20:30:00.958 - Unchanged
 2023-03-01 20:30:52.799 - Unchanged
 2023-03-08 20:30:16.563 - Unchanged
 2023-03-15 20:29:35.338 - Unchanged
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2023-04-12 20:26:23.732 - Unchanged
 2023-12-07 20:29:42.872 - Unchanged
 2023-12-14 20:29:39.610 - Unchanged
+2023-12-21 20:29:40.831 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/eff2gps.clk.log)
 
