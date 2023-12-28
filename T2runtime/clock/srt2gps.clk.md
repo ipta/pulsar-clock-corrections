@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2013-03-20 MJD 56371.0 |
 | Clock file end | 2019-12-11 MJD 58828.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2023-12-21 |
+| Last update attempt | 2023-12-28 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2023-03-01 20:30:52.492 - Unchanged
 2023-03-08 20:30:16.424 - Unchanged
 2023-03-15 20:29:34.821 - Unchanged
 2023-03-22 20:26:17.989 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2023-12-07 20:29:42.674 - Unchanged
 2023-12-14 20:29:39.428 - Unchanged
 2023-12-21 20:29:40.647 - Unchanged
+2023-12-28 20:29:30.696 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/srt2gps.clk.log)
 
