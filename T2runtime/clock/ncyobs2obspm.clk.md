@@ -22,12 +22,11 @@ thus here) can be expected to be somewhat up to date.
 | Clock file start | 1988-05-18 MJD 47299.6 |
 | Clock file end | 2023-10-27 MJD 60244.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-01-17 |
+| Last update attempt | 2024-01-24 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2023-12-04 18:55:35.954 - Validation failed: New version of T2runtime/clock/ncyobs2obspm.clk has decreased from 19563 to 17671 measurements.
 2023-12-06 14:53:46.684 - Validation failed: New version of T2runtime/clock/ncyobs2obspm.clk has decreased from 19563 to 18038 measurements.
 2023-12-06 14:54:27.386 - Validation failed: New version of T2runtime/clock/ncyobs2obspm.clk has decreased from 19563 to 18038 measurements.
 2023-12-06 14:54:27.387 - Updated overriding validation failure
@@ -37,6 +36,7 @@ Log entries from the last few update attempts:
 2024-01-03 20:29:25.040 - Unchanged
 2024-01-10 20:29:35.611 - Unchanged
 2024-01-17 20:29:47.775 - Unchanged
+2024-01-24 20:31:00.116 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ncyobs2obspm.clk.log)
 
