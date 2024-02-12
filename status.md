@@ -13,17 +13,17 @@ name of each clock file links to a page with more details.
 
 | Name | File | Corrections start | Corrections end | Last check date | Last check result 
 |:--- |:--- | --- | --- | --- |:--- 
-| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2023-12-31 MJD 60309.0 | 2024-02-11 | Unchanged 
-| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2023-12-31 MJD 60309.0 | 2024-02-11 | Unchanged 
-| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2023-12-31 MJD 60309.0 | 2024-02-11 | Unchanged 
-| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2023-03-20 MJD 60023.5 | 2024-02-11 | **Validation failed** 
+| [GPS to UTC](T2runtime/clock/gps2utc.clk.html) | `T2runtime/clock/gps2utc.clk` | 1993-01-01 MJD 48988.0 | 2024-01-30 MJD 60339.0 | 2024-02-12 | Updated 
+| [GPS to UTC (Combined Clock)](T2runtime/clock/gps2utc_cc.clk.html) | `T2runtime/clock/gps2utc_cc.clk` | 1993-01-01 MJD 48988.0 | 2024-01-30 MJD 60339.0 | 2024-02-12 | Updated 
+| [GPS to UTC (Corrected)](T2runtime/clock/gps2utc_c0p.clk.html) | `T2runtime/clock/gps2utc_c0p.clk` | 2010-12-29 MJD 55559.0 | 2024-01-30 MJD 60339.0 | 2024-02-12 | Updated 
+| [GBT](tempo/clock/time_gbt.dat.html) | `tempo/clock/time_gbt.dat` | 2000-12-31 MJD 51909.5 | 2023-03-20 MJD 60023.5 | 2024-02-12 | **Validation failed** 
 | [GBT (TEMPO2 converted from TEMPO)](T2runtime/clock/gbt2gps.clk.html) | `T2runtime/clock/gbt2gps.clk` | 2000-12-31 MJD 51909.5 | 2023-03-20 MJD 60023.5 | 2023-03-21 | Updated 
 | [Jodrell Bank](T2runtime/clock/jb2gps.clk.html) | `T2runtime/clock/jb2gps.clk` | 2006-10-13 MJD 54021.4 | 2023-12-04 MJD 60282.0 | 2024-02-08 | Unchanged 
 | [Jodrell Bank Roach](T2runtime/clock/jbroach2jb.clk.html) | `T2runtime/clock/jbroach2jb.clk` | 2006-10-13 MJD 54021.4 | 2018-03-20 MJD 58197.6 | 2024-02-08 | Unchanged 
 | [Jodrell Bank DFB](T2runtime/clock/jbdfb2jb.clk.html) | `T2runtime/clock/jbdfb2jb.clk` | 2006-10-13 MJD 54021.4 | 2017-05-11 MJD 57884.0 | 2024-02-08 | Unchanged 
 | [Meerkat (observatory)](T2runtime/clock/mk2utc_observatory.clk.html) | `T2runtime/clock/mk2utc_observatory.clk` | 2019-01-01 MJD 58484.0 | 2024-01-31 MJD 60341.0 | 2024-02-08 | Updated 
-| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2024-02-11 | Unchanged 
-| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2025-02-15 MJD 60721.0 | 2024-02-11 | Unchanged 
+| [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2024-02-12 | Unchanged 
+| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2025-02-15 MJD 60721.0 | 2024-02-12 | Unchanged 
 
 
 
@@ -81,7 +81,7 @@ name of each clock file links to a page with more details.
 | [Effelsberg Asterix/PSRix](T2runtime/clock/effix2gps.clk.html) | `T2runtime/clock/effix2gps.clk` | 2011-01-01 MJD 55562.5 | 2021-03-21 MJD 59294.5 | 2024-02-08 | Unchanged 
 | [LEAP](T2runtime/clock/leap2effix.clk.html) | `T2runtime/clock/leap2effix.clk` | 2012-10-29 MJD 56230.0 | 2014-03-04 MJD 56720.0 | 2024-02-08 | Unchanged 
 | [NUPPI](tempo/clock/time_nuppi.dat.html) | `tempo/clock/time_nuppi.dat` | 2005-03-07 MJD 53436.0 | 2015-11-08 MJD 57334.6 | 2024-02-08 | Unchanged 
-| [Meerkat (TEMPO2)](T2runtime/clock/mk2utc.clk.html) | `T2runtime/clock/mk2utc.clk` | 2019-01-01 MJD 58484.0 | 2023-10-18 MJD 60235.9 | 2024-02-05 | Unchanged 
+| [Meerkat (TEMPO2)](T2runtime/clock/mk2utc.clk.html) | `T2runtime/clock/mk2utc.clk` | 2019-01-01 MJD 58484.0 | 2023-10-18 MJD 60235.9 | 2024-02-12 | Unchanged 
 | [MOST](T2runtime/clock/mo2gps.clk.html) | `T2runtime/clock/mo2gps.clk` | 2003-12-27 MJD 53000.0 | 2018-09-06 MJD 58367.0 | 2024-02-08 | Unchanged 
 | [Nancay to obspm](T2runtime/clock/ncyobs2obspm.clk.html) | `T2runtime/clock/ncyobs2obspm.clk` | 1988-05-18 MJD 47299.6 | 2023-10-27 MJD 60244.0 | 2024-02-07 | Unchanged 
 | [obspm](T2runtime/clock/obspm2gps.clk.html) | `T2runtime/clock/obspm2gps.clk` | 2003-12-01 MJD 52974.0 | 2023-10-27 MJD 60244.0 | 2024-02-07 | Unchanged 
