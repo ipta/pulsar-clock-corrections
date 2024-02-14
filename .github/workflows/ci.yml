@@ -2,7 +2,7 @@ name: Check updates work
 on: 
   push
 jobs:
-    run-update-script:
+    run-update-script-but-dont-commit:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
