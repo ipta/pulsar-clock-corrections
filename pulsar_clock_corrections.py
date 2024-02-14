@@ -857,6 +857,19 @@ updaters.append(
 
             The observatory distributes this file on the Web, updated about daily.
 
+            A discrepancy arose between the observatory-distributed file and the
+            file in this repository (which had been identical to the 
+            observatory-distributed one up to that point). Around 
+            2023-03-20 (MJD 60023), the first ~11 entries in the 
+            observatory-distributed file were changed to zero.
+            Ryan Lynch expressed surprise that this had occurred, but no
+            resolution had arisen as of 2024-02-14. Since this resulted in
+            the new file failing validation and the file in this repository
+            not updating, at that point I (Anne Archibald) decided to
+            switch those entries to match the observatory values. The old values
+            are available from the version of the file in git tag 
+            "gbt-mystery-values".
+
             If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
         """,
     )
