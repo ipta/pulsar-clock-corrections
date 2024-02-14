@@ -7,6 +7,19 @@ This file records the difference between UTC(GBT) and UTC(GPS).
 
 The observatory distributes this file on the Web, updated about daily.
 
+A discrepancy arose between the observatory-distributed file and the
+file in this repository (which had been identical to the 
+observatory-distributed one up to that point). Around 
+2023-03-20 (MJD 60023), the first ~11 entries in the 
+observatory-distributed file were changed to zero.
+Ryan Lynch expressed surprise that this had occurred, but no
+resolution had arisen as of 2024-02-14. Since this resulted in
+the new file failing validation and the file in this repository
+not updating, at that point I (Anne Archibald) decided to
+switch those entries to match the observatory values. The old values
+are available from the version of the file in git tag 
+"gbt-mystery-values".
+
 If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
 
 |     |     |
@@ -18,14 +31,13 @@ If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2023-03-20 MJD 60023.5 |
+| Clock file end | 2024-02-13 MJD 60353.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2024-02-13 |
-| Last update result | Validation failed |
+| Last update attempt | 2024-02-14 |
+| Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2024-02-04 20:29:57.030 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-02-05 20:29:36.542 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-02-06 20:29:29.568 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-02-07 20:29:35.592 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
@@ -35,6 +47,7 @@ Log entries from the last few update attempts:
 2024-02-11 20:29:38.960 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-02-12 20:29:41.143 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-02-13 20:30:16.364 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
+2024-02-14 18:47:24.340 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_gbt.dat.log)
 
