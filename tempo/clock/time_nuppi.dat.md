@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2005-03-07 MJD 53436.0 |
 | Clock file end | 2015-11-08 MJD 57334.6 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-02-29 |
+| Last update attempt | 2024-03-07 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2023-12-28 20:29:31.639 - Unchanged
 2024-01-04 20:29:29.289 - Unchanged
 2024-01-11 20:30:18.141 - Unchanged
 2024-01-18 20:30:01.250 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2024-02-15 20:29:57.526 - Unchanged
 2024-02-22 20:29:58.476 - Unchanged
 2024-02-29 20:29:38.892 - Unchanged
+2024-03-07 20:30:03.676 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_nuppi.dat.log)
 
