@@ -20,12 +20,11 @@ should be the same information.
 | Clock file start | 1987-07-24 MJD 47000.0 |
 | Clock file end | 2007-12-24 MJD 54458.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-03-07 |
+| Last update attempt | 2024-03-14 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2024-01-04 20:29:23.796 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1932-fzypdoq9 appears to be out of order
 2024-01-11 20:30:10.381 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1836-0nvh625l appears to be out of order
 2024-01-18 20:29:55.192 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1811-4vnrq20h appears to be out of order
 2024-01-25 20:29:31.258 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1900-mec4_oar appears to be out of order
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2024-02-22 20:29:52.522 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1784-4nx1rkse appears to be out of order: 53000.05 > 53000.0
 2024-02-29 20:29:32.708 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1810-gqrpdwt_ appears to be out of order: 53000.05 > 53000.0
 2024-03-07 20:29:57.677 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1997-9f3c9zsx appears to be out of order: 53000.05 > 53000.0
+2024-03-14 20:29:28.740 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1789-qmkos7mt appears to be out of order: 53000.05 > 53000.0
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_wsrt.dat.log)
 
