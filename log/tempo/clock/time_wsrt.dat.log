@@ -60,3 +60,4 @@
 2024-02-22 20:29:52.522 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1784-4nx1rkse appears to be out of order: 53000.05 > 53000.0
 2024-02-29 20:29:32.708 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1810-gqrpdwt_ appears to be out of order: 53000.05 > 53000.0
 2024-03-07 20:29:57.677 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1997-9f3c9zsx appears to be out of order: 53000.05 > 53000.0
+2024-03-14 20:29:28.740 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1789-qmkos7mt appears to be out of order: 53000.05 > 53000.0
