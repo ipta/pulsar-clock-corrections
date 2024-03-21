@@ -20,12 +20,11 @@ telescopes in the same file, distinguished only by observatory code.
 | Clock file start | 1979-05-07 MJD 44000.0 |
 | Clock file end | 2011-07-03 MJD 55745.8 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-03-14 |
+| Last update attempt | 2024-03-21 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2024-01-11 20:30:15.803 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1836-pi4hbxxj appears to be out of order
 2024-01-18 20:29:59.171 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1811-rrpdm8ca appears to be out of order
 2024-01-25 20:29:36.041 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1900-0idy_odh appears to be out of order
 2024-02-01 20:29:37.102 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1816-okvvhk9o appears to be out of order
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2024-02-29 20:29:37.500 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1810-sn87ef0r appears to be out of order: 49959.0 > 49958.0
 2024-03-07 20:30:02.201 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1997-a8wm1p2b appears to be out of order: 49959.0 > 49958.0
 2024-03-14 20:29:37.280 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1789-i6da_346 appears to be out of order: 49959.0 > 49958.0
+2024-03-21 20:29:48.248 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1983-p8p10h_t appears to be out of order: 49959.0 > 49958.0
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_pks.dat.log)
 
