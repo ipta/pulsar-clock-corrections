@@ -32,12 +32,11 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 | Clock file start | 1993-01-01 MJD 48988.0 |
 | Clock file end | 2024-02-29 MJD 60369.0 |
 | Update interval (days) | 1 |
-| Last update attempt | 2024-03-25 |
+| Last update attempt | 2024-03-26 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2024-03-16 20:29:21.467 - Unchanged
 2024-03-17 20:29:40.127 - Unchanged
 2024-03-18 20:29:23.980 - Unchanged
 2024-03-19 20:29:38.312 - Unchanged
@@ -47,6 +46,7 @@ Log entries from the last few update attempts:
 2024-03-23 20:29:41.056 - Unchanged
 2024-03-24 20:29:14.355 - Failed to download: <urlopen error 530 Sorry, the maximum number of allowed clients (20) are already connected.>
 2024-03-25 20:29:34.523 - Unchanged
+2024-03-26 20:29:50.342 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc.clk.log)
 
