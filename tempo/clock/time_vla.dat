@@ -2177,3 +2177,18 @@
  59278.5        0.0        -1.918 6  
  59279.5        0.0        -1.968 6  
  59280.5        0.0        -2.018 6  
+
+    <html>
+    <head>
+    <title>Server Error</title>
+    
+    </head>
+    <body>
+    <h1>Server Error</h1>
+    
+            An error occurred.  See the error logs for more information.
+            (Turn debug on to display exception reports here)
+            
+    
+    </body>
+    </html>
