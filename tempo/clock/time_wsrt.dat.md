@@ -20,12 +20,11 @@ should be the same information.
 | Clock file start | 1987-07-24 MJD 47000.0 |
 | Clock file end | 2007-12-24 MJD 54458.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-04-04 |
+| Last update attempt | 2024-04-11 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2024-02-01 20:29:31.547 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1816-1ws_cqpx appears to be out of order
 2024-02-08 20:29:37.017 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1793-eyxf175c appears to be out of order
 2024-02-15 20:29:52.172 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1800-t833eh9r appears to be out of order
 2024-02-22 20:29:52.522 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1784-4nx1rkse appears to be out of order: 53000.05 > 53000.0
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2024-03-21 20:29:42.142 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1983-7dg1tve1 appears to be out of order: 53000.05 > 53000.0
 2024-03-28 20:29:34.065 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1896-xbrtefzd appears to be out of order: 53000.05 > 53000.0
 2024-04-04 20:29:30.644 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1911-2suothm5 appears to be out of order: 53000.05 > 53000.0
+2024-04-11 20:29:29.782 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1801-eyxtozmn appears to be out of order: 53000.05 > 53000.0
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_wsrt.dat.log)
 

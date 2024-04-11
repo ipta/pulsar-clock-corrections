@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2000-12-31 MJD 51909.5 |
 | Clock file end | 2020-02-25 MJD 58904.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-04-04 |
+| Last update attempt | 2024-04-11 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2024-02-01 20:29:28.151 - Unchanged
 2024-02-08 20:29:33.879 - Unchanged
 2024-02-15 20:29:47.767 - Unchanged
 2024-02-22 20:29:48.261 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2024-03-21 20:29:38.175 - Unchanged
 2024-03-28 20:29:30.459 - Unchanged
 2024-04-04 20:29:27.000 - Unchanged
+2024-04-11 20:29:26.673 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps_tempo2.clk.log)
 
