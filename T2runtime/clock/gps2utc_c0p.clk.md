@@ -28,14 +28,13 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2010-12-29 MJD 55559.0 |
-| Clock file end | 2024-02-29 MJD 60369.0 |
+| Clock file end | 2024-03-30 MJD 60399.0 |
 | Update interval (days) | 1 |
-| Last update attempt | 2024-04-11 |
-| Last update result | Unchanged |
+| Last update attempt | 2024-04-12 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2024-04-02 20:30:01.923 - Unchanged
 2024-04-03 20:29:21.533 - Unchanged
 2024-04-04 20:29:25.773 - Unchanged
 2024-04-05 20:29:18.946 - Unchanged
@@ -45,6 +44,7 @@ Log entries from the last few update attempts:
 2024-04-09 20:29:19.198 - Unchanged
 2024-04-10 20:29:33.899 - Unchanged
 2024-04-11 20:29:26.272 - Unchanged
+2024-04-12 20:29:23.922 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc_c0p.clk.log)
 
