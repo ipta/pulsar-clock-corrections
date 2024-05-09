@@ -1,6 +1,7 @@
 name: Check updates work
 on: 
-  push
+  push:
+  pull_request:
 jobs:
     run-update-script-but-dont-commit:
         runs-on: ubuntu-latest
