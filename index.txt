@@ -38,6 +38,7 @@ T2runtime/clock/gmrt2gps.clk                       inf   ---
 T2runtime/clock/obspm2gps.clk                      7.0   ---
 tempo/clock/leap.sec                               0.0   ---
 tempo/clock/ut1.dat                                0.0   ---
+T2runtime/clock/tai2tt_bipm2023.clk                inf   ---
 T2runtime/clock/tai2tt_bipm2022.clk                inf   ---
 T2runtime/clock/tai2tt_bipm2021.clk                inf   ---
 T2runtime/clock/tai2tt_bipm2020.clk                inf   ---
