@@ -23,14 +23,13 @@ If questions arise about the conversion, contact Anne Archibald
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2023-03-20 MJD 60023.5 |
+| Clock file end | 2024-05-16 MJD 60446.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2024-05-16 |
-| Last update result | Validation failed |
+| Last update attempt | 2024-05-17 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2024-04-19 20:29:30.284 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
 2024-04-20 20:29:22.594 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
 2024-04-21 20:29:25.527 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
 2024-05-10 20:29:32.718 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
@@ -40,12 +39,13 @@ Log entries from the last few update attempts:
 2024-05-14 20:29:38.905 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
 2024-05-15 20:30:39.614 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
 2024-05-16 20:29:39.594 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2024-05-17 20:29:38.159 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 
 Leading comments from clock file:
 
-    # This file was automatically converted from tempo/clock/time_gbt.dat on 2023-03-21 20:26:24.413
+    # This file was automatically converted from tempo/clock/time_gbt.dat on 2024-05-17 20:29:38.105
 
 
 
