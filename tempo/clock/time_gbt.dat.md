@@ -33,12 +33,11 @@ If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
 | Clock file start | 2000-12-31 MJD 51909.5 |
 | Clock file end | 2024-05-18 MJD 60448.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2024-06-11 |
+| Last update attempt | 2024-06-12 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2024-06-02 20:29:34.192 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-06-03 20:29:27.834 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-06-04 20:29:33.484 - Failed to download: The read operation timed out
 2024-06-05 20:29:46.522 - Failed to download: The read operation timed out
@@ -48,6 +47,7 @@ Log entries from the last few update attempts:
 2024-06-09 20:31:09.186 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-06-10 20:29:45.790 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 2024-06-11 20:29:28.400 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
+2024-06-12 20:30:53.174 - Validation failed: New version of tempo/clock/time_gbt.dat clock corrections differ from old version where they overlap in 11 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_gbt.dat.log)
 
