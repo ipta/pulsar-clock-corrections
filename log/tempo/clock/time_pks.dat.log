@@ -72,3 +72,4 @@
 2024-05-31 20:29:34.723 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1808-9uv0anl1 appears to be out of order: 49959.0 > 49958.0
 2024-06-07 20:29:32.720 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1810-bf_kz8b_ appears to be out of order: 49959.0 > 49958.0
 2024-06-14 20:29:51.890 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1801-tisulijr appears to be out of order: 49959.0 > 49958.0
+2024-06-21 20:29:55.211 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1818-a0_m0tm6 appears to be out of order: 49959.0 > 49958.0
