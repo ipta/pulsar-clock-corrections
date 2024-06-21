@@ -20,12 +20,11 @@ should be the same information.
 | Clock file start | 1987-07-24 MJD 47000.0 |
 | Clock file end | 2007-12-24 MJD 54458.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-06-14 |
+| Last update attempt | 2024-06-21 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2024-03-28 20:29:34.065 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1896-xbrtefzd appears to be out of order: 53000.05 > 53000.0
 2024-04-04 20:29:30.644 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1911-2suothm5 appears to be out of order: 53000.05 > 53000.0
 2024-04-11 20:29:29.782 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1801-eyxtozmn appears to be out of order: 53000.05 > 53000.0
 2024-04-18 20:29:33.818 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1796-uswo2pn9 appears to be out of order: 53000.05 > 53000.0
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2024-05-31 20:29:29.819 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1808-s7arrwqh appears to be out of order: 53000.05 > 53000.0
 2024-06-07 20:29:27.848 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1810-vr839f9d appears to be out of order: 53000.05 > 53000.0
 2024-06-14 20:29:48.546 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1801-gxdcwqox appears to be out of order: 53000.05 > 53000.0
+2024-06-21 20:29:50.513 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-1818-gztup1ud appears to be out of order: 53000.05 > 53000.0
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_wsrt.dat.log)
 
