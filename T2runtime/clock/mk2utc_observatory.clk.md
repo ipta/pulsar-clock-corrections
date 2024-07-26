@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2024-04-24 MJD 60425.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-07-19 |
+| Last update attempt | 2024-07-26 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2024-05-17 20:29:50.578 - Unchanged
 2024-05-24 20:29:41.581 - Unchanged
 2024-05-31 20:29:41.668 - Unchanged
 2024-06-07 20:29:36.289 - Unchanged
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2024-07-05 20:30:07.740 - Unchanged
 2024-07-12 20:29:44.446 - Unchanged
 2024-07-19 20:31:14.053 - Failed to download: HTTP Error 403: Forbidden
+2024-07-26 20:31:14.162 - Failed to download: HTTP Error 403: Forbidden
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
