@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2023-10-18 MJD 60235.9 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-08-02 |
+| Last update attempt | 2024-08-09 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2024-05-31 20:29:42.042 - Unchanged
 2024-06-07 20:29:36.643 - Unchanged
 2024-06-14 20:29:58.528 - Unchanged
 2024-06-21 20:29:59.124 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2024-07-19 20:31:14.616 - Unchanged
 2024-07-26 20:31:14.851 - Unchanged
 2024-08-02 20:31:20.214 - Unchanged
+2024-08-09 20:31:14.567 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc.clk.log)
 
