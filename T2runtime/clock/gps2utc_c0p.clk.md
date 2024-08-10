@@ -30,12 +30,11 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 | Clock file start | 2010-12-29 MJD 55559.0 |
 | Clock file end | 2024-04-29 MJD 60429.0 |
 | Update interval (days) | 1 |
-| Last update attempt | 2024-08-09 |
+| Last update attempt | 2024-08-10 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2024-07-31 20:30:08.192 - Unchanged
 2024-08-01 20:30:39.033 - Unchanged
 2024-08-02 20:31:06.551 - Unchanged
 2024-08-03 20:29:53.200 - Unchanged
@@ -45,6 +44,7 @@ Log entries from the last few update attempts:
 2024-08-07 20:30:22.109 - Unchanged
 2024-08-08 20:30:50.919 - Unchanged
 2024-08-09 20:30:59.405 - Unchanged
+2024-08-10 20:30:34.499 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc_c0p.clk.log)
 
