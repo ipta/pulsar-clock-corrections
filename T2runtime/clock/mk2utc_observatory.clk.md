@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2024-04-24 MJD 60425.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-08-09 |
+| Last update attempt | 2024-08-16 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2024-06-07 20:29:36.289 - Unchanged
 2024-06-14 20:29:57.559 - Unchanged
 2024-06-21 20:29:58.849 - Unchanged
 2024-06-28 20:29:55.029 - Failed to download: <urlopen error _ssl.c:990: The handshake operation timed out>
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2024-07-26 20:31:14.162 - Failed to download: HTTP Error 403: Forbidden
 2024-08-02 20:31:19.452 - Failed to download: HTTP Error 403: Forbidden
 2024-08-09 20:31:14.076 - Failed to download: HTTP Error 403: Forbidden
+2024-08-16 20:31:06.018 - Failed to download: HTTP Error 403: Forbidden
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
