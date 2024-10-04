@@ -27,12 +27,11 @@ are from the column C0').
 | Clock file start | 1996-03-27 MJD 50169.0 |
 | Clock file end | 2022-10-27 MJD 59879.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-09-27 |
+| Last update attempt | 2024-10-04 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2024-07-26 20:30:27.098 - Failed to download: HTTP Error 404: Not Found
 2024-08-02 20:30:33.662 - Failed to download: HTTP Error 404: Not Found
 2024-08-09 20:30:35.633 - Failed to download: HTTP Error 404: Not Found
 2024-08-16 20:30:32.528 - Failed to download: HTTP Error 404: Not Found
@@ -42,6 +41,7 @@ Log entries from the last few update attempts:
 2024-09-13 20:31:35.404 - Failed to download: HTTP Error 404: Not Found
 2024-09-20 20:32:57.970 - Failed to download: HTTP Error 404: Not Found
 2024-09-27 20:32:51.886 - Failed to download: HTTP Error 404: Not Found
+2024-10-04 20:32:41.616 - Failed to download: HTTP Error 404: Not Found
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc_tempo2.clk.log)
 
