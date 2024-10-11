@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2006-10-13 MJD 54021.4 |
 | Clock file end | 2019-05-13 MJD 58616.2 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-10-04 |
+| Last update attempt | 2024-10-11 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2024-08-02 20:31:08.975 - Unchanged
 2024-08-09 20:31:00.883 - Unchanged
 2024-08-16 20:30:57.735 - Unchanged
 2024-08-23 20:30:51.600 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2024-09-20 20:33:22.140 - Unchanged
 2024-09-27 20:33:17.188 - Unchanged
 2024-10-04 20:33:09.226 - Unchanged
+2024-10-11 20:39:03.983 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_jb.dat.log)
 
