@@ -1,0 +1,9 @@
+# UTC(GPS) UTC(GPST)
+# This clock file provides support for corrections to 'GPS' in a relatively
+# backwards compatible way.
+# Specifically, tempo2 gps2utc.clk used to correct to GPST for a period, then
+# correct to the UTC as derived using the corrections to get a good approximation of
+# UTC from the GPS time.
+# (In either case, no leap seconds are added)
+48988.00000 0
+55559 0
