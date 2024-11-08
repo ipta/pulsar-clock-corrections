@@ -29,10 +29,10 @@ heading_re = re.compile(r"^ *\d+ - \S.*$")
 utcgnss_url = "https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss"
 
 # Yearly tables 1993 to 2003 containing C0
-utcgps_old = "ftp://ftp2.bipm.org/pub/tai/scale/UTCGPS/utcgps{}.ar"
+utcgps_old = "https://webtai.bipm.org/ftp/pub/tai/scale/UTCGPS/utcgps{}.ar"
 
 # Yearly tables 2003 to 2015 containing C0 and, for 2011 on, C0'
-utcgps_med = "ftp://ftp2.bipm.org/pub/tai/scale/UTCGPSGLO/utcgpsglo{}.ar"
+utcgps_med = "https://webtai.bipm.org/ftp/pub/tai/scale/UTCGPSGLO/utcgpsglo{}.ar"
 
 # Explanatory supplement
 # https://webtai.bipm.org/ftp/pub/tai/other-products/notes/explanatory_supplement_v0.6.pdf
@@ -96,7 +96,7 @@ def read_old_gps_corrections():
                     continue
                 if not 40000 < mjd < 60000:
                     continue
-                if mjds and mjd < mjds[-1]:
+                if mjds and mjd <= mjds[-1]:
                     # print(f"MJD {mjd} less than last previous mjd: {mjds[-10:]}")
                     continue
                 try:
@@ -130,7 +130,7 @@ def read_old_gps_corrections():
                     c0 = float(ls[3])
                 except ValueError:
                     continue
-                if mjds and mjd < mjds[-1]:
+                if mjds and mjd <= mjds[-1]:
                     # print(f"MJD {mjd} less than last previous mjd: {mjds[-10:]}")
                     continue
                 mjds.append(mjd)
@@ -148,9 +148,9 @@ def get_gps_c0():
     b = read_recent_gps_corrections()
     if a[-1, 0] > b[0, 0]:
         raise ValueError(f"MJDs overlap: {a[-10:]} vs {b[:10]}")
-    mjds = np.concatenate([a[:, 0], b[:, 0]])
-    c0s = np.concatenate([a[:, 1], b[:, 1]])
-    hdrline = "# UTC(GPS)_CC UTC(USNO)"
+    mjds = np.concatenate([a[:, 0], b[1:, 0]])
+    c0s = np.concatenate([a[:, 1], b[1:, 1]])
+    hdrline = "# UTC(GPST) UTC"
     leading_comment = dedent(
         """\
         # Corrections from UTC inferred from the GPS Combined Clock to UTC.
@@ -197,7 +197,7 @@ def get_gps_c0p():
     a = read_recent_gps_corrections()
     mjds = a[:, 0]
     c0ps = a[:, 2]
-    hdrline = "# UTC(GPS)_C0P UTC(USNO)"
+    hdrline = "# UTC(GPS_UNSO) UTC"
     leading_comment = dedent(
         """\
         # Corrections from the GPS predictions of UTC to UTC.
