@@ -1,4 +1,4 @@
-name: update-clock-corrections
+name: Regular Update to Clock Corrections
 on: 
   schedule:
     # * is a special character in YAML so you have to quote this string
@@ -7,18 +7,40 @@ jobs:
     run-update-script:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-            - run: pip install -r requirements.txt
-            - run: git clone https://github.com/ipta/pulsar-clock-corrections.git  --branch gh-pages --single-branch /tmp/gh-pages --depth 1
-            - run: python update_clock_corrections.py --gh-pages /tmp/gh-pages
-            - run: |
+            - uses: actions/checkout@v4
+            - name: Set-Up Python Env
+              uses: mamba-org/setup-micromamba@v1
+              with: 
+                init-shell: bash
+                environment-name: clocks
+                cache-environment: true
+                cache-downloads: true
+                create-args: >-
+                    -c conda-forge
+                    python=3.11
+                    astropy
+                    git
+            - name: Install Specified Requirements
+              shell: bash -el {0}
+              run: pip install -r requirements.txt
+            - name: Clone the Directory & Switch to GH-Pages
+              shell: bash -el {0}
+              run: git clone https://github.com/ipta/pulsar-clock-corrections.git  --branch gh-pages --single-branch /tmp/gh-pages --depth 1
+            - name: Update the Clock Files from Remote Repositories
+              shell: bash -el {0}
+              run: python update_clock_corrections.py --gh-pages /tmp/gh-pages
+            - name: Push Clock Corrections to Remote Repo
+              shell: bash -el {0}
+              run: |
                 git config --global user.name "Anne Archibald"
                 git config --global user.email 'aarchiba@users.noreply.github.com'
                 git add tempo T2runtime log
                 git commit -am "Routine repo update from Github action `date`"
                 git log -n 1
                 git push
-            - run: |
+            - name: Push all Clock Files to the GH Page
+              shell: bash -el {0}
+              run: |
                 cd /tmp/gh-pages 
                 git add .
                 git commit -am "Routine gh-pages update from Github action `date`"
