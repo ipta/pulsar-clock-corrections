@@ -7,7 +7,7 @@ jobs:
     run-update-script:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - run: pip install -r requirements.txt
             - run: git clone https://github.com/ipta/pulsar-clock-corrections.git  --branch gh-pages --single-branch /tmp/gh-pages --depth 1
             - run: python update_clock_corrections.py --gh-pages /tmp/gh-pages
