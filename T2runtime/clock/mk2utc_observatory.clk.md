@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2024-04-24 MJD 60425.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-10-11 |
+| Last update attempt | 2024-11-27 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2024-08-09 20:31:14.076 - Failed to download: HTTP Error 403: Forbidden
 2024-08-16 20:31:06.018 - Failed to download: HTTP Error 403: Forbidden
 2024-08-23 20:31:02.824 - Failed to download: HTTP Error 502: Proxy Error
 2024-08-30 20:32:35.880 - Failed to download: HTTP Error 403: Forbidden
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2024-09-27 20:33:26.829 - Failed to download: HTTP Error 403: Forbidden
 2024-10-04 20:33:22.425 - Failed to download: HTTP Error 403: Forbidden
 2024-10-11 20:39:13.519 - Failed to download: HTTP Error 403: Forbidden
+2024-11-27 20:39:59.127 - Failed to download: HTTP Error 403: Forbidden
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 

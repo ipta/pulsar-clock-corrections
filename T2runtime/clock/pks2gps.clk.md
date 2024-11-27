@@ -29,18 +29,17 @@ we retain it.
 | File | `T2runtime/clock/pks2gps.clk` |
 | Authority | temporary |
 | URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/pks2gps.clk> |
-| Original download URL | <https://www.parkes.atnf.csiro.au/observing/clockfiles/pks2gps.clk.20241001> |
+| Original download URL | <https://www.parkes.atnf.csiro.au/observing/clockfiles/pks2gps.clk.20241101> |
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1858-11-17 MJD 0.0 |
-| Clock file end | 2024-09-30 MJD 60583.1 |
+| Clock file end | 2024-10-31 MJD 60614.1 |
 | Update interval (days) | 7 |
-| Last update attempt | 2024-10-11 |
+| Last update attempt | 2024-11-27 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2024-08-09 20:31:07.759 - Updated
 2024-08-16 20:31:04.055 - Unchanged
 2024-08-23 20:30:58.744 - Unchanged
 2024-08-30 20:32:33.292 - Unchanged
@@ -50,6 +49,7 @@ Log entries from the last few update attempts:
 2024-09-27 20:33:24.237 - Unchanged
 2024-10-04 20:33:16.183 - Unchanged
 2024-10-11 20:39:10.791 - Updated
+2024-11-27 20:39:54.501 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/pks2gps.clk.log)
 
