@@ -1,4 +1,4 @@
-name: Check updates work
+name: Check that Updates are Working
 on: 
   push:
   pull_request:
