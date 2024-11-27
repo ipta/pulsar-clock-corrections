@@ -27,7 +27,7 @@ heading_re = re.compile(r"^ *\d+ - \S.*$")
 # A summary file containing C0 and C0' as well as corrected errata, from 2011 to recently
 # Is this updated regularly? Maybe when each Circular T is released? Last MJD 59699, same
 # as current last Circular T.
-utcgnss_url = "hhttps://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gps"
+utcgnss_url = "https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gps"
 
 # Yearly tables 1993 to 2003 containing C0
 utcgps_old = "ftp://ftp2.bipm.org/pub/tai/scale/UTCGPS/utcgps{}.ar"
