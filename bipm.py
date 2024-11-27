@@ -54,7 +54,7 @@ def read_recent_gps_corrections():
         The shape will be n by 3, with the columns MJD, C0, C0'; the last two
         are in nanoseconds.
     """
-    cols = (0, 1, 4)
+    cols = (0, 2, 1)
     r = np.loadtxt(
         astropy.utils.data.download_file(utcgnss_url, cache=True), usecols=cols
     )
