@@ -8,6 +8,7 @@ are also two different ways to infer UTC from GPS, and the BIPM has published
 two different versions (C0 and C0').
 
 """
+
 import re
 from io import StringIO
 from textwrap import dedent
@@ -26,7 +27,7 @@ heading_re = re.compile(r"^ *\d+ - \S.*$")
 # A summary file containing C0 and C0' as well as corrected errata, from 2011 to recently
 # Is this updated regularly? Maybe when each Circular T is released? Last MJD 59699, same
 # as current last Circular T.
-utcgnss_url = "https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss"
+utcgnss_url = "hhttps://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gps"
 
 # Yearly tables 1993 to 2003 containing C0
 utcgps_old = "ftp://ftp2.bipm.org/pub/tai/scale/UTCGPS/utcgps{}.ar"
@@ -172,15 +173,15 @@ def get_gps_c0():
         # ftp://ftp2.bipm.org/pub/tai/scale/UTCGPSGLO/utcgpsgloYY.ar
         # Later entries in the file (there is a comment to mark the place)
         # are obtained from
-        # https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss
+        # https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gps
         # which is updated monthly.
         #
     """
     )
     comments = [""] * len(c0s)
-    comments[
-        len(a) - 1
-    ] = "\n# These entries are from https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss"
+    comments[len(a) - 1] = (
+        "\n# These entries are from https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gps"
+    )
     c = pint.observatory.clock_file.ClockFile(
         mjd=mjds,
         clock=c0s * u.ns,
@@ -212,7 +213,7 @@ def get_gps_c0p():
         # 1993. Those are available in a separate file.
         #
         # The data in this file is obtained from
-        # https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss
+        # https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gps
         # which is updated monthly.
         #
     """
@@ -262,16 +263,16 @@ def get_gps_merged():
         # ftp://ftp2.bipm.org/pub/tai/scale/UTCGPSGLO/utcgpsgloYY.ar
         # Later entries in the file (there is a comment to mark the place)
         # are obtained from
-        # https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss
+        # https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gps
         # which is updated monthly.
         #
         # These entries are based on C0 values.
     """
     )
     comments = [""] * len(c0s)
-    comments[
-        len(a) - 1
-    ] = "\n# These entries are from https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gnss\n# These entries are based on C0' values."
+    comments[len(a) - 1] = (
+        "\n# These entries are from https://webtai.bipm.org/ftp/pub/tai/other-products/utcgnss/utc-gps\n# These entries are based on C0' values."
+    )
     c = pint.observatory.clock_file.ClockFile(
         mjd=mjds,
         clock=c0s * u.ns,
