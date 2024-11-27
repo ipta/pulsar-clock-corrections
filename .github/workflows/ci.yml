@@ -9,15 +9,16 @@ jobs:
             - uses: actions/checkout@v4
             - name: Set-Up Python Env
               uses: mamba-org/setup-micromamba@v1
-              with: init-shell: bash
-              environment-name: clocks
-              cache-environment: true
-              cache-downloads: true
-              create-args: >-
-                -c conda-forge
-                python=3.11
-                astropy
-                git
+              with: 
+                init-shell: bash
+                environment-name: clocks
+                cache-environment: true
+                cache-downloads: true
+                create-args: >-
+                  -c conda-forge
+                  python=3.11
+                  astropy
+                  git
             - name: Install Git Version of PINT
               shell: bash -el {0}
               run: pip install -r requirements.txt
