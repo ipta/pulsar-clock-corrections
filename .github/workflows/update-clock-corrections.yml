@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-             - name: Set-Up Python Env
+            - name: Set-Up Python Env
               uses: mamba-org/setup-micromamba@v1
               with: 
                 init-shell: bash
@@ -16,10 +16,10 @@ jobs:
                 cache-environment: true
                 cache-downloads: true
                 create-args: >-
-                  -c conda-forge
-                  python=3.11
-                  astropy
-                  git
+                    -c conda-forge
+                    python=3.11
+                    astropy
+                    git
             - name: Install Specified Requirements
               shell: bash -el {0}
               run: pip install -r requirements.txt
