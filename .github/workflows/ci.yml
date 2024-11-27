@@ -6,7 +6,24 @@ jobs:
     run-update-script-but-dont-commit:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-            - run: pip install -r requirements.txt
-            - run: git clone https://github.com/ipta/pulsar-clock-corrections.git  --branch gh-pages --single-branch /tmp/gh-pages --depth 1
-            - run: python update_clock_corrections.py --gh-pages /tmp/gh-pages
+            - uses: actions/checkout@v4
+            - name: Set-Up Python Env
+              uses: mamba-org/setup-micromamba@v1
+              with: init-shell: bash
+              environment-name: clocks
+              cache-environment: true
+              cache-downloads: true
+              create-args: >-
+                -c conda-forge
+                python=3.11
+                astropy
+                git
+            - name: Install Git Version of PINT
+              shell: bash -el {0}
+              run: pip install -r requirements.txt
+            - name: Clone the Directory & Switch to GH-Pages
+              shell: bash -el {0}
+              run: git clone https://github.com/ipta/pulsar-clock-corrections.git  --branch gh-pages --single-branch /tmp/gh-pages --depth 1
+            - name: Test Updating the Clocks
+              shell: bash -el {0}
+              run: python update_clock_corrections.py --gh-pages /tmp/gh-pages
