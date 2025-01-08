@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2024-04-24 MJD 60425.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-01-01 |
+| Last update attempt | 2025-01-08 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2024-09-20 20:33:35.218 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Header line must start with # and contain two time scales: 'The SARAO archive is currently down. We apologise for the inconvenience. We will remove this alert once the archive is available again.\n'
 2024-09-27 20:33:26.829 - Failed to download: HTTP Error 403: Forbidden
 2024-10-04 20:33:22.425 - Failed to download: HTTP Error 403: Forbidden
 2024-10-11 20:39:13.519 - Failed to download: HTTP Error 403: Forbidden
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2024-12-18 20:39:27.691 - Failed to download: HTTP Error 403: Forbidden
 2024-12-25 20:35:18.261 - Failed to download: HTTP Error 403: Forbidden
 2025-01-01 20:35:40.302 - Failed to download: HTTP Error 403: Forbidden
+2025-01-08 20:37:07.662 - Failed to download: The read operation timed out
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
