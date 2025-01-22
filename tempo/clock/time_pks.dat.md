@@ -20,12 +20,11 @@ telescopes in the same file, distinguished only by observatory code.
 | Clock file start | 1979-05-07 MJD 44000.0 |
 | Clock file end | 2011-07-03 MJD 55745.8 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-01-15 |
+| Last update attempt | 2025-01-22 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2024-10-04 20:33:16.722 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-1844-zxupk919 appears to be out of order: 49959.0 > 49958.0
 2024-10-11 20:39:11.255 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2062-ylxvq7_t appears to be out of order: 49959.0 > 49958.0
 2024-11-27 20:39:55.006 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2172-0awx7c85 appears to be out of order: 49959.0 > 49958.0
 2024-12-04 20:40:28.450 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2139-qynhkydv appears to be out of order: 49959.0 > 49958.0
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2025-01-01 20:35:37.359 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2322-zqzvwthm appears to be out of order: 49959.0 > 49958.0
 2025-01-08 20:36:54.237 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2276-gpk3q2dj appears to be out of order: 49959.0 > 49958.0
 2025-01-15 20:35:03.801 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2348-0794xif6 appears to be out of order: 49959.0 > 49958.0
+2025-01-22 20:35:06.602 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2304-98v3yima appears to be out of order: 49959.0 > 49958.0
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_pks.dat.log)
 
