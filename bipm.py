@@ -61,7 +61,7 @@ def read_recent_gps_corrections():
     permitted_age = 31 + 12
     if Time.now().mjd - r[-1, 0] > permitted_age:
         r = np.loadtxt(
-            astropy.utils.data.download_file(utcgnss_url, cache=True), usecols=cols
+            astropy.utils.data.download_file(utcgnss_url, cache=False), usecols=cols
         )
     return r
 
