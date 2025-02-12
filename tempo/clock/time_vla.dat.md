@@ -15,14 +15,13 @@ up-to-date.
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 1990-10-27 MJD 48191.2 |
-| Clock file end | 2021-03-07 MJD 59280.5 |
+| Clock file end | 2025-02-10 MJD 60716.2 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-02-05 |
-| Last update result | Unchanged |
+| Last update attempt | 2025-02-12 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2024-12-04 20:40:22.126 - Unchanged
 2024-12-11 20:40:35.492 - Unchanged
 2024-12-18 20:39:18.612 - Unchanged
 2024-12-25 20:35:02.030 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2025-01-22 20:35:00.046 - Unchanged
 2025-01-29 20:35:40.463 - Unchanged
 2025-02-05 20:37:02.535 - Unchanged
+2025-02-12 20:36:27.628 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_vla.dat.log)
 

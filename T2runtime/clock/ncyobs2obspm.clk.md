@@ -20,14 +20,13 @@ thus here) can be expected to be somewhat up to date.
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 1988-05-18 MJD 47299.6 |
-| Clock file end | 2023-10-27 MJD 60244.0 |
+| Clock file end | 2024-12-30 MJD 60674.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-02-05 |
-| Last update result | Unchanged |
+| Last update attempt | 2025-02-12 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2024-12-04 20:40:31.702 - Unchanged
 2024-12-11 20:40:48.861 - Unchanged
 2024-12-18 20:39:29.775 - Unchanged
 2024-12-25 20:35:19.376 - Unchanged
@@ -37,6 +36,7 @@ Log entries from the last few update attempts:
 2025-01-22 20:35:18.846 - Unchanged
 2025-01-29 20:35:54.673 - Unchanged
 2025-02-05 20:37:16.595 - Unchanged
+2025-02-12 20:36:47.775 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ncyobs2obspm.clk.log)
 
