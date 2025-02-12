@@ -22,4 +22,8 @@
 57784.63487268     8.760000e-06     # 2017-1-31  JBO 1pps recabled.
 57883.99644676     8.760000e-06
 57884.00339120     0.000000e-06		# 2017-5-11 Restored 1pps link. Prev was -1.165 us shift, removed by MJK 2020
+59145.43672450     0
+59145.43672460     11.11260e-6      # The DFB clock stepped during the pandemic and nobody was around to fix it. Measured from the DFB clock logs.
+59267.97336800     11.11260e-6
+59267.97336810     0
 99999.00000000     0.000000e-06
