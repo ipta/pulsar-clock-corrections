@@ -871,6 +871,11 @@ updaters.append(
             are available from the version of the file in git tag 
             "gbt-mystery-values".
 
+            In May 2024, the values were changed back in the source file.
+            This resulted in the file failing validation and refusing to update,
+            again. As of February 2025, this should be fully resolved and the
+            original values restored, on both ends.
+
             If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
         """,
     )
