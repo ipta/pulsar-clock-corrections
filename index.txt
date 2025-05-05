@@ -1,5 +1,5 @@
 # File                                   Update (days)   Invalid if older than
-T2runtime/clock/gps2utc_tempo2.clk                 7.0   ---
+T2runtime/clock/gpst2utc_tempo2.clk                7.0   ---
 T2runtime/clock/gps2utc.clk                        1.0   ---
 T2runtime/clock/gps2utc_cc.clk                     1.0   ---
 T2runtime/clock/gps2utc_c0p.clk                    1.0   ---
