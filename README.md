@@ -67,3 +67,4 @@ python ./update_clock_corrections.py --file tai2tt_bipm2024.clk --no-respect-int
 git add T2runtime/clock/tai2tt_bipm2024.clk log/T2runtime/clock/tai2tt_bipm2024.clk.log index.txt
 git commit ...
 ```
+where you change `./gh-pages` to whereever you have output the github pages.
