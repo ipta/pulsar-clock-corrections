@@ -57,3 +57,13 @@ I suggest you file a pull request that simply replaces the clock file with
 its updated form. Please try running `update_clock_corrections.py` before
 submitting the PR; this should catch any problems like out-of-order clock
 corrections within the new file.
+
+### BIPM
+When new BIPM files are added each year, they need to be explicitly included in this repository.
+This can be done by creating a new PR with:
+
+```
+python ./update_clock_corrections.py --file tai2tt_bipm2024.clk --no-respect-interval --gh-pages ./gh-pages
+git add T2runtime/clock/tai2tt_bipm2024.clk log/T2runtime/clock/tai2tt_bipm2024.clk.log index.txt
+git commit ...
+```
