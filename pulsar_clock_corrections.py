@@ -573,7 +573,6 @@ tempo_repository_url = (
 tempo2_repository_url = (
     "https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/{}"
 )
-
 updaters: List[FileUpdater] = []
 
 
@@ -742,8 +741,8 @@ class PagesUpdater:
 updaters.append(
     ClockFileUpdater(
         "GPS to UTC (TEMPO2)",
-        "T2runtime/clock/gps2utc_tempo2.clk",
-        download_url=tempo2_repository_url.format("gps2utc.clk"),
+        "T2runtime/clock/gpst2utc_tempo2.clk",
+        download_url=tempo2_repository_url.format("gpst2utc.clk"),
         authority="temporary",
         format="tempo2",
         bogus_last_correction=True,
