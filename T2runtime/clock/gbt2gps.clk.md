@@ -25,21 +25,21 @@ If questions arise about the conversion, contact Anne Archibald
 | Clock file start | 2000-12-31 MJD 51909.5 |
 | Clock file end | 2024-05-18 MJD 60448.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2025-02-13 |
+| Last update attempt | 2025-05-05 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2024-05-17 20:29:38.159 - Updated
-2024-05-18 20:29:23.913 - Updated
-2024-05-19 20:29:30.992 - Updated
-2025-02-07 20:35:48.198 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
-2025-02-08 20:33:46.230 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
-2025-02-09 20:33:00.381 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
-2025-02-10 20:36:31.772 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
-2025-02-11 20:36:33.669 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
-2025-02-12 20:36:25.630 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
 2025-02-13 20:35:53.017 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 14:30:52.590 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 14:32:18.629 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 14:34:06.452 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 14:42:53.005 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 18:22:59.479 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 18:23:23.183 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 18:37:58.969 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 18:38:32.855 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
+2025-05-05 20:37:50.823 - Validation failed: New version of T2runtime/clock/gbt2gps.clk clock corrections differ from old version where they overlap in 11 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 

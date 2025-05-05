@@ -18,12 +18,13 @@ obvious.
 | Clock file start | --- |
 | Clock file end | --- |
 | Update interval (days) | inf |
-| Last update attempt | 2022-06-01 |
-| Last update result | Failed to download |
+| Last update attempt | 2025-05-05 |
+| Last update result | No way to download |
 
 Log entries from the last few update attempts:
 ```
 2022-06-01 12:20:21.838 - Failed to download: HTTP Error 404: Not Found
+2025-05-05 17:53:46.839 - No way to download: 'T2runtime/clock/gmrt2gps.clk'
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gmrt2gps.clk.log)
 
