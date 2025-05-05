@@ -1569,6 +1569,8 @@ updaters.append(
     )
 )
 for y in bipm.list_recent_ttbipmxy()[::-1]:
+    if y == 2024:
+        continue
     updaters.append(
         ClockFileCallableUpdater(
             f"TAI to TT(BIPM{y})",
