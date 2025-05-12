@@ -102,3 +102,4 @@
 2025-02-05 20:37:08.242 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2343-ovr9scze appears to be out of order: 49959.0 > 49958.0
 2025-02-12 20:36:34.000 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /tmp/astropy-download-2294-sgs73xt5 appears to be out of order: 49959.0 > 49958.0
 2025-05-05 14:30:59.843 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /var/folders/mb/xng3q7pn3hgbsmmrvqbhzth40007g7/T/astropy-download-369-kffeyfr8 appears to be out of order: 49959.0 > 49958.0
+2025-05-12 20:38:51.896 - Updated
