@@ -20,12 +20,11 @@ should be the same information.
 | Clock file start | 1987-07-24 MJD 47000.0 |
 | Clock file end | 2007-12-24 MJD 54458.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-05-26 |
+| Last update attempt | 2025-06-02 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2025-01-08 20:36:50.333 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-2276-l3i_8691 appears to be out of order: 53000.05 > 53000.0
 2025-01-15 20:35:00.039 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-2348-_2252_mq appears to be out of order: 53000.05 > 53000.0
 2025-01-22 20:35:01.240 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-2304-riwd1xxy appears to be out of order: 53000.05 > 53000.0
 2025-01-29 20:35:42.515 - Validation failed: Unable to read new version of tempo/clock/time_wsrt.dat: Clock file /tmp/astropy-download-2314-jajeweba appears to be out of order: 53000.05 > 53000.0
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2025-05-12 20:38:46.867 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
 2025-05-19 20:42:11.433 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
 2025-05-26 20:41:03.017 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
+2025-06-02 20:43:47.127 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_wsrt.dat.log)
 
