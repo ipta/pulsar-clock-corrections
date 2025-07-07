@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 1990-10-27 MJD 48191.2 |
 | Clock file end | 1993-11-13 MJD 49304.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-06-30 |
+| Last update attempt | 2025-07-07 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-02-12 20:36:28.005 - Unchanged
 2025-05-05 14:30:54.936 - Unchanged
 2025-05-12 20:38:45.971 - Unchanged
 2025-05-19 20:42:10.805 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2025-06-16 20:43:48.468 - Unchanged
 2025-06-23 20:43:49.846 - Unchanged
 2025-06-30 20:43:30.039 - Unchanged
+2025-07-07 20:44:28.897 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/vla2nist.clk.log)
 
