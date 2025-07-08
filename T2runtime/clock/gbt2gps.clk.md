@@ -25,12 +25,11 @@ If questions arise about the conversion, contact Anne Archibald
 | Clock file start | 2000-12-31 MJD 51909.5 |
 | Clock file end | 2024-05-18 MJD 60448.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2025-07-07 |
+| Last update attempt | 2025-07-08 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2025-06-28 20:41:24.898 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2025-06-29 20:42:01.046 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2025-06-30 20:43:26.038 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2025-07-01 20:43:54.535 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
@@ -40,6 +39,7 @@ Log entries from the last few update attempts:
 2025-07-05 20:41:31.359 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2025-07-06 20:42:20.141 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2025-07-07 20:44:25.459 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
+2025-07-08 20:43:56.864 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 
