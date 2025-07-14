@@ -20,12 +20,11 @@ telescopes in the same file, distinguished only by observatory code.
 | Clock file start | 1979-05-07 MJD 44000.0 |
 | Clock file end | 2011-07-03 MJD 55745.8 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-07-07 |
+| Last update attempt | 2025-07-14 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-05-05 14:30:59.843 - Validation failed: Unable to read new version of tempo/clock/time_pks.dat: Clock file /var/folders/mb/xng3q7pn3hgbsmmrvqbhzth40007g7/T/astropy-download-369-kffeyfr8 appears to be out of order: 49959.0 > 49958.0
 2025-05-12 20:38:51.896 - Updated
 2025-05-19 20:42:16.749 - Unchanged
 2025-05-26 20:41:07.727 - Unchanged
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2025-06-23 20:43:55.195 - Unchanged
 2025-06-30 20:43:34.826 - Unchanged
 2025-07-07 20:44:34.087 - Unchanged
+2025-07-14 20:44:55.018 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_pks.dat.log)
 
