@@ -14,14 +14,13 @@ This file is pulled from the FAST_ClockFile repository.
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 2017-07-27 MJD 57961.0 |
-| Clock file end | 2025-07-20 MJD 60877.0 |
+| Clock file end | 2025-07-27 MJD 60884.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-07-21 |
+| Last update attempt | 2025-07-28 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2025-05-19 20:42:11.064 - Updated
 2025-05-26 20:41:02.533 - Updated
 2025-06-02 20:43:46.376 - Updated
 2025-06-09 20:43:56.626 - Updated
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2025-07-07 20:44:29.278 - Updated
 2025-07-14 20:44:50.198 - Updated
 2025-07-21 20:45:21.770 - Updated
+2025-07-28 20:46:15.169 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_fast.dat.log)
 
