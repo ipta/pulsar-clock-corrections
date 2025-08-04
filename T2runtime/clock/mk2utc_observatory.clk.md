@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2025-07-17 MJD 60874.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-07-28 |
-| Last update result | Updated |
+| Last update attempt | 2025-08-04 |
+| Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2025-05-26 20:41:14.027 - Updated
 2025-06-02 20:44:03.921 - Failed to download: <urlopen error _ssl.c:999: The handshake operation timed out>
 2025-06-09 20:44:06.297 - Unchanged
 2025-06-16 20:44:23.561 - Unchanged
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2025-07-14 20:45:02.678 - Unchanged
 2025-07-21 20:45:50.761 - Unchanged
 2025-07-28 20:46:35.112 - Updated
+2025-08-04 20:47:31.397 - Failed to download: <urlopen error _ssl.c:999: The handshake operation timed out>
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 

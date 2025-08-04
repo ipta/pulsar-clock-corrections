@@ -23,12 +23,11 @@ thus here) can be expected to be somewhat up to date.
 | Clock file start | 2012-10-29 MJD 56230.0 |
 | Clock file end | 2014-03-04 MJD 56720.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-07-28 |
+| Last update attempt | 2025-08-04 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-05-26 20:41:09.281 - Unchanged
 2025-06-02 20:43:52.983 - Unchanged
 2025-06-09 20:44:02.952 - Unchanged
 2025-06-16 20:43:55.146 - Unchanged
@@ -38,6 +37,7 @@ Log entries from the last few update attempts:
 2025-07-14 20:44:55.976 - Unchanged
 2025-07-21 20:45:37.713 - Unchanged
 2025-07-28 20:46:21.283 - Unchanged
+2025-08-04 20:47:20.813 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/leap2effix.clk.log)
 
