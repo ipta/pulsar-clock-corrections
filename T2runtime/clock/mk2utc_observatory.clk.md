@@ -19,14 +19,13 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2019-01-01 MJD 58484.0 |
-| Clock file end | 2025-07-17 MJD 60874.0 |
+| Clock file end | 2025-08-01 MJD 60889.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-08-04 |
-| Last update result | Failed to download |
+| Last update attempt | 2025-08-11 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2025-06-02 20:44:03.921 - Failed to download: <urlopen error _ssl.c:999: The handshake operation timed out>
 2025-06-09 20:44:06.297 - Unchanged
 2025-06-16 20:44:23.561 - Unchanged
 2025-06-23 20:44:08.669 - Updated
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2025-07-21 20:45:50.761 - Unchanged
 2025-07-28 20:46:35.112 - Updated
 2025-08-04 20:47:31.397 - Failed to download: <urlopen error _ssl.c:999: The handshake operation timed out>
+2025-08-11 20:42:54.993 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
@@ -44,7 +44,7 @@ Leading comments from clock file:
     # Tie of Karoo Telescope Time to UTC
     # This file is from the KTT-GNSS sensor, and does not include circular-T
     # MJD = (SensorTime(us)/86400e6)+40587    15-minute snapshots
-    # Created at unix time 1753181942.723906 from KTT mySQL database.
+    # Created at unix time 1754484025.142011 from KTT mySQL database.
     #
     # MJD (days)   KTT-UTC (seconds)
     #------------------------------------------------------
