@@ -29,7 +29,7 @@ we retain it.
 | File | `T2runtime/clock/pks2gps.clk` |
 | Authority | temporary |
 | URL in repository | <https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/T2runtime/clock/pks2gps.clk> |
-| Original download URL | <https://bitbucket.org/psrsoft/tempo2/raw/HEAD/T2runtime/clock/pks2gps.clk> |
+| Original download URL | <https://www.parkes.atnf.csiro.au/observing/clockfiles/pks2gps.clk.20250701> |
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1858-11-17 MJD 0.0 |
