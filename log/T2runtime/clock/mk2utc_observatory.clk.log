@@ -119,3 +119,4 @@
 2025-09-15 20:38:23.219 - Unchanged
 2025-09-22 20:40:19.530 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Clock file /tmp/astropy-download-3290-2dyj3b3u appears to be out of order: 60933.96875 > 60929.0
 2025-09-29 20:37:22.935 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Clock file /tmp/astropy-download-3302-dwp2zb0z appears to be out of order: 60933.96875 > 60929.0
+2025-10-06 20:40:07.077 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Clock file /tmp/astropy-download-3288-vga3zoa1 appears to be out of order: 60933.96875 > 60929.0
