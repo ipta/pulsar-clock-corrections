@@ -16,12 +16,11 @@ This file is pulled from the FAST_ClockFile repository.
 | Clock file start | 2017-07-27 MJD 57961.0 |
 | Clock file end | 2025-08-25 MJD 60913.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-09-29 |
+| Last update attempt | 2025-10-06 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-07-28 20:46:15.169 - Updated
 2025-08-04 20:47:14.380 - Updated
 2025-08-11 20:42:44.120 - Updated
 2025-08-18 20:41:30.519 - Updated
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2025-09-15 20:38:13.792 - Unchanged
 2025-09-22 20:40:03.597 - Unchanged
 2025-09-29 20:37:16.851 - Unchanged
+2025-10-06 20:39:56.798 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_fast.dat.log)
 
