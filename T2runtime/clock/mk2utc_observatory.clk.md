@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2025-10-02 MJD 60951.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-10-13 |
-| Last update result | Updated |
+| Last update attempt | 2025-10-20 |
+| Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-08-11 20:42:54.993 - Updated
 2025-08-18 20:41:41.526 - Unchanged
 2025-08-25 20:42:34.702 - Unchanged
 2025-09-01 20:38:34.421 - Updated
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2025-09-29 20:37:22.935 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Clock file /tmp/astropy-download-3302-dwp2zb0z appears to be out of order: 60933.96875 > 60929.0
 2025-10-06 20:40:07.077 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Clock file /tmp/astropy-download-3288-vga3zoa1 appears to be out of order: 60933.96875 > 60929.0
 2025-10-13 20:39:51.453 - Updated
+2025-10-20 20:42:36.844 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
