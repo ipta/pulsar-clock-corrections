@@ -24,12 +24,11 @@ If questions arise, contact Michael Keith
 | Clock file start | 2006-10-13 MJD 54021.4 |
 | Clock file end | 2025-10-08 MJD 60956.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-10-27 |
+| Last update attempt | 2025-11-03 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-08-25 20:42:20.747 - Unchanged
 2025-09-01 20:38:18.784 - Unchanged
 2025-09-08 20:40:27.826 - Unchanged
 2025-09-15 20:38:12.618 - Unchanged
@@ -39,6 +38,7 @@ Log entries from the last few update attempts:
 2025-10-13 20:39:39.898 - Updated
 2025-10-20 20:42:24.686 - Unchanged
 2025-10-27 20:39:57.564 - Unchanged
+2025-11-03 20:42:25.171 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/jb2gps.clk.log)
 
