@@ -28,14 +28,13 @@ If there are any questions, contact Anne Archibald
 | File | `tempo/clock/ut1.dat` |
 | Authority | observatory |
 | File start | 1973-01-02 MJD 41684.0 |
-| File end | 2026-11-14 MJD 61358.0 |
+| File end | 2026-11-21 MJD 61365.0 |
 | Update interval (days) | 0 |
-| Last update attempt | 2025-11-12 |
-| Last update result | Unchanged |
+| Last update attempt | 2025-11-13 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2025-11-03 20:43:10.964 - Unchanged
 2025-11-04 20:43:39.235 - Unchanged
 2025-11-05 20:44:01.952 - Unchanged
 2025-11-06 20:43:32.742 - Updated
@@ -45,5 +44,6 @@ Log entries from the last few update attempts:
 2025-11-10 20:45:13.472 - Unchanged
 2025-11-11 20:42:04.821 - Unchanged
 2025-11-12 20:43:41.827 - Unchanged
+2025-11-13 20:43:34.562 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/ut1.dat.log)
