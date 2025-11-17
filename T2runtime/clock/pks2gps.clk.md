@@ -35,12 +35,11 @@ we retain it.
 | Clock file start | 1858-11-17 MJD 0.0 |
 | Clock file end | 2025-10-31 MJD 60979.1 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-11-10 |
+| Last update attempt | 2025-11-17 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-09-08 20:40:34.487 - Unchanged
 2025-09-15 20:38:19.101 - Unchanged
 2025-09-22 20:40:08.004 - Unchanged
 2025-09-29 20:37:17.888 - Validation failed: New version of T2runtime/clock/pks2gps.clk has decreased from 46535 to 46325 measurements.
@@ -50,6 +49,7 @@ Log entries from the last few update attempts:
 2025-10-27 20:40:03.699 - Unchanged
 2025-11-03 20:42:31.755 - Updated
 2025-11-10 20:44:44.539 - Unchanged
+2025-11-17 20:41:32.854 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/pks2gps.clk.log)
 
