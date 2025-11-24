@@ -19,14 +19,13 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 2019-01-01 MJD 58484.0 |
-| Clock file end | 2025-10-30 MJD 60979.0 |
+| Clock file end | 2025-11-14 MJD 60994.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-11-17 |
+| Last update attempt | 2025-11-24 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2025-09-15 20:38:23.219 - Unchanged
 2025-09-22 20:40:19.530 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Clock file /tmp/astropy-download-3290-2dyj3b3u appears to be out of order: 60933.96875 > 60929.0
 2025-09-29 20:37:22.935 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Clock file /tmp/astropy-download-3302-dwp2zb0z appears to be out of order: 60933.96875 > 60929.0
 2025-10-06 20:40:07.077 - Validation failed: Unable to read new version of T2runtime/clock/mk2utc_observatory.clk: Clock file /tmp/astropy-download-3288-vga3zoa1 appears to be out of order: 60933.96875 > 60929.0
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2025-11-03 20:42:59.579 - Unchanged
 2025-11-10 20:44:57.437 - Failed to download: <urlopen error _ssl.c:999: The handshake operation timed out>
 2025-11-17 20:41:48.816 - Updated
+2025-11-24 20:42:17.159 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
@@ -44,7 +44,7 @@ Leading comments from clock file:
     # Tie of Karoo Telescope Time to UTC
     # This file is from the KTT-GNSS sensor, and does not include circular-T
     # MJD = (SensorTime(us)/86400e6)+40587    15-minute snapshots
-    # Created at unix time 1762257342.154564 from KTT mySQL database.
+    # Created at unix time 1763626920.271524 from KTT mySQL database.
     #
     # MJD (days)   KTT-UTC (seconds)
     #------------------------------------------------------
