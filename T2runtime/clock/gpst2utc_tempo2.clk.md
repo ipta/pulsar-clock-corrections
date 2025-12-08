@@ -27,12 +27,11 @@ are from the column C0').
 | Clock file start | 1993-01-01 MJD 48988.0 |
 | Clock file end | 2024-12-30 MJD 60674.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-12-01 |
+| Last update attempt | 2025-12-08 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-09-29 20:33:38.838 - Unchanged
 2025-10-06 20:36:19.365 - Unchanged
 2025-10-13 20:36:04.109 - Unchanged
 2025-10-20 20:38:48.171 - Unchanged
@@ -42,6 +41,7 @@ Log entries from the last few update attempts:
 2025-11-17 20:37:37.391 - Unchanged
 2025-11-24 20:38:20.412 - Unchanged
 2025-12-01 20:36:13.799 - Unchanged
+2025-12-08 20:41:26.757 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gpst2utc_tempo2.clk.log)
 
