@@ -35,12 +35,11 @@ we retain it.
 | Clock file start | 1858-11-17 MJD 0.0 |
 | Clock file end | 2025-11-30 MJD 61009.1 |
 | Update interval (days) | 7 |
-| Last update attempt | 2025-12-29 |
+| Last update attempt | 2026-01-05 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-10-27 20:40:03.699 - Unchanged
 2025-11-03 20:42:31.755 - Updated
 2025-11-10 20:44:44.539 - Unchanged
 2025-11-17 20:41:32.854 - Unchanged
@@ -50,6 +49,7 @@ Log entries from the last few update attempts:
 2025-12-15 20:46:33.920 - Unchanged
 2025-12-22 20:44:30.511 - Unchanged
 2025-12-29 20:45:53.913 - Unchanged
+2026-01-05 20:47:18.367 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/pks2gps.clk.log)
 
