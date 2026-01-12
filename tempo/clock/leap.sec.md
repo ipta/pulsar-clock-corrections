@@ -21,12 +21,11 @@ If there are any questions, contact Anne Archibald
 | File start | 1972-07-01 MJD 41499.0 |
 | File end | 2017-01-01 MJD 57754.0 |
 | Update interval (days) | 0 |
-| Last update attempt | 2026-01-11 |
+| Last update attempt | 2026-01-12 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2026-01-02 20:44:08.295 - Unchanged
 2026-01-03 20:43:23.631 - Unchanged
 2026-01-04 20:44:17.023 - Unchanged
 2026-01-05 20:47:25.006 - Unchanged
@@ -36,5 +35,6 @@ Log entries from the last few update attempts:
 2026-01-09 20:46:23.102 - Unchanged
 2026-01-10 20:43:50.437 - Unchanged
 2026-01-11 20:44:08.398 - Unchanged
+2026-01-12 20:46:58.174 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/leap.sec.log)
