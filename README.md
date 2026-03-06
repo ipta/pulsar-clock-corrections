@@ -67,4 +67,7 @@ python ./update_clock_corrections.py --file tai2tt_bipm2024.clk --no-respect-int
 git add T2runtime/clock/tai2tt_bipm2024.clk log/T2runtime/clock/tai2tt_bipm2024.clk.log index.txt
 git commit ...
 ```
-where you change `./gh-pages` to whereever you have output the github pages.
+where you change `./gh-pages` to whereever you have output the github pages.  You can get the github pages via:
+```
+git clone https://github.com/ipta/pulsar-clock-corrections.git  --branch gh-pages --single-branch gh-pages --depth 1
+```
