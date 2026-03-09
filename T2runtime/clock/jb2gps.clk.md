@@ -22,15 +22,13 @@ If questions arise, contact Michael Keith
 | Format | tempo2 |
 | Bogus last correction | True |
 | Clock file start | 2006-10-13 MJD 54021.4 |
-| Clock file end | 2025-10-08 MJD 60956.0 |
+| Clock file end | 2025-11-28 MJD 61007.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-03-06 |
-| Last update result | Validation failed |
+| Last update attempt | 2026-03-09 |
+| Last update result | Updated overriding validation failure |
 
 Log entries from the last few update attempts:
 ```
-2025-12-22 20:44:24.602 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
-2025-12-29 20:45:48.346 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
 2026-01-05 20:47:11.922 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
 2026-01-12 20:46:43.663 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
 2026-01-19 20:45:53.907 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
@@ -39,6 +37,8 @@ Log entries from the last few update attempts:
 2026-02-10 21:07:57.591 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
 2026-02-17 21:03:12.060 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
 2026-03-06 20:56:02.621 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
+2026-03-09 15:44:30.539 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
+2026-03-09 15:44:30.542 - Updated overriding validation failure
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/jb2gps.clk.log)
 
