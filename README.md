@@ -1,4 +1,4 @@
-# pulsar-clock-corrections
+# pulsar-clock-corrections  [![Update status](https://github.com/ipta/pulsar-clock-corrections/actions/workflows/update-clock-corrections.yml/badge.svg)](https://github.com/ipta/pulsar-clock-corrections/actions/workflows/update-clock-corrections.yml)
 
 Distribution point and tools for observatory clock corrections for pulsar timing
 
