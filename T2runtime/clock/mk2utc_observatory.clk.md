@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2026-02-18 MJD 61090.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-03-06 |
-| Last update result | Updated |
+| Last update attempt | 2026-03-13 |
+| Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2025-12-22 20:44:34.912 - Unchanged
 2025-12-29 20:45:59.660 - Unchanged
 2026-01-05 20:47:23.154 - Unchanged
 2026-01-12 20:46:55.870 - Updated
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2026-02-10 21:08:08.520 - Unchanged
 2026-02-17 21:03:24.266 - Updated
 2026-03-06 20:56:20.131 - Updated
+2026-03-13 21:00:06.998 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
