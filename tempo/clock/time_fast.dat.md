@@ -16,12 +16,11 @@ This file is pulled from the FAST_ClockFile repository.
 | Clock file start | 2017-07-27 MJD 57961.0 |
 | Clock file end | 2025-08-25 MJD 60913.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-03-20 |
+| Last update attempt | 2026-03-27 |
 | Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2026-01-05 20:47:13.160 - Failed to download: HTTP Error 404: Not Found
 2026-01-12 20:46:45.350 - Failed to download: HTTP Error 404: Not Found
 2026-01-19 20:45:54.946 - Failed to download: HTTP Error 404: Not Found
 2026-01-26 20:49:50.003 - Failed to download: HTTP Error 404: Not Found
@@ -31,6 +30,7 @@ Log entries from the last few update attempts:
 2026-03-06 20:56:05.024 - Failed to download: HTTP Error 404: Not Found
 2026-03-13 20:59:56.016 - Failed to download: HTTP Error 404: Not Found
 2026-03-20 20:57:38.170 - Failed to download: HTTP Error 404: Not Found
+2026-03-27 21:04:30.437 - Failed to download: HTTP Error 404: Not Found
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_fast.dat.log)
 
