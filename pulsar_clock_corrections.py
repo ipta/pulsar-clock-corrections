@@ -1309,6 +1309,8 @@ updaters.append(
 
             Originally made from time_bonn.dat with an awk script, according to
             the comments.
+            
+            If questions arise, contact Thomas Abbott <tabbott@mpifr-bonn.mpg.de>
         """,
     )
 )
@@ -1324,8 +1326,27 @@ updaters.append(
             This file is pulled from the TEMPO2 repository and may not be fully
             up-to-date. The European Pulsar Timing Array maintains an internal
             repository of clock corrections, which they have transferred to the TEMPO2
-            repository, so  EPTA telescope data in the TEMPO2 repository (and
+            repository, so EPTA telescope data in the TEMPO2 repository (and
             thus here) can be expected to be somewhat up to date.
+            
+            If questions arise, contact Thomas Abbott <tabbott@mpifr-bonn.mpg.de>
+        """,
+    )
+)
+updaters.append(
+    ClockFileUpdater(
+        "Effelsberg",
+        "T2runtime/clock/effedd2gps.clk",
+        download_url=tempo2_repository_url.format("effedd2gps.clk"),
+        authority="temporary",
+        format="tempo2",
+        bogus_last_correction=True,
+        description="""Effelsberg telescope Direct Digitization (EDD) clock corrections
+
+            This file is was uploaded manually and contains clock corrections up to and
+            including Data Release 3.
+            
+            If questions arise, contact Thomas Abbott <tabbott@mpifr-bonn.mpg.de>
         """,
     )
 )
