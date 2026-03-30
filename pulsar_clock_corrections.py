@@ -1335,16 +1335,16 @@ updaters.append(
 )
 updaters.append(
     ClockFileUpdater(
-        "Effelsberg",
+        "Effelsberg DD",
         "T2runtime/clock/effedd2gps.clk",
-        download_url=tempo2_repository_url.format("effedd2gps.clk"),
+        download_url=tempo2_repository_url.format("effedd2gps.clk"), # file is available locally for now. 
         authority="temporary",
         format="tempo2",
         bogus_last_correction=True,
         description="""Effelsberg telescope Direct Digitization (EDD) clock corrections
 
             This file is was uploaded manually and contains clock corrections up to and
-            including Data Release 3.
+            including IPTA Data Release 3.
             
             If questions arise, contact Thomas Abbott <tabbott@mpifr-bonn.mpg.de>
         """,
