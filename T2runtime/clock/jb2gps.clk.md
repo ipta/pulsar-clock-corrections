@@ -24,12 +24,11 @@ If questions arise, contact Michael Keith
 | Clock file start | 2006-10-13 MJD 54021.4 |
 | Clock file end | 2025-11-28 MJD 61007.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-03-30 |
+| Last update attempt | 2026-04-06 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2026-01-26 20:49:48.345 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
 2026-02-03 21:01:55.386 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
 2026-02-10 21:07:57.591 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
 2026-02-17 21:03:12.060 - Validation failed: New version of T2runtime/clock/jb2gps.clk clock corrections differ from old version where they overlap in 177 places
@@ -39,6 +38,7 @@ Log entries from the last few update attempts:
 2026-03-16 21:04:28.422 - Unchanged
 2026-03-23 21:01:28.030 - Unchanged
 2026-03-30 21:08:30.889 - Unchanged
+2026-04-06 21:02:49.240 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/jb2gps.clk.log)
 
