@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2026-04-10 MJD 61141.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-04-17 |
-| Last update result | Updated |
+| Last update attempt | 2026-04-24 |
+| Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2026-02-03 21:02:20.809 - Unchanged
 2026-02-10 21:08:08.520 - Unchanged
 2026-02-17 21:03:24.266 - Updated
 2026-03-06 20:56:20.131 - Updated
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2026-04-03 21:02:14.300 - Unchanged
 2026-04-10 21:03:02.691 - Unchanged
 2026-04-17 21:12:20.424 - Updated
+2026-04-24 21:13:55.408 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
