@@ -36,14 +36,13 @@ If questions arise, contact Ryan S. Lynch <rlynch@nrao.edu>.
 | Format | tempo |
 | Bogus last correction | False |
 | Clock file start | 2000-12-31 MJD 51909.5 |
-| Clock file end | 2026-04-25 MJD 61155.5 |
+| Clock file end | 2026-04-26 MJD 61156.5 |
 | Update interval (days) | 1 |
-| Last update attempt | 2026-04-26 |
+| Last update attempt | 2026-04-27 |
 | Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2026-04-17 21:10:21.347 - Updated
 2026-04-18 21:02:03.430 - Updated
 2026-04-19 21:02:14.906 - Updated
 2026-04-20 21:08:27.110 - Updated
@@ -53,6 +52,7 @@ Log entries from the last few update attempts:
 2026-04-24 21:13:35.402 - Updated
 2026-04-25 21:04:17.431 - Updated
 2026-04-26 21:04:23.928 - Updated
+2026-04-27 21:34:59.103 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_gbt.dat.log)
 
