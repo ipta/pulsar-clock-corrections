@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2015-02-01 MJD 57054.6 |
 | Clock file end | 2025-02-10 MJD 60716.2 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-05-15 |
+| Last update attempt | 2026-05-22 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2026-03-13 20:59:55.802 - Unchanged
 2026-03-20 20:57:37.677 - Unchanged
 2026-03-27 21:04:29.947 - Unchanged
 2026-04-03 21:02:03.855 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2026-05-01 21:14:44.655 - Unchanged
 2026-05-08 21:34:53.007 - Unchanged
 2026-05-15 21:35:32.010 - Unchanged
+2026-05-22 21:43:12.238 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/vla2gps.clk.log)
 
