@@ -20,12 +20,11 @@ thus here) can be expected to be somewhat up to date.
 | Clock file start | 2011-01-01 MJD 55562.5 |
 | Clock file end | 2021-03-21 MJD 59294.5 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-06-12 |
+| Last update attempt | 2026-06-19 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2026-04-10 21:02:58.209 - Validation failed: New version of T2runtime/clock/effix2gps.clk clock corrections differ from old version where they overlap in 52 places
 2026-04-17 21:10:30.149 - Validation failed: New version of T2runtime/clock/effix2gps.clk clock corrections differ from old version where they overlap in 52 places
 2026-04-24 21:13:44.593 - Validation failed: New version of T2runtime/clock/effix2gps.clk clock corrections differ from old version where they overlap in 52 places
 2026-05-01 21:14:51.447 - Validation failed: New version of T2runtime/clock/effix2gps.clk clock corrections differ from old version where they overlap in 52 places
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2026-05-29 22:14:10.335 - Validation failed: New version of T2runtime/clock/effix2gps.clk clock corrections differ from old version where they overlap in 52 places
 2026-06-05 21:54:10.504 - Validation failed: New version of T2runtime/clock/effix2gps.clk clock corrections differ from old version where they overlap in 52 places
 2026-06-12 22:06:18.811 - Validation failed: New version of T2runtime/clock/effix2gps.clk clock corrections differ from old version where they overlap in 52 places
+2026-06-19 21:42:57.326 - Validation failed: New version of T2runtime/clock/effix2gps.clk clock corrections differ from old version where they overlap in 52 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/effix2gps.clk.log)
 
