@@ -33,14 +33,13 @@ we retain it.
 | Format | tempo2 |
 | Bogus last correction | False |
 | Clock file start | 1858-11-17 MJD 0.0 |
-| Clock file end | 2026-03-31 MJD 61130.1 |
+| Clock file end | 2026-06-30 MJD 61221.1 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-07-10 |
-| Last update result | Unchanged |
+| Last update attempt | 2026-07-17 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2026-05-08 21:34:58.080 - Unchanged
 2026-05-15 21:35:37.521 - Updated
 2026-05-22 21:43:17.584 - Unchanged
 2026-05-29 22:14:08.594 - Unchanged
@@ -50,6 +49,7 @@ Log entries from the last few update attempts:
 2026-06-26 21:48:32.593 - Unchanged
 2026-07-03 21:39:56.595 - Unchanged
 2026-07-10 21:35:05.004 - Unchanged
+2026-07-17 21:16:03.176 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/pks2gps.clk.log)
 
