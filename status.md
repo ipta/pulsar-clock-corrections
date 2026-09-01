@@ -23,8 +23,8 @@ name of each clock file links to a page with more details.
 | [Jodrell Bank DFB](T2runtime/clock/jbdfb2jb.clk.html) | `T2runtime/clock/jbdfb2jb.clk` | 2006-10-13 MJD 54021.4 | 2021-02-22 MJD 59268.0 | 2026-08-29 | Unchanged 
 | [Meerkat (observatory)](T2runtime/clock/mk2utc_observatory.clk.html) | `T2runtime/clock/mk2utc_observatory.clk` | 2019-01-01 MJD 58484.0 | 2026-04-10 MJD 61141.0 | 2026-08-29 | **Validation failed** 
 | [Leap seconds](tempo/clock/leap.sec.html) | `tempo/clock/leap.sec` | 1972-07-01 MJD 41499.0 | 2017-01-01 MJD 57754.0 | 2026-09-01 | Unchanged 
-| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2027-08-28 MJD 61645.0 | 2026-09-01 | Updated 
-| [UT1 table](T2runtime/clock/ut1.dat.html) | `T2runtime/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2027-08-28 MJD 61645.0 | 2026-09-01 | Updated 
+| [UT1 table](tempo/clock/ut1.dat.html) | `tempo/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2027-08-28 MJD 61645.0 | 2026-09-01 | Unchanged 
+| [UT1 table](T2runtime/clock/ut1.dat.html) | `T2runtime/clock/ut1.dat` | 1973-01-02 MJD 41684.0 | 2027-08-28 MJD 61645.0 | 2026-09-01 | Unchanged 
 
 
 
