@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 1999-01-01 MJD 51179.5 |
 | Clock file end | 2015-06-29 MJD 57202.1 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-08-29 |
+| Last update attempt | 2026-09-05 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2026-06-26 21:48:28.688 - Unchanged
 2026-07-03 21:39:52.047 - Unchanged
 2026-07-10 21:34:59.794 - Unchanged
 2026-07-17 21:15:58.020 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2026-08-14 20:54:58.986 - Unchanged
 2026-08-21 20:48:49.843 - Unchanged
 2026-08-29 02:51:54.167 - Unchanged
+2026-09-05 22:10:21.127 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/wsrt2gps.clk.log)
 
