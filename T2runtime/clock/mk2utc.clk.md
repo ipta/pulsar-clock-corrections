@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2024-09-23 MJD 60576.9 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-09-19 |
+| Last update attempt | 2026-09-26 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2026-07-17 21:16:11.187 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 8252 places
 2026-07-24 21:37:14.867 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 8252 places
 2026-07-31 21:37:42.870 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 8252 places
 2026-08-07 21:05:07.699 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 8252 places
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2026-09-05 22:10:34.965 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 8252 places
 2026-09-12 22:29:02.739 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 8252 places
 2026-09-19 22:26:21.884 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 8252 places
+2026-09-26 23:03:57.064 - Validation failed: New version of T2runtime/clock/mk2utc.clk MJDs differ from old version where they overlap in 8252 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc.clk.log)
 
