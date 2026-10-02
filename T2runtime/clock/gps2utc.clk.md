@@ -37,7 +37,6 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 
 Log entries from the last few update attempts:
 ```
-2026-09-22 23:06:32.345 - Unchanged
 2026-09-23 23:04:33.639 - Unchanged
 2026-09-24 23:20:11.265 - Unchanged
 2026-09-25 23:25:18.564 - Unchanged
@@ -47,6 +46,7 @@ Log entries from the last few update attempts:
 2026-09-29 23:52:02.860 - Unchanged
 2026-10-01 00:00:10.872 - Failed to download: <urlopen error [Errno 111] Connection refused>
 2026-10-02 00:02:29.606 - Unchanged
+2026-10-02 23:56:09.647 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc.clk.log)
 

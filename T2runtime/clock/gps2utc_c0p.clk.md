@@ -35,7 +35,6 @@ about the BIPM's published corrections, contact <tai@bipm.org>.
 
 Log entries from the last few update attempts:
 ```
-2026-09-22 23:06:32.377 - Unchanged
 2026-09-23 23:04:33.669 - Unchanged
 2026-09-24 23:20:11.295 - Unchanged
 2026-09-25 23:25:18.594 - Unchanged
@@ -45,6 +44,7 @@ Log entries from the last few update attempts:
 2026-09-29 23:52:02.890 - Unchanged
 2026-10-01 00:00:11.662 - Unchanged
 2026-10-02 00:02:29.637 - Unchanged
+2026-10-02 23:56:09.677 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gps2utc_c0p.clk.log)
 

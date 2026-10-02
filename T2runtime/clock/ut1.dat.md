@@ -35,7 +35,6 @@ If there are any questions, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
-2026-09-22 23:06:34.498 - Unchanged
 2026-09-23 23:04:34.882 - Updated
 2026-09-24 23:20:12.798 - Unchanged
 2026-09-25 23:25:19.827 - Unchanged
@@ -45,5 +44,6 @@ Log entries from the last few update attempts:
 2026-09-29 23:52:05.348 - Unchanged
 2026-10-01 00:00:12.845 - Unchanged
 2026-10-02 00:02:31.123 - Unchanged
+2026-10-02 23:56:10.629 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ut1.dat.log)
