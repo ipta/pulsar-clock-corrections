@@ -22,12 +22,11 @@ thus here) can be expected to be somewhat up to date.
 | Clock file start | 2003-12-01 MJD 52974.0 |
 | Clock file end | 2025-09-26 MJD 60944.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-09-26 |
+| Last update attempt | 2026-10-03 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2026-07-24 21:37:16.471 - Unchanged
 2026-07-31 21:37:44.171 - Unchanged
 2026-08-07 21:05:08.979 - Unchanged
 2026-08-14 20:55:12.809 - Unchanged
@@ -37,6 +36,7 @@ Log entries from the last few update attempts:
 2026-09-12 22:29:03.257 - Unchanged
 2026-09-19 22:26:23.112 - Unchanged
 2026-09-26 23:03:57.778 - Unchanged
+2026-10-03 23:15:24.686 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/obspm2gps.clk.log)
 

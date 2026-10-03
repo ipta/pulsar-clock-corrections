@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 2003-12-27 MJD 53000.0 |
 | Clock file end | 2018-09-06 MJD 58367.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-09-26 |
+| Last update attempt | 2026-10-03 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2026-07-24 21:37:15.273 - Unchanged
 2026-07-31 21:37:43.159 - Unchanged
 2026-08-07 21:05:08.032 - Unchanged
 2026-08-14 20:55:12.370 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2026-09-12 22:29:02.871 - Unchanged
 2026-09-19 22:26:22.151 - Unchanged
 2026-09-26 23:03:57.256 - Unchanged
+2026-10-03 23:15:23.511 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mo2gps.clk.log)
 
