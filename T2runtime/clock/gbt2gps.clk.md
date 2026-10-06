@@ -30,7 +30,6 @@ If questions arise about the conversion, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
-2026-09-26 23:03:39.926 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2026-09-27 23:13:45.317 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2026-09-29 00:30:29.088 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2026-09-29 23:52:03.825 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
@@ -40,6 +39,7 @@ Log entries from the last few update attempts:
 2026-10-03 23:15:04.192 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2026-10-04 23:22:41.095 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 2026-10-06 01:24:49.843 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
+2026-10-06 23:54:30.134 - Validation failed: New version of T2runtime/clock/gbt2gps.clk MJDs differ from old version where they overlap in 8407 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/gbt2gps.clk.log)
 

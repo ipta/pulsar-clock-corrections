@@ -26,7 +26,6 @@ If there are any questions, contact Anne Archibald
 
 Log entries from the last few update attempts:
 ```
-2026-09-26 23:03:57.785 - Unchanged
 2026-09-27 23:13:45.344 - Unchanged
 2026-09-29 00:30:29.114 - Unchanged
 2026-09-29 23:52:04.779 - Unchanged
@@ -36,5 +35,6 @@ Log entries from the last few update attempts:
 2026-10-03 23:15:24.695 - Unchanged
 2026-10-04 23:22:41.107 - Unchanged
 2026-10-06 01:24:49.859 - Unchanged
+2026-10-06 23:54:31.480 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/leap.sec.log)
