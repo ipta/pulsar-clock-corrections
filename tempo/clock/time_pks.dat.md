@@ -20,12 +20,11 @@ telescopes in the same file, distinguished only by observatory code.
 | Clock file start | 1979-05-07 MJD 44000.0 |
 | Clock file end | 2011-07-03 MJD 55745.8 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-10-03 |
+| Last update attempt | 2026-10-10 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2026-07-31 21:37:32.554 - Unchanged
 2026-08-07 21:04:57.394 - Unchanged
 2026-08-14 20:55:04.356 - Unchanged
 2026-08-21 20:48:54.054 - Unchanged
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2026-09-19 22:26:10.796 - Unchanged
 2026-09-26 23:03:47.576 - Unchanged
 2026-10-03 23:15:11.786 - Unchanged
+2026-10-10 23:44:23.876 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_pks.dat.log)
 
