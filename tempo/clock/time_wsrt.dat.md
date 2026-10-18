@@ -20,12 +20,11 @@ should be the same information.
 | Clock file start | 1987-07-24 MJD 47000.0 |
 | Clock file end | 2007-12-24 MJD 54458.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-10-10 |
-| Last update result | Validation failed |
+| Last update attempt | 2026-10-18 |
+| Last update result | Failed to download |
 
 Log entries from the last few update attempts:
 ```
-2026-08-07 21:04:53.484 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
 2026-08-14 20:54:59.236 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
 2026-08-21 20:48:50.060 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
 2026-08-29 02:51:54.432 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
@@ -35,6 +34,7 @@ Log entries from the last few update attempts:
 2026-09-26 23:03:42.886 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
 2026-10-03 23:15:07.202 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
 2026-10-10 23:44:19.720 - Validation failed: New version of tempo/clock/time_wsrt.dat MJDs differ from old version where they overlap in 5 places
+2026-10-18 22:33:14.307 - Failed to download: The read operation timed out
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_wsrt.dat.log)
 
