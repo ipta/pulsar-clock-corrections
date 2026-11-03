@@ -28,14 +28,13 @@ If there are any questions, contact Anne Archibald
 | File | `T2runtime/clock/ut1.dat` |
 | Authority | observatory |
 | File start | 1973-01-02 MJD 41684.0 |
-| File end | 2027-10-04 MJD 61682.0 |
+| File end | 2027-10-29 MJD 61707.0 |
 | Update interval (days) | 0 |
-| Last update attempt | 2026-11-01 |
-| Last update result | Unchanged |
+| Last update attempt | 2026-11-03 |
+| Last update result | Updated |
 
 Log entries from the last few update attempts:
 ```
-2026-10-23 23:18:19.019 - Unchanged
 2026-10-24 22:38:48.060 - Unchanged
 2026-10-25 22:44:39.012 - Unchanged
 2026-10-27 00:01:13.690 - Unchanged
@@ -45,5 +44,6 @@ Log entries from the last few update attempts:
 2026-10-30 23:59:00.540 - Unchanged
 2026-10-31 23:33:21.372 - Unchanged
 2026-11-01 23:46:37.484 - Unchanged
+2026-11-03 02:32:10.622 - Updated
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/ut1.dat.log)
