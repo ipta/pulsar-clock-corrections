@@ -21,12 +21,11 @@ If questions arise, contact Ryan Shannon <rshannon@swin.edu.au>
 | Clock file start | 2019-01-01 MJD 58484.0 |
 | Clock file end | 2026-04-10 MJD 61141.0 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-11-01 |
+| Last update attempt | 2026-11-08 |
 | Last update result | Validation failed |
 
 Log entries from the last few update attempts:
 ```
-2026-08-29 02:52:11.949 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
 2026-09-05 22:10:33.692 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
 2026-09-12 22:29:01.471 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
 2026-09-19 22:26:20.220 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
@@ -36,6 +35,7 @@ Log entries from the last few update attempts:
 2026-10-18 22:33:29.336 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
 2026-10-25 22:44:35.554 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
 2026-11-01 23:46:34.863 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
+2026-11-08 23:53:43.335 - Validation failed: New version of T2runtime/clock/mk2utc_observatory.clk MJDs differ from old version where they overlap in 7 places
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/T2runtime/clock/mk2utc_observatory.clk.log)
 
