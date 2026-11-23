@@ -17,12 +17,11 @@ up-to-date.
 | Clock file start | 1990-10-27 MJD 48191.2 |
 | Clock file end | 2025-02-10 MJD 60716.2 |
 | Update interval (days) | 7 |
-| Last update attempt | 2026-11-16 |
+| Last update attempt | 2026-11-23 |
 | Last update result | Unchanged |
 
 Log entries from the last few update attempts:
 ```
-2026-09-12 22:28:47.509 - Failed to download: The read operation timed out
 2026-09-19 22:26:05.360 - Unchanged
 2026-09-26 23:03:41.165 - Unchanged
 2026-10-03 23:15:05.642 - Unchanged
@@ -32,6 +31,7 @@ Log entries from the last few update attempts:
 2026-11-01 23:46:23.031 - Unchanged
 2026-11-08 23:53:31.119 - Unchanged
 2026-11-16 00:06:00.466 - Unchanged
+2026-11-23 01:02:34.430 - Unchanged
 ```
 [Full log](https://raw.githubusercontent.com/ipta/pulsar-clock-corrections/main/log/tempo/clock/time_vla.dat.log)
 
